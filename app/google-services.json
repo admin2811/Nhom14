@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "335292764237",
+    "project_id": "authenticatorapp-aca98",
+    "storage_bucket": "authenticatorapp-aca98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335292764237:android:5336e7384a4f9e7d9bcc04",
+        "android_client_info": {
+          "package_name": "com.example.authenticatorapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaXDI551gXT8s_17IGe7kRxMZTJTMtFqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335292764237:android:1708e5996b1fecfd9bcc04",
+        "android_client_info": {
+          "package_name": "com.example.myfirebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaXDI551gXT8s_17IGe7kRxMZTJTMtFqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
