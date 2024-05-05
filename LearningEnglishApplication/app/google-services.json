@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "638940284921",
+    "firebase_url": "https://english-application-d5fc1-default-rtdb.firebaseio.com",
+    "project_id": "english-application-d5fc1",
+    "storage_bucket": "english-application-d5fc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638940284921:android:723beb5312b49de3a89f28",
+        "android_client_info": {
+          "package_name": "com.example.learningenglishapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638940284921-pli52argdrme3l3911c0t46mea194eln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.learningenglishapplication",
+            "certificate_hash": "ebb7b51262c0ca002c134fe268c6229283b44bf9"
+          }
+        },
+        {
+          "client_id": "638940284921-e62vumi9tf080pb605ghrn7o8qn6p77m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApTanuG9npNLBRMld7JpN8hNBcVq8wsb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638940284921-2ojegrf9hf8um4s5pibqk1sfmg3cfb9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
