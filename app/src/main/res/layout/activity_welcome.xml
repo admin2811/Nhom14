@@ -67,7 +67,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button3"
+                android:id="@+id/login_button"
                 style="android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
@@ -82,7 +82,7 @@
                 tools:ignore="DuplicateIds" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button3"
+                android:id="@+id/register_button"
                 style="android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"

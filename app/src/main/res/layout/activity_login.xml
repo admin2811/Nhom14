@@ -175,7 +175,7 @@
                 style="android:style/Widget.Button"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+                android:id="@+id/btnRegister"
                 style="@android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
