@@ -63,14 +63,11 @@ public class UserProfileActivity extends AppCompatActivity {
                 if (readWriteUserDetails != null){
                     fullName = firebaseUser.getDisplayName();
                     email = firebaseUser.getEmail();
-                    doB =  readWriteUserDetails.dob;
-                    gender = readWriteUserDetails.gender;
+
 
                     textVieWelcome.setText("Welcome, " + fullName + "!");
                     textViewFullName.setText(fullName);
                     textViewEmail.setText(email);
-                    textViewDob.setText(doB);
-                    textViewGender.setText(gender);
                 }
             }
             @Override

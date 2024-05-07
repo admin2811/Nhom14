@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView forgotPassword;
     //Show Hide Password using Eye Icon
 
+
     private  static  final String TAG = "LoginActivity";
     @SuppressLint("MissingInflatedId")
     @Override
@@ -158,9 +159,9 @@ public class LoginActivity extends AppCompatActivity {
                        /* startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
                         finish();*/
                     }else{
-                        firebaseUser.sendEmailVerification();
+                       /* firebaseUser.sendEmailVerification();
                         authProfile.signOut();
-                        showAlterDialog();
+                        showAlterDialog(); */
                     }
                 }else{
                     try {
