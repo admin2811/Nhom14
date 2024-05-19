@@ -66,7 +66,11 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 //check if home is already selected or not.
                 if(selectedTab != 1){
-
+                    if(user == null){
+                        Toast.makeText(MainActivity2.this, "User is null", Toast.LENGTH_SHORT).show();
+                    }else{
+                        getLastName(user);
+                    }
                     getSupportFragmentManager().beginTransaction()
                             .setReorderingAllowed(true).replace(R.id.fragmentContainerView, HomeFragment.class, null).commit();
                     // unselect other tabs execpet home tab
