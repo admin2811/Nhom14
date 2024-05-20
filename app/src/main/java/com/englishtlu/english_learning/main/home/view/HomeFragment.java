@@ -37,8 +37,6 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
-
-
     private static final String ARG_LAST_NAME = "LAST_NAME";
     private String lastName;
     public TextView LastName;
