@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -40,6 +41,7 @@ public class HomeFragment extends Fragment {
     private static final String ARG_LAST_NAME = "LAST_NAME";
     private String lastName;
     public TextView LastName;
+    public ProgressBar progressBar;
 
     public RecyclerView recyclerViewCourse;
 
@@ -64,18 +66,25 @@ public class HomeFragment extends Fragment {
 
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         //Lay du liệu từ MainActivity2
+
+
         View view = inflater.inflate(R.layout.fragment_home2, container, false);
         LastName = view.findViewById(R.id.textView6);
+        progressBar = view.findViewById(R.id.progressBar3);
+        progressBar.setVisibility(View.VISIBLE);
         // Kiểm tra xem đã có Bundle được truyền vào fragment chưa
         if (getArguments() != null && getArguments().containsKey(ARG_LAST_NAME)) {
             lastName = getArguments().getString(ARG_LAST_NAME);
+            progressBar.setVisibility(View.GONE);
         }
         LastName.setText(lastName);
+
         return view;
     }
 

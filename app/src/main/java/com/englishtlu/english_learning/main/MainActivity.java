@@ -26,7 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private  String lastName,getLastName;
     private FirebaseAuth auth;
@@ -67,7 +67,7 @@ public class MainActivity2 extends AppCompatActivity {
                 //check if home is already selected or not.
                 if(selectedTab != 1){
                     if(user == null){
-                        Toast.makeText(MainActivity2.this, "User is null", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "User is null", Toast.LENGTH_SHORT).show();
                     }else{
                         getLastName(user);
                     }
@@ -234,7 +234,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(MainActivity2.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

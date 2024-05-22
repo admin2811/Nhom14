@@ -21,8 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.englishtlu.english_learning.R;
-import com.englishtlu.english_learning.main.MainActivity2;
-import com.englishtlu.english_learning.main.home.view.HomeFragment;
+import com.englishtlu.english_learning.main.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -159,7 +158,7 @@ public class LoginActivity extends AppCompatActivity {
                     assert firebaseUser != null;
                     if(firebaseUser.isEmailVerified()){
 
-                        Intent intent = new Intent(LoginActivity.this, MainActivity2.class);
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
 
                         Toast.makeText(LoginActivity.this, "You are logged in now",Toast.LENGTH_SHORT).show();
@@ -175,12 +174,15 @@ public class LoginActivity extends AppCompatActivity {
                     }catch (FirebaseAuthInvalidUserException e){
                         edtEmail.setError("User does not exists or is no longer valid. Please register again");
                         edtEmail.requestFocus();
+                        progressBarLogin.setVisibility(View.GONE);
                     }catch (FirebaseAuthInvalidCredentialsException e){
                         edtEmail.setError("Invalid credentials. Please check your email and password");
                         edtEmail.requestFocus();
+                        progressBarLogin.setVisibility(View.GONE);
                     }catch (Exception e) {
                         Log.e(TAG, Objects.requireNonNull(e.getMessage()));
                         Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                        progressBarLogin.setVisibility(View.GONE);
                     }
                     Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                 }

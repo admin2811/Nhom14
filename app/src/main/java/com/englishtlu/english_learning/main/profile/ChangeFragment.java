@@ -1,8 +1,10 @@
 package com.englishtlu.english_learning.main.profile;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
@@ -32,6 +34,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -49,7 +52,8 @@ public class ChangeFragment extends Fragment {
 
     private EditText fullname,mobile,dob,school;
     Spinner spinnerRelative,spinnerGender;
-    private ImageView selectPhoto,ProfileImage;
+    private  ImageView goback;
+    private ImageView selectPhoto ,ProfileImage;
     private Uri imageUri;
     private Bitmap bitmap;
     private FirebaseStorage storage;
@@ -81,6 +85,14 @@ public class ChangeFragment extends Fragment {
         save = view.findViewById(R.id.edtProfile);
         currentUserId = Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
         progressBar = view.findViewById(R.id.progressBar2);
+        goback = view.findViewById(R.id.imageView8);
+
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().onBackPressed();
+            }
+        });
         selectPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,10 +132,12 @@ public class ChangeFragment extends Fragment {
         return view ;
     }
 
+    @SuppressLint("ObsoleteSdkInt")
     private void CheckStoragePermission() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-            if(ContextCompat.checkSelfPermission(requireActivity(), android.Manifest.permission.READ_EXTERNAL_STORAGE) != getActivity().getPackageManager().PERMISSION_GRANTED){
-                ActivityCompat.requestPermissions(getActivity(), new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            if( ContextCompat.checkSelfPermission(requireActivity(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
+                    ContextCompat.checkSelfPermission(requireActivity(), android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(requireActivity(), new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, 2);
             }else {
                 PickImageFromGallery();
             }
@@ -133,10 +147,13 @@ public class ChangeFragment extends Fragment {
     }
 
     private void PickImageFromGallery() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        launcher.launch(intent);
+        Intent galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
+        galleryIntent.setType("image/*");
+
+        Intent cameraIntent =  new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        Intent chooser = Intent.createChooser(galleryIntent,"Choose Image");
+        chooser.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[]{cameraIntent});
+        launcher.launch(chooser);
 
     }
     ActivityResultLauncher<Intent> launcher
@@ -145,18 +162,28 @@ public class ChangeFragment extends Fragment {
             result -> {
                 if (result.getResultCode() == Activity.RESULT_OK) {
                     Intent data = result.getData();
-                    if(data != null && data.getData() != null){
-                        imageUri =data.getData();
-                        try {
-                            bitmap = MediaStore.Images.Media.getBitmap(
-                                    getActivity().getContentResolver(),
-                                    imageUri
-                            );
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
+                    if(data != null){
+                        if(data.getData() != null) {
+                            imageUri = data.getData();
+                            try {
+                                bitmap = MediaStore.Images.Media.getBitmap(
+                                        requireActivity().getContentResolver(),
+                                        imageUri
+                                );
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }else{
+                            Bundle extras = data.getExtras();
+                            if(extras != null) {
+                                bitmap = (Bitmap) extras.get("data");
+                            }
                         }
                     }
                     if(imageUri != null){
+                        ProfileImage.setImageBitmap(bitmap);
+                    }
+                    if(bitmap != null){
                         ProfileImage.setImageBitmap(bitmap);
                     }
                 }

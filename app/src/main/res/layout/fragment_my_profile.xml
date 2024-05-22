@@ -135,15 +135,15 @@
                 <EditText
                     android:id="@+id/spinner"
                     android:layout_width="103dp"
-                    android:layout_height="43dp"
+                    android:layout_height="48dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Male"
+                    android:background="@drawable/background_info"
+                    android:enabled="false"
                     android:fontFamily="@font/font1"
                     android:padding="10dp"
+                    android:text="Male"
                     android:textSize="15sp"
-                    android:enabled="false"
-                    android:background="@drawable/background_info"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.626"
                     app:layout_constraintStart_toEndOf="@+id/spinner2"
@@ -152,13 +152,13 @@
                 <EditText
                     android:id="@+id/spinner2"
                     android:layout_width="106dp"
-                    android:layout_height="41dp"
+                    android:layout_height="48dp"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/background_info"
+                    android:enabled="false"
                     android:fontFamily="@font/font1"
                     android:padding="10dp"
                     android:text="Me"
-                    android:enabled="false"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toStartOf="@+id/textView13"
                     app:layout_constraintHorizontal_bias="0.435"
@@ -247,12 +247,16 @@
                     app:layout_constraintTop_toTopOf="@+id/textView17" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="540dp"
                 android:src="@drawable/profile"
+                app:shapeAppearance="@style/circular"
+                android:padding="5dp"
+                app:strokeWidth="5dp"
+                app:strokeColor="@color/lavender"
                 app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

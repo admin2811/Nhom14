@@ -2,15 +2,16 @@ package com.englishtlu.english_learning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
 import com.englishtlu.english_learning.authentication.WelcomeActivity;
-import com.englishtlu.english_learning.main.MainActivity2;
 
-public class MainActivity extends AppCompatActivity {
+@SuppressLint("CustomSplashScreen")
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+            Intent intent = new Intent(SplashActivity.this, WelcomeActivity.class);
             startActivity(intent);
             finish();
         }, 3000); // 3000ms = 3s

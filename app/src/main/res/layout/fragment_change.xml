@@ -135,7 +135,7 @@
                 <Spinner
                     android:id="@+id/spinner"
                     android:layout_width="103dp"
-                    android:layout_height="43dp"
+                    android:layout_height="48dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/background_spinner"
@@ -152,7 +152,7 @@
                 <Spinner
                     android:id="@+id/spinner2"
                     android:layout_width="106dp"
-                    android:layout_height="41dp"
+                    android:layout_height="48dp"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/background_spinner"
                     android:fontFamily="@font/font1"
@@ -256,10 +256,10 @@
                     android:visibility="gone"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginBottom="540dp"
                 android:src="@drawable/profile"
                 app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
@@ -267,7 +267,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -288,8 +288,7 @@
                 app:layout_constraintHorizontal_bias="0.083"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-
-                />
+                android:contentDescription="TODO" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
