@@ -7,6 +7,7 @@
     tools:context=".main.profile.ProfileFragment">
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F2F1F6"
@@ -36,16 +37,15 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent" />
 
-                <ImageView
-                    android:id="@+id/imageView7"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_Image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/profile"
                     app:layout_constraintBottom_toTopOf="@+id/imageView4"
                     app:layout_constraintEnd_toEndOf="@+id/imageView4"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/imageView4"
-                     />
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -62,32 +62,30 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/fullNameTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DUC MINH"
+                android:text="None"
                 android:textAlignment="center"
-                android:textSize="26sp"
-                android:textStyle="bold"
                 android:textColor="#4C39CC"
-                />
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/emailTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ducminhxp.tp@gmail.com"
-                android:textAlignment="center"
-                />
+                android:text="user@gmail.com"
+                android:textAlignment="center" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/myProfile"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="45dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/round_back_home_100">
 
                 <ImageView
@@ -103,10 +101,10 @@
                     android:id="@+id/profileTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
                     android:text="Profile"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/font1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.066"
@@ -121,17 +119,16 @@
                     android:src="@drawable/arrow"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                     />
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/round_back_home_100">
 
                 <ImageView
@@ -147,10 +144,10 @@
                     android:id="@+id/helpTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
                     android:text="Help Center"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/font1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.066"
@@ -165,17 +162,16 @@
                     android:src="@drawable/arrow"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                     />
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/round_back_home_100">
 
                 <ImageView
@@ -185,17 +181,16 @@
                     android:src="@drawable/send"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                     />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/sendTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
                     android:text="Share"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/font1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.066"
@@ -210,17 +205,16 @@
                     android:src="@drawable/arrow"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                     />
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/round_back_home_100">
 
                 <ImageView
@@ -236,10 +230,10 @@
                     android:id="@+id/changePasswordTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
                     android:text="Change Password"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/font1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.066"
@@ -254,17 +248,16 @@
                     android:src="@drawable/arrow"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/round_back_home_100">
 
                 <ImageView
@@ -276,8 +269,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.615"
-                     />
+                    app:layout_constraintVertical_bias="0.615" />
 
                 <TextView
                     android:id="@+id/logoutTxt"
@@ -307,4 +299,14 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F2F1F6"
@@ -54,7 +55,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.13"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/editTextText2" />
+                    app:layout_constraintTop_toTopOf="@+id/edtMobile" />
 
                 <TextView
                     android:id="@+id/textView14"
@@ -68,7 +69,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.127"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/spinner2" />
+                    app:layout_constraintTop_toTopOf="@+id/edtRelative" />
 
                 <TextView
                     android:id="@+id/textView11"
@@ -85,18 +86,18 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextText"
+                    android:id="@+id/edtName"
                     android:layout_width="281dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="96dp"
                     android:background="@drawable/background_info"
                     android:ems="10"
+                    android:enabled="false"
                     android:fontFamily="@font/font1"
                     android:inputType="text"
                     android:minHeight="48dp"
                     android:paddingStart="15dp"
-                    android:text="Nguyen Duc Minh"
-                    android:enabled="false"
+                    android:text="None"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +117,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.125"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/editTextText" />
+                    app:layout_constraintTop_toTopOf="@+id/edtName" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -130,10 +131,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.509"
                     app:layout_constraintStart_toEndOf="@+id/textView12"
-                    app:layout_constraintTop_toTopOf="@+id/editTextText" />
+                    app:layout_constraintTop_toTopOf="@+id/edtName" />
 
                 <EditText
-                    android:id="@+id/spinner"
+                    android:id="@+id/edtGender"
                     android:layout_width="103dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="32dp"
@@ -142,15 +143,15 @@
                     android:enabled="false"
                     android:fontFamily="@font/font1"
                     android:padding="10dp"
-                    android:text="Male"
+                    android:text="None"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.626"
-                    app:layout_constraintStart_toEndOf="@+id/spinner2"
+                    app:layout_constraintStart_toEndOf="@+id/edtRelative"
                     app:layout_constraintTop_toTopOf="@+id/textView13" />
 
                 <EditText
-                    android:id="@+id/spinner2"
+                    android:id="@+id/edtRelative"
                     android:layout_width="106dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="32dp"
@@ -158,7 +159,7 @@
                     android:enabled="false"
                     android:fontFamily="@font/font1"
                     android:padding="10dp"
-                    android:text="Me"
+                    android:text="None"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toStartOf="@+id/textView13"
                     app:layout_constraintHorizontal_bias="0.435"
@@ -166,17 +167,17 @@
                     app:layout_constraintTop_toTopOf="@+id/textView12" />
 
                 <EditText
-                    android:id="@+id/editTextText2"
+                    android:id="@+id/edtMobile"
                     android:layout_width="271dp"
                     android:layout_height="49dp"
                     android:layout_marginTop="28dp"
                     android:autofillHints=""
                     android:background="@drawable/background_info"
                     android:ems="10"
+                    android:enabled="false"
                     android:inputType="text"
                     android:padding="15dp"
-                    android:enabled="false"
-                    android:text="0333550452"
+                    android:text="None"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.468"
@@ -184,16 +185,16 @@
                     app:layout_constraintTop_toTopOf="@+id/textView14" />
 
                 <EditText
-                    android:id="@+id/editTextText3"
+                    android:id="@+id/edtDob"
                     android:layout_width="242dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="24dp"
                     android:background="@drawable/background_info"
                     android:ems="10"
+                    android:enabled="false"
                     android:inputType="text"
                     android:padding="10dp"
-                    android:text="28/11/2003"
-                    android:enabled="false"
+                    android:text="None"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.351"
@@ -212,10 +213,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.126"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/editTextText3" />
+                    app:layout_constraintTop_toTopOf="@+id/edtDob" />
 
                 <Button
-                    android:id="@+id/edtProfile"
+                    android:id="@+id/saveBtn"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -226,20 +227,20 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/editTextText4"
+                    app:layout_constraintTop_toTopOf="@+id/edtSchool"
                     app:layout_constraintVertical_bias="0.872" />
 
                 <EditText
-                    android:id="@+id/editTextText4"
+                    android:id="@+id/edtSchool"
                     android:layout_width="256dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="28dp"
                     android:background="@drawable/background_info"
                     android:ems="10"
+                    android:enabled="false"
                     android:inputType="text"
                     android:padding="10dp"
-                    android:text="Dai hoc Thuy Loi"
-                    android:enabled="false"
+                    android:text="None"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.404"
@@ -247,31 +248,30 @@
                     app:layout_constraintTop_toTopOf="@+id/textView17" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView10"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="540dp"
-                android:src="@drawable/profile"
-                app:shapeAppearance="@style/circular"
                 android:padding="5dp"
-                app:strokeWidth="5dp"
-                app:strokeColor="@color/lavender"
+                android:src="@drawable/profile"
                 app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="@style/circular"
+                app:strokeColor="@color/lavender"
+                app:strokeWidth="5dp"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/selectPhoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_camera"
                 android:padding="3dp"
                 android:src="@drawable/solar_camera"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                app:layout_constraintEnd_toEndOf="@+id/imageView10"
-                 />
+                app:layout_constraintBottom_toBottomOf="@+id/ImageProfile"
+                app:layout_constraintEnd_toEndOf="@+id/ImageProfile" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -282,10 +282,16 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.083"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                 />
-
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
