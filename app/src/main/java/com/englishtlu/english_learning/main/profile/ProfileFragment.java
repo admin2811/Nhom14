@@ -55,6 +55,10 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(layout.fragment_profile, container, false);
         ConstraintLayout myProfile = (ConstraintLayout) view.findViewById(R.id.myProfile);
+        ConstraintLayout FAQ = (ConstraintLayout) view.findViewById(id.FAQ);
+        ConstraintLayout share = (ConstraintLayout) view.findViewById(id.share);
+        ConstraintLayout changePassword = (ConstraintLayout) view.findViewById(id.changePasswordandEmail);
+        final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
         myProfile.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +66,34 @@ public class ProfileFragment extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
                 transaction.replace(id.fragmentContainerView, new MyProfileFragment());
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+        FAQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(id.fragmentContainerView,new FAQFragment());
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, "Check this App\n" + "https://play.google.com/store/apps/details?id="+app);
+                intent.setType("text/plain");
+                startActivity(Intent.createChooser(intent, "Share via"));
+            }
+        });
+        changePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(id.fragmentContainerView,new ChangePasswordandEmailFragment());
                 transaction.addToBackStack(null);
                 transaction.commit();
             }
@@ -92,7 +124,7 @@ public class ProfileFragment extends Fragment {
                                 String email = dataSnapshot.getValue(String.class);
                                 // hiển thị thông tin người dùng
                                 TextView fullNameEdt = view.findViewById(id.fullNameTxt);
-                                TextView emailEdt = view.findViewById(id.emailTxt); // Add this line to get email EditText
+                                TextView emailEdt = view.findViewById(id.emailTxt);
                                 ImageView profileImage = view.findViewById(id.profile_Image);
                                 if (photoUrl != null && !photoUrl.isEmpty()) {
                                     Glide.with(requireContext())

@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.model.User;
+import com.englishtlu.english_learning.authentication.utility.PreferenceManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -127,6 +128,8 @@ public class RegisterActivity extends AppCompatActivity {
                 Toast.makeText(RegisterActivity.this, "Register successfully", Toast.LENGTH_SHORT).show();
                 FirebaseUser firebaseUser = auth.getCurrentUser();
                 assert firebaseUser != null;
+                PreferenceManager preferenceManager = new PreferenceManager(RegisterActivity.this);
+                preferenceManager.savePassword(textPassword);
                 //Send Verification Email
                 firebaseUser.sendEmailVerification();
                 User user = new User(textFirstName, textLastName, textEmail, textPassword);

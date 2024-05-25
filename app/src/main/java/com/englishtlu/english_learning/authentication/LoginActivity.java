@@ -8,6 +8,7 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.authentication.utility.PreferenceManager;
 import com.englishtlu.english_learning.main.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -156,6 +158,9 @@ public class LoginActivity extends AppCompatActivity {
                     FirebaseUser firebaseUser = authProfile.getCurrentUser();
                     //Check if email is verified before user can access their profile
                     assert firebaseUser != null;
+                    //Lưu vào shareprefence
+                    PreferenceManager preferenceManager = new PreferenceManager(LoginActivity.this);
+                    preferenceManager.savePassword(password);
                     if(firebaseUser.isEmailVerified()){
 
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
