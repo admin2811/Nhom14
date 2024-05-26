@@ -26,6 +26,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.R.id;
+import com.englishtlu.english_learning.authentication.LoginActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -58,6 +59,7 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout FAQ = (ConstraintLayout) view.findViewById(id.FAQ);
         ConstraintLayout share = (ConstraintLayout) view.findViewById(id.share);
         ConstraintLayout changePassword = (ConstraintLayout) view.findViewById(id.changePasswordandEmail);
+        ConstraintLayout signOut = (ConstraintLayout) view.findViewById(id.signOut);
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
@@ -96,6 +98,15 @@ public class ProfileFragment extends Fragment {
                 transaction.replace(id.fragmentContainerView,new ChangePasswordandEmailFragment());
                 transaction.addToBackStack(null);
                 transaction.commit();
+            }
+        });
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(requireContext(), LoginActivity.class);
+                startActivity(intent);
+                requireActivity().finish();
             }
         });
         firestore = FirebaseFirestore.getInstance();
