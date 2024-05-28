@@ -10,7 +10,6 @@
     tools:context=".SplashActivity">
 
     <androidx.fragment.app.FragmentContainerView
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragmentContainerView"
@@ -88,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Translate"
+                android:textColor="@color/black"
                 android:layout_marginStart="10dp"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
@@ -115,6 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dictionary"
+                android:textColor="@color/black"
                 android:layout_marginStart="10dp"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
@@ -145,12 +146,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="Profile"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_button"
         android:layout_width="wrap_content"
@@ -160,8 +161,8 @@
         android:layout_marginEnd="13dp"
         android:layout_marginBottom="30dp"
         android:contentDescription="TODO"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/baseline_chat_24"
+        app:backgroundTint="@color/white"
+        android:src="@drawable/icon_chatbot"
         app:fabSize="normal"
         tools:ignore="SpeakableTextPresentCheck" />
 </RelativeLayout>

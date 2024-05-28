@@ -117,6 +117,11 @@ public class HomeFragment extends Fragment {
         ItemsArrayList.add(new Course("vocabulary", "Vocabulary \n" +
                 "Treasure Hunt", "Collect hidden English vocabulary words in a timed scavenger hunt", 4.5));
         ItemsArrayList.add(new Course("completion", "Sentence Building Competition", "Drag and drop words to form grammatically correct sentences", 4.5));
+        //ItemsArrayList.add(new Course("quiz", "Grammar Quiz", "Test your knowledge of English grammar with a multiple-choice quiz", 4.5));
+        //flashcard
+        ItemsArrayList.add(new Course("flashcard", "FlashCard Revolution: Unleash Learning!", "Unveiling the Mind: Unlocking Secret Skills with Flashcards", 4.5));
+        //document
+        ItemsArrayList.add(new Course("document", "Document Dynamo: Empower Knowledge", "Discover the power of effective document with \"Document Dynamics.\"", 4.5));
 
         recyclerViewCourse.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
         RecyclerView.Adapter<CourseAdapter.ViewHolder> adapterPopular = new CourseAdapter(ItemsArrayList);

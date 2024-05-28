@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -15,10 +16,12 @@ import android.widget.Toast;
 
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.model.User;
+import com.englishtlu.english_learning.main.chatbot.ChatBotActivity;
 import com.englishtlu.english_learning.main.dictionary.DictionaryFragment;
 import com.englishtlu.english_learning.main.home.view.HomeFragment;
 import com.englishtlu.english_learning.main.profile.ProfileFragment;
 import com.englishtlu.english_learning.main.translate.TranslateFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -52,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
         final TextView translateText = findViewById(R.id.translateTxt);
         final TextView dicText = findViewById(R.id.dicTxt);
         final TextView profileText = findViewById(R.id.profileTxt);
+        final FloatingActionButton chatBot = findViewById(R.id.fab_button);
+        chatBot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChatBotActivity.class);
+                startActivity(intent);
+
+            }
+        });
         //in ra userId để kiểm tra
 
         auth = FirebaseAuth.getInstance();
@@ -196,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
 
                     homeImage.setImageResource(R.drawable.icon_home);
                     translateImage.setImageResource(R.drawable.icon_translate);
-                    dicImage.setImageResource(R.drawable.icon_chatbot);
+                    dicImage.setImageResource(R.drawable.dictionary);
 
                     homeLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
                     translateLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));

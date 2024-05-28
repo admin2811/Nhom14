@@ -7,8 +7,8 @@ public class PreferenceManager {
     private static final String PREF_NAME = "user_pref";
     private static final String KEY_PASSWORD = "password";
 
-    private SharedPreferences sharedPreferences;
-    private SharedPreferences.Editor editor;
+    private final SharedPreferences sharedPreferences;
+    private final SharedPreferences.Editor editor;
 
     public PreferenceManager(Context context) {
         sharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.chatbot.ChatBotActivity">
+    tools:context=".main.chatbot.ChatBotActivity"
+    android:background="@color/white">
 
 
     <LinearLayout
@@ -16,6 +17,7 @@
         android:background="@color/white">
 
         <ImageButton
+            android:id="@+id/backtohome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -27,6 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chat Bot"
+            android:fontFamily="@font/poppins"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginStart="20dp"
@@ -47,15 +50,18 @@
         android:layout_alignParentBottom="true"
         android:padding="8dp"
         android:id="@+id/bottom_layout">
+
         <EditText
+            android:id="@+id/message_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/message_edit_text"
             android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/send_btn"
+            android:autofillHints=""
+            android:background="@drawable/rounded_corner"
             android:hint="Write here"
-            android:padding="16dp"
-            android:layout_toLeftOf="@+id/send_btn"
-            android:background="@drawable/rounded_corner"/>
+            android:textColor="@color/black"
+            android:padding="16dp" />
 
         <ImageButton
             android:id="@+id/send_btn"
