@@ -17,7 +17,8 @@
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:orientation="vertical">
+          android:orientation="vertical"
+          android:background="@color/white">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                />
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/textView"
@@ -41,14 +42,15 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="84dp"
                 android:layout_marginEnd="32dp"
-                android:text="Welcome back to \n EnglishTLU App"
-                android:textColor="#ffffff"
+                android:text="@string/welcome_back_to_n_englishtlu_app"
+                android:textColor="@color/white"
                 android:textSize="40sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.517"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -58,37 +60,40 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                 />
+                android:contentDescription="@string/todo" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/login_button"
-            style="@android:style/Widget.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="32dp"
-            android:background="@drawable/background_btn_1"
-            android:text="Login"
-            android:textColor="#2f3363"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            />
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/login_button"
+              style="@android:style/Widget.Button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="35dp"
+              android:layout_marginEnd="32dp"
+              android:background="@drawable/background_btn_1"
+              android:text="@string/login"
+              android:textAppearance="@style/TextAppearance.AppCompat.Large"
+              android:textColor="#2f3363"
+              android:textSize="22sp"
+              android:textStyle="bold" />
+
           <androidx.appcompat.widget.AppCompatButton
               android:id="@+id/register_button"
               style="@android:style/Widget.Button"
-              android:layout_width="340dp"
+              android:layout_width="300dp"
               android:layout_height="wrap_content"
-              android:layout_marginBottom="50dp"
               android:layout_marginStart="32dp"
               android:layout_marginTop="40dp"
               android:layout_marginEnd="32dp"
+              android:layout_marginBottom="50dp"
               android:background="@drawable/background_btn_1"
-              android:text="Sign Up"
+              android:text="@string/sign_up"
+              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
               android:textColor="#2f3363"
               android:textSize="22sp"
-              android:textStyle="bold"/>
+              android:textStyle="bold" />
       </LinearLayout>
   </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

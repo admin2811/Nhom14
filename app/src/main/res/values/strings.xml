@@ -2,4 +2,19 @@
     <string name="app_name" translatable="false">EnglishTLU</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_back_to_n_englishtlu_app">Welcome back to \n EnglishTLU App</string>
+    <string name="search_for">Search for....</string>
+    <string name="all_courses">All Courses</string>
+    <string name="next">Next</string>
+    <string name="what_would_you_like_to_learn_today_nsearch_bellow">What Would you like to learn today? \nSearch Bellow</string>
+    <string name="alex">Alex</string>
+    <string name="hi">Hi,</string>
+    <string name="chanllenge">Chanllenge!</string>
+    <string name="collect_hidden_english_vocabulary_words_in_a_timed_scavenger_hunt">Collect hidden English vocabulary words in a timed scavenger hunt</string>
+    <string name="todo3">TODO</string>
+    <string name="change_your_password">Change Your Password</string>
+    <string name="todo8">TODO</string>
 </resources>

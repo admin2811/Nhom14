@@ -3,6 +3,7 @@ package com.englishtlu.english_learning.main;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -32,23 +33,24 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private int selectedTab = 1;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         final LinearLayout homeLayout = findViewById(R.id.homeLayout);
         final LinearLayout translateLayout = findViewById(R.id.translateLayout);
-        final LinearLayout chatbotLayout = findViewById(R.id.chatbotLayout);
+         final LinearLayout dicLayout = findViewById(R.id.dicLayout);
         final LinearLayout profileLayout = findViewById(R.id.profileLayout);
 
         final ImageView homeImage = findViewById(R.id.homeImage);
         final ImageView translateImage = findViewById(R.id.translateImage);
-        final ImageView chatbotImage = findViewById(R.id.chatbotImage);
+        final ImageView dicImage = findViewById(R.id.dicImage);
         final ImageView profileImage = findViewById(R.id.profileImage);
 
         final TextView homeText = findViewById(R.id.homeTxt);
         final TextView translateText = findViewById(R.id.translateTxt);
-        final TextView chatbotText = findViewById(R.id.chatbotTxt);
+        final TextView dicText = findViewById(R.id.dicTxt);
         final TextView profileText = findViewById(R.id.profileTxt);
         //in ra userId để kiểm tra
 
@@ -75,15 +77,15 @@ public class MainActivity extends AppCompatActivity {
                             .setReorderingAllowed(true).replace(R.id.fragmentContainerView, HomeFragment.class, null).commit();
                     // unselect other tabs execpet home tab
                     translateText.setVisibility(View.GONE);
-                    chatbotText.setVisibility(View.GONE);
+                    dicText.setVisibility(View.GONE);
                     profileText.setVisibility(View.GONE);
 
                     translateImage.setImageResource(R.drawable.icon_translate);
-                    chatbotImage.setImageResource(R.drawable.icon_chatbot);
+                    dicImage.setImageResource(R.drawable.dictionary);
                     profileImage.setImageResource(R.drawable.icon_profile);
 
                     translateLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
-                    chatbotLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    dicLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
                     profileLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
 
                     // select home tab
@@ -116,15 +118,15 @@ public class MainActivity extends AppCompatActivity {
 
                     // unselect other tabs execpet translate tab
                     homeText.setVisibility(View.GONE);
-                    chatbotText.setVisibility(View.GONE);
+                    dicText.setVisibility(View.GONE);
                     profileText.setVisibility(View.GONE);
 
                     homeImage.setImageResource(R.drawable.icon_home);
-                    chatbotImage.setImageResource(R.drawable.icon_chatbot);
+                    dicImage.setImageResource(R.drawable.dictionary);
                     profileImage.setImageResource(R.drawable.icon_profile);
 
                     homeLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
-                    chatbotLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    dicLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
                     profileLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
 
                     // select home tab
@@ -145,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        chatbotLayout.setOnClickListener(new View.OnClickListener() {
+        dicLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(selectedTab != 3){
@@ -165,15 +167,15 @@ public class MainActivity extends AppCompatActivity {
                     profileLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
 
                     // select home tab
-                    chatbotText.setVisibility(View.VISIBLE);
-                    chatbotImage.setImageResource(R.drawable.icon_chatbot_selected);
-                    chatbotLayout.setBackgroundResource(R.drawable.round_back_home_100);
+                    dicText.setVisibility(View.VISIBLE);
+                    dicImage.setImageResource(R.drawable.dictionary_selected);
+                    dicLayout.setBackgroundResource(R.drawable.round_back_home_100);
 
                     //create animation
                     ScaleAnimation scaleAnimation = new ScaleAnimation(0.8f, 1.0f,1f,1f, Animation.RELATIVE_TO_SELF,1.0f,Animation.RELATIVE_TO_SELF,0.0f);
                     scaleAnimation.setDuration(200);
                     scaleAnimation.setFillAfter(true);
-                    chatbotLayout.startAnimation(scaleAnimation);
+                   dicLayout.startAnimation(scaleAnimation);
 
                     //set 1st tab as selected
                     selectedTab = 3;
@@ -190,15 +192,15 @@ public class MainActivity extends AppCompatActivity {
                     // unselect other tabs execpet home tab
                     homeText.setVisibility(View.GONE);
                     translateText.setVisibility(View.GONE);
-                    chatbotText.setVisibility(View.GONE);
+                    dicText.setVisibility(View.GONE);
 
                     homeImage.setImageResource(R.drawable.icon_home);
                     translateImage.setImageResource(R.drawable.icon_translate);
-                    chatbotImage.setImageResource(R.drawable.icon_chatbot);
+                    dicImage.setImageResource(R.drawable.icon_chatbot);
 
                     homeLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
                     translateLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
-                    chatbotLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    dicLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));
 
                     // select home tab
                     profileText.setVisibility(View.VISIBLE);

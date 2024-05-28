@@ -11,14 +11,13 @@ import com.englishtlu.english_learning.R;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    private AppCompatButton btnLogin, btnRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        btnLogin = (AppCompatButton) findViewById(R.id.login_button);
-        btnRegister = (AppCompatButton) findViewById(R.id.register_button);
+        AppCompatButton btnLogin = (AppCompatButton) findViewById(R.id.login_button);
+        AppCompatButton btnRegister = (AppCompatButton) findViewById(R.id.register_button);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

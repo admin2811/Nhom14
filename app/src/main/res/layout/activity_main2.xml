@@ -93,7 +93,7 @@
                 android:textStyle="bold"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/chatbotLayout"
+            android:id="@+id/dicLayout"
             android:background="@android:color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
@@ -104,17 +104,17 @@
             android:layout_weight="1"
             android:elevation="1dp">
             <ImageView
-                android:id="@+id/chatbotImage"
+                android:id="@+id/dicImage"
                 android:layout_width="25dp"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/icon_chatbot"/>
+                android:src="@drawable/dictionary"/>
             <TextView
-                android:id="@+id/chatbotTxt"
+                android:id="@+id/dicTxt"
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ChatBot"
+                android:text="Dictionary"
                 android:layout_marginStart="10dp"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
@@ -150,4 +150,18 @@
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragmentContainerView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="TODO"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_chat_24"
+        app:fabSize="normal"
+        tools:ignore="SpeakableTextPresentCheck" />
 </RelativeLayout>

@@ -40,6 +40,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/reemkufi"
                     android:text="Frequently Asked Questions"
+                    android:textColor="@color/black"
                     android:textSize="23sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
