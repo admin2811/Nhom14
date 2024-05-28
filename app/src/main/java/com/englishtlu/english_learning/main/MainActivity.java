@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.model.User;
-import com.englishtlu.english_learning.main.chatbot.ChatBotFragment;
+import com.englishtlu.english_learning.main.dictionary.DictionaryFragment;
 import com.englishtlu.english_learning.main.home.view.HomeFragment;
 import com.englishtlu.english_learning.main.profile.ProfileFragment;
 import com.englishtlu.english_learning.main.translate.TranslateFragment;
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(selectedTab != 3){
                     getSupportFragmentManager().beginTransaction()
-                            .setReorderingAllowed(true).replace(R.id.fragmentContainerView, ChatBotFragment.class, null).commit();
+                            .setReorderingAllowed(true).replace(R.id.fragmentContainerView, DictionaryFragment.class, null).commit();
                     // unselect other tabs execpet home tab
                     homeText.setVisibility(View.GONE);
                     translateText.setVisibility(View.GONE);
