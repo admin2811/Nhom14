@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">566258165896</string>
+    <string name="google_api_key" translatable="false">AIzaSyAHfQpB1AMgQb6OSFjAW2r2doOARxKGePw</string>
+    <string name="google_app_id" translatable="false">1:566258165896:android:05052d740c1be3c45b973d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAHfQpB1AMgQb6OSFjAW2r2doOARxKGePw</string>
+    <string name="google_storage_bucket" translatable="false">e-learning-app-9e5d6.appspot.com</string>
+    <string name="project_id" translatable="false">e-learning-app-9e5d6</string>
+</resources>

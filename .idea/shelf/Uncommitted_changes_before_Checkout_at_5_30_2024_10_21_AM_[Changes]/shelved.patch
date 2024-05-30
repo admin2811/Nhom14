@@ -1,0 +1,83 @@
+Index: app/src/main/res/layout/activity_chat_bot.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".main.chatbot.ChatBotActivity\"\r\n    android:background=\"@color/white\">\r\n\r\n\r\n    <LinearLayout\r\n        android:id=\"@+id/toolbar\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"50dp\"\r\n        android:layout_marginBottom=\"10dp\"\r\n        android:orientation=\"horizontal\"\r\n        android:background=\"@color/white\">\r\n\r\n        <ImageButton\r\n            android:id=\"@+id/backtohome\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"10dp\"\r\n            android:layout_marginTop=\"10dp\"\r\n            android:background=\"@color/white\"\r\n            android:src=\"@drawable/baseline_chevron_left_24\"\r\n            tools:ignore=\"SpeakableTextPresentCheck,TouchTargetSizeCheck\" />\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Chat Bot\"\r\n            android:fontFamily=\"@font/poppins\"\r\n            android:textSize=\"20sp\"\r\n            android:textStyle=\"bold\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:layout_marginTop=\"8dp\"\r\n            android:textColor=\"@color/black\"/>\r\n    </LinearLayout>\r\n\r\n    <androidx.recyclerview.widget.RecyclerView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:id=\"@+id/recycler_view\"\r\n        android:layout_above=\"@+id/bottom_layout\"\r\n        android:layout_below=\"@id/toolbar\"/>\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"80dp\"\r\n        android:layout_alignParentBottom=\"true\"\r\n        android:padding=\"8dp\"\r\n        android:id=\"@+id/bottom_layout\">\r\n\r\n        <EditText\r\n            android:id=\"@+id/message_edit_text\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_centerInParent=\"true\"\r\n            android:layout_toStartOf=\"@+id/send_btn\"\r\n            android:autofillHints=\"\"\r\n            android:background=\"@drawable/rounded_corner\"\r\n            android:hint=\"Write here\"\r\n            android:textColor=\"@color/black\"\r\n            android:padding=\"16dp\" />\r\n\r\n        <ImageButton\r\n            android:id=\"@+id/send_btn\"\r\n            android:layout_width=\"48dp\"\r\n            android:layout_height=\"48dp\"\r\n            android:layout_alignParentEnd=\"true\"\r\n            android:layout_centerInParent=\"true\"\r\n            android:layout_marginStart=\"10dp\"\r\n            android:background=\"?attr/selectableItemBackgroundBorderless\"\r\n            android:padding=\"8dp\"\r\n            android:src=\"@drawable/baseline_send_24\"\r\n            tools:ignore=\"SpeakableTextPresentCheck\" />\r\n    </RelativeLayout>\r\n\r\n</RelativeLayout>
+===================================================================
+diff --git a/app/src/main/res/layout/activity_chat_bot.xml b/app/src/main/res/layout/activity_chat_bot.xml
+--- a/app/src/main/res/layout/activity_chat_bot.xml	
++++ b/app/src/main/res/layout/activity_chat_bot.xml	
+@@ -20,7 +20,7 @@
+             android:id="@+id/backtohome"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:layout_marginStart="10dp"
++            android:layout_marginStart="5dp"
+             android:layout_marginTop="10dp"
+             android:background="@color/white"
+             android:src="@drawable/baseline_chevron_left_24"
+@@ -28,7 +28,7 @@
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:text="Chat Bot"
++            android:text="Conversation Chatbot"
+             android:fontFamily="@font/poppins"
+             android:textSize="20sp"
+             android:textStyle="bold"
+Index: app/src/main/res/layout/chat_item.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:padding=\"8dp\">\r\n\r\n    <LinearLayout\r\n        android:id=\"@+id/left_chat_view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:background=\"@drawable/rounded_corner\"\r\n        android:backgroundTint=\"#1E88E5\"\r\n        android:padding=\"8dp\"\r\n        android:layout_marginEnd=\"80dp\">\r\n        <TextView\r\n            android:id=\"@+id/left_chat_text_view\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:textSize=\"18sp\"\r\n            android:textColor=\"@color/white\"\r\n           />\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:id=\"@+id/right_chat_view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_alignParentEnd=\"true\"\r\n        android:background=\"@drawable/rounded_corner\"\r\n        android:backgroundTint=\"#7CB342\"\r\n        android:padding=\"8dp\"\r\n        android:layout_marginStart=\"80dp\"\r\n        tools:ignore=\"RelativeOverlap\">\r\n        <TextView\r\n            android:id=\"@+id/right_chat_text_view\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:textSize=\"18sp\"\r\n            android:textColor=\"@color/white\"\r\n           />\r\n    </LinearLayout>\r\n</RelativeLayout>
+===================================================================
+diff --git a/app/src/main/res/layout/chat_item.xml b/app/src/main/res/layout/chat_item.xml
+--- a/app/src/main/res/layout/chat_item.xml	
++++ b/app/src/main/res/layout/chat_item.xml	
+@@ -9,17 +9,20 @@
+         android:id="@+id/left_chat_view"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:background="@drawable/rounded_corner"
+-        android:backgroundTint="#1E88E5"
++        android:background="@drawable/background_chat"
+         android:padding="8dp"
+         android:layout_marginEnd="80dp">
++
+         <TextView
+             android:id="@+id/left_chat_text_view"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:textSize="18sp"
+-            android:textColor="@color/white"
+-           />
++            android:textColor="@color/black"
++            android:fontFamily="@font/poppins"
++            android:layout_marginStart="10dp"
++            android:layout_marginTop="10dp"
++            android:padding="5dp"
++            android:textSize="15sp" />
+     </LinearLayout>
+ 
+     <LinearLayout
+@@ -27,8 +30,7 @@
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+-        android:background="@drawable/rounded_corner"
+-        android:backgroundTint="#7CB342"
++        android:background="@drawable/background_chat_2"
+         android:padding="8dp"
+         android:layout_marginStart="80dp"
+         tools:ignore="RelativeOverlap">
+@@ -36,8 +38,9 @@
+             android:id="@+id/right_chat_text_view"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:textSize="18sp"
+-            android:textColor="@color/white"
++            android:fontFamily="@font/poppins"
++            android:textSize="15sp"
++            android:textColor="@color/black"
+            />
+     </LinearLayout>
+ </RelativeLayout>
+\ No newline at end of file

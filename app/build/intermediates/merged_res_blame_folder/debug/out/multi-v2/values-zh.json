@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-zh/values-zh.xml",
+            "map": [
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\3dd8146f986482b0c2f3d270aeb587c7\\transformed\\ucrop-2.2.6\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0fc"
+    tools:context=".authentication.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/top_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:importantForAccessibility="no" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/women1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.806"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="Creat \nAccount"
+                    android:textColor="#ffffff"
+                    android:textSize="33sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp">
+
+                <TextView
+                    android:id="@+id/textFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textSize="18sp"
+                    android:textColor="#2f3363"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/textLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="Last Name"
+                    android:textColor="#2f3363"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textFirstName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textFirstName"
+                    app:layout_constraintTop_toTopOf="@+id/textFirstName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp">
+
+                <EditText
+                    android:id="@+id/edtFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:hint="First"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="#A2A4b5"
+                    android:textColorHint="#1976D2"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/edtLastName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textFirstName"
+                    tools:ignore="NotSibling,DuplicateSpeakableTextCheck" />
+
+                <EditText
+                    android:id="@+id/edtLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:hint="Last"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="#A2A4b5"
+                    android:textColorHint="#1976D2"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtFirstName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/edtFirstName"
+                    app:layout_constraintTop_toTopOf="@+id/edtFirstName"
+                    tools:ignore="DuplicateSpeakableTextCheck"
+                    android:autofillHints="" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Email"
+                android:textSize="18sp"
+                android:textColor="#2f3363"
+                android:textStyle="bold"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"/>
+
+            <EditText
+                android:id="@+id/edtEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:autofillHints=""
+                android:background="@drawable/background_edittext"
+                android:ems="10"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="#A2A4b5"
+                android:textColorHint="#1976D2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Password"
+                android:textSize="18sp"
+                android:textColor="#2f3363"
+                android:textStyle="bold"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edtPasswordRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:autofillHints=""
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="#A2A4b5"
+                    android:textColorHint="#1976D2"
+                    android:textSize="16sp"
+                    tools:ignore="TextFields,DuplicateSpeakableTextCheck" />
+                <ImageView
+                    android:id="@+id/passwordShowIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_visibility_off_24"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtConPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Confirm Password"
+                android:textColor="#2f3363"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:autofillHints=""
+                    android:background="@drawable/background_edittext"
+                    android:ems="10"
+                    android:hint="Enter your confirm password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="#A2A4b5"
+                    android:textColorHint="#1976D2"
+                    android:textSize="16sp"
+                    tools:ignore="TextFields"
+                    />
+                <ImageView
+                    android:id="@+id/passwordConIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_visibility_off_24"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegister_1"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/backgroud_button_2"
+                android:drawableEnd="@drawable/circle"
+                android:padding="4dp"
+                android:paddingStart="64dp"
+                android:text="Register"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Already have an account?"
+                android:textAlignment="center"
+                android:textColor="#7986CB"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin_1"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/background_btn_1"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                tools:ignore="TextSizeCheck" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
