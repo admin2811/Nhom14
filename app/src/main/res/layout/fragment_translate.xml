@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    tools:context=".main.translate.TranslateFragment">
+
+    <ScrollView
+        android:layout_above="@+id/optionsLl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UnknownId,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables,UselessParent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/translate"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Translate E-Learning"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="4dp"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_above="@+id/translateBtn"
+                tools:ignore="ObsoleteLayoutParam"
+                android:background="@drawable/background"
+                android:elevation="4dp">
+
+                <Spinner
+                    android:id="@+id/sourceLanguageSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:padding="3dp"
+                    tools:ignore="HardcodedText"
+                    />
+
+                <ImageButton
+                    android:id="@+id/languageSwitchBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:contentDescription="@string/app_name"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_compare_arrows_24"
+                    tools:ignore="ContentDescription,TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/destinationLanguageSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:padding="3dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sourceLanguageEt"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter your text"
+                android:minHeight="150dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="30dp"
+                android:paddingTop="50dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/background"
+                android:elevation="4dp"
+                tools:ignore="Autofill,HardcodedText,TextFields"/>
+            <TextView
+                android:id="@+id/destinationLanguageTv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:background="@drawable/background"
+                android:elevation="4dp"
+                android:textStyle="normal"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/translateBtn"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_button1"
+                app:icon="@drawable/baseline_g_translate_24"
+                android:text="Translate"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/baseline_mic_24"
+                        android:padding="4dp"
+                        android:id="@+id/idIVMic"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Say Something..."
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/baseline_camera_alt_24"
+                        android:padding="4dp"
+                        android:id="@+id/idIVCamera"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capture Something..."
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
