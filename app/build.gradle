@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.englishtlu.english_learning'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.englishtlu.english_learning"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.mlkit:translate:17.0.2'
+
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    implementation 'com.google.mlkit:text-recognition:16.0.0'
+
+    // To recognize Chinese script
+    implementation 'com.google.mlkit:text-recognition-chinese:16.0.0'
+
+    // To recognize Devanagari script
+    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.0'
+
+    // To recognize Japanese script
+    implementation 'com.google.mlkit:text-recognition-japanese:16.0.0'
+
+    // To recognize Korean script
+    implementation 'com.google.mlkit:text-recognition-korean:16.0.0'
+
+    // To recognize Latin script
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+
+    // To recognize Chinese script
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.0'
+
+    // To recognize Devanagari script
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0'
+
+    // To recognize Japanese script
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.0'
+
+    // To recognize Korean script
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.0'
+
+
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation("com.google.ai.client.generativeai:generativeai:0.6.0")
+
+    // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
+    implementation("com.google.guava:guava:31.0.1-android")
+
+    // Required for streaming operations (to use `Publisher` from Reactive Streams)
+    implementation("org.reactivestreams:reactive-streams:1.0.4")
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:23.0.0'
+    implementation 'com.google.firebase:firebase-database:21.0.0'
+    implementation 'com.google.firebase:firebase-firestore:25.0.0'
+    implementation 'com.google.firebase:firebase-storage:21.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.7.7'
+    implementation 'androidx.navigation:navigation-ui:2.7.7'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+}

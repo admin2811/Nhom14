@@ -173,6 +173,7 @@
     "android-custom-viewD:/Android Project/caches/modules-2/files-2.1/com.google.android.material/material/1.12.0/5583a9ff7f51bd568ac8b94496ec3d1ec787a015/material-1.12.0-sources.jar!/com/google/android/material/imageview/ShapeableImageView.java_SELECTED": "ShapeableImageView",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "DucMinh__63HTTT1",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "D:/EnglishTLU/app/src/main/res/drawable",
     "last_opened_file_path": "D:/EnglishTLU",
@@ -284,6 +285,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -305,7 +317,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/englishtlu/english_learning/main/profile/ChangePasswordandEmailFragment.java</url>
           <line>225</line>
-          <properties class="com.englishtlu.english_learning.main.profile.ChangePasswordandEmailFragment" method="UpdatePassword">
+          <properties class="com.englishtlu.english_learning.main.profile.ChangePasswordandEmailFragment">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

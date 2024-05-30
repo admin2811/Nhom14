@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="55dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/vocabulary"
+            app:layout_constraintBottom_toTopOf="@+id/titleTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck"
+            tools:srcCompat="@drawable/vocabulary"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="25"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.711"
+            app:layout_constraintStart_toEndOf="@+id/pic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="16dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/todo3"
+            android:src="@drawable/star_1828884"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/star"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="228dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/font4"
+            android:text="Vocabulary \nTreasure Hunt"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.413"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="247dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="52dp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/black"
+            android:text="@string/collect_hidden_english_vocabulary_words_in_a_timed_scavenger_hunt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/titleTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/titleTxt"
+            app:layout_constraintTop_toTopOf="@+id/titleTxt"
+            app:layout_constraintVertical_bias="0.714"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_chanllenge"
+            android:layout_width="200dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/btn_changllenge"
+            android:fontFamily="@font/font6"
+            android:text="@string/chanllenge"
+            android:textColor="#3A94E7"
+            android:textSize="16sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
