@@ -3389,6 +3389,7 @@ int drawable send 0x7f070169
 int drawable social 0x7f07016a
 int drawable solar_camera 0x7f07016b
 int drawable star_1828884 0x7f07016c
+int drawable storagebox 0x7f070191
 int drawable test_level_drawable 0x7f07016d
 int drawable tooltip_frame_dark 0x7f07016e
 int drawable tooltip_frame_light 0x7f07016f

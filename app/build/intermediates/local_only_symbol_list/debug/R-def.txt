@@ -114,6 +114,7 @@ drawable send
 drawable social
 drawable solar_camera
 drawable star_1828884
+drawable storagebox
 drawable top_background
 drawable translate
 drawable trends
