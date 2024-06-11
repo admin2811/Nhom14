@@ -60,9 +60,20 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout share = (ConstraintLayout) view.findViewById(id.share);
         ConstraintLayout changePassword = (ConstraintLayout) view.findViewById(id.changePasswordandEmail);
         ConstraintLayout signOut = (ConstraintLayout) view.findViewById(id.signOut);
+        ConstraintLayout document = (ConstraintLayout) view.findViewById(id.document);
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
+
+        document.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(id.fragmentContainerView, new DocumentFragment());
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
         myProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
