@@ -6,11 +6,21 @@ public class Course {
     private String description;
     private double star;
 
-    public Course(String picpath, String title, String description, double star) {
+    private int id;
+    public Course(int id, String picpath, String title, String description, double star) {
+        this.id = id;
         this.picpath = picpath;
         this.title = title;
         this.description = description;
         this.star = star;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getPicpath() {
@@ -45,4 +55,6 @@ public class Course {
     public void setStar(double star) {
         this.star = star;
     }
+
+
 }

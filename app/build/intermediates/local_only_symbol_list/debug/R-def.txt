@@ -338,6 +338,7 @@ layout activity_chat_bot
 layout activity_login
 layout activity_main
 layout activity_main2
+layout activity_pdfactivity
 layout activity_register
 layout activity_welcome
 layout chat_item

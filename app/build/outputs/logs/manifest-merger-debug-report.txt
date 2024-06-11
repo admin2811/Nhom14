@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] D:\Android Project\caches\transforms-3\d38a4dcfd3773f55f83252abc1ff51d4\transformed\viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:2:1-20:12
 MERGED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:2:1-42:12
@@ -161,7 +161,7 @@ ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:10:5-71
 	android:name
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:10:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:11:5-78
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:11:5-79
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:7:5-79
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] D:\Android Project\caches\transforms-3\48e2453a391daa69ee5f913f3c5fb55c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
@@ -183,8 +183,8 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] D:\Androi
 	android:name
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:11:22-76
 application
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-50:19
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-50:19
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-53:19
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-53:19
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:21:5-40:19
@@ -283,56 +283,62 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] D:\Android Project\cache
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:16:9-51
 	android:dataExtractionRules
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:15:9-65
-activity#com.englishtlu.english_learning.main.chatbot.ChatBotActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:24:9-28:60
-	android:label
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:27:13-60
+activity#com.englishtlu.english_learning.main.document.activity.PDFActivity
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:28:13-57
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:25:13-57
-activity#com.englishtlu.english_learning.authentication.LoginActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:29:9-31:40
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:25:13-63
+activity#com.englishtlu.english_learning.main.chatbot.ChatBotActivity
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:27:9-31:60
+	android:label
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:30:13-60
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:31:13-57
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:30:13-57
-activity#com.englishtlu.english_learning.authentication.RegisterActivity
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:28:13-57
+activity#com.englishtlu.english_learning.authentication.LoginActivity
 ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:33:13-60
-activity#com.englishtlu.english_learning.authentication.WelcomeActivity
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:33:13-57
+activity#com.englishtlu.english_learning.authentication.RegisterActivity
 ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:36:13-59
-activity#com.englishtlu.english_learning.main.MainActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:38:9-40:39
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:36:13-60
+activity#com.englishtlu.english_learning.authentication.WelcomeActivity
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:40:13-36
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:39:13-46
-activity#com.englishtlu.english_learning.SplashActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:41:9-49:20
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:39:13-59
+activity#com.englishtlu.english_learning.main.MainActivity
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:41:9-43:39
 	android:exported
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:43:13-36
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:42:13-43
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:42:13-46
+activity#com.englishtlu.english_learning.SplashActivity
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:44:9-52:20
+	android:exported
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:45:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:44:13-48:29
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:47:13-51:29
 action#android.intent.action.MAIN
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:47:17-77
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:47:27-74
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:50:27-74
 uses-sdk
 INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml
