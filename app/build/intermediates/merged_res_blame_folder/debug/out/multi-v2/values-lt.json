@@ -4,6 +4,23 @@
             "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-lt/values-lt.xml",
             "map": [
                 {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\c8cd2810a25c7ae064fa1b03de98f10d\\transformed\\core-1.13.1\\res\\values-lt\\values-lt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,263,362,465,576,686,806",
+                        "endColumns": "97,109,98,102,110,109,119,100",
+                        "endOffsets": "148,258,357,460,571,681,801,902"
+                    },
+                    "to": {
+                        "startLines": "42,43,44,45,46,47,48,144",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3847,3945,4055,4154,4257,4368,4478,13326",
+                        "endColumns": "97,109,98,102,110,109,119,100",
+                        "endOffsets": "3940,4050,4149,4252,4363,4473,4593,13422"
+                    }
+                },
+                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\2f9515335d68f213d538ba4f7683c4df\\transformed\\navigation-ui-2.7.7\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3",
@@ -52,23 +69,6 @@
                         "startOffsets": "4896,5003,5155,5287,5394,5547,5677,5796,6061,6227,6336,6501,6635,6788,6938,7006,7072",
                         "endColumns": "106,151,131,106,152,129,118,105,165,108,164,133,152,149,67,65,89",
                         "endOffsets": "4998,5150,5282,5389,5542,5672,5791,5897,6222,6331,6496,6630,6783,6933,7001,7067,7157"
-                    }
-                },
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\ef3502255406c7307637cddc73cd1b44\\transformed\\core-1.13.0\\res\\values-lt\\values-lt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,263,362,465,576,686,806",
-                        "endColumns": "97,109,98,102,110,109,119,100",
-                        "endOffsets": "148,258,357,460,571,681,801,902"
-                    },
-                    "to": {
-                        "startLines": "42,43,44,45,46,47,48,144",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3847,3945,4055,4154,4257,4368,4478,13326",
-                        "endColumns": "97,109,98,102,110,109,119,100",
-                        "endOffsets": "3940,4050,4149,4252,4363,4473,4593,13422"
                     }
                 },
                 {

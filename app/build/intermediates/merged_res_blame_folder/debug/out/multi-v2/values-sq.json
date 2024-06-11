@@ -4,23 +4,6 @@
             "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-sq/values-sq.xml",
             "map": [
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\ef3502255406c7307637cddc73cd1b44\\transformed\\core-1.13.0\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,354,451,559,670,792",
-                        "endColumns": "98,101,97,96,107,110,121,100",
-                        "endOffsets": "149,251,349,446,554,665,787,888"
-                    },
-                    "to": {
-                        "startLines": "40,41,42,43,44,45,46,142",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3686,3785,3887,3985,4082,4190,4301,13184",
-                        "endColumns": "98,101,97,96,107,110,121,100",
-                        "endOffsets": "3780,3882,3980,4077,4185,4296,4418,13280"
-                    }
-                },
-                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\b084ed24f58390ea3d177c2518546c2c\\transformed\\browser-1.4.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -103,6 +86,23 @@
                         "startOffsets": "317,431,531,643,729,835,958,1040,1118,1209,1302,1397,1491,1592,1685,1780,1877,1968,2061,2142,2248,2352,2450,2556,2660,2762,2916,12865",
                         "endColumns": "113,99,111,85,105,122,81,77,90,92,94,93,100,92,94,96,90,92,80,105,103,97,105,103,101,153,96,81",
                         "endOffsets": "426,526,638,724,830,953,1035,1113,1204,1297,1392,1486,1587,1680,1775,1872,1963,2056,2137,2243,2347,2445,2551,2655,2757,2911,3008,12942"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\c8cd2810a25c7ae064fa1b03de98f10d\\transformed\\core-1.13.1\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,354,451,559,670,792",
+                        "endColumns": "98,101,97,96,107,110,121,100",
+                        "endOffsets": "149,251,349,446,554,665,787,888"
+                    },
+                    "to": {
+                        "startLines": "40,41,42,43,44,45,46,142",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3686,3785,3887,3985,4082,4190,4301,13184",
+                        "endColumns": "98,101,97,96,107,110,121,100",
+                        "endOffsets": "3780,3882,3980,4077,4185,4296,4418,13280"
                     }
                 },
                 {

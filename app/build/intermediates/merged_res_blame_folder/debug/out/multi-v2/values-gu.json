@@ -4,6 +4,23 @@
             "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-gu/values-gu.xml",
             "map": [
                 {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\c8cd2810a25c7ae064fa1b03de98f10d\\transformed\\core-1.13.1\\res\\values-gu\\values-gu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,149,252,349,451,553,651,773",
+                        "endColumns": "93,102,96,101,101,97,121,100",
+                        "endOffsets": "144,247,344,446,548,646,768,869"
+                    },
+                    "to": {
+                        "startLines": "41,42,43,44,45,46,47,151",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3705,3799,3902,3999,4101,4203,4301,13577",
+                        "endColumns": "93,102,96,101,101,97,121,100",
+                        "endOffsets": "3794,3897,3994,4096,4198,4296,4418,13673"
+                    }
+                },
+                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\392e73c8346ff736bf0feb29735805b6\\transformed\\appcompat-1.6.1\\res\\values-gu\\values-gu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
@@ -107,23 +124,6 @@
                         "endLines": "33,71,72,73,74,75,77,146,152,153,154,155,156,157,158,159,160",
                         "endColumns": "48,79,90,87,101,74,75,131,47,64,48,43,67,52,48,46,45",
                         "endOffsets": "3045,7135,7226,7314,7416,7491,7630,13257,13721,13786,13835,13879,13947,14000,14049,14096,14142"
-                    }
-                },
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\ef3502255406c7307637cddc73cd1b44\\transformed\\core-1.13.0\\res\\values-gu\\values-gu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,149,252,349,451,553,651,773",
-                        "endColumns": "93,102,96,101,101,97,121,100",
-                        "endOffsets": "144,247,344,446,548,646,768,869"
-                    },
-                    "to": {
-                        "startLines": "41,42,43,44,45,46,47,151",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3705,3799,3902,3999,4101,4203,4301,13577",
-                        "endColumns": "93,102,96,101,101,97,121,100",
-                        "endOffsets": "3794,3897,3994,4096,4198,4296,4418,13673"
                     }
                 },
                 {

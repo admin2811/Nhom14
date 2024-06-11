@@ -74,23 +74,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\ef3502255406c7307637cddc73cd1b44\\transformed\\core-1.13.0\\res\\values-bn\\values-bn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,358,461,562,664,784",
-                        "endColumns": "98,101,101,102,100,101,119,100",
-                        "endOffsets": "149,251,353,456,557,659,779,880"
-                    },
-                    "to": {
-                        "startLines": "40,41,42,43,44,45,46,142",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3744,3843,3945,4047,4150,4251,4353,12956",
-                        "endColumns": "98,101,101,102,100,101,119,100",
-                        "endOffsets": "3838,3940,4042,4145,4246,4348,4468,13052"
-                    }
-                },
-                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\47055b66d56e873639ba4f65bde55b8b\\transformed\\play-services-basement-18.3.0\\res\\values-bn\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -122,6 +105,23 @@
                         "startOffsets": "6942,7266,7368,7477",
                         "endColumns": "105,101,108,105",
                         "endOffsets": "7043,7363,7472,7578"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\c8cd2810a25c7ae064fa1b03de98f10d\\transformed\\core-1.13.1\\res\\values-bn\\values-bn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,358,461,562,664,784",
+                        "endColumns": "98,101,101,102,100,101,119,100",
+                        "endOffsets": "149,251,353,456,557,659,779,880"
+                    },
+                    "to": {
+                        "startLines": "40,41,42,43,44,45,46,142",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3744,3843,3945,4047,4150,4251,4353,12956",
+                        "endColumns": "98,101,101,102,100,101,119,100",
+                        "endOffsets": "3838,3940,4042,4145,4246,4348,4468,13052"
                     }
                 },
                 {

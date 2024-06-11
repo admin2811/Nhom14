@@ -4,6 +4,23 @@
             "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\c8cd2810a25c7ae064fa1b03de98f10d\\transformed\\core-1.13.1\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,353,453,560,666,787",
+                        "endColumns": "96,101,98,99,106,105,120,100",
+                        "endOffsets": "147,249,348,448,555,661,782,883"
+                    },
+                    "to": {
+                        "startLines": "40,41,42,43,44,45,46,142",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3731,3828,3930,4029,4129,4236,4342,13248",
+                        "endColumns": "96,101,98,99,106,105,120,100",
+                        "endOffsets": "3823,3925,4024,4124,4231,4337,4458,13344"
+                    }
+                },
+                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\e8afbc4e211ac4bb1fedfeb227a51103\\transformed\\credentials-1.2.0-rc01\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "from": {
                         "startLines": "2,3",
@@ -35,23 +52,6 @@
                         "startOffsets": "323,431,537,644,733,834,952,1037,1117,1209,1303,1400,1494,1593,1687,1783,1878,1970,2062,2147,2254,2365,2467,2575,2683,2790,2955,12921",
                         "endColumns": "107,105,106,88,100,117,84,79,91,93,96,93,98,93,95,94,91,91,84,106,110,101,107,107,106,164,98,85",
                         "endOffsets": "426,532,639,728,829,947,1032,1112,1204,1298,1395,1489,1588,1682,1778,1873,1965,2057,2142,2249,2360,2462,2570,2678,2785,2950,3049,13002"
-                    }
-                },
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\ef3502255406c7307637cddc73cd1b44\\transformed\\core-1.13.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,152,254,353,453,560,666,787",
-                        "endColumns": "96,101,98,99,106,105,120,100",
-                        "endOffsets": "147,249,348,448,555,661,782,883"
-                    },
-                    "to": {
-                        "startLines": "40,41,42,43,44,45,46,142",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3731,3828,3930,4029,4129,4236,4342,13248",
-                        "endColumns": "96,101,98,99,106,105,120,100",
-                        "endOffsets": "3823,3925,4024,4124,4231,4337,4458,13344"
                     }
                 },
                 {

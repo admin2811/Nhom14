@@ -4,23 +4,6 @@
             "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\ef3502255406c7307637cddc73cd1b44\\transformed\\core-1.13.0\\res\\values-pt\\values-pt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,152,254,353,453,560,670,790",
-                        "endColumns": "96,101,98,99,106,109,119,100",
-                        "endOffsets": "147,249,348,448,555,665,785,886"
-                    },
-                    "to": {
-                        "startLines": "31,32,33,34,35,36,37,45",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3074,3171,3273,3372,3472,3579,3689,4559",
-                        "endColumns": "96,101,98,99,106,109,119,100",
-                        "endOffsets": "3166,3268,3367,3467,3574,3684,3804,4655"
-                    }
-                },
-                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\b084ed24f58390ea3d177c2518546c2c\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -52,6 +35,23 @@
                         "startOffsets": "2843,2952",
                         "endColumns": "108,121",
                         "endOffsets": "2947,3069"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\c8cd2810a25c7ae064fa1b03de98f10d\\transformed\\core-1.13.1\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,353,453,560,670,790",
+                        "endColumns": "96,101,98,99,106,109,119,100",
+                        "endOffsets": "147,249,348,448,555,665,785,886"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34,35,36,37,45",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3074,3171,3273,3372,3472,3579,3689,4559",
+                        "endColumns": "96,101,98,99,106,109,119,100",
+                        "endOffsets": "3166,3268,3367,3467,3574,3684,3804,4655"
                     }
                 },
                 {

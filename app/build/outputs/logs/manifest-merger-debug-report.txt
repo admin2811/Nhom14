@@ -1,9 +1,20 @@
 -- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:grantUriPermissions
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:31:13-47
+	android:authorities
+		INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:29:13-65
+	android:exported
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:28:13-62
 manifest
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:1-67:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] D:\Android Project\caches\transforms-3\d38a4dcfd3773f55f83252abc1ff51d4\transformed\viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:2:1-20:12
 MERGED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:2:1-42:12
@@ -61,10 +72,10 @@ MERGED from [com.google.android.gms:play-services-tasks:18.1.0] D:\Android Proje
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\47055b66d56e873639ba4f65bde55b8b\transformed\play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.6.2] D:\Android Project\caches\transforms-3\1bda94bc55e196d05ccc71361eca39ec\transformed\fragment-1.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] D:\Android Project\caches\transforms-3\dd0f1872d2fa34d2c6e531cee6851445\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.8.0] D:\Android Project\caches\transforms-3\69acd175305a97b2099edbb7458bc8ca\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity-ktx:1.8.0] D:\Android Project\caches\transforms-3\b8dc6d9d2b3945d9c1bdfbebf7445fbf\transformed\activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] D:\Android Project\caches\transforms-3\e9568a8ab529f1d0b65d36c0188b6bd5\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] D:\Android Project\caches\transforms-3\b8dc6d9d2b3945d9c1bdfbebf7445fbf\transformed\activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.0] D:\Android Project\caches\transforms-3\69acd175305a97b2099edbb7458bc8ca\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] D:\Android Project\caches\transforms-3\861c79147199fce295298d6bbf038dba\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\Android Project\caches\transforms-3\18446997fedd27c62cfad63e62f68ff1\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] D:\Android Project\caches\transforms-3\9dda7a3c17725564e50907e21e709427\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -76,24 +87,25 @@ MERGED from [androidx.browser:browser:1.4.0] D:\Android Project\caches\transform
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\Android Project\caches\transforms-3\23b7a85fcc961ea6d3844bb548dcdce6\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\Android Project\caches\transforms-3\16c702bf92f8bddf7595e10afa7c0b72\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] D:\Android Project\caches\transforms-3\f19173f0842151e182779fbc31f33982\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\Android Project\caches\transforms-3\032ef617c0fcb084e8e2a0652e42891e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.loader:loader:1.0.0] D:\Android Project\caches\transforms-3\74d41945754c6e13be08e6e77f3f634c\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] D:\Android Project\caches\transforms-3\83efff5b73628bc94ad440f16fb72105\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] D:\Android Project\caches\transforms-3\368222e48f461a21019f7588693909e1\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\Android Project\caches\transforms-3\032ef617c0fcb084e8e2a0652e42891e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] D:\Android Project\caches\transforms-3\74d41945754c6e13be08e6e77f3f634c\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] D:\Android Project\caches\transforms-3\1bfd843f6d91234c04aeaaa251700e05\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] D:\Android Project\caches\transforms-3\b3bb048f37a4c5583288351ee5b682bc\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] D:\Android Project\caches\transforms-3\3539c69fea4aa7dc1cf36105e4919e65\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] D:\Android Project\caches\transforms-3\096658b7f6603abad5591e180c29066f\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] D:\Android Project\caches\transforms-3\daef2d04e0a14bbd544a7eb0f8cbc488\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.13.0] D:\Android Project\caches\transforms-3\009a00b5b6991a2deadc61f49eedf1bb\transformed\core-ktx-1.13.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\Android Project\caches\transforms-3\e3bd90079b271b704a42da16bd62523a\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] D:\Android Project\caches\transforms-3\b3bb048f37a4c5583288351ee5b682bc\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] D:\Android Project\caches\transforms-3\c0615c72cfd943d504fcca99876d3a47\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] D:\Android Project\caches\transforms-3\daef2d04e0a14bbd544a7eb0f8cbc488\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] D:\Android Project\caches\transforms-3\08ba3780378c8b7a8e913b75c2ad6951\transformed\core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\Android Project\caches\transforms-3\e3bd90079b271b704a42da16bd62523a\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] D:\Android Project\caches\transforms-3\ef19adfff1fd49fcb09f0f3f73117090\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\Android Project\caches\transforms-3\2cf1f79732ef824ee96508d05b07c4d5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\Android Project\caches\transforms-3\49d706b8f4ba509465e21e3fedf8179f\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.2.1] D:\Android Project\caches\transforms-3\28016f650bb5f1343b05cd4a21096fe4\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\ff5e9eb0451cb3bce342c5c20674189a\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\314573de9829eb26b8084f8531e78b29\transformed\transport-runtime-2.2.6\AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.1] D:\Android Project\caches\transforms-3\ef827685bc9d85dda59bd974a36c0f21\transformed\transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
@@ -105,12 +117,12 @@ MERGED from [androidx.cardview:cardview:1.0.0] D:\Android Project\caches\transfo
 MERGED from [com.google.firebase:firebase-components:18.0.0] D:\Android Project\caches\transforms-3\f60286c310eb85d634e007b548f67f96\transformed\firebase-components-18.0.0\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\Android Project\caches\transforms-3\7f1b7e2f82e85f86770efb0d5dc164a2\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] D:\Android Project\caches\transforms-3\30b1cc3ca5937d908af9cbafe3d82484\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Android Project\caches\transforms-3\1480edb4e8a6b039b136b9076fb32c4a\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\Android Project\caches\transforms-3\fd1e0e76854b152b80fa6c9f491987ec\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] D:\Android Project\caches\transforms-3\30d1c403eccf5ea490baa0cbb32b997a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] D:\Android Project\caches\transforms-3\007d87d742af42f14b06c91c778f18b1\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Android Project\caches\transforms-3\1480edb4e8a6b039b136b9076fb32c4a\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] D:\Android Project\caches\transforms-3\a01a5f004ec9d877b911d983a8db4cf9\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] D:\Android Project\caches\transforms-3\0c73b1ac01180a288bb71a36060efca6\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] D:\Android Project\caches\transforms-3\a01a5f004ec9d877b911d983a8db4cf9\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] D:\Android Project\caches\transforms-3\41e6cd1e96fb5b8fd7aefabe015464d8\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] D:\Android Project\caches\transforms-3\970e19fc30ee17acf465358c9ea4cba1\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] D:\Android Project\caches\transforms-3\2d8e27349ec2e581539a46033ca5abe7\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
@@ -126,16 +138,26 @@ MERGED from [com.android.support:exifinterface:27.1.0] D:\Android Project\caches
 		INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:5:22-74
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:5:5-8:40
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:6:5-9:40
 	android:maxSdkVersion
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:8:9-35
 	tools:ignore
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:8:9-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:9:9-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:6:9-65
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:7:9-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:10:5-11:40
+	tools:ignore
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:11:9-37
+	android:name
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.INTERNET
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:9:5-67
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:12:5-67
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:8:5-67
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:8:5-67
 MERGED from [com.google.ai.client.generativeai:generativeai:0.6.0] D:\Android Project\caches\transforms-3\92c3aa13dba3136d4a0c88470aa327ab\transformed\generativeai-0.6.0\AndroidManifest.xml:22:5-67
@@ -155,13 +177,13 @@ MERGED from [com.google.firebase:firebase-storage:21.0.0] D:\Android Project\cac
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\ff5e9eb0451cb3bce342c5c20674189a\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\ff5e9eb0451cb3bce342c5c20674189a\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:12:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:10:5-71
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-71
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:10:22-68
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:11:5-79
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:14:5-79
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:7:5-79
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] D:\Android Project\caches\transforms-3\48e2453a391daa69ee5f913f3c5fb55c\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
@@ -181,10 +203,14 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] D:\An
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\314573de9829eb26b8084f8531e78b29\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\314573de9829eb26b8084f8531e78b29\transformed\transport-runtime-2.2.6\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:11:22-76
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:15:22-73
 application
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-53:19
-INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:13:5-53:19
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:16:5-65:19
+INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:16:5-65:19
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.mlkit:translate:17.0.2] D:\Android Project\caches\transforms-3\789800be377817a0e2dbc541f80d8492\transformed\translate-17.0.2\AndroidManifest.xml:10:5-18:19
 MERGED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:21:5-40:19
@@ -237,12 +263,12 @@ MERGED from [com.google.android.gms:play-services-basement:18.3.0] D:\Android Pr
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\47055b66d56e873639ba4f65bde55b8b\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\Android Project\caches\transforms-3\2cf1f79732ef824ee96508d05b07c4d5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\Android Project\caches\transforms-3\2cf1f79732ef824ee96508d05b07c4d5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\Android Project\caches\transforms-3\49d706b8f4ba509465e21e3fedf8179f\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
@@ -262,83 +288,89 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] D:\Android Project\cache
 	android:extractNativeLibs
 		INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:22:9-41
 	android:fullBackupContent
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:20:9-54
 	android:roundIcon
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:20:9-59
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:23:9-59
 	tools:targetApi
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:23:9-35
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:26:9-35
 	android:icon
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:18:9-48
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:21:9-48
 	android:allowBackup
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:22:9-53
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:25:9-53
 	android:enableOnBackInvokedCallback
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:16:9-51
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:19:9-51
 	android:dataExtractionRules
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:15:9-65
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:18:9-65
 activity#com.englishtlu.english_learning.main.document.activity.PDFActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:25:13-63
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:37:13-63
 activity#com.englishtlu.english_learning.main.chatbot.ChatBotActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:27:9-31:60
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:39:9-43:60
 	android:label
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:30:13-60
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:42:13-60
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:41:13-37
 	android:theme
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:31:13-57
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:43:13-57
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:28:13-57
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:40:13-57
 activity#com.englishtlu.english_learning.authentication.LoginActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:32:9-34:40
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:33:13-57
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:45:13-57
 activity#com.englishtlu.english_learning.authentication.RegisterActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:36:13-60
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:48:13-60
 activity#com.englishtlu.english_learning.authentication.WelcomeActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:38:9-40:40
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:39:13-59
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:51:13-59
 activity#com.englishtlu.english_learning.main.MainActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:41:9-43:39
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:53:9-55:39
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:43:13-36
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:42:13-46
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:54:13-46
 activity#com.englishtlu.english_learning.SplashActivity
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:44:9-52:20
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:56:9-64:20
 	android:exported
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:58:13-36
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:45:13-43
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:57:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:59:13-63:29
 action#android.intent.action.MAIN
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:60:17-69
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:60:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:62:17-77
 	android:name
-		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:62:27-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:32:13-34:54
+	android:resource
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:34:17-51
+	android:name
+		ADDED from D:\EnglishTLU\app\src\main\AndroidManifest.xml:33:17-67
 uses-sdk
 INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\EnglishTLU\app\src\main\AndroidManifest.xml
@@ -457,14 +489,14 @@ MERGED from [androidx.fragment:fragment:1.6.2] D:\Android Project\caches\transfo
 MERGED from [androidx.fragment:fragment:1.6.2] D:\Android Project\caches\transforms-3\1bda94bc55e196d05ccc71361eca39ec\transformed\fragment-1.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] D:\Android Project\caches\transforms-3\dd0f1872d2fa34d2c6e531cee6851445\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] D:\Android Project\caches\transforms-3\dd0f1872d2fa34d2c6e531cee6851445\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.0] D:\Android Project\caches\transforms-3\69acd175305a97b2099edbb7458bc8ca\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.0] D:\Android Project\caches\transforms-3\69acd175305a97b2099edbb7458bc8ca\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.0] D:\Android Project\caches\transforms-3\b8dc6d9d2b3945d9c1bdfbebf7445fbf\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.0] D:\Android Project\caches\transforms-3\b8dc6d9d2b3945d9c1bdfbebf7445fbf\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] D:\Android Project\caches\transforms-3\e9568a8ab529f1d0b65d36c0188b6bd5\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] D:\Android Project\caches\transforms-3\e9568a8ab529f1d0b65d36c0188b6bd5\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] D:\Android Project\caches\transforms-3\b8dc6d9d2b3945d9c1bdfbebf7445fbf\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] D:\Android Project\caches\transforms-3\b8dc6d9d2b3945d9c1bdfbebf7445fbf\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.0] D:\Android Project\caches\transforms-3\69acd175305a97b2099edbb7458bc8ca\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] D:\Android Project\caches\transforms-3\69acd175305a97b2099edbb7458bc8ca\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] D:\Android Project\caches\transforms-3\861c79147199fce295298d6bbf038dba\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] D:\Android Project\caches\transforms-3\861c79147199fce295298d6bbf038dba\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] D:\Android Project\caches\transforms-3\18446997fedd27c62cfad63e62f68ff1\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -487,42 +519,44 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] D:\Android Project\caches\trans
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\Android Project\caches\transforms-3\16c702bf92f8bddf7595e10afa7c0b72\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] D:\Android Project\caches\transforms-3\f19173f0842151e182779fbc31f33982\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] D:\Android Project\caches\transforms-3\f19173f0842151e182779fbc31f33982\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\Android Project\caches\transforms-3\032ef617c0fcb084e8e2a0652e42891e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\Android Project\caches\transforms-3\032ef617c0fcb084e8e2a0652e42891e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.loader:loader:1.0.0] D:\Android Project\caches\transforms-3\74d41945754c6e13be08e6e77f3f634c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] D:\Android Project\caches\transforms-3\74d41945754c6e13be08e6e77f3f634c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] D:\Android Project\caches\transforms-3\83efff5b73628bc94ad440f16fb72105\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] D:\Android Project\caches\transforms-3\83efff5b73628bc94ad440f16fb72105\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] D:\Android Project\caches\transforms-3\368222e48f461a21019f7588693909e1\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] D:\Android Project\caches\transforms-3\368222e48f461a21019f7588693909e1\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\Android Project\caches\transforms-3\032ef617c0fcb084e8e2a0652e42891e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] D:\Android Project\caches\transforms-3\032ef617c0fcb084e8e2a0652e42891e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] D:\Android Project\caches\transforms-3\74d41945754c6e13be08e6e77f3f634c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] D:\Android Project\caches\transforms-3\74d41945754c6e13be08e6e77f3f634c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] D:\Android Project\caches\transforms-3\1bfd843f6d91234c04aeaaa251700e05\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] D:\Android Project\caches\transforms-3\1bfd843f6d91234c04aeaaa251700e05\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] D:\Android Project\caches\transforms-3\b3bb048f37a4c5583288351ee5b682bc\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] D:\Android Project\caches\transforms-3\b3bb048f37a4c5583288351ee5b682bc\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] D:\Android Project\caches\transforms-3\3539c69fea4aa7dc1cf36105e4919e65\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] D:\Android Project\caches\transforms-3\3539c69fea4aa7dc1cf36105e4919e65\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] D:\Android Project\caches\transforms-3\096658b7f6603abad5591e180c29066f\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] D:\Android Project\caches\transforms-3\096658b7f6603abad5591e180c29066f\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] D:\Android Project\caches\transforms-3\daef2d04e0a14bbd544a7eb0f8cbc488\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] D:\Android Project\caches\transforms-3\daef2d04e0a14bbd544a7eb0f8cbc488\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.13.0] D:\Android Project\caches\transforms-3\009a00b5b6991a2deadc61f49eedf1bb\transformed\core-ktx-1.13.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.13.0] D:\Android Project\caches\transforms-3\009a00b5b6991a2deadc61f49eedf1bb\transformed\core-ktx-1.13.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\Android Project\caches\transforms-3\e3bd90079b271b704a42da16bd62523a\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\Android Project\caches\transforms-3\e3bd90079b271b704a42da16bd62523a\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] D:\Android Project\caches\transforms-3\b3bb048f37a4c5583288351ee5b682bc\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] D:\Android Project\caches\transforms-3\b3bb048f37a4c5583288351ee5b682bc\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] D:\Android Project\caches\transforms-3\c0615c72cfd943d504fcca99876d3a47\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] D:\Android Project\caches\transforms-3\c0615c72cfd943d504fcca99876d3a47\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] D:\Android Project\caches\transforms-3\daef2d04e0a14bbd544a7eb0f8cbc488\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] D:\Android Project\caches\transforms-3\daef2d04e0a14bbd544a7eb0f8cbc488\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] D:\Android Project\caches\transforms-3\08ba3780378c8b7a8e913b75c2ad6951\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] D:\Android Project\caches\transforms-3\08ba3780378c8b7a8e913b75c2ad6951\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\Android Project\caches\transforms-3\e3bd90079b271b704a42da16bd62523a\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\Android Project\caches\transforms-3\e3bd90079b271b704a42da16bd62523a\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] D:\Android Project\caches\transforms-3\ef19adfff1fd49fcb09f0f3f73117090\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] D:\Android Project\caches\transforms-3\ef19adfff1fd49fcb09f0f3f73117090\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\Android Project\caches\transforms-3\2cf1f79732ef824ee96508d05b07c4d5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\Android Project\caches\transforms-3\2cf1f79732ef824ee96508d05b07c4d5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\Android Project\caches\transforms-3\49d706b8f4ba509465e21e3fedf8179f\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\Android Project\caches\transforms-3\49d706b8f4ba509465e21e3fedf8179f\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.2.1] D:\Android Project\caches\transforms-3\28016f650bb5f1343b05cd4a21096fe4\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] D:\Android Project\caches\transforms-3\28016f650bb5f1343b05cd4a21096fe4\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\ff5e9eb0451cb3bce342c5c20674189a\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\ff5e9eb0451cb3bce342c5c20674189a\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\314573de9829eb26b8084f8531e78b29\transformed\transport-runtime-2.2.6\AndroidManifest.xml:18:5-20:41
@@ -545,18 +579,18 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\Andr
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\Android Project\caches\transforms-3\7f1b7e2f82e85f86770efb0d5dc164a2\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] D:\Android Project\caches\transforms-3\30b1cc3ca5937d908af9cbafe3d82484\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] D:\Android Project\caches\transforms-3\30b1cc3ca5937d908af9cbafe3d82484\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Android Project\caches\transforms-3\1480edb4e8a6b039b136b9076fb32c4a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Android Project\caches\transforms-3\1480edb4e8a6b039b136b9076fb32c4a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\Android Project\caches\transforms-3\fd1e0e76854b152b80fa6c9f491987ec\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\Android Project\caches\transforms-3\fd1e0e76854b152b80fa6c9f491987ec\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] D:\Android Project\caches\transforms-3\30d1c403eccf5ea490baa0cbb32b997a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] D:\Android Project\caches\transforms-3\30d1c403eccf5ea490baa0cbb32b997a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] D:\Android Project\caches\transforms-3\007d87d742af42f14b06c91c778f18b1\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] D:\Android Project\caches\transforms-3\007d87d742af42f14b06c91c778f18b1\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Android Project\caches\transforms-3\1480edb4e8a6b039b136b9076fb32c4a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] D:\Android Project\caches\transforms-3\1480edb4e8a6b039b136b9076fb32c4a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] D:\Android Project\caches\transforms-3\a01a5f004ec9d877b911d983a8db4cf9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] D:\Android Project\caches\transforms-3\a01a5f004ec9d877b911d983a8db4cf9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] D:\Android Project\caches\transforms-3\0c73b1ac01180a288bb71a36060efca6\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] D:\Android Project\caches\transforms-3\0c73b1ac01180a288bb71a36060efca6\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] D:\Android Project\caches\transforms-3\a01a5f004ec9d877b911d983a8db4cf9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] D:\Android Project\caches\transforms-3\a01a5f004ec9d877b911d983a8db4cf9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] D:\Android Project\caches\transforms-3\41e6cd1e96fb5b8fd7aefabe015464d8\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] D:\Android Project\caches\transforms-3\41e6cd1e96fb5b8fd7aefabe015464d8\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] D:\Android Project\caches\transforms-3\970e19fc30ee17acf465358c9ea4cba1\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
@@ -635,12 +669,6 @@ ADDED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\tra
 		ADDED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:32:13-85
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:36:13-38:71
-	android:resource
-		ADDED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:38:17-68
-	android:name
-		ADDED from [com.github.dhaval2404:imagepicker:2.1] D:\Android Project\caches\transforms-3\7b3c4567667d7976a10269a596356b0e\transformed\imagepicker-2.1\AndroidManifest.xml:37:17-67
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] D:\Android Project\caches\transforms-3\6ff7b015a95fa89d9d4960d696e021bb\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities
@@ -915,6 +943,12 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3
 		ADDED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] D:\Android Project\caches\transforms-3\04435d3ba448ba77704c9c0c98c3e81d\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 	android:required
@@ -927,32 +961,26 @@ ADDED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3
 		ADDED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\192208ca3cfbfaee6734687d71d12a73\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\d278ba2f8d96d668569ad6c6926e4aa4\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 permission#com.englishtlu.english_learning.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 uses-permission#com.englishtlu.english_learning.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.0] D:\Android Project\caches\transforms-3\ef3502255406c7307637cddc73cd1b44\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] D:\Android Project\caches\transforms-3\c8cd2810a25c7ae064fa1b03de98f10d\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\Android Project\caches\transforms-3\2cf1f79732ef824ee96508d05b07c4d5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 	android:value
