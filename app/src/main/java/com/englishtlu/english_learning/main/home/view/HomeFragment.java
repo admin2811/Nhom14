@@ -1,6 +1,7 @@
 package com.englishtlu.english_learning.main.home.view;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.model.User;
+import com.englishtlu.english_learning.main.document.activity.PDFActivity;
 import com.englishtlu.english_learning.main.home.adapter.CourseAdapter;
 import com.englishtlu.english_learning.main.home.model.Course;
 import com.google.firebase.database.DataSnapshot;
@@ -102,7 +104,6 @@ public class HomeFragment extends Fragment {
         slideModels.add(new SlideModel(R.drawable.image1, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image2, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
-
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
         intRecyclerView();
 
@@ -114,17 +115,28 @@ public class HomeFragment extends Fragment {
     private void intRecyclerView() {
         ArrayList<Course> ItemsArrayList = new ArrayList<>();
 
-        ItemsArrayList.add(new Course("vocabulary", "Vocabulary \n" +
+        ItemsArrayList.add(new Course(1,"vocabulary", "Vocabulary \n" +
                 "Treasure Hunt", "Collect hidden English vocabulary words in a timed scavenger hunt", 4.5));
-        ItemsArrayList.add(new Course("completion", "Sentence Building Competition", "Drag and drop words to form grammatically correct sentences", 4.5));
+        ItemsArrayList.add(new Course(2,"completion", "Sentence Building Competition", "Drag and drop words to form grammatically correct sentences", 4.5));
         //ItemsArrayList.add(new Course("quiz", "Grammar Quiz", "Test your knowledge of English grammar with a multiple-choice quiz", 4.5));
         //flashcard
-        ItemsArrayList.add(new Course("flashcard", "FlashCard Revolution: Unleash Learning!", "Unveiling the Mind: Unlocking Secret Skills with Flashcards", 4.5));
+        ItemsArrayList.add(new Course(3,"flashcard", "FlashCard Revolution: Unleash Learning!", "Unveiling the Mind: Unlocking Secret Skills with Flashcards", 4.5));
         //document
-        ItemsArrayList.add(new Course("document", "Document Dynamo: Empower Knowledge", "Discover the power of effective document with \"Document Dynamics.\"", 4.5));
+        ItemsArrayList.add(new Course(4,"document", "Document Dynamo: Empower Knowledge", "Discover the power of effective document with \"Document Dynamics.\"", 4.5));
 
         recyclerViewCourse.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
-        RecyclerView.Adapter<CourseAdapter.ViewHolder> adapterPopular = new CourseAdapter(ItemsArrayList);
-        recyclerViewCourse.setAdapter(adapterPopular);
+        // Truyền listener vào adapter
+        RecyclerView.Adapter<CourseAdapter.ViewHolder> adapter = new CourseAdapter(ItemsArrayList, new CourseAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Course course) {
+                Log.d("CourseAdapter", "ID: " + course.getId());
+                //Khi ấn vào document thì chuyển sang PDFActivity
+                if (course.getId() == 4) {
+                    Intent intent = new Intent(requireContext(), PDFActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+        recyclerViewCourse.setAdapter(adapter);
     }
 }

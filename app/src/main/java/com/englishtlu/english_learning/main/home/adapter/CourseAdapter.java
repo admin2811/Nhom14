@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,11 +20,19 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder>{
-    ArrayList<Course> items;
+    static ArrayList<Course> items;
 
-    Context context;
-    public  CourseAdapter(ArrayList<Course> items) {
-        this.items = items;
+    @SuppressLint("StaticFieldLeak")
+    static Context context;
+
+    private static OnItemClickListener mListener;
+
+    public interface OnItemClickListener {
+        void onItemClick(Course course);
+    }
+    public  CourseAdapter(ArrayList<Course> items, OnItemClickListener listener) {
+        CourseAdapter.items = items;
+        mListener = listener;
     }
 
 
@@ -38,13 +47,15 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Course item = items.get(position);
-        holder.title.setText(item.getTitle());
-        holder.description.setText(item.getDescription());
-        holder.star.setText(new DecimalFormat("##.#").format(item.getStar()));
-        @SuppressLint("DiscouragedApi") int drawableResourceId = context.getResources().getIdentifier(item.getPicpath(), "drawable", context.getPackageName());
-        Glide.with(holder.itemView.getContext())
-                .load(drawableResourceId)
-                .into(holder.picpath);
+        holder.bind(item);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onItemClick(item);
+            }
+        });
+
     }
 
     @Override
@@ -63,6 +74,29 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
             description = itemView.findViewById(R.id.description);
             star = itemView.findViewById(R.id.star);
             picpath = itemView.findViewById(R.id.pic);
+            // Bắt sự kiện khi item được click
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION) {
+                        Course course = items.get(position);
+                        mListener.onItemClick(course);
+                    }
+                }
+            });
         }
+
+        // Bind dữ liệu vào ViewHolder
+        public void bind(Course course) {
+            title.setText(course.getTitle());
+            description.setText(course.getDescription());
+            star.setText(new DecimalFormat("##.#").format(course.getStar()));
+            @SuppressLint("DiscouragedApi") int drawableResourceId = context.getResources().getIdentifier(course.getPicpath(), "drawable", context.getPackageName());
+            Glide.with(itemView.getContext())
+                    .load(drawableResourceId)
+                    .into(picpath);
+        }
+
     }
 }
