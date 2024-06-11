@@ -2,8 +2,15 @@ R_DEF: Internal format may change without notice
 local
 color black
 color english_learning_background
+color grey
 color lavender
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
 color white
+color yellow
 dimen fab_margin
 drawable arc_1
 drawable arc_2
@@ -15,8 +22,6 @@ drawable background
 drawable background_btn_1
 drawable background_button1
 drawable background_camera
-drawable background_chat
-drawable background_chat_2
 drawable background_edittext
 drawable background_info
 drawable background_intro
@@ -28,6 +33,7 @@ drawable baseline_chat_24
 drawable baseline_chevron_left_24
 drawable baseline_chevron_right_24
 drawable baseline_compare_arrows_24
+drawable baseline_contactless_24
 drawable baseline_g_translate_24
 drawable baseline_keyboard_arrow_down_24
 drawable baseline_lock_reset_24
@@ -216,6 +222,7 @@ id iconshow2
 id iconshow3
 id idIVCamera
 id idIVMic
+id imageButton_audio
 id imageSlider
 id imageView
 id imageView2
@@ -236,6 +243,7 @@ id logoutImage
 id logoutTxt
 id main
 id message_edit_text
+id mic_icon
 id motionLayout
 id myProfile
 id nav_graph
@@ -262,7 +270,10 @@ id progressImage
 id progressIn
 id progressTxt
 id question
+id recycle_meanings
+id recycle_phonetics
 id recyclerView
+id recycler_definitions
 id recycler_view
 id register_button
 id right_chat_text_view
@@ -271,6 +282,7 @@ id saveBtn
 id scrollView2
 id scrollView3
 id scrollView4
+id search_view
 id selectPhoto
 id send
 id sendImage
@@ -306,6 +318,13 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView_antonyns
+id textView_definition
+id textView_example
+id textView_partsOfSpeech
+id textView_phonetic
+id textView_synonyns
+id textView_word
 id titleTxt
 id toolbar
 id translateBtn
@@ -323,6 +342,7 @@ layout activity_register
 layout activity_welcome
 layout chat_item
 layout custom_spinner_dropdown_item
+layout definitions_list_items
 layout dialog_forgot
 layout fragment_change
 layout fragment_change_passwordand_email
@@ -333,6 +353,8 @@ layout fragment_my_profile
 layout fragment_profile
 layout fragment_translate
 layout layout_change_password
+layout meanings_list_items
+layout phonetics_list_items
 layout question_faq
 layout spinner_item
 layout viewholder_course

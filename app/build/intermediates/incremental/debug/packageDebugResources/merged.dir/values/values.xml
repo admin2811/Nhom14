@@ -2,8 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="english_learning_background">#FFFFFF</color>
+    <color name="grey">#242B2E</color>
     <color name="lavender">#8395fb</color>
+    <color name="purple_200">#FFBBB6FC</color>
+    <color name="purple_500">#F7CD2E</color>
+    <color name="purple_700">#F7CD2E</color>
+    <color name="teal_200">#FFD3DAC5</color>
+    <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F7CD2E</color>
     <dimen name="fab_margin">16dp</dimen>
     <string name="alex">Alex</string>
     <string name="all_courses">All Courses</string>
