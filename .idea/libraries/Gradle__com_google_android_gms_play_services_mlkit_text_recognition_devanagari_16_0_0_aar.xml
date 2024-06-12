@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/5102eb08bdb96e7a314d3d2f86dd8e43/transformed/play-services-mlkit-text-recognition-devanagari-16.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/5102eb08bdb96e7a314d3d2f86dd8e43/transformed/play-services-mlkit-text-recognition-devanagari-16.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/3f8a443d1a437ca057bb0bf4be0d6842/transformed/play-services-mlkit-text-recognition-devanagari-16.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/3f8a443d1a437ca057bb0bf4be0d6842/transformed/play-services-mlkit-text-recognition-devanagari-16.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Android Project/caches/modules-2/files-2.1/com.google.android.gms/play-services-mlkit-text-recognition-devanagari/16.0.0/768e05dd3fb66b22fc346e69e3c5b00ddafa9aa6/play-services-mlkit-text-recognition-devanagari-16.0.0-javadoc.jar!/" />

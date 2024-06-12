@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-components:18.0.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/f60286c310eb85d634e007b548f67f96/transformed/firebase-components-18.0.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/e78fd79a0842eda91e79722eb8eaaba9/transformed/firebase-components-18.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/f60286c310eb85d634e007b548f67f96/transformed/firebase-components-18.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/f60286c310eb85d634e007b548f67f96/transformed/firebase-components-18.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/e78fd79a0842eda91e79722eb8eaaba9/transformed/firebase-components-18.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/e78fd79a0842eda91e79722eb8eaaba9/transformed/firebase-components-18.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

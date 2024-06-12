@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.mlkit:text-recognition-japanese:16.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/dd718b008f8d7c43aeb821de0fdd903f/transformed/text-recognition-japanese-16.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/dd718b008f8d7c43aeb821de0fdd903f/transformed/text-recognition-japanese-16.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/58522668004bf31788ac5a33be8cd387/transformed/text-recognition-japanese-16.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/58522668004bf31788ac5a33be8cd387/transformed/text-recognition-japanese-16.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Android Project/caches/modules-2/files-2.1/com.google.mlkit/text-recognition-japanese/16.0.0/7441f27d65d6e0726181f4b116b9985f45834883/text-recognition-japanese-16.0.0-javadoc.jar!/" />

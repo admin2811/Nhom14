@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.denzcoskun:ImageSlideshow:0.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/ab5728cefa60f30f0c203b1f1218eabf/transformed/ImageSlideshow-0.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/ab5728cefa60f30f0c203b1f1218eabf/transformed/ImageSlideshow-0.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/ab5728cefa60f30f0c203b1f1218eabf/transformed/ImageSlideshow-0.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/f46503417edb4162b4db0c946590ed95/transformed/ImageSlideshow-0.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/f46503417edb4162b4db0c946590ed95/transformed/ImageSlideshow-0.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/f46503417edb4162b4db0c946590ed95/transformed/ImageSlideshow-0.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

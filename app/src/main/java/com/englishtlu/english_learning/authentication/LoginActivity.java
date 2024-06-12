@@ -36,7 +36,7 @@ import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText edtPassword,edtEmail;
-    private ImageView passwordIcon;
+    private ImageView passwordIcon, phoneIcon;
     private boolean passwordShowing = false;
     Button register,login;
     TextView forgotPassword;
@@ -55,6 +55,14 @@ public class LoginActivity extends AppCompatActivity {
         progressBarLogin = findViewById(R.id.progressBar_login);
         login = findViewById(R.id.btnLogin);
         authProfile =FirebaseAuth.getInstance();
+        phoneIcon = findViewById(R.id.phone_btn);
+        phoneIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, LoginWithPhoneNumberActivity.class);
+                startActivity(intent);
+            }
+        });
         //Login User
          login.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -79,7 +87,6 @@ public class LoginActivity extends AppCompatActivity {
                  }
              }
          });
-
         //Forgot Password
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.mlkit:text-recognition-korean:16.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/6da21acde6405e5b85dc52c9f33d6b86/transformed/text-recognition-korean-16.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/6da21acde6405e5b85dc52c9f33d6b86/transformed/text-recognition-korean-16.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/4b753887f08614f221b3bc1805f28cc9/transformed/text-recognition-korean-16.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/4b753887f08614f221b3bc1805f28cc9/transformed/text-recognition-korean-16.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Android Project/caches/modules-2/files-2.1/com.google.mlkit/text-recognition-korean/16.0.0/5f9a3b946f56b5f8b21688f6b66c3dfbf3ad5251/text-recognition-korean-16.0.0-javadoc.jar!/" />

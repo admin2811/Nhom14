@@ -154,6 +154,7 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
             fos.write(pdfAsBytes);
             fos.close();
             Toast.makeText(context, "PDF đã được tải xuống thành công.", Toast.LENGTH_SHORT).show();
+
             showNotification(context, "Download hoàn thành", "PDF đã được tải xuống thành công.");
     
         }

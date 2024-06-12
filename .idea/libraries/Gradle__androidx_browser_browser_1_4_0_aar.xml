@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.browser:browser:1.4.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/b084ed24f58390ea3d177c2518546c2c/transformed/browser-1.4.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/e15eb1e0b06bc34dc67d4a333bb8f771/transformed/browser-1.4.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/b084ed24f58390ea3d177c2518546c2c/transformed/browser-1.4.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/b084ed24f58390ea3d177c2518546c2c/transformed/browser-1.4.0/res" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/b084ed24f58390ea3d177c2518546c2c/transformed/browser-1.4.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/e15eb1e0b06bc34dc67d4a333bb8f771/transformed/browser-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/e15eb1e0b06bc34dc67d4a333bb8f771/transformed/browser-1.4.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/e15eb1e0b06bc34dc67d4a333bb8f771/transformed/browser-1.4.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

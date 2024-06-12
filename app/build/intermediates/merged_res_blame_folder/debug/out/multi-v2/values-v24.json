@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-v24/values-v24.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-56:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\8cf5049f016f084c109f70ac94f02ec6\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\784fd688083b71c80f66d0455dd306b8\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\392e73c8346ff736bf0feb29735805b6\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\3eb69eeac7a6196586642a3c77d190ec\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

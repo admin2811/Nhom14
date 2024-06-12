@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-56:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\392e73c8346ff736bf0feb29735805b6\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\3eb69eeac7a6196586642a3c77d190ec\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

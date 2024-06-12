@@ -2,6 +2,7 @@ package com.englishtlu.english_learning.main.document.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,8 @@ public class PDFActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private PDFAdapter pdfAdapter;
     private List<PDF> pdfList = new ArrayList<>();
+
+    private ImageView ivBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +38,8 @@ public class PDFActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         pdfAdapter = new PDFAdapter(pdfList,this);
         recyclerView.setAdapter(pdfAdapter);
-
+        ivBack = findViewById(R.id.ivBack);
+        ivBack.setOnClickListener(v -> finish());
         fetchData();
 
     }

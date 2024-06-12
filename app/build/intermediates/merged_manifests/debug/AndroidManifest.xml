@@ -8,6 +8,10 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -17,6 +21,8 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
 
     <queries>
 
@@ -52,6 +58,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.EnglishLearning" >
+        <activity
+            android:name="com.englishtlu.english_learning.authentication.LoginOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.englishtlu.english_learning.authentication.LoginWithPhoneNumberActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login_with_phone_number"
+            android:theme="@style/Theme.EnglishLearning" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.englishtlu.english_learning.file-provider"
@@ -253,17 +268,6 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.englishtlu.english_learning.firebaseinitprovider"
-            android:directBootAware="true"
-            android:exported="false"
-            android:initOrder="100" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.englishtlu.english_learning.androidx-startup"
             android:exported="false" >
@@ -277,6 +281,16 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.englishtlu.english_learning.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <uses-library
             android:name="androidx.window.extensions"

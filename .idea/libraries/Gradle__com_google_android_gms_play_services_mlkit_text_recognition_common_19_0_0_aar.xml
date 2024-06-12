@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/b8696ece816732d058662f98d230d621/transformed/play-services-mlkit-text-recognition-common-19.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/b8696ece816732d058662f98d230d621/transformed/play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/1e5ac6ba5ba7b221cbf99944bfe45a5e/transformed/play-services-mlkit-text-recognition-common-19.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/1e5ac6ba5ba7b221cbf99944bfe45a5e/transformed/play-services-mlkit-text-recognition-common-19.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Android Project/caches/modules-2/files-2.1/com.google.android.gms/play-services-mlkit-text-recognition-common/19.0.0/4f550b52963e22f47224c2c18e4aead02276eae1/play-services-mlkit-text-recognition-common-19.0.0-javadoc.jar!/" />

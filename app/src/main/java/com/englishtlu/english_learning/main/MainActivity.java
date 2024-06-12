@@ -234,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getLastName(FirebaseUser user) {
-            String userID = user.getUid();
+        String userID = user.getUid();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

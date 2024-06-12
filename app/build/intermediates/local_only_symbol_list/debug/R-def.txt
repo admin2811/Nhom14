@@ -114,7 +114,7 @@ drawable send
 drawable social
 drawable solar_camera
 drawable star_1828884
-drawable storagebox
+drawable storage_box
 drawable top_background
 drawable translate
 drawable trends
@@ -160,11 +160,13 @@ id bottom_layout
 id btnCancel
 id btnLogin
 id btnLogin_1
+id btnOtp
 id btnRegister
 id btnRegister_1
 id btnReset
 id btnSetEmail
 id btnSetPassword
+id btnVeritfy
 id btn_chanllenge
 id cardView
 id changePassword
@@ -201,9 +203,11 @@ id edtMobile
 id edtName
 id edtNewEmail
 id edtNewPassword
+id edtOtp
 id edtPassword
 id edtPassword1
 id edtPasswordRegister
+id edtPhoneNumber
 id edtRelative
 id edtSchool
 id emailBox
@@ -253,6 +257,7 @@ id left_chat_text_view
 id left_chat_view
 id linear_layout
 id login_button
+id login_countrycode
 id logout
 id logoutImage
 id logoutTxt
@@ -263,6 +268,7 @@ id motionLayout
 id myProfile
 id nav_graph
 id nav_graph2
+id nav_graph3
 id optionsLl
 id passwordConIcon
 id passwordIcon
@@ -281,6 +287,7 @@ id progressBar2
 id progressBar3
 id progressBar4
 id progressBar5
+id progressBar6
 id progressBar_login
 id progressImage
 id progressIn
@@ -292,6 +299,7 @@ id recyclerView
 id recycler_definitions
 id recycler_view
 id register_button
+id resedn_otp_textView
 id right_chat_text_view
 id right_chat_view
 id rvpdf
@@ -355,6 +363,8 @@ id txtPwd
 id view
 layout activity_chat_bot
 layout activity_login
+layout activity_login_otpactivity
+layout activity_login_with_phone_number
 layout activity_main
 layout activity_main2
 layout activity_pdfactivity
@@ -388,6 +398,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 navigation nav_graph2
+navigation nav_graph3
 string alex
 string all_courses
 string app_name
@@ -411,6 +422,7 @@ string search_for
 string second_fragment_label
 string sign_up
 string title_activity_chat_bot
+string title_activity_login_with_phone_number
 string todo
 string todo3
 string todo8
