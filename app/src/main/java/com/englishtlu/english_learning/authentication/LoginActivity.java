@@ -1,6 +1,7 @@
 package com.englishtlu.english_learning.authentication;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +9,7 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 
+import android.content.IntentSender;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -24,14 +26,27 @@ import android.widget.Toast;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.utility.PreferenceManager;
 import com.englishtlu.english_learning.main.MainActivity;
+import com.google.android.gms.auth.api.identity.BeginSignInRequest;
+import com.google.android.gms.auth.api.identity.BeginSignInResult;
+import com.google.android.gms.auth.api.identity.Identity;
+import com.google.android.gms.auth.api.identity.SignInClient;
+import com.google.android.gms.auth.api.identity.SignInCredential;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
-
+import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.FirebaseDatabase;
+import  com.google.android.gms.auth.api.identity.BeginSignInRequest.GoogleIdTokenRequestOptions;
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
@@ -42,6 +57,12 @@ public class LoginActivity extends AppCompatActivity {
     TextView forgotPassword;
     ProgressBar progressBarLogin;
     private FirebaseAuth authProfile;
+    private FirebaseDatabase database;
+    SignInClient oneTapClient;
+    BeginSignInRequest signInRequest;
+    GoogleSignInOptions gso;
+    GoogleSignInClient gsc;
+    private static final int REQ_ONE_TAP = 100;
     private  static  final String TAG = "LoginActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +77,19 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.btnLogin);
         authProfile =FirebaseAuth.getInstance();
         phoneIcon = findViewById(R.id.phone_btn);
+
+        authProfile = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        oneTapClient = Identity.getSignInClient(this);
+
+        signInRequest = BeginSignInRequest.builder()
+                .setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
+                        .setSupported(true)
+                        .setServerClientId("566258165896-r7vsj49ves5qs90chs9s4cb4cifch32r.apps.googleusercontent.com")
+                        .setFilterByAuthorizedAccounts(false)
+                        .build())
+                .build();
+
         phoneIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -153,6 +187,66 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(intent);
         });
+    }
+
+    public void SigninGoogle(View view) {
+        oneTapClient.beginSignIn(signInRequest)
+                .addOnSuccessListener(this, new OnSuccessListener<BeginSignInResult>() {
+                    @Override
+                    public void onSuccess(BeginSignInResult result) {
+                        try {
+                            startIntentSenderForResult(
+                                    result.getPendingIntent().getIntentSender(), REQ_ONE_TAP,
+                                    null, 0, 0, 0);
+                        } catch (IntentSender.SendIntentException e) {
+                            Log.e(TAG, "Couldn't start one tap UI" + e.getLocalizedMessage());
+                        }
+                    }
+                })
+                .addOnFailureListener(this, new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d(TAG, Objects.requireNonNull(e.getLocalizedMessage()));
+                    }
+                });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case REQ_ONE_TAP:
+                try {
+                    SignInCredential credential = oneTapClient.getSignInCredentialFromIntent(data);
+                    String idToken = credential.getGoogleIdToken();
+                    if (idToken !=  null) {
+                        AuthCredential firebaseCredential = GoogleAuthProvider.getCredential(idToken,null);
+                        authProfile.signInWithCredential(firebaseCredential)
+                                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<AuthResult> task) {
+                                        if(task.isSuccessful()){
+                                            FirebaseUser user = authProfile.getCurrentUser();
+                                            Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                                            startActivity(intent);
+                                            finish();
+                                        }
+                                    }
+                                });
+
+                    }
+                } catch (ApiException e) {
+                    Toast.makeText(LoginActivity.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                }
+                break;
+        }
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = authProfile.getCurrentUser();
     }
 
     private void loginUser(String email, String password) {

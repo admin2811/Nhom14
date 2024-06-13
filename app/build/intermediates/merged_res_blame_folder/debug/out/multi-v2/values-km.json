@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-56:/values-km/values-km.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-km/values-km.xml",
             "map": [
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\023d8ef0e0815c9a78e7a21abd583acd\\transformed\\play-services-basement-18.3.0\\res\\values-km\\values.xml",
@@ -108,7 +108,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\614a80f044892b486f0d74f188a7b4e2\\transformed\\play-services-base-18.1.0\\res\\values-km\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\15a0e8e1b66de676e0aa08e5f3adcae2\\transformed\\play-services-base-18.3.0\\res\\values-km\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

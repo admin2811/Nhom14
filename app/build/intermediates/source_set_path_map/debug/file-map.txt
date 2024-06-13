@@ -2,60 +2,59 @@ com.englishtlu.english_learning.app-play-services-basement-18.3.0-0 D:\Android P
 com.englishtlu.english_learning.app-lifecycle-viewmodel-savedstate-2.6.2-1 D:\Android Project\caches\transforms-3\07f7e1eb4c002a822a87f3dd46a489f9\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
 com.englishtlu.english_learning.app-ucrop-2.2.6-2 D:\Android Project\caches\transforms-3\104408b4988d34197d6181d193432d64\transformed\ucrop-2.2.6\res
 com.englishtlu.english_learning.app-firebase-common-21.0.0-3 D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\res
-com.englishtlu.english_learning.app-appcompat-resources-1.7.0-4 D:\Android Project\caches\transforms-3\215516553e220c120fe01ccfee95d8f2\transformed\appcompat-resources-1.7.0\res
-com.englishtlu.english_learning.app-lifecycle-process-2.6.2-5 D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\res
-com.englishtlu.english_learning.app-activity-ktx-1.8.0-6 D:\Android Project\caches\transforms-3\255f1e1d27495e3628238d54ca6b6cef\transformed\activity-ktx-1.8.0\res
-com.englishtlu.english_learning.app-transition-1.5.0-7 D:\Android Project\caches\transforms-3\27baa0c14fff37736260aecabc85afa2\transformed\transition-1.5.0\res
-com.englishtlu.english_learning.app-credentials-play-services-auth-1.2.0-rc01-8 D:\Android Project\caches\transforms-3\2a7e6126655fad1f7558326b490b4c2e\transformed\credentials-play-services-auth-1.2.0-rc01\res
-com.englishtlu.english_learning.app-navigation-fragment-2.7.7-9 D:\Android Project\caches\transforms-3\2f323a9080f2d4b47c00f0876fdd3514\transformed\navigation-fragment-2.7.7\res
-com.englishtlu.english_learning.app-circleimageview-3.1.0-10 D:\Android Project\caches\transforms-3\33a8f6e1ee029223c01391ff805d05fb\transformed\circleimageview-3.1.0\res
-com.englishtlu.english_learning.app-appcompat-1.7.0-11 D:\Android Project\caches\transforms-3\3eb69eeac7a6196586642a3c77d190ec\transformed\appcompat-1.7.0\res
-com.englishtlu.english_learning.app-navigation-runtime-2.7.7-12 D:\Android Project\caches\transforms-3\40a2ca99f714364966c803d997b737dc\transformed\navigation-runtime-2.7.7\res
-com.englishtlu.english_learning.app-core-runtime-2.2.0-13 D:\Android Project\caches\transforms-3\42c4c0875339f172a01227f3db456e6f\transformed\core-runtime-2.2.0\res
-com.englishtlu.english_learning.app-glide-4.12.0-14 D:\Android Project\caches\transforms-3\448f0f60f801ea2b24df5e24fe2b6763\transformed\glide-4.12.0\res
-com.englishtlu.english_learning.app-emoji2-views-helper-1.3.0-15 D:\Android Project\caches\transforms-3\4f66630685705bb1f3174e836619826f\transformed\emoji2-views-helper-1.3.0\res
-com.englishtlu.english_learning.app-lifecycle-runtime-ktx-2.6.2-16 D:\Android Project\caches\transforms-3\51d2ec77be449962225a6735f2f8d304\transformed\lifecycle-runtime-ktx-2.6.2\res
-com.englishtlu.english_learning.app-lifecycle-livedata-core-2.6.2-17 D:\Android Project\caches\transforms-3\5204e762e8c8026497c321331e099780\transformed\lifecycle-livedata-core-2.6.2\res
-com.englishtlu.english_learning.app-profileinstaller-1.3.1-18 D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\res
-com.englishtlu.english_learning.app-ccp-2.5.0-19 D:\Android Project\caches\transforms-3\5f50884c62ac57cd47e7a10061add100\transformed\ccp-2.5.0\res
-com.englishtlu.english_learning.app-play-services-base-18.1.0-20 D:\Android Project\caches\transforms-3\614a80f044892b486f0d74f188a7b4e2\transformed\play-services-base-18.1.0\res
-com.englishtlu.english_learning.app-annotation-experimental-1.4.0-21 D:\Android Project\caches\transforms-3\6204d737315cb290d8a58afd2cc5c381\transformed\annotation-experimental-1.4.0\res
-com.englishtlu.english_learning.app-navigation-common-2.7.7-22 D:\Android Project\caches\transforms-3\635975190a351e9a922d754e68751c69\transformed\navigation-common-2.7.7\res
-com.englishtlu.english_learning.app-core-1.13.1-23 D:\Android Project\caches\transforms-3\63fc2177aa5e5723897d26382fe08136\transformed\core-1.13.1\res
-com.englishtlu.english_learning.app-startup-runtime-1.1.1-24 D:\Android Project\caches\transforms-3\64bef76eac4e861b14a2f5c98a7cccdd\transformed\startup-runtime-1.1.1\res
-com.englishtlu.english_learning.app-lifecycle-viewmodel-ktx-2.6.2-25 D:\Android Project\caches\transforms-3\6bc9b30931234bd72961a4ba6ef3dfea\transformed\lifecycle-viewmodel-ktx-2.6.2\res
-com.englishtlu.english_learning.app-cardview-1.0.0-26 D:\Android Project\caches\transforms-3\6de0ed8196ad431d72e8290e70679432\transformed\cardview-1.0.0\res
-com.englishtlu.english_learning.app-fragment-1.6.2-27 D:\Android Project\caches\transforms-3\7595878ade14deb01ba1aa1961f85fc5\transformed\fragment-1.6.2\res
-com.englishtlu.english_learning.app-material-1.12.0-28 D:\Android Project\caches\transforms-3\784fd688083b71c80f66d0455dd306b8\transformed\material-1.12.0\res
-com.englishtlu.english_learning.app-lifecycle-runtime-2.6.2-29 D:\Android Project\caches\transforms-3\84e9c7f2704cb29bfa9a6356d0bb6589\transformed\lifecycle-runtime-2.6.2\res
-com.englishtlu.english_learning.app-credentials-1.2.0-rc01-30 D:\Android Project\caches\transforms-3\8f05977593ecba6644789ee6ac6c1c8e\transformed\credentials-1.2.0-rc01\res
-com.englishtlu.english_learning.app-play-services-auth-20.7.0-31 D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\res
+com.englishtlu.english_learning.app-play-services-base-18.3.0-4 D:\Android Project\caches\transforms-3\15a0e8e1b66de676e0aa08e5f3adcae2\transformed\play-services-base-18.3.0\res
+com.englishtlu.english_learning.app-appcompat-resources-1.7.0-5 D:\Android Project\caches\transforms-3\215516553e220c120fe01ccfee95d8f2\transformed\appcompat-resources-1.7.0\res
+com.englishtlu.english_learning.app-lifecycle-process-2.6.2-6 D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\res
+com.englishtlu.english_learning.app-activity-ktx-1.8.0-7 D:\Android Project\caches\transforms-3\255f1e1d27495e3628238d54ca6b6cef\transformed\activity-ktx-1.8.0\res
+com.englishtlu.english_learning.app-transition-1.5.0-8 D:\Android Project\caches\transforms-3\27baa0c14fff37736260aecabc85afa2\transformed\transition-1.5.0\res
+com.englishtlu.english_learning.app-credentials-play-services-auth-1.2.0-rc01-9 D:\Android Project\caches\transforms-3\2a7e6126655fad1f7558326b490b4c2e\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.englishtlu.english_learning.app-navigation-fragment-2.7.7-10 D:\Android Project\caches\transforms-3\2f323a9080f2d4b47c00f0876fdd3514\transformed\navigation-fragment-2.7.7\res
+com.englishtlu.english_learning.app-circleimageview-3.1.0-11 D:\Android Project\caches\transforms-3\33a8f6e1ee029223c01391ff805d05fb\transformed\circleimageview-3.1.0\res
+com.englishtlu.english_learning.app-appcompat-1.7.0-12 D:\Android Project\caches\transforms-3\3eb69eeac7a6196586642a3c77d190ec\transformed\appcompat-1.7.0\res
+com.englishtlu.english_learning.app-navigation-runtime-2.7.7-13 D:\Android Project\caches\transforms-3\40a2ca99f714364966c803d997b737dc\transformed\navigation-runtime-2.7.7\res
+com.englishtlu.english_learning.app-core-runtime-2.2.0-14 D:\Android Project\caches\transforms-3\42c4c0875339f172a01227f3db456e6f\transformed\core-runtime-2.2.0\res
+com.englishtlu.english_learning.app-glide-4.12.0-15 D:\Android Project\caches\transforms-3\448f0f60f801ea2b24df5e24fe2b6763\transformed\glide-4.12.0\res
+com.englishtlu.english_learning.app-emoji2-views-helper-1.3.0-16 D:\Android Project\caches\transforms-3\4f66630685705bb1f3174e836619826f\transformed\emoji2-views-helper-1.3.0\res
+com.englishtlu.english_learning.app-lifecycle-runtime-ktx-2.6.2-17 D:\Android Project\caches\transforms-3\51d2ec77be449962225a6735f2f8d304\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.englishtlu.english_learning.app-lifecycle-livedata-core-2.6.2-18 D:\Android Project\caches\transforms-3\5204e762e8c8026497c321331e099780\transformed\lifecycle-livedata-core-2.6.2\res
+com.englishtlu.english_learning.app-play-services-auth-21.2.0-19 D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\res
+com.englishtlu.english_learning.app-profileinstaller-1.3.1-20 D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\res
+com.englishtlu.english_learning.app-ccp-2.5.0-21 D:\Android Project\caches\transforms-3\5f50884c62ac57cd47e7a10061add100\transformed\ccp-2.5.0\res
+com.englishtlu.english_learning.app-annotation-experimental-1.4.0-22 D:\Android Project\caches\transforms-3\6204d737315cb290d8a58afd2cc5c381\transformed\annotation-experimental-1.4.0\res
+com.englishtlu.english_learning.app-navigation-common-2.7.7-23 D:\Android Project\caches\transforms-3\635975190a351e9a922d754e68751c69\transformed\navigation-common-2.7.7\res
+com.englishtlu.english_learning.app-core-1.13.1-24 D:\Android Project\caches\transforms-3\63fc2177aa5e5723897d26382fe08136\transformed\core-1.13.1\res
+com.englishtlu.english_learning.app-startup-runtime-1.1.1-25 D:\Android Project\caches\transforms-3\64bef76eac4e861b14a2f5c98a7cccdd\transformed\startup-runtime-1.1.1\res
+com.englishtlu.english_learning.app-lifecycle-viewmodel-ktx-2.6.2-26 D:\Android Project\caches\transforms-3\6bc9b30931234bd72961a4ba6ef3dfea\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.englishtlu.english_learning.app-cardview-1.0.0-27 D:\Android Project\caches\transforms-3\6de0ed8196ad431d72e8290e70679432\transformed\cardview-1.0.0\res
+com.englishtlu.english_learning.app-fragment-1.6.2-28 D:\Android Project\caches\transforms-3\7595878ade14deb01ba1aa1961f85fc5\transformed\fragment-1.6.2\res
+com.englishtlu.english_learning.app-material-1.12.0-29 D:\Android Project\caches\transforms-3\784fd688083b71c80f66d0455dd306b8\transformed\material-1.12.0\res
+com.englishtlu.english_learning.app-lifecycle-runtime-2.6.2-30 D:\Android Project\caches\transforms-3\84e9c7f2704cb29bfa9a6356d0bb6589\transformed\lifecycle-runtime-2.6.2\res
+com.englishtlu.english_learning.app-credentials-1.2.0-rc01-31 D:\Android Project\caches\transforms-3\8f05977593ecba6644789ee6ac6c1c8e\transformed\credentials-1.2.0-rc01\res
 com.englishtlu.english_learning.app-activity-1.8.0-32 D:\Android Project\caches\transforms-3\9755b800d2807bdde32599ba5a296c11\transformed\activity-1.8.0\res
 com.englishtlu.english_learning.app-viewpager2-1.0.0-33 D:\Android Project\caches\transforms-3\9a23043ab31975c4d30ffe1e2062a5fe\transformed\viewpager2-1.0.0\res
 com.englishtlu.english_learning.app-navigation-ui-2.7.7-34 D:\Android Project\caches\transforms-3\a4b947526e4399e6cf814c0909e155ce\transformed\navigation-ui-2.7.7\res
 com.englishtlu.english_learning.app-emoji2-1.3.0-35 D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\res
 com.englishtlu.english_learning.app-constraintlayout-2.1.4-36 D:\Android Project\caches\transforms-3\ae35fe771f645ef8eb0eb0417e33a225\transformed\constraintlayout-2.1.4\res
 com.englishtlu.english_learning.app-window-1.0.0-37 D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\res
-com.englishtlu.english_learning.app-lifecycle-livedata-2.6.2-38 D:\Android Project\caches\transforms-3\bc7b173911c5e96818ad6e7bd67bd0b2\transformed\lifecycle-livedata-2.6.2\res
-com.englishtlu.english_learning.app-imagepicker-2.1-39 D:\Android Project\caches\transforms-3\bd732bf09bc5cb2f5f775194e762a6f1\transformed\imagepicker-2.1\res
-com.englishtlu.english_learning.app-fragment-ktx-1.6.2-40 D:\Android Project\caches\transforms-3\c650fa96613804fcbf1d80ddcdbce332\transformed\fragment-ktx-1.6.2\res
-com.englishtlu.english_learning.app-slidingpanelayout-1.2.0-41 D:\Android Project\caches\transforms-3\c83382ccd7d30ea27ba8de03354f15be\transformed\slidingpanelayout-1.2.0\res
-com.englishtlu.english_learning.app-translate-17.0.2-42 D:\Android Project\caches\transforms-3\d0adb1764dd8ff16666b4c084f43fa39\transformed\translate-17.0.2\res
-com.englishtlu.english_learning.app-lifecycle-viewmodel-2.6.2-43 D:\Android Project\caches\transforms-3\d30c0d2991849ced51af0900b9c8a8cb\transformed\lifecycle-viewmodel-2.6.2\res
-com.englishtlu.english_learning.app-browser-1.4.0-44 D:\Android Project\caches\transforms-3\e15eb1e0b06bc34dc67d4a333bb8f771\transformed\browser-1.4.0\res
-com.englishtlu.english_learning.app-lifecycle-livedata-core-ktx-2.6.2-45 D:\Android Project\caches\transforms-3\e9de7e4f592b94096b1ceed4496a640e\transformed\lifecycle-livedata-core-ktx-2.6.2\res
-com.englishtlu.english_learning.app-recyclerview-1.1.0-46 D:\Android Project\caches\transforms-3\ec3d0816d23364a262f3fed84cb3a8bf\transformed\recyclerview-1.1.0\res
-com.englishtlu.english_learning.app-coordinatorlayout-1.1.0-47 D:\Android Project\caches\transforms-3\f41480b3792d996d29e7aa1fcd20d3d3\transformed\coordinatorlayout-1.1.0\res
-com.englishtlu.english_learning.app-ImageSlideshow-0.1.0-48 D:\Android Project\caches\transforms-3\f46503417edb4162b4db0c946590ed95\transformed\ImageSlideshow-0.1.0\res
-com.englishtlu.english_learning.app-core-ktx-1.13.1-49 D:\Android Project\caches\transforms-3\f5d1aed64c589ed4566f2100a1287d79\transformed\core-ktx-1.13.1\res
-com.englishtlu.english_learning.app-savedstate-ktx-1.2.1-50 D:\Android Project\caches\transforms-3\f7bd13a129dcb799e700c4141eb195c6\transformed\savedstate-ktx-1.2.1\res
-com.englishtlu.english_learning.app-savedstate-1.2.1-51 D:\Android Project\caches\transforms-3\fe81562a4122d8e0af894224fb2c29ad\transformed\savedstate-1.2.1\res
-com.englishtlu.english_learning.app-drawerlayout-1.1.1-52 D:\Android Project\caches\transforms-3\fef399a32804c97dd940e7994b28a83e\transformed\drawerlayout-1.1.1\res
-com.englishtlu.english_learning.app-pngs-53 D:\EnglishTLU\app\build\generated\res\pngs\debug
-com.englishtlu.english_learning.app-res-54 D:\EnglishTLU\app\build\generated\res\processDebugGoogleServices
-com.englishtlu.english_learning.app-resValues-55 D:\EnglishTLU\app\build\generated\res\resValues\debug
-com.englishtlu.english_learning.app-packageDebugResources-56 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.englishtlu.english_learning.app-packageDebugResources-57 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.englishtlu.english_learning.app-merged_res-58 D:\EnglishTLU\app\build\intermediates\merged_res\debug
-com.englishtlu.english_learning.app-debug-59 D:\EnglishTLU\app\src\debug\res
-com.englishtlu.english_learning.app-main-60 D:\EnglishTLU\app\src\main\res
+com.englishtlu.english_learning.app-imagepicker-2.1-38 D:\Android Project\caches\transforms-3\bd732bf09bc5cb2f5f775194e762a6f1\transformed\imagepicker-2.1\res
+com.englishtlu.english_learning.app-fragment-ktx-1.6.2-39 D:\Android Project\caches\transforms-3\c650fa96613804fcbf1d80ddcdbce332\transformed\fragment-ktx-1.6.2\res
+com.englishtlu.english_learning.app-slidingpanelayout-1.2.0-40 D:\Android Project\caches\transforms-3\c83382ccd7d30ea27ba8de03354f15be\transformed\slidingpanelayout-1.2.0\res
+com.englishtlu.english_learning.app-translate-17.0.2-41 D:\Android Project\caches\transforms-3\d0adb1764dd8ff16666b4c084f43fa39\transformed\translate-17.0.2\res
+com.englishtlu.english_learning.app-lifecycle-viewmodel-2.6.2-42 D:\Android Project\caches\transforms-3\d30c0d2991849ced51af0900b9c8a8cb\transformed\lifecycle-viewmodel-2.6.2\res
+com.englishtlu.english_learning.app-browser-1.4.0-43 D:\Android Project\caches\transforms-3\e15eb1e0b06bc34dc67d4a333bb8f771\transformed\browser-1.4.0\res
+com.englishtlu.english_learning.app-lifecycle-livedata-core-ktx-2.6.2-44 D:\Android Project\caches\transforms-3\e9de7e4f592b94096b1ceed4496a640e\transformed\lifecycle-livedata-core-ktx-2.6.2\res
+com.englishtlu.english_learning.app-recyclerview-1.1.0-45 D:\Android Project\caches\transforms-3\ec3d0816d23364a262f3fed84cb3a8bf\transformed\recyclerview-1.1.0\res
+com.englishtlu.english_learning.app-coordinatorlayout-1.1.0-46 D:\Android Project\caches\transforms-3\f41480b3792d996d29e7aa1fcd20d3d3\transformed\coordinatorlayout-1.1.0\res
+com.englishtlu.english_learning.app-ImageSlideshow-0.1.0-47 D:\Android Project\caches\transforms-3\f46503417edb4162b4db0c946590ed95\transformed\ImageSlideshow-0.1.0\res
+com.englishtlu.english_learning.app-core-ktx-1.13.1-48 D:\Android Project\caches\transforms-3\f5d1aed64c589ed4566f2100a1287d79\transformed\core-ktx-1.13.1\res
+com.englishtlu.english_learning.app-savedstate-ktx-1.2.1-49 D:\Android Project\caches\transforms-3\f7bd13a129dcb799e700c4141eb195c6\transformed\savedstate-ktx-1.2.1\res
+com.englishtlu.english_learning.app-savedstate-1.2.1-50 D:\Android Project\caches\transforms-3\fe81562a4122d8e0af894224fb2c29ad\transformed\savedstate-1.2.1\res
+com.englishtlu.english_learning.app-drawerlayout-1.1.1-51 D:\Android Project\caches\transforms-3\fef399a32804c97dd940e7994b28a83e\transformed\drawerlayout-1.1.1\res
+com.englishtlu.english_learning.app-pngs-52 D:\EnglishTLU\app\build\generated\res\pngs\debug
+com.englishtlu.english_learning.app-res-53 D:\EnglishTLU\app\build\generated\res\processDebugGoogleServices
+com.englishtlu.english_learning.app-resValues-54 D:\EnglishTLU\app\build\generated\res\resValues\debug
+com.englishtlu.english_learning.app-packageDebugResources-55 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.englishtlu.english_learning.app-packageDebugResources-56 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.englishtlu.english_learning.app-merged_res-57 D:\EnglishTLU\app\build\intermediates\merged_res\debug
+com.englishtlu.english_learning.app-debug-58 D:\EnglishTLU\app\src\debug\res
+com.englishtlu.english_learning.app-main-59 D:\EnglishTLU\app\src\main\res

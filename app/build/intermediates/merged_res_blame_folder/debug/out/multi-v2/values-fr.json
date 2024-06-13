@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-56:/values-fr/values-fr.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-55:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\3eb69eeac7a6196586642a3c77d190ec\\transformed\\appcompat-1.7.0\\res\\values-fr\\values-fr.xml",
@@ -72,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\614a80f044892b486f0d74f188a7b4e2\\transformed\\play-services-base-18.1.0\\res\\values-fr\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\15a0e8e1b66de676e0aa08e5f3adcae2\\transformed\\play-services-base-18.3.0\\res\\values-fr\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

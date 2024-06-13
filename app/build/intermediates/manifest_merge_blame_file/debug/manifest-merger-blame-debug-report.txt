@@ -464,166 +464,167 @@
 248-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] D:\Android Project\caches\transforms-3\2a7e6126655fad1f7558326b490b4c2e\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
 249        </activity>
 250        <activity
-250-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+250-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:23:9-27:75
 251            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-251-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+251-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:24:13-93
 252            android:excludeFromRecents="true"
-252-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+252-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:25:13-46
 253            android:exported="false"
-253-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+253-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:26:13-37
 254            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-254-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+254-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:27:13-72
 255        <!--
 256            Service handling Google Sign-In user revocation. For apps that do not integrate with
 257            Google Sign-In, this service will never be started.
 258        -->
 259        <service
-259-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+259-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:33:9-37:51
 260            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-260-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+260-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:34:13-89
 261            android:exported="true"
-261-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+261-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:35:13-36
 262            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-262-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+262-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:36:13-107
 263            android:visibleToInstantApps="true" />
-263-->[com.google.android.gms:play-services-auth:20.7.0] D:\Android Project\caches\transforms-3\961fbb62ccc08c1e3f9605741444963f\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+263-->[com.google.android.gms:play-services-auth:21.2.0] D:\Android Project\caches\transforms-3\551511d6433494cc49100f02436a7b9f\transformed\play-services-auth-21.2.0\AndroidManifest.xml:37:13-48
 264
-265        <activity
-265-->[com.google.android.gms:play-services-base:18.1.0] D:\Android Project\caches\transforms-3\614a80f044892b486f0d74f188a7b4e2\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-266            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-266-->[com.google.android.gms:play-services-base:18.1.0] D:\Android Project\caches\transforms-3\614a80f044892b486f0d74f188a7b4e2\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-267            android:exported="false"
-267-->[com.google.android.gms:play-services-base:18.1.0] D:\Android Project\caches\transforms-3\614a80f044892b486f0d74f188a7b4e2\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-268            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-268-->[com.google.android.gms:play-services-base:18.1.0] D:\Android Project\caches\transforms-3\614a80f044892b486f0d74f188a7b4e2\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-269
-270        <provider
-270-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-271            android:name="androidx.startup.InitializationProvider"
-271-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-272            android:authorities="com.englishtlu.english_learning.androidx-startup"
-272-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-273            android:exported="false" >
-273-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-274            <meta-data
-274-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-275                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-275-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-276                android:value="androidx.startup" />
-276-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-277            <meta-data
-277-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-278                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-278-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-279                android:value="androidx.startup" />
-279-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-280            <meta-data
-280-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-281                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-281-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-282                android:value="androidx.startup" />
-282-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-283        </provider>
-284        <provider
-284-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-285            android:name="com.google.firebase.provider.FirebaseInitProvider"
-285-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-286            android:authorities="com.englishtlu.english_learning.firebaseinitprovider"
-286-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-287            android:directBootAware="true"
-287-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-288            android:exported="false"
-288-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-289            android:initOrder="100" />
-289-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-290
-291        <meta-data
-291-->[com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\023d8ef0e0815c9a78e7a21abd583acd\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-292            android:name="com.google.android.gms.version"
-292-->[com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\023d8ef0e0815c9a78e7a21abd583acd\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-293            android:value="@integer/google_play_services_version" />
-293-->[com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\023d8ef0e0815c9a78e7a21abd583acd\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-294
-295        <uses-library
-295-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-296            android:name="androidx.window.extensions"
-296-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-297            android:required="false" />
-297-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-298        <uses-library
-298-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-299            android:name="androidx.window.sidecar"
-299-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-300            android:required="false" />
-300-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-301
-302        <receiver
-302-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-303            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-303-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-304            android:directBootAware="false"
-304-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-305            android:enabled="true"
-305-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-306            android:exported="true"
-306-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-307            android:permission="android.permission.DUMP" >
-307-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-308            <intent-filter>
-308-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-309                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-309-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-309-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-310            </intent-filter>
-311            <intent-filter>
-311-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-312                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-312-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-312-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-313            </intent-filter>
-314            <intent-filter>
-314-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-315                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-315-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-315-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-316            </intent-filter>
-317            <intent-filter>
-317-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-318                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-318-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-318-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-319            </intent-filter>
-320        </receiver>
-321
-322        <service
-322-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-323            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-323-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-324            android:exported="false" >
-324-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-325            <meta-data
-325-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-326                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-326-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-327                android:value="cct" />
-327-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-328        </service>
-329        <service
-329-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-330            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-330-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-331            android:exported="false"
-331-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-332            android:permission="android.permission.BIND_JOB_SERVICE" >
-332-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-333        </service>
-334
-335        <receiver
-335-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-336            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-336-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-337            android:exported="false" />
-337-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-338    </application>
-339
-340</manifest>
+265        <provider
+265-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+266            android:name="com.google.firebase.provider.FirebaseInitProvider"
+266-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+267            android:authorities="com.englishtlu.english_learning.firebaseinitprovider"
+267-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+268            android:directBootAware="true"
+268-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+269            android:exported="false"
+269-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+270            android:initOrder="100" />
+270-->[com.google.firebase:firebase-common:21.0.0] D:\Android Project\caches\transforms-3\114afafcc7d35383574e7a8525f12d39\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+271
+272        <activity
+272-->[com.google.android.gms:play-services-base:18.3.0] D:\Android Project\caches\transforms-3\15a0e8e1b66de676e0aa08e5f3adcae2\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+273            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+273-->[com.google.android.gms:play-services-base:18.3.0] D:\Android Project\caches\transforms-3\15a0e8e1b66de676e0aa08e5f3adcae2\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+274            android:exported="false"
+274-->[com.google.android.gms:play-services-base:18.3.0] D:\Android Project\caches\transforms-3\15a0e8e1b66de676e0aa08e5f3adcae2\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+275            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+275-->[com.google.android.gms:play-services-base:18.3.0] D:\Android Project\caches\transforms-3\15a0e8e1b66de676e0aa08e5f3adcae2\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+276
+277        <meta-data
+277-->[com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\023d8ef0e0815c9a78e7a21abd583acd\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+278            android:name="com.google.android.gms.version"
+278-->[com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\023d8ef0e0815c9a78e7a21abd583acd\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+279            android:value="@integer/google_play_services_version" />
+279-->[com.google.android.gms:play-services-basement:18.3.0] D:\Android Project\caches\transforms-3\023d8ef0e0815c9a78e7a21abd583acd\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+280
+281        <provider
+281-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+282            android:name="androidx.startup.InitializationProvider"
+282-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+283            android:authorities="com.englishtlu.english_learning.androidx-startup"
+283-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+284            android:exported="false" >
+284-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+285            <meta-data
+285-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+286                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+286-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+287                android:value="androidx.startup" />
+287-->[androidx.emoji2:emoji2:1.3.0] D:\Android Project\caches\transforms-3\a5f4e3b7461f2aa0bd117a0baa72d715\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+288            <meta-data
+288-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+289                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+289-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+290                android:value="androidx.startup" />
+290-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\Android Project\caches\transforms-3\22bc6817b185b45c09d6fdb65caac66a\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+291            <meta-data
+291-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+292                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+292-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+293                android:value="androidx.startup" />
+293-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+294        </provider>
+295
+296        <uses-library
+296-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+297            android:name="androidx.window.extensions"
+297-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+298            android:required="false" />
+298-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+299        <uses-library
+299-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+300            android:name="androidx.window.sidecar"
+300-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+301            android:required="false" />
+301-->[androidx.window:window:1.0.0] D:\Android Project\caches\transforms-3\b61a7aa928ad570295b9e7a1933c22a1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+302
+303        <receiver
+303-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+304            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+304-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+305            android:directBootAware="false"
+305-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+306            android:enabled="true"
+306-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+307            android:exported="true"
+307-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+308            android:permission="android.permission.DUMP" >
+308-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+309            <intent-filter>
+309-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+310                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+310-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+310-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+311            </intent-filter>
+312            <intent-filter>
+312-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+313                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+313-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+313-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+314            </intent-filter>
+315            <intent-filter>
+315-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+316                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+316-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+316-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+317            </intent-filter>
+318            <intent-filter>
+318-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+319                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+319-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+319-->[androidx.profileinstaller:profileinstaller:1.3.1] D:\Android Project\caches\transforms-3\5dfdbb36cd09f213cab2570a8f089f43\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+320            </intent-filter>
+321        </receiver>
+322
+323        <service
+323-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+324            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+324-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+325            android:exported="false" >
+325-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+326            <meta-data
+326-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+327                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+327-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+328                android:value="cct" />
+328-->[com.google.android.datatransport:transport-backend-cct:2.3.3] D:\Android Project\caches\transforms-3\48d4dc259bbcf454c67e0784ee09e9ca\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+329        </service>
+330        <service
+330-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+331            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+331-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+332            android:exported="false"
+332-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+333            android:permission="android.permission.BIND_JOB_SERVICE" >
+333-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+334        </service>
+335
+336        <receiver
+336-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+337            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+337-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+338            android:exported="false" />
+338-->[com.google.android.datatransport:transport-runtime:2.2.6] D:\Android Project\caches\transforms-3\a8c3a0a83a99461113877163a9a6592a\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+339    </application>
+340
+341</manifest>

@@ -13,7 +13,20 @@
           "package_name": "com.englishtlu.english_learning"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "566258165896-r6eomb7qabst0t4e4kt8e9ufsh5rub9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.englishtlu.english_learning",
+            "certificate_hash": "582dd182a6885d9df0d08867cc6cf9423764aae3"
+          }
+        },
+        {
+          "client_id": "566258165896-7k3a11dr83pbp4o7vs2nvtsmckifcc58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAHfQpB1AMgQb6OSFjAW2r2doOARxKGePw"
@@ -21,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566258165896-7k3a11dr83pbp4o7vs2nvtsmckifcc58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
