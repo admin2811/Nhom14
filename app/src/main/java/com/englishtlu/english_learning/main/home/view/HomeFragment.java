@@ -84,6 +84,9 @@ public class HomeFragment extends Fragment {
         if (getArguments() != null && getArguments().containsKey(ARG_LAST_NAME)) {
             lastName = getArguments().getString(ARG_LAST_NAME);
             progressBar.setVisibility(View.GONE);
+        }else{
+            lastName = "Sir ";
+            progressBar.setVisibility(View.GONE);
         }
         LastName.setText(lastName);
 

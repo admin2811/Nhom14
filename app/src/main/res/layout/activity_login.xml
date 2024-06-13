@@ -164,7 +164,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:importantForAccessibility="no"
-                    android:src="@drawable/google" />
+                    android:onClick="SigninGoogle"
+                    android:src="@drawable/google"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <ImageView
                     android:id="@+id/phone_btn"
