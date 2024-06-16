@@ -1,5 +1,4 @@
 package com.englishtlu.english_learning.authentication;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

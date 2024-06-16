@@ -1,6 +1,16 @@
 pluginManagement {
     repositories {
+<<<<<<< HEAD
         google()
+=======
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+>>>>>>> 41e1e40cadec1eb5ded5221a11e551755c164d9a
         mavenCentral()
         gradlePluginPortal()
     }
@@ -10,7 +20,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
         maven { url 'https://jitpack.io'}
+=======
+        maven { url 'https://jitpack.io' }
+>>>>>>> 41e1e40cadec1eb5ded5221a11e551755c164d9a
     }
 }
 

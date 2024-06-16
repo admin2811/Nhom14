@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scrollView2" type="id" />
+    <item name="edtEmail" type="id" />
+    <item name="progressBar_login" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="phone_btn" type="id" />
+    <item name="google_btn" type="id" />
+    <item name="facebook_btn" type="id" />
+    <item name="forgot_password" type="id" />
+</resources>
