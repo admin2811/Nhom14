@@ -161,8 +161,9 @@
         android:layout_marginEnd="13dp"
         android:layout_marginBottom="30dp"
         android:contentDescription="TODO"
-        app:backgroundTint="@color/white"
         android:src="@drawable/icon_chatbot"
+        android:backgroundTint="#17a683"
         app:fabSize="normal"
+        app:tint="#FFFFFF"
         tools:ignore="SpeakableTextPresentCheck" />
 </RelativeLayout>

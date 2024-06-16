@@ -4188,6 +4188,7 @@ id italic
 id item_touch_helper_previous_elevation
 id ivAdd
 id ivBack
+id ivBackToHome
 id ivDownload
 id ivSearch
 id ivView
@@ -4293,6 +4294,7 @@ id nav_controller_view_tag
 id nav_graph
 id nav_graph2
 id nav_graph3
+id nav_graph4
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -4524,6 +4526,7 @@ id textView21
 id textView22
 id textView23
 id textView25
+id textView3
 id textView4
 id textView5
 id textView6
@@ -4742,6 +4745,7 @@ layout activity_login_with_phone_number
 layout activity_main
 layout activity_main2
 layout activity_pdfactivity
+layout activity_quizz
 layout activity_register
 layout activity_welcome
 layout browser_actions_context_menu_page
@@ -4779,6 +4783,7 @@ layout fragment_translate
 layout image_slider
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_course
 layout item_pdf
 layout layout_change_password
 layout layout_code_picker
@@ -4870,6 +4875,7 @@ mipmap ic_launcher_round
 navigation nav_graph
 navigation nav_graph2
 navigation nav_graph3
+navigation nav_graph4
 plurals mtrl_badge_content_description
 raw a_new_lang_template
 raw ccp_afrikaans
@@ -5143,6 +5149,7 @@ string sign_up
 string status_bar_notification_info_overflow
 string title_activity_chat_bot
 string title_activity_login_with_phone_number
+string title_activity_quizz
 string title_camera
 string title_choose_image_provider
 string title_gallery

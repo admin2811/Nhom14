@@ -60,4 +60,5 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_login_with_phone_number">LoginWithPhoneNumberActivity</string>
+    <string name="title_activity_quizz">QuizzActivity</string>
 </resources>

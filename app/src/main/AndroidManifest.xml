@@ -18,9 +18,9 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
 
-    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -32,6 +32,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="tiramisu">
+        <activity
+            android:name=".main.quizz.QuizzVocabActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quizz"
+            android:theme="@style/Theme.EnglishLearning" />
         <activity
             android:name=".authentication.LoginOTPActivity"
             android:exported="false" />

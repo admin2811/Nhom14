@@ -14,7 +14,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -22,15 +21,10 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.englishtlu.english_learning.R;
-import com.englishtlu.english_learning.authentication.model.User;
 import com.englishtlu.english_learning.main.document.activity.PDFActivity;
 import com.englishtlu.english_learning.main.home.adapter.CourseAdapter;
 import com.englishtlu.english_learning.main.home.model.Course;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.englishtlu.english_learning.main.quizz.QuizzVocabActivity;
 
 import java.util.ArrayList;
 
@@ -80,6 +74,7 @@ public class HomeFragment extends Fragment {
         LastName = view.findViewById(R.id.textView6);
         progressBar = view.findViewById(R.id.progressBar3);
         progressBar.setVisibility(View.VISIBLE);
+
         // Kiểm tra xem đã có Bundle được truyền vào fragment chưa
         if (getArguments() != null && getArguments().containsKey(ARG_LAST_NAME)) {
             lastName = getArguments().getString(ARG_LAST_NAME);
@@ -136,6 +131,9 @@ public class HomeFragment extends Fragment {
                 //Khi ấn vào document thì chuyển sang PDFActivity
                 if (course.getId() == 4) {
                     Intent intent = new Intent(requireContext(), PDFActivity.class);
+                    startActivity(intent);
+                }else if(course.getId() == 1){
+                    Intent intent = new Intent(requireContext(), QuizzVocabActivity.class);
                     startActivity(intent);
                 }
             }

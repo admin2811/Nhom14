@@ -71,6 +71,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="title_activity_chat_bot">ChatBotActivity</string>
     <string name="title_activity_login_with_phone_number">LoginWithPhoneNumberActivity</string>
+    <string name="title_activity_quizz">QuizzActivity</string>
     <string name="todo">TODO</string>
     <string name="todo3">TODO</string>
     <string name="todo8">TODO</string>

@@ -18,6 +18,7 @@ drawable arc_3
 drawable arrow
 drawable back
 drawable backgroud_button_2
+drawable backgroud_course
 drawable background
 drawable background_btn_1
 drawable background_button1
@@ -60,6 +61,7 @@ drawable btn_4
 drawable btn_5
 drawable btn_6
 drawable btn_changllenge
+drawable btn_vocabulary
 drawable circle
 drawable circual_bg
 drawable completion
@@ -92,6 +94,8 @@ drawable image1
 drawable image2
 drawable image3
 drawable lavender_round
+drawable lesson1
+drawable lessons2
 drawable logout
 drawable message
 drawable microphone
@@ -249,7 +253,9 @@ id imageView9
 id include
 id ivAdd
 id ivBack
+id ivBackToHome
 id ivDownload
+id ivLessonVideo
 id ivSearch
 id ivView
 id languageSwitchBtn
@@ -269,6 +275,7 @@ id myProfile
 id nav_graph
 id nav_graph2
 id nav_graph3
+id nav_graph4
 id optionsLl
 id passwordConIcon
 id passwordIcon
@@ -276,6 +283,7 @@ id passwordShowIcon
 id pdfImage
 id phone_btn
 id pic
+id picLesson
 id profile
 id profileImage
 id profileLayout
@@ -338,6 +346,7 @@ id textView21
 id textView22
 id textView23
 id textView25
+id textView3
 id textView4
 id textView5
 id textView6
@@ -356,6 +365,8 @@ id translateBtn
 id translateImage
 id translateLayout
 id translateTxt
+id tvLessonDec
+id tvLessonName
 id tvPdfName
 id tvPdfSize
 id txtConPwd
@@ -368,6 +379,7 @@ layout activity_login_with_phone_number
 layout activity_main
 layout activity_main2
 layout activity_pdfactivity
+layout activity_quizz
 layout activity_register
 layout activity_welcome
 layout chat_item
@@ -382,7 +394,9 @@ layout fragment_home2
 layout fragment_my_profile
 layout fragment_profile
 layout fragment_translate
+layout item_course
 layout item_pdf
+layout item_quizz
 layout layout_change_password
 layout meanings_list_items
 layout pdf_view
@@ -399,6 +413,7 @@ mipmap ic_launcher_round
 navigation nav_graph
 navigation nav_graph2
 navigation nav_graph3
+navigation nav_graph4
 string alex
 string all_courses
 string app_name
@@ -423,6 +438,7 @@ string second_fragment_label
 string sign_up
 string title_activity_chat_bot
 string title_activity_login_with_phone_number
+string title_activity_quizz
 string todo
 string todo3
 string todo8

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroud_course"
+    android:layout_margin="@dimen/carbon_padding"
+    android:orientation="vertical"
+    app:carbon_elevation="10dp"
+    app:carbon_cornerRadius="2dp"
+    app:carbon_elevationShadowColor="#3A94E7"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:outlineAmbientShadowColor="#3A94E7"
+        android:outlineSpotShadowColor="#3A94E7">
+
+        <ImageView
+            android:id="@+id/picLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lesson1"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesson Video"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/tvLessonName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 vocabulary video"
+                android:fontFamily="@font/poppins"
+                android:textSize="10sp"
+                android:id="@+id/tvLessonDec"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivLessonVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_vocabulary"
+            android:layout_marginStart="80dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+</carbon.widget.LinearLayout>
