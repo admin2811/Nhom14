@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566258165896",
+    "project_id": "e-learning-app-9e5d6",
+    "storage_bucket": "e-learning-app-9e5d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566258165896:android:05052d740c1be3c45b973d",
+        "android_client_info": {
+          "package_name": "com.englishtlu.english_learning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHfQpB1AMgQb6OSFjAW2r2doOARxKGePw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

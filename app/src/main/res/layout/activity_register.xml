@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#eff0fc"
-    tools:context=".auth.LoginActivity">
+    tools:context=".authentication.RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -38,18 +38,20 @@
                     android:id="@+id/imageView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
                     android:src="@drawable/women1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:ignore="ContentDescription,ImageContrastCheck"
-                    />
+                    app:layout_constraintHorizontal_bias="0.806"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:text="Create\naccount"
+                    android:text="Creat \nAccount"
                     android:textColor="#ffffff"
                     android:textSize="33sp"
                     android:textStyle="bold"
@@ -107,7 +109,7 @@
                     android:autofillHints=""
                     android:background="@drawable/background_edittext"
                     android:ems="10"
-                    android:hint="Firt Name"
+                    android:hint="First"
                     android:inputType="textPersonName"
                     android:padding="8dp"
                     android:textColor="#A2A4b5"
@@ -126,7 +128,7 @@
                     android:layout_marginStart="32dp"
                     android:background="@drawable/background_edittext"
                     android:ems="10"
-                    android:hint="Last Name"
+                    android:hint="Last"
                     android:inputType="textPersonName"
                     android:padding="8dp"
                     android:textColor="#A2A4b5"
@@ -162,7 +164,7 @@
                 android:autofillHints=""
                 android:background="@drawable/background_edittext"
                 android:ems="10"
-                android:hint="Enter your email"
+                android:hint="Enter your Email"
                 android:inputType="textEmailAddress"
                 android:padding="8dp"
                 android:textColor="#A2A4b5"
@@ -170,7 +172,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/txtPwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Your Password"
@@ -213,11 +215,11 @@
                     android:layout_marginTop="25dp"
                     android:padding="10dp"
                     android:src="@drawable/baseline_visibility_off_24"
-                     />
+                    android:contentDescription="TODO" />
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/txtConPwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -242,7 +244,7 @@
                     android:autofillHints=""
                     android:background="@drawable/background_edittext"
                     android:ems="10"
-                    android:hint="Enter your password"
+                    android:hint="Enter your confirm password"
                     android:inputType="textPassword"
                     android:padding="8dp"
                     android:textColor="#A2A4b5"
@@ -251,7 +253,7 @@
                     tools:ignore="TextFields"
                     />
                 <ImageView
-                    android:id="@+id/passwordIcon"
+                    android:id="@+id/passwordConIcon"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_alignParentEnd="true"
@@ -261,7 +263,7 @@
                     android:layout_marginTop="25dp"
                     android:padding="10dp"
                     android:src="@drawable/baseline_visibility_off_24"
-                     />
+                    android:contentDescription="TODO" />
             </RelativeLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -272,7 +274,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/background_button_2"
+                android:background="@drawable/backgroud_button_2"
                 android:drawableEnd="@drawable/circle"
                 android:padding="4dp"
                 android:paddingStart="64dp"
@@ -287,7 +289,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Already have an account"
+                android:text="Already have an account?"
                 android:textAlignment="center"
                 android:textColor="#7986CB"
                 android:textStyle="bold" />
@@ -306,6 +308,14 @@
                 android:textStyle="bold"
                 android:textSize="16sp"
                 tools:ignore="TextSizeCheck" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

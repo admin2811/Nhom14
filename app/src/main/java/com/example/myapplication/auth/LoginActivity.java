@@ -11,7 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.myapplication.R;
+import com.englishtlu.english_learning.R;
+
 
 public class LoginActivity extends AppCompatActivity {
     Button btnRegister;

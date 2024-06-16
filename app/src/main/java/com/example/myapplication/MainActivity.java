@@ -11,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.englishtlu.english_learning.R;
 import com.example.myapplication.auth.WelcomeActivity;
 
 public class MainActivity extends AppCompatActivity {

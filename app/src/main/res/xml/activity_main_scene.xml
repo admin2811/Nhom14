@@ -39,14 +39,13 @@
         <Constraint
             android:id="@+id/backgroudLayout"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             android:scaleX="0"
-            android:scaleY="0"
-            android:alpha="1" />
+            android:scaleY="0" />
         <Constraint
             android:id="@+id/imageView"
             motion:layout_constraintEnd_toEndOf="parent"
