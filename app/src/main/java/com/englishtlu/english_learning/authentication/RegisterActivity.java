@@ -80,7 +80,6 @@ public class RegisterActivity extends AppCompatActivity {
                 } else {
                     progressBar.setVisibility(View.VISIBLE);
                     registerUser(textFirstName, textLastName, textEmail, textPassword);
-
                 }
             }
         });
@@ -143,13 +142,6 @@ public class RegisterActivity extends AppCompatActivity {
                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                         //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(intent);
-
-                        /*//Open User Profile after successfully  registration
-                            Intent intent = new Intent(RegisterActivity.this, UserProfileActivity.class);
-                            //To Prevent User from returning back to Register Activity on pressing back button after
-                                   registration
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK*/
-
                            Log.d(TAG, "User details saved");
                        }else{
                             progressBar.setVisibility(View.GONE);

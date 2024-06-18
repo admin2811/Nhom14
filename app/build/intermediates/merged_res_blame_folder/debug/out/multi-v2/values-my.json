@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-my/values-my.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-my/values-my.xml",
             "map": [
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\3eb69eeac7a6196586642a3c77d190ec\\transformed\\appcompat-1.7.0\\res\\values-my\\values-my.xml",
@@ -21,20 +21,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\8f05977593ecba6644789ee6ac6c1c8e\\transformed\\credentials-1.2.0-rc01\\res\\values-my\\values-my.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\0de3d6076ff05ecf30d8c2d9e264f389\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-my\\values.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,167",
-                        "endColumns": "111,119",
-                        "endOffsets": "162,282"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "149",
+                        "endOffsets": "344"
                     },
                     "to": {
-                        "startLines": "33,34",
-                        "startColumns": "4,4",
-                        "startOffsets": "3096,3208",
-                        "endColumns": "111,119",
-                        "endOffsets": "3203,3323"
+                        "startLines": "58",
+                        "startColumns": "4",
+                        "startOffsets": "5869",
+                        "endColumns": "153",
+                        "endOffsets": "6018"
                     }
                 },
                 {
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\15a0e8e1b66de676e0aa08e5f3adcae2\\transformed\\play-services-base-18.3.0\\res\\values-my\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\e4c5ca36aac25d19cdbbf0ca4f09cb44\\transformed\\jetified-play-services-base-18.3.0\\res\\values-my\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -106,20 +106,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\023d8ef0e0815c9a78e7a21abd583acd\\transformed\\play-services-basement-18.3.0\\res\\values-my\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\29102fed2b6247d452e3e9cb38441dc9\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-my\\values-my.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "149",
-                        "endOffsets": "344"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,119",
+                        "endOffsets": "162,282"
                     },
                     "to": {
-                        "startLines": "58",
-                        "startColumns": "4",
-                        "startOffsets": "5869",
-                        "endColumns": "153",
-                        "endOffsets": "6018"
+                        "startLines": "33,34",
+                        "startColumns": "4,4",
+                        "startOffsets": "3096,3208",
+                        "endColumns": "111,119",
+                        "endOffsets": "3203,3323"
                     }
                 },
                 {

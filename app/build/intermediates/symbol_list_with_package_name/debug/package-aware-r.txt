@@ -23,6 +23,8 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+anim carbon_popup_hide
+anim carbon_popup_show
 anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
@@ -137,6 +139,7 @@ attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
 attr alertDialogTheme
+attr alignmentMode
 attr allowStacking
 attr alpha
 attr alphabeticModifiers
@@ -249,6 +252,183 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr carbon_actionButton
+attr carbon_anchor
+attr carbon_anchorGravity
+attr carbon_animateColorChanges
+attr carbon_appBarLayoutStyle
+attr carbon_aspectRatio
+attr carbon_autoCompleteLayoutStyle
+attr carbon_autoSizeMaxTextSize
+attr carbon_autoSizeMinTextSize
+attr carbon_autoSizeStepGranularity
+attr carbon_autoSizeText
+attr carbon_backgroundTint
+attr carbon_backgroundTintMode
+attr carbon_bannerStyle
+attr carbon_barStyle
+attr carbon_barWidth
+attr carbon_buttonGravity
+attr carbon_cardViewStyle
+attr carbon_chipStyle
+attr carbon_collapsingToolbarLayoutStyle
+attr carbon_colorBackground
+attr carbon_colorBackgroundInverse
+attr carbon_colorDisabled
+attr carbon_colorDisabledInverse
+attr carbon_colorError
+attr carbon_colorForeground
+attr carbon_constraintLayoutStyle
+attr carbon_coordinatorLayoutStyle
+attr carbon_cornerCut
+attr carbon_cornerCutBottomEnd
+attr carbon_cornerCutBottomStart
+attr carbon_cornerCutTopEnd
+attr carbon_cornerCutTopStart
+attr carbon_cornerRadius
+attr carbon_cornerRadiusBottomEnd
+attr carbon_cornerRadiusBottomStart
+attr carbon_cornerRadiusTopEnd
+attr carbon_cornerRadiusTopStart
+attr carbon_counterFontFamily
+attr carbon_counterFontPath
+attr carbon_counterTextSize
+attr carbon_cursorColor
+attr carbon_dividerColor
+attr carbon_dividerStyle
+attr carbon_drawerLayoutStyle
+attr carbon_dropDownPopupTheme
+attr carbon_dropDownStyle
+attr carbon_editMenuTheme
+attr carbon_elevation
+attr carbon_elevationAmbientShadowColor
+attr carbon_elevationShadowColor
+attr carbon_elevationSpotShadowColor
+attr carbon_error
+attr carbon_errorFontFamily
+attr carbon_errorFontPath
+attr carbon_errorMode
+attr carbon_errorTextSize
+attr carbon_fabStyle
+attr carbon_fixedTabs
+attr carbon_flowLayoutStyle
+attr carbon_font
+attr carbon_fontFamily
+attr carbon_fontPath
+attr carbon_frameLayoutStyle
+attr carbon_gridLayoutStyle
+attr carbon_headerMinHeight
+attr carbon_headerParallax
+attr carbon_headerTint
+attr carbon_heightPercent
+attr carbon_horizontalScrollViewStyle
+attr carbon_htmlText
+attr carbon_icon
+attr carbon_iconColor
+attr carbon_iconColorInverse
+attr carbon_id
+attr carbon_imageViewStyle
+attr carbon_inAnimation
+attr carbon_indicatorWidth
+attr carbon_inputLayoutBoxColor
+attr carbon_inputLayoutBoxPadding
+attr carbon_inputLayoutButtonStyle
+attr carbon_inputLayoutContainerStyle
+attr carbon_inputLayoutStyle
+attr carbon_inset
+attr carbon_insetBottom
+attr carbon_insetColor
+attr carbon_insetLeft
+attr carbon_insetRight
+attr carbon_insetTop
+attr carbon_label
+attr carbon_labelFontFamily
+attr carbon_labelFontPath
+attr carbon_labelFormat
+attr carbon_labelStyle
+attr carbon_labelTextSize
+attr carbon_layout
+attr carbon_linearLayoutStyle
+attr carbon_marginBottomPercent
+attr carbon_marginEndPercent
+attr carbon_marginLeftPercent
+attr carbon_marginPercent
+attr carbon_marginRightPercent
+attr carbon_marginStartPercent
+attr carbon_marginTopPercent
+attr carbon_matchingView
+attr carbon_max
+attr carbon_maxCharacters
+attr carbon_maxHeight
+attr carbon_maxWidth
+attr carbon_menu
+attr carbon_min
+attr carbon_minCharacters
+attr carbon_mode
+attr carbon_navigationViewStyle
+attr carbon_outAnimation
+attr carbon_overScroll
+attr carbon_pagerTabStripStyle
+attr carbon_pattern
+attr carbon_popupTheme
+attr carbon_prefix
+attr carbon_progressStyle
+attr carbon_rangeSeekBarStyle
+attr carbon_recyclerViewStyle
+attr carbon_relativeLayoutStyle
+attr carbon_required
+attr carbon_rippleColor
+attr carbon_rippleColorInverse
+attr carbon_rippleHotspot
+attr carbon_rippleRadius
+attr carbon_rippleStyle
+attr carbon_searchEditTextStyle
+attr carbon_showLabel
+attr carbon_snackbarStyle
+attr carbon_snackbarTheme
+attr carbon_state_indeterminate
+attr carbon_state_invalid
+attr carbon_stepSize
+attr carbon_stroke
+attr carbon_strokeWidth
+attr carbon_style
+attr carbon_suffix
+attr carbon_text
+attr carbon_textAppearanceBody1
+attr carbon_textAppearanceBody1Inverse
+attr carbon_textAppearanceBody2
+attr carbon_textAppearanceBody2Inverse
+attr carbon_textAppearanceButton
+attr carbon_textAppearanceButtonInverse
+attr carbon_textAppearanceCaption
+attr carbon_textAppearanceCaptionInverse
+attr carbon_textAppearanceHeadline
+attr carbon_textAppearanceHeadlineInverse
+attr carbon_textAppearanceListHeader
+attr carbon_textAppearanceListHeaderInverse
+attr carbon_textAppearanceSubhead
+attr carbon_textAppearanceSubheadInverse
+attr carbon_textAppearanceTitle
+attr carbon_textAppearanceTitleInverse
+attr carbon_textView
+attr carbon_theme
+attr carbon_tick
+attr carbon_tickColor
+attr carbon_tickStep
+attr carbon_tint
+attr carbon_tintMode
+attr carbon_toolbarTheme
+attr carbon_touchMargin
+attr carbon_touchMarginBottom
+attr carbon_touchMarginLeft
+attr carbon_touchMarginRight
+attr carbon_touchMarginTop
+attr carbon_type
+attr carbon_value
+attr carbon_value2
+attr carbon_viewPagerIndicatorStyle
+attr carbon_viewPagerStyle
+attr carbon_widthPercent
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -453,6 +633,8 @@ attr colorTertiary
 attr colorTertiaryContainer
 attr colorTertiaryFixed
 attr colorTertiaryFixedDim
+attr columnCount
+attr columnOrderPreserved
 attr commitIcon
 attr compatShadowEnabled
 attr constraintRotate
@@ -563,6 +745,8 @@ attr dropDownListViewStyle
 attr dropdownListPreferredItemHeight
 attr duration
 attr dynamicColorThemeOverlay
+attr edgeEffectOffsetBottom
+attr edgeEffectOffsetTop
 attr editTextBackground
 attr editTextColor
 attr editTextStyle
@@ -805,6 +989,9 @@ attr layout_anchorGravity
 attr layout_behavior
 attr layout_collapseMode
 attr layout_collapseParallaxMultiplier
+attr layout_column
+attr layout_columnSpan
+attr layout_columnWeight
 attr layout_constrainedHeight
 attr layout_constrainedWidth
 attr layout_constraintBaseline_creator
@@ -861,10 +1048,14 @@ attr layout_goneMarginLeft
 attr layout_goneMarginRight
 attr layout_goneMarginStart
 attr layout_goneMarginTop
+attr layout_gravity
 attr layout_insetEdge
 attr layout_keyline
 attr layout_marginBaseline
 attr layout_optimizationLevel
+attr layout_row
+attr layout_rowSpan
+attr layout_rowWeight
 attr layout_scrollEffect
 attr layout_scrollFlags
 attr layout_scrollInterpolator
@@ -1041,6 +1232,7 @@ attr onPositiveCross
 attr onShow
 attr onStateTransition
 attr onTouchUp
+attr orientation
 attr overlapAnchor
 attr overlay
 attr paddingBottomNoButtons
@@ -1119,6 +1311,8 @@ attr rotationCenterId
 attr round
 attr roundPercent
 attr route
+attr rowCount
+attr rowOrderPreserved
 attr saturation
 attr scaleFromTextSize
 attr scopeUris
@@ -1431,6 +1625,7 @@ attr ucrop_show_oval_crop_frame
 attr upDuration
 attr uri
 attr useCompatPadding
+attr useDefaultMargins
 attr useDrawerArrowDrawable
 attr useMaterialThemeColors
 attr values
@@ -1465,6 +1660,7 @@ attr yearStyle
 attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
+bool carbon_isPhone
 bool mtrl_btn_textappearance_all_caps
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
@@ -1514,6 +1710,319 @@ color button_material_dark
 color button_material_light
 color call_notification_answer_color
 color call_notification_decline_color
+color carbon_amber_100
+color carbon_amber_200
+color carbon_amber_300
+color carbon_amber_400
+color carbon_amber_50
+color carbon_amber_500
+color carbon_amber_600
+color carbon_amber_700
+color carbon_amber_800
+color carbon_amber_900
+color carbon_amber_a100
+color carbon_amber_a200
+color carbon_amber_a400
+color carbon_amber_a700
+color carbon_black
+color carbon_black_12
+color carbon_black_38
+color carbon_black_54
+color carbon_black_6
+color carbon_black_87
+color carbon_blueGrey_100
+color carbon_blueGrey_200
+color carbon_blueGrey_300
+color carbon_blueGrey_400
+color carbon_blueGrey_50
+color carbon_blueGrey_500
+color carbon_blueGrey_600
+color carbon_blueGrey_700
+color carbon_blueGrey_800
+color carbon_blueGrey_900
+color carbon_blue_100
+color carbon_blue_200
+color carbon_blue_300
+color carbon_blue_400
+color carbon_blue_50
+color carbon_blue_500
+color carbon_blue_600
+color carbon_blue_700
+color carbon_blue_800
+color carbon_blue_900
+color carbon_blue_a100
+color carbon_blue_a200
+color carbon_blue_a400
+color carbon_blue_a700
+color carbon_brown_100
+color carbon_brown_200
+color carbon_brown_300
+color carbon_brown_400
+color carbon_brown_50
+color carbon_brown_500
+color carbon_brown_600
+color carbon_brown_700
+color carbon_brown_800
+color carbon_brown_900
+color carbon_colorBackground_dark
+color carbon_colorBackground_light
+color carbon_colorControl_dark
+color carbon_colorControl_light
+color carbon_colorForeground_dark
+color carbon_colorForeground_light
+color carbon_colorPrimaryDark_dark
+color carbon_colorPrimaryDark_light
+color carbon_colorPrimary_dark
+color carbon_colorPrimary_light
+color carbon_cyan_100
+color carbon_cyan_200
+color carbon_cyan_300
+color carbon_cyan_400
+color carbon_cyan_50
+color carbon_cyan_500
+color carbon_cyan_600
+color carbon_cyan_700
+color carbon_cyan_800
+color carbon_cyan_900
+color carbon_cyan_a100
+color carbon_cyan_a200
+color carbon_cyan_a400
+color carbon_cyan_a700
+color carbon_debug
+color carbon_deepOrange_100
+color carbon_deepOrange_200
+color carbon_deepOrange_300
+color carbon_deepOrange_400
+color carbon_deepOrange_50
+color carbon_deepOrange_500
+color carbon_deepOrange_600
+color carbon_deepOrange_700
+color carbon_deepOrange_800
+color carbon_deepOrange_900
+color carbon_deepOrange_a100
+color carbon_deepOrange_a200
+color carbon_deepOrange_a400
+color carbon_deepOrange_a700
+color carbon_deepPurple_100
+color carbon_deepPurple_200
+color carbon_deepPurple_300
+color carbon_deepPurple_400
+color carbon_deepPurple_50
+color carbon_deepPurple_500
+color carbon_deepPurple_600
+color carbon_deepPurple_700
+color carbon_deepPurple_800
+color carbon_deepPurple_900
+color carbon_deepPurple_a100
+color carbon_deepPurple_a200
+color carbon_deepPurple_a400
+color carbon_deepPurple_a700
+color carbon_defaultColor
+color carbon_defaultColorAccent
+color carbon_defaultColorPrimary
+color carbon_defaultIconColor
+color carbon_defaultIconColorAccent
+color carbon_defaultIconColorAccentInverse
+color carbon_defaultIconColorInverse
+color carbon_defaultIconColorPrimary
+color carbon_defaultIconColorPrimaryInverse
+color carbon_defaultRippleColor
+color carbon_defaultRippleColorAccent
+color carbon_defaultRippleColorPrimary
+color carbon_defaultTextColorAccent
+color carbon_defaultTextColorPrimary
+color carbon_defaultTextPrimaryColor
+color carbon_defaultTextPrimaryColorInverse
+color carbon_defaultTextSecondaryColor
+color carbon_defaultTextSecondaryColorInverse
+color carbon_dividerColor_dark
+color carbon_dividerColor_light
+color carbon_green_100
+color carbon_green_200
+color carbon_green_300
+color carbon_green_400
+color carbon_green_50
+color carbon_green_500
+color carbon_green_600
+color carbon_green_700
+color carbon_green_800
+color carbon_green_900
+color carbon_green_a100
+color carbon_green_a200
+color carbon_green_a400
+color carbon_green_a700
+color carbon_grey_100
+color carbon_grey_200
+color carbon_grey_300
+color carbon_grey_400
+color carbon_grey_50
+color carbon_grey_500
+color carbon_grey_600
+color carbon_grey_700
+color carbon_grey_800
+color carbon_grey_900
+color carbon_iconColorActive_dark
+color carbon_iconColorActive_light
+color carbon_iconColorInactive_dark
+color carbon_iconColorInactive_light
+color carbon_indigo_100
+color carbon_indigo_200
+color carbon_indigo_300
+color carbon_indigo_400
+color carbon_indigo_50
+color carbon_indigo_500
+color carbon_indigo_600
+color carbon_indigo_700
+color carbon_indigo_800
+color carbon_indigo_900
+color carbon_indigo_a100
+color carbon_indigo_a200
+color carbon_indigo_a400
+color carbon_indigo_a700
+color carbon_lightBlue_100
+color carbon_lightBlue_200
+color carbon_lightBlue_300
+color carbon_lightBlue_400
+color carbon_lightBlue_50
+color carbon_lightBlue_500
+color carbon_lightBlue_600
+color carbon_lightBlue_700
+color carbon_lightBlue_800
+color carbon_lightBlue_900
+color carbon_lightBlue_a100
+color carbon_lightBlue_a200
+color carbon_lightBlue_a400
+color carbon_lightBlue_a700
+color carbon_lightGreen_100
+color carbon_lightGreen_200
+color carbon_lightGreen_300
+color carbon_lightGreen_400
+color carbon_lightGreen_50
+color carbon_lightGreen_500
+color carbon_lightGreen_600
+color carbon_lightGreen_700
+color carbon_lightGreen_800
+color carbon_lightGreen_900
+color carbon_lightGreen_a100
+color carbon_lightGreen_a200
+color carbon_lightGreen_a400
+color carbon_lightGreen_a700
+color carbon_lime_100
+color carbon_lime_200
+color carbon_lime_300
+color carbon_lime_400
+color carbon_lime_50
+color carbon_lime_500
+color carbon_lime_600
+color carbon_lime_700
+color carbon_lime_800
+color carbon_lime_900
+color carbon_lime_a100
+color carbon_lime_a200
+color carbon_lime_a400
+color carbon_lime_a700
+color carbon_orange_100
+color carbon_orange_200
+color carbon_orange_300
+color carbon_orange_400
+color carbon_orange_50
+color carbon_orange_500
+color carbon_orange_600
+color carbon_orange_700
+color carbon_orange_800
+color carbon_orange_900
+color carbon_orange_a100
+color carbon_orange_a200
+color carbon_orange_a400
+color carbon_orange_a700
+color carbon_pink_100
+color carbon_pink_200
+color carbon_pink_300
+color carbon_pink_400
+color carbon_pink_50
+color carbon_pink_500
+color carbon_pink_600
+color carbon_pink_700
+color carbon_pink_800
+color carbon_pink_900
+color carbon_pink_a100
+color carbon_pink_a200
+color carbon_pink_a400
+color carbon_pink_a700
+color carbon_purple_100
+color carbon_purple_200
+color carbon_purple_300
+color carbon_purple_400
+color carbon_purple_50
+color carbon_purple_500
+color carbon_purple_600
+color carbon_purple_700
+color carbon_purple_800
+color carbon_purple_900
+color carbon_purple_a100
+color carbon_purple_a200
+color carbon_purple_a400
+color carbon_purple_a700
+color carbon_red_100
+color carbon_red_200
+color carbon_red_300
+color carbon_red_400
+color carbon_red_50
+color carbon_red_500
+color carbon_red_600
+color carbon_red_700
+color carbon_red_800
+color carbon_red_900
+color carbon_red_a100
+color carbon_red_a200
+color carbon_red_a400
+color carbon_red_a700
+color carbon_rippleColor_dark
+color carbon_rippleColor_light
+color carbon_tab_text_selected
+color carbon_tab_text_unselected
+color carbon_teal_100
+color carbon_teal_200
+color carbon_teal_300
+color carbon_teal_400
+color carbon_teal_50
+color carbon_teal_500
+color carbon_teal_600
+color carbon_teal_700
+color carbon_teal_800
+color carbon_teal_900
+color carbon_teal_a100
+color carbon_teal_a200
+color carbon_teal_a400
+color carbon_teal_a700
+color carbon_textColorDisabled_dark
+color carbon_textColorDisabled_light
+color carbon_textColorHint_dark
+color carbon_textColorHint_light
+color carbon_textColorPrimary_dark
+color carbon_textColorPrimary_light
+color carbon_textColorSecondary_dark
+color carbon_textColorSecondary_light
+color carbon_tooltip
+color carbon_white
+color carbon_white_10
+color carbon_white_12
+color carbon_white_50
+color carbon_white_70
+color carbon_yellow_100
+color carbon_yellow_200
+color carbon_yellow_300
+color carbon_yellow_400
+color carbon_yellow_50
+color carbon_yellow_500
+color carbon_yellow_600
+color carbon_yellow_700
+color carbon_yellow_800
+color carbon_yellow_900
+color carbon_yellow_a100
+color carbon_yellow_a200
+color carbon_yellow_a400
+color carbon_yellow_a700
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -2384,6 +2893,99 @@ dimen abc_text_size_title_material_toolbar
 dimen appcompat_dialog_background_inset
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
+dimen carbon_1dip
+dimen carbon_avatarSize
+dimen carbon_avatarSizeHalf
+dimen carbon_bottomBarActiveMargin
+dimen carbon_bottomBarActiveMaxWidth
+dimen carbon_bottomBarActiveMinWidth
+dimen carbon_bottomBarActiveTextSize
+dimen carbon_bottomBarHeight
+dimen carbon_bottomBarInactiveMaxWidth
+dimen carbon_bottomBarInactiveMinWidth
+dimen carbon_bottomBarInactiveTextSize
+dimen carbon_bottomBarInctiveMargin
+dimen carbon_charCounterTextSize
+dimen carbon_chipCloseMargin
+dimen carbon_chipHeight
+dimen carbon_chipPadding
+dimen carbon_chipTextSize
+dimen carbon_contentPadding
+dimen carbon_contentSpace
+dimen carbon_cornerRadiusButton
+dimen carbon_cornerRadiusCard
+dimen carbon_cornerRadiusImage
+dimen carbon_cornerRadiusSnackbar
+dimen carbon_dialogMinimumWidth
+dimen carbon_dialogPadding
+dimen carbon_dividerHeight
+dimen carbon_dividerWidth
+dimen carbon_elevationBottomNavigationBar
+dimen carbon_elevationBottomSheet
+dimen carbon_elevationButton
+dimen carbon_elevationCard
+dimen carbon_elevationDialog
+dimen carbon_elevationDrawer
+dimen carbon_elevationDropDown
+dimen carbon_elevationFAB
+dimen carbon_elevationFlat
+dimen carbon_elevationHigh
+dimen carbon_elevationLow
+dimen carbon_elevationMax
+dimen carbon_elevationMedium
+dimen carbon_elevationMenu
+dimen carbon_elevationPicker
+dimen carbon_elevationRefreshIndicator
+dimen carbon_elevationSnackbar
+dimen carbon_elevationSwitch
+dimen carbon_elevationToolbar
+dimen carbon_elevationTooltip
+dimen carbon_errorTextSize
+dimen carbon_fabSize
+dimen carbon_fabSizeHalf
+dimen carbon_grid8
+dimen carbon_iconSize
+dimen carbon_item_touch_helper_max_drag_scroll_per_frame
+dimen carbon_item_touch_helper_swipe_escape_max_velocity
+dimen carbon_item_touch_helper_swipe_escape_velocity
+dimen carbon_labelTextSize
+dimen carbon_largeListItemHeight
+dimen carbon_listItemHeight
+dimen carbon_margin
+dimen carbon_marginHalf
+dimen carbon_mediumListItemHeight
+dimen carbon_menuHeight
+dimen carbon_navigationBarHeight
+dimen carbon_padding
+dimen carbon_paddingHalf
+dimen carbon_progressSize
+dimen carbon_smallFabSize
+dimen carbon_smallFabSizeHalf
+dimen carbon_statusBarHeight
+dimen carbon_strokeWidthButton
+dimen carbon_subtitleHeight
+dimen carbon_tableFooterHeight
+dimen carbon_tableHeaderHeight
+dimen carbon_tableRowHeight
+dimen carbon_textSizeBody
+dimen carbon_textSizeButton
+dimen carbon_textSizeCaption
+dimen carbon_textSizeHeadline
+dimen carbon_textSizeListHeader
+dimen carbon_textSizeSubhead
+dimen carbon_textSizeTitle
+dimen carbon_timelineTextSize
+dimen carbon_toolbarHeight
+dimen carbon_toolbarItemMargin
+dimen carbon_toolbarItemPadding
+dimen carbon_toolbarItemSize
+dimen carbon_toolbarTextSize
+dimen carbon_toolbarUpTitleMargin
+dimen carbon_tooltipHeight
+dimen carbon_tooltipPadding
+dimen carbon_tooltipTextSize
+dimen carbon_translationButton
+dimen carbon_windowPadding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2397,6 +2999,7 @@ dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
 dimen def_drawer_elevation
+dimen default_gap
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_item_min_width
@@ -3226,6 +3829,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable backgroud_button_2
+drawable backgroud_course
 drawable background
 drawable background_btn_1
 drawable background_button1
@@ -3276,6 +3880,15 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_vocabulary
+drawable carbon_defaultcolorstatelist
+drawable carbon_defaultdrawable
+drawable carbon_iconplaceholder
+drawable carbon_scrollbar_thumb
+drawable carbon_tab_text
+drawable carbon_textcursor
+drawable carbon_windowbackground_dark
+drawable carbon_windowbackground_light
 drawable ccp_ic_arrow_drop_down
 drawable circle
 drawable circual_bg
@@ -3614,6 +4227,8 @@ drawable image2
 drawable image3
 drawable indeterminate_static
 drawable lavender_round
+drawable lesson1
+drawable lessons2
 drawable loading
 drawable logout
 drawable m3_avd_hide_password
@@ -3907,6 +4522,8 @@ id add
 id adjust_height
 id adjust_width
 id alertTitle
+id alignBounds
+id alignMargins
 id aligned
 id all
 id allStates
@@ -3928,13 +4545,18 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id back
 id backgroudLayout
+id background
 id backtohome
+id bar_determinate
+id bar_indeterminate
+id bar_query
 id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id borderless
 id bottom
 id bottomBar
 id bottom_layout
@@ -3942,6 +4564,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id brightnessSaturationFade
 id browser_actions_header_text
 id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
@@ -3962,6 +4585,84 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id carbon_actionButton
+id carbon_autoCompleteLayoutRowText
+id carbon_autoCompleteResults
+id carbon_autoCompleteSearch
+id carbon_avatar
+id carbon_bannerIcon
+id carbon_bannerText
+id carbon_banner_buttons
+id carbon_banner_content
+id carbon_bottomBarContent
+id carbon_bottomDivider
+id carbon_bottomIcon
+id carbon_bottomSheetRecycler
+id carbon_bottomSheetTitle
+id carbon_bottomText
+id carbon_bottomTextMarker
+id carbon_bubble
+id carbon_buttonContainer
+id carbon_buttonNegative
+id carbon_buttonPositive
+id carbon_checkBox
+id carbon_chipClose
+id carbon_chipIcon
+id carbon_chipText
+id carbon_clear
+id carbon_copy
+id carbon_counter
+id carbon_coverImage
+id carbon_cut
+id carbon_date
+id carbon_dropDown
+id carbon_error
+id carbon_expansionPanelContent
+id carbon_expansionPanelHeader
+id carbon_fab
+id carbon_groupExpandedIndicator
+id carbon_groupText
+id carbon_input
+id carbon_inputLayoutContainer
+id carbon_itemCheckText
+id carbon_itemIcon
+id carbon_itemText
+id carbon_label
+id carbon_marker
+id carbon_marker2
+id carbon_marker3
+id carbon_mask
+id carbon_menuContainer
+id carbon_menuContent
+id carbon_messageText
+id carbon_paste
+id carbon_popupContainer
+id carbon_popupContent
+id carbon_progressDialogText
+id carbon_query
+id carbon_radioButton
+id carbon_rating
+id carbon_selectAll
+id carbon_showPassword
+id carbon_snackbarContent
+id carbon_subtext
+id carbon_tabText
+id carbon_table
+id carbon_tableFooter
+id carbon_tableHeader
+id carbon_tableHeaderText
+id carbon_tablePageNumbers
+id carbon_tableRowNumber
+id carbon_text
+id carbon_toolbarContent
+id carbon_toolbarIcon
+id carbon_toolbarTitle
+id carbon_tooltip
+id carbon_topDivider
+id carbon_voiceInput
+id carbon_window
+id carbon_windowContent
+id carbon_windowTitle
 id cardView
 id cardViewRoot
 id carryVelocity
@@ -3981,6 +4682,9 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id circular_determinate
+id circular_indeterminate
+id clear
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3995,6 +4699,7 @@ id container
 id content
 id contentPanel
 id contiguous
+id continuous
 id continuousVelocity
 id controls_shadow
 id controls_wrapper
@@ -4008,6 +4713,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4040,6 +4746,7 @@ id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
+id discrete
 id disjoint
 id document
 id documentIn
@@ -4061,6 +4768,7 @@ id edge
 id editText_search
 id edit_query
 id edit_text_id
+id editable
 id edtConPassword
 id edtConfirmPassword
 id edtDob
@@ -4102,6 +4810,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id fit
 id fitCenter
 id fitEnd
 id fitStart
@@ -4114,6 +4823,7 @@ id flashCardIn
 id flashCardTxt
 id flip
 id floating
+id fly
 id forever
 id forgotTitle
 id forgot_password
@@ -4137,12 +4847,14 @@ id help
 id helpTxt
 id hide_ime_id
 id hideable
+id hint
 id home
 id homeAsUp
 id homeImage
 id homeLayout
 id homeTxt
 id honorRequest
+id horizontal
 id horizontal_only
 id icon
 id icon_group
@@ -4152,6 +4864,8 @@ id iconshow2
 id iconshow3
 id idIVCamera
 id idIVMic
+id ifContentScrolls
+id ifNotEmpty
 id ifRoom
 id ignore
 id ignoreRequest
@@ -4190,6 +4904,7 @@ id ivAdd
 id ivBack
 id ivBackToHome
 id ivDownload
+id ivLessonImage
 id ivSearch
 id ivView
 id jumpToEnd
@@ -4288,6 +5003,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
+id multiSelect
 id multiply
 id myProfile
 id nav_controller_view_tag
@@ -4316,6 +5032,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view
 id open_search_view_background
@@ -4334,6 +5052,7 @@ id open_search_view_toolbar_container
 id optionsLl
 id outline
 id outward
+id over
 id overshoot
 id packed
 id pager_dots
@@ -4351,9 +5070,11 @@ id pathRelative
 id pdfImage
 id peekHeight
 id percent
+id persistent
 id phone_btn
 id pic
 id pin
+id pop
 id position
 id postLayout
 id preferenceDivider
@@ -4374,6 +5095,7 @@ id progressBar_login
 id progressImage
 id progressIn
 id progressTxt
+id progressWidth
 id progress_circular
 id progress_horizontal
 id question
@@ -4382,6 +5104,7 @@ id ratio
 id rectangles
 id recycle_meanings
 id recycle_phonetics
+id recycler
 id recyclerView
 id recycler_countryDialog
 id recycler_definitions
@@ -4403,6 +5126,7 @@ id rotate_scroll_wheel
 id rounded
 id row_index_key
 id rtl
+id rvQuizzVocab
 id rvpdf
 id saveBtn
 id save_non_transition_alpha
@@ -4444,9 +5168,11 @@ id sharedValueUnset
 id shortcut
 id showCustom
 id showHome
+id showPassword
 id showTitle
 id signOut
 id sin
+id singleSelect
 id skipCollapsed
 id skipped
 id slide
@@ -4544,6 +5270,7 @@ id textView_selectedCountry
 id textView_synonyns
 id textView_title
 id textView_word
+id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -4583,6 +5310,8 @@ id translateImage
 id translateLayout
 id translateTxt
 id triangle
+id tvLessonDec
+id tvLessonName
 id tvPdfName
 id tvPdfSize
 id txtConPwd
@@ -4595,6 +5324,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vertical
 id vertical_only
 id view
 id view_offset_helper
@@ -4607,7 +5337,9 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id voiceInput
 id west
+id whenInvalid
 id wide
 id withText
 id with_icon
@@ -4626,6 +5358,7 @@ integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
+integer carbon_snackbarDuration
 integer config_navAnimTime
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
@@ -4750,6 +5483,58 @@ layout activity_register
 layout activity_welcome
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout carbon_autocompletelayout
+layout carbon_autocompletelayout_row
+layout carbon_banner
+layout carbon_bottombar
+layout carbon_bottombar_item
+layout carbon_bottomsheet
+layout carbon_bottomsheet_cell
+layout carbon_bottomsheet_row
+layout carbon_chip
+layout carbon_dialog
+layout carbon_dialogfooter
+layout carbon_dialogheader
+layout carbon_editormenu
+layout carbon_expandablerecyclerview_group
+layout carbon_expansionpanel
+layout carbon_floatingactionmenu_left
+layout carbon_floatingactionmenu_right
+layout carbon_inputlayout
+layout carbon_navigation_header
+layout carbon_navigation_row
+layout carbon_popupmenu
+layout carbon_popupmenu_checkableitem
+layout carbon_popupmenu_item
+layout carbon_progressdialog
+layout carbon_row_avatartext
+layout carbon_row_avatartextratingsubtextdate
+layout carbon_row_avatartextsubtext2date
+layout carbon_row_avatartextsubtextdate
+layout carbon_row_dialog_checkboxtext
+layout carbon_row_dialog_radiotext
+layout carbon_row_divider
+layout carbon_row_header
+layout carbon_row_iconcheckbox
+layout carbon_row_icondropdown
+layout carbon_row_iconedittext
+layout carbon_row_iconpassword
+layout carbon_row_iconsearch
+layout carbon_row_icontext
+layout carbon_row_imagetextsubtext
+layout carbon_row_imagetextsubtextdate
+layout carbon_row_paddeddivider
+layout carbon_row_paddedheader
+layout carbon_row_padding
+layout carbon_row_text
+layout carbon_seekbar_bubble
+layout carbon_snackbar
+layout carbon_tab
+layout carbon_tablelayout
+layout carbon_tablelayout_header
+layout carbon_tablelayout_row
+layout carbon_tableview_row
+layout carbon_toolbar
 layout chat_item
 layout custom_dialog
 layout custom_spinner_dropdown_item
@@ -4783,8 +5568,8 @@ layout fragment_translate
 layout image_slider
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
-layout item_course
 layout item_pdf
+layout item_quizz
 layout layout_change_password
 layout layout_code_picker
 layout layout_full_width_code_picker
@@ -4878,6 +5663,27 @@ navigation nav_graph3
 navigation nav_graph4
 plurals mtrl_badge_content_description
 raw a_new_lang_template
+raw carbon_arrow_down
+raw carbon_bubble
+raw carbon_checkbox_checked
+raw carbon_checkbox_filled
+raw carbon_checkbox_unchecked
+raw carbon_clear
+raw carbon_dropdown
+raw carbon_next
+raw carbon_prev
+raw carbon_radiobutton_checked
+raw carbon_radiobutton_filled
+raw carbon_radiobutton_unchecked
+raw carbon_remove
+raw carbon_search
+raw carbon_selecthandle_left
+raw carbon_selecthandle_middle
+raw carbon_selecthandle_right
+raw carbon_uparrow
+raw carbon_visibility
+raw carbon_visibility_off
+raw carbon_voice
 raw ccp_afrikaans
 raw ccp_arabic
 raw ccp_bengali
@@ -4965,6 +5771,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string carbon_rowsPerPage
 string change_your_password
 string chanllenge
 string character_counter_content_description
@@ -6296,6 +7103,116 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style carbon_AppBarLayout
+style carbon_AutoCompleteLayout
+style carbon_Button
+style carbon_Button_Colored
+style carbon_Button_Colored_Inverse
+style carbon_Button_Flat
+style carbon_Button_Flat_Colored
+style carbon_Button_Flat_Colored_Inverse
+style carbon_Button_Inverse
+style carbon_Button_Outlined
+style carbon_Button_Outlined_Colored
+style carbon_Button_Outlined_Colored_Inverse
+style carbon_CardView
+style carbon_CheckBox
+style carbon_CheckBox_IconButton
+style carbon_CheckBox_IconButton_Colored
+style carbon_CheckBox_IconButton_Inverse
+style carbon_CheckedTextView
+style carbon_CheckedTextView_IconButton
+style carbon_CheckedTextView_IconButton_Inverse
+style carbon_Chip
+style carbon_CollapsingToolbarLayout
+style carbon_ConstraintLayout
+style carbon_CoordinatorLayout
+style carbon_Divider
+style carbon_DrawerLayout
+style carbon_DropDown
+style carbon_EditText
+style carbon_EditText_InputLayout_Box
+style carbon_EditText_InputLayout_Stroke
+style carbon_FloatingActionButton
+style carbon_FloatingActionButton_Primary
+style carbon_FloatingActionButton_Small
+style carbon_FloatingActionButton_Small_Primary
+style carbon_FlowLayout
+style carbon_FrameLayout
+style carbon_GridLayout
+style carbon_HorizontalScrollView
+style carbon_ImageView
+style carbon_ImageView_Avatar
+style carbon_ImageView_Icon
+style carbon_ImageView_Icon_Inverse
+style carbon_ImageView_IconButton
+style carbon_ImageView_IconButton_Inverse
+style carbon_ImageView_InputLayout
+style carbon_ImageView_InputLayout_Box
+style carbon_ImageView_InputLayout_Stroke
+style carbon_InputLayout
+style carbon_InputLayout_Box
+style carbon_InputLayout_Stroke
+style carbon_InputLayoutContainer
+style carbon_InputLayoutContainer_Box
+style carbon_InputLayoutContainer_Stroke
+style carbon_InputLayoutContainerTheme
+style carbon_InputLayoutContainerTheme_Box
+style carbon_InputLayoutContainerTheme_Stroke
+style carbon_LinearLayout
+style carbon_ListView
+style carbon_NavigationView
+style carbon_PagerTabStrip
+style carbon_PopupAnimation
+style carbon_ProgressBar
+style carbon_RadioButton
+style carbon_RadioButton_IconButton
+style carbon_RadioButton_IconButton_Colored
+style carbon_RadioButton_IconButton_Inverse
+style carbon_RecyclerView
+style carbon_RelativeLayout
+style carbon_ScrollView
+style carbon_SearchEditText
+style carbon_SeekBar
+style carbon_Snackbar
+style carbon_TextAppearance
+style carbon_TextAppearance_Body1
+style carbon_TextAppearance_Body1_Inverse
+style carbon_TextAppearance_Body2
+style carbon_TextAppearance_Body2_Inverse
+style carbon_TextAppearance_Button
+style carbon_TextAppearance_Button_Inverse
+style carbon_TextAppearance_Caption
+style carbon_TextAppearance_Caption_Inverse
+style carbon_TextAppearance_Headline
+style carbon_TextAppearance_Headline_Inverse
+style carbon_TextAppearance_ListHeader
+style carbon_TextAppearance_ListHeader_Inverse
+style carbon_TextAppearance_Subhead
+style carbon_TextAppearance_Subhead_Inverse
+style carbon_TextAppearance_Title
+style carbon_TextAppearance_Title_Inverse
+style carbon_TextView
+style carbon_TextView_Tooltip
+style carbon_Theme_Dark
+style carbon_Theme_Dark_DarkPrimaryColor
+style carbon_Theme_Dark_DarkPrimaryColor_NoActionBar
+style carbon_Theme_Dark_NoActionBar
+style carbon_Theme_Light
+style carbon_Theme_Light_LightPrimaryColor
+style carbon_Theme_Light_LightPrimaryColor_NoActionBar
+style carbon_Theme_Light_NoActionBar
+style carbon_ThemeOverlay_Dark
+style carbon_ThemeOverlay_Dark_Dialog
+style carbon_ThemeOverlay_Dark_Snackbar
+style carbon_ThemeOverlay_Light
+style carbon_ThemeOverlay_Light_Dialog
+style carbon_ThemeOverlay_Light_Snackbar
+style carbon_ToggleButton
+style carbon_Toolbar
+style carbon_View
+style carbon_ViewPager
+style carbon_ViewPagerIndicator
 style circular
 style ucrop_ImageViewWidgetIcon
 style ucrop_TextViewCropAspectRatio
@@ -6316,63 +7233,80 @@ styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listI
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
 styleable AnimatedStateListDrawableTransition android_drawable android_toId android_fromId android_reversible
-styleable AppBarLayout android_background android_touchscreenBlocksFocus android_keyboardNavigationCluster elevation expanded liftOnScroll liftOnScrollColor liftOnScrollTargetViewId statusBarForeground
+styleable AppBarLayout android_background android_touchscreenBlocksFocus android_keyboardNavigationCluster carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop elevation expanded liftOnScroll liftOnScrollColor liftOnScrollTargetViewId statusBarForeground
 styleable AppBarLayoutStates state_collapsed state_collapsible state_liftable state_lifted
-styleable AppBarLayout_Layout layout_scrollEffect layout_scrollFlags layout_scrollInterpolator
+styleable AppBarLayout_Layout carbon_anchor carbon_anchorGravity carbon_theme layout_scrollEffect layout_scrollFlags layout_scrollInterpolator
 styleable AppCompatEmojiHelper
 styleable AppCompatImageView android_src srcCompat tint tintMode
 styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat emojiCompatEnabled firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseContentDescription actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeTheme actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
+styleable AutoCompleteLayout carbon_theme
 styleable Badge autoAdjustToWithinGrandparentBounds backgroundColor badgeGravity badgeHeight badgeRadius badgeShapeAppearance badgeShapeAppearanceOverlay badgeText badgeTextAppearance badgeTextColor badgeVerticalPadding badgeWidePadding badgeWidth badgeWithTextHeight badgeWithTextRadius badgeWithTextShapeAppearance badgeWithTextShapeAppearanceOverlay badgeWithTextWidth horizontalOffset horizontalOffsetWithText largeFontVerticalOffsetAdjustment maxCharacterCount maxNumber number offsetAlignmentMode verticalOffset verticalOffsetWithText
+styleable Banner android_text carbon_icon
 styleable BaseProgressIndicator android_indeterminate hideAnimationBehavior indicatorColor indicatorTrackGapSize minHideDelay showAnimationBehavior showDelay trackColor trackCornerRadius trackThickness
 styleable BottomAppBar addElevationShadow backgroundTint elevation fabAlignmentMode fabAlignmentModeEndMargin fabAnchorMode fabAnimationMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll menuAlignmentMode navigationIconTint paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets removeEmbeddedFabElevation
 styleable BottomNavigationView android_minHeight compatShadowEnabled itemHorizontalTranslationEnabled shapeAppearance shapeAppearanceOverlay
 styleable BottomSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_significantVelocityThreshold behavior_skipCollapsed gestureInsetBottomIgnored marginLeftSystemWindowInsets marginRightSystemWindowInsets marginTopSystemWindowInsets paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay shouldRemoveExpandedCorners
+styleable Button android_textAppearance android_textStyle android_textColor android_background android_maxLines android_singleLine android_textAllCaps carbon_animateColorChanges carbon_autoSizeMaxTextSize carbon_autoSizeMinTextSize carbon_autoSizeStepGranularity carbon_autoSizeText carbon_backgroundTint carbon_backgroundTintMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_font carbon_fontFamily carbon_fontPath carbon_htmlText carbon_inAnimation carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_tint carbon_tintMode carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
 styleable ButtonBarLayout allowStacking
 styleable Capability queryPatterns shortcutMatchRequired
+styleable Carbon carbon_aspectRatio carbon_colorBackground carbon_colorBackgroundInverse carbon_colorDisabled carbon_colorDisabledInverse carbon_colorError carbon_colorForeground carbon_dividerColor carbon_heightPercent carbon_iconColor carbon_iconColorInverse carbon_inputLayoutBoxColor carbon_inputLayoutBoxPadding carbon_marginBottomPercent carbon_marginEndPercent carbon_marginLeftPercent carbon_marginPercent carbon_marginRightPercent carbon_marginStartPercent carbon_marginTopPercent carbon_textAppearanceBody1 carbon_textAppearanceBody1Inverse carbon_textAppearanceBody2 carbon_textAppearanceBody2Inverse carbon_textAppearanceButton carbon_textAppearanceButtonInverse carbon_textAppearanceCaption carbon_textAppearanceCaptionInverse carbon_textAppearanceHeadline carbon_textAppearanceHeadlineInverse carbon_textAppearanceListHeader carbon_textAppearanceListHeaderInverse carbon_textAppearanceSubhead carbon_textAppearanceSubheadInverse carbon_textAppearanceTitle carbon_textAppearanceTitleInverse carbon_widthPercent
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Carousel carousel_alignment carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold
+styleable CheckBox android_checked android_button android_drawablePadding carbon_buttonGravity carbon_htmlText carbon_theme
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
-styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
+styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_background android_maxWidth android_text android_checkable carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_icon carbon_stroke carbon_strokeWidth carbon_theme checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
 styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
-styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance collapsedTitleTextColor contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance expandedTitleTextColor extraMultilineHeightEnabled forceApplySystemWindowInsetTop maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleCollapseMode titleEnabled titlePositionInterpolator titleTextEllipsize toolbarId
+styleable CollapsingToolbarLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop collapsedTitleGravity collapsedTitleTextAppearance collapsedTitleTextColor contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance expandedTitleTextColor extraMultilineHeightEnabled forceApplySystemWindowInsetTop maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleCollapseMode titleEnabled titlePositionInterpolator titleTextEllipsize toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha android_lStar alpha lStar
+styleable ComponentView carbon_id carbon_layout carbon_type
 styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
 styleable Constraint android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation animateCircleAngleTo animateRelativeTo barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraint_referenced_ids constraint_referenced_tags drawPath flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTag layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent motionProgress motionStagger pathMotionArc pivotAnchor polarRelativeTo quantizeMotionInterpolator quantizeMotionPhase quantizeMotionSteps transformPivotTarget transitionEasing transitionPathRotate visibilityMode
+styleable ConstraintLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
 styleable ConstraintLayout_Layout android_orientation android_padding android_paddingLeft android_paddingTop android_paddingRight android_paddingBottom android_visibility android_layout_width android_layout_height android_layout_margin android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_paddingStart android_paddingEnd android_layout_marginStart android_layout_marginEnd android_elevation android_layout_marginHorizontal android_layout_marginVertical barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl circularflow_angles circularflow_defaultAngle circularflow_defaultRadius circularflow_radiusInDP circularflow_viewCenter constraintSet constraint_referenced_ids constraint_referenced_tags flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layoutDescription layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTag layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_optimizationLevel layout_wrapBehaviorInParent
 styleable ConstraintLayout_ReactiveGuide reactiveGuide_animateChange reactiveGuide_applyToAllConstraintSets reactiveGuide_applyToConstraintSet reactiveGuide_valueId
 styleable ConstraintLayout_placeholder content placeholder_emptyVisibility
 styleable ConstraintOverride android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation animateCircleAngleTo animateRelativeTo barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraint_referenced_ids drawPath flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBottom_creator layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintRight_creator layout_constraintTag layout_constraintTop_creator layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent motionProgress motionStagger motionTarget pathMotionArc pivotAnchor polarRelativeTo quantizeMotionInterpolator quantizeMotionPhase quantizeMotionSteps transformPivotTarget transitionEasing transitionPathRotate visibilityMode
 styleable ConstraintSet android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_pivotX android_pivotY android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation animateCircleAngleTo animateRelativeTo barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraintRotate constraint_referenced_ids constraint_referenced_tags deriveConstraintsFrom drawPath flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTag layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent motionProgress motionStagger pathMotionArc pivotAnchor polarRelativeTo quantizeMotionSteps transitionEasing transitionPathRotate
-styleable CoordinatorLayout keylines statusBarBackground
-styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
+styleable CoordinatorLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop keylines statusBarBackground
+styleable CoordinatorLayout_Layout android_layout_gravity carbon_anchor carbon_anchorGravity carbon_theme layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CountryCodePicker ccpDialog_allowSearch ccpDialog_background ccpDialog_backgroundColor ccpDialog_cornerRadius ccpDialog_fastScroller_bubbleColor ccpDialog_fastScroller_bubbleTextAppearance ccpDialog_fastScroller_handleColor ccpDialog_initialScrollToSelection ccpDialog_keyboardAutoPopup ccpDialog_searchEditTextTint ccpDialog_showCloseIcon ccpDialog_showFastScroller ccpDialog_showFlag ccpDialog_showNameCode ccpDialog_showPhoneCode ccpDialog_showTitle ccpDialog_textColor ccp_areaCodeDetectedCountry ccp_arrowColor ccp_arrowSize ccp_autoDetectCountry ccp_autoDetectLanguage ccp_autoFormatNumber ccp_clickable ccp_contentColor ccp_countryAutoDetectionPref ccp_countryPreference ccp_customMasterCountries ccp_defaultLanguage ccp_defaultNameCode ccp_defaultPhoneCode ccp_excludedCountries ccp_flagBorderColor ccp_hintExampleNumber ccp_hintExampleNumberType ccp_internationalFormattingOnly ccp_padding ccp_rememberLastSelection ccp_selectionMemoryTag ccp_showArrow ccp_showFlag ccp_showFullName ccp_showNameCode ccp_showPhoneCode ccp_textGravity ccp_textSize ccp_useDummyEmojiForPreview ccp_useFlagEmoji
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
 styleable DialogFragmentNavigator android_name
+styleable Divider android_orientation
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
-styleable DrawerLayout elevation
+styleable DrawerLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop elevation
+styleable DropDown carbon_mode carbon_popupTheme carbon_style carbon_theme
+styleable EditText android_textAppearance android_textStyle android_textColor android_background android_maxLines android_singleLine android_textAllCaps carbon_animateColorChanges carbon_autoSizeMaxTextSize carbon_autoSizeMinTextSize carbon_autoSizeStepGranularity carbon_autoSizeText carbon_backgroundTint carbon_backgroundTintMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_cursorColor carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_font carbon_fontFamily carbon_fontPath carbon_htmlText carbon_inAnimation carbon_matchingView carbon_maxCharacters carbon_maxHeight carbon_maxWidth carbon_minCharacters carbon_outAnimation carbon_pattern carbon_prefix carbon_required carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_suffix carbon_theme carbon_tint carbon_tintMode carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec extendStrategy hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
-styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
+styleable FloatingActionButton android_enabled android_background backgroundTint backgroundTintMode borderWidth carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_menu carbon_stroke carbon_strokeWidth carbon_theme elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
-styleable FlowLayout itemSpacing lineSpacing
+styleable FlowLayout android_gravity carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
 styleable FragmentNavigator android_name
+styleable FrameLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
+styleable FrameLayout_Layout carbon_anchor carbon_anchorGravity
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable GridLayout alignmentMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop columnCount columnOrderPreserved orientation rowCount rowOrderPreserved useDefaultMargins
+styleable GridLayout_Layout android_layout_width android_layout_height android_layout_margin android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom layout_column layout_columnSpan layout_columnWeight layout_gravity layout_row layout_rowSpan layout_rowWeight
+styleable HorizontalScrollView carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_overScroll carbon_theme carbon_tint carbon_tintMode
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth
 styleable ImageSlider iss_auto_cycle iss_corner_radius iss_delay iss_error_image iss_indicator_align iss_period iss_placeholder iss_selected_dot iss_text_align iss_title_background iss_unselected_dot
+styleable ImageView android_enabled android_background android_src carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_tint carbon_tintMode carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
+styleable InputLayout android_textStyle android_gravity carbon_actionButton carbon_counterFontFamily carbon_counterFontPath carbon_counterTextSize carbon_error carbon_errorFontFamily carbon_errorFontPath carbon_errorMode carbon_errorTextSize carbon_label carbon_labelFontFamily carbon_labelFontPath carbon_labelStyle carbon_labelTextSize carbon_theme
 styleable Insets marginLeftSystemWindowInsets marginRightSystemWindowInsets marginTopSystemWindowInsets paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingStartSystemWindowInsets paddingTopSystemWindowInsets
 styleable KeyAttribute android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transformPivotTarget transitionEasing transitionPathRotate
 styleable KeyCycle android_alpha android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transitionEasing transitionPathRotate waveOffset wavePeriod wavePhase waveShape waveVariesBy
@@ -6382,9 +7316,13 @@ styleable KeyFramesVelocity
 styleable KeyPosition curveFit drawPath framePosition keyPositionType motionTarget pathMotionArc percentHeight percentWidth percentX percentY sizePercent transitionEasing
 styleable KeyTimeCycle android_alpha android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transitionEasing transitionPathRotate waveDecay waveOffset wavePeriod wavePhase waveShape
 styleable KeyTrigger framePosition motionTarget motion_postLayoutCollision motion_triggerOnCollision onCross onNegativeCross onPositiveCross triggerId triggerReceiver triggerSlack viewTransitionOnCross viewTransitionOnNegativeCross viewTransitionOnPositiveCross
+styleable LayerDrawable android_paddingLeft android_paddingTop android_paddingRight android_paddingBottom android_visible android_opacity android_paddingStart android_paddingEnd android_autoMirrored android_paddingMode
+styleable LayerDrawableItem android_gravity android_id android_height android_width android_drawable android_left android_top android_right android_bottom android_start android_end
 styleable Layout android_orientation android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_layout_marginStart android_layout_marginEnd barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraint_referenced_ids constraint_referenced_tags guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent maxHeight maxWidth minHeight minWidth
+styleable LinearLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
+styleable LinearLayout_Layout carbon_anchor carbon_anchorGravity
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear trackStopIndicatorSize
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
@@ -6427,21 +7365,30 @@ styleable NavInclude graph
 styleable NavigationBarActiveIndicator android_height android_width android_color marginHorizontal shapeAppearance
 styleable NavigationBarView activeIndicatorLabelPadding backgroundTint elevation itemActiveIndicatorStyle itemBackground itemIconSize itemIconTint itemPaddingBottom itemPaddingTop itemRippleColor itemTextAppearanceActive itemTextAppearanceActiveBoldEnabled itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable NavigationRailView headerLayout itemMinHeight menuGravity paddingBottomSystemWindowInsets paddingStartSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
-styleable NavigationView android_layout_gravity android_background android_fitsSystemWindows android_maxWidth bottomInsetScrimEnabled dividerInsetEnd dividerInsetStart drawerLayoutCornerSize elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemRippleColor itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextAppearanceActiveBoldEnabled itemTextColor itemVerticalPadding menu shapeAppearance shapeAppearanceOverlay subheaderColor subheaderInsetEnd subheaderInsetStart subheaderTextAppearance topInsetScrimEnabled
+styleable NavigationView android_layout_gravity android_background android_fitsSystemWindows android_maxWidth bottomInsetScrimEnabled carbon_theme dividerInsetEnd dividerInsetStart drawerLayoutCornerSize elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemRippleColor itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextAppearanceActiveBoldEnabled itemTextColor itemVerticalPadding menu shapeAppearance shapeAppearanceOverlay subheaderColor subheaderInsetEnd subheaderInsetStart subheaderTextAppearance topInsetScrimEnabled
 styleable Navigator android_label android_id route
 styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
+styleable PagerTabStrip carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_fixedTabs carbon_indicatorWidth carbon_theme carbon_tint carbon_tintMode
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable ProgressBar carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_barWidth carbon_inAnimation carbon_outAnimation carbon_progressStyle carbon_theme carbon_tint carbon_tintMode
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RadialViewGroup materialCircleRadius
+styleable RadioButton android_checked android_button android_drawablePadding carbon_buttonGravity carbon_htmlText carbon_theme
+styleable RadioGroup android_checkedButton carbon_theme
 styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
-styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability android_divider android_dividerHeight carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_headerMinHeight carbon_headerParallax carbon_headerTint carbon_inAnimation carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_overScroll carbon_stroke carbon_strokeWidth carbon_theme carbon_tint carbon_tintMode edgeEffectOffsetBottom edgeEffectOffsetTop fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RelativeLayout carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_inset carbon_insetBottom carbon_insetColor carbon_insetLeft carbon_insetRight carbon_insetTop carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
+styleable RelativeLayout_Layout carbon_anchor carbon_anchorGravity
+styleable RippleDrawable android_color android_radius
 styleable ScrimInsetsFrameLayout insetForeground
+styleable ScrollView carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_headerMinHeight carbon_headerParallax carbon_headerTint carbon_overScroll carbon_theme carbon_tint carbon_tintMode
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchBar android_textAppearance android_text android_hint backgroundTint defaultMarginsEnabled defaultScrollFlagsEnabled elevation forceDefaultNavigationOnClickListener hideNavigationIcon navigationIconTint strokeColor strokeWidth tintNavigationIcon
 styleable SearchView android_textAppearance android_focusable android_maxWidth android_text android_hint android_inputType android_imeOptions animateMenuItems animateNavigationIcon autoShowKeyboard backHandlingEnabled backgroundTint closeIcon commitIcon defaultQueryHint goIcon headerLayout hideNavigationIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon searchPrefixText submitBackground suggestionRowLayout useDrawerArrowDrawable voiceIcon
+styleable SeekBar carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_barStyle carbon_inAnimation carbon_labelFormat carbon_max carbon_min carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_showLabel carbon_stepSize carbon_theme carbon_tick carbon_tickColor carbon_tickStep carbon_tint carbon_tintMode carbon_value carbon_value2
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable SideSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable coplanarSiblingViewId shapeAppearance shapeAppearanceOverlay
@@ -6461,19 +7408,23 @@ styleable SwitchCompat android_textOn android_textOff android_thumb showText spl
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text
 styleable TabLayout tabBackground tabContentStart tabGravity tabIconTint tabIconTintMode tabIndicator tabIndicatorAnimationDuration tabIndicatorAnimationMode tabIndicatorColor tabIndicatorFullWidth tabIndicatorGravity tabIndicatorHeight tabInlineLabel tabMaxWidth tabMinWidth tabMode tabPadding tabPaddingBottom tabPaddingEnd tabPaddingStart tabPaddingTop tabRippleColor tabSelectedTextAppearance tabSelectedTextColor tabTextAppearance tabTextColor tabUnboundedRipple
-styleable TextAppearance android_textSize android_typeface android_textStyle android_textColor android_textColorHint android_textColorLink android_shadowColor android_shadowDx android_shadowDy android_shadowRadius android_fontFamily android_textFontWeight fontFamily fontVariationSettings textAllCaps textLocale
+styleable TextAppearance android_textSize android_typeface android_textStyle android_textColor android_textColorHint android_textColorLink android_shadowColor android_shadowDx android_shadowDy android_shadowRadius android_textAllCaps android_fontFamily android_textFontWeight carbon_font carbon_fontFamily carbon_fontPath fontFamily fontVariationSettings textAllCaps textLocale
 styleable TextEffects android_textSize android_typeface android_textStyle android_text android_shadowColor android_shadowDx android_shadowDy android_shadowRadius android_fontFamily borderRound borderRoundPercent textFillColor textOutlineColor textOutlineThickness
 styleable TextInputEditText textInputLayoutFocusedRectEnabled
 styleable TextInputLayout android_enabled android_textColorHint android_maxWidth android_minWidth android_hint android_maxEms android_minEms boxBackgroundColor boxBackgroundMode boxCollapsedPaddingTop boxCornerRadiusBottomEnd boxCornerRadiusBottomStart boxCornerRadiusTopEnd boxCornerRadiusTopStart boxStrokeColor boxStrokeErrorColor boxStrokeWidth boxStrokeWidthFocused counterEnabled counterMaxLength counterOverflowTextAppearance counterOverflowTextColor counterTextAppearance counterTextColor cursorColor cursorErrorColor endIconCheckable endIconContentDescription endIconDrawable endIconMinSize endIconMode endIconScaleType endIconTint endIconTintMode errorAccessibilityLiveRegion errorContentDescription errorEnabled errorIconDrawable errorIconTint errorIconTintMode errorTextAppearance errorTextColor expandedHintEnabled helperText helperTextEnabled helperTextTextAppearance helperTextTextColor hintAnimationEnabled hintEnabled hintTextAppearance hintTextColor passwordToggleContentDescription passwordToggleDrawable passwordToggleEnabled passwordToggleTint passwordToggleTintMode placeholderText placeholderTextAppearance placeholderTextColor prefixText prefixTextAppearance prefixTextColor shapeAppearance shapeAppearanceOverlay startIconCheckable startIconContentDescription startIconDrawable startIconMinSize startIconScaleType startIconTint startIconTintMode suffixText suffixTextAppearance suffixTextColor
+styleable TextMarker carbon_text carbon_textView
+styleable TextView android_textAppearance android_textStyle android_textColor android_background android_maxLines android_singleLine android_textAllCaps carbon_animateColorChanges carbon_autoSizeMaxTextSize carbon_autoSizeMinTextSize carbon_autoSizeStepGranularity carbon_autoSizeText carbon_backgroundTint carbon_backgroundTintMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_font carbon_fontFamily carbon_fontPath carbon_htmlText carbon_inAnimation carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_tint carbon_tintMode carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop
 styleable ThemeEnforcement android_textAppearance enforceMaterialTheme enforceTextAppearance
-styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
+styleable Toolbar android_gravity android_background android_minHeight android_text buttonGravity carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_icon carbon_inAnimation carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_stroke carbon_strokeWidth carbon_theme collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
 styleable Tooltip android_textAppearance android_textColor android_padding android_layout_margin android_minWidth android_minHeight android_text backgroundTint showMarker
 styleable Transform android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation transformPivotTarget
 styleable Transition android_id autoTransition constraintSetEnd constraintSetStart duration layoutDuringTransition motionInterpolator pathMotionArc staggered transitionDisable transitionFlags
 styleable Variant constraints region_heightLessThan region_heightMoreThan region_widthLessThan region_widthMoreThan
-styleable View android_theme android_focusable paddingEnd paddingStart theme
+styleable View android_theme android_background android_focusable carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_cornerCut carbon_cornerCutBottomEnd carbon_cornerCutBottomStart carbon_cornerCutTopEnd carbon_cornerCutTopStart carbon_cornerRadius carbon_cornerRadiusBottomEnd carbon_cornerRadiusBottomStart carbon_cornerRadiusTopEnd carbon_cornerRadiusTopStart carbon_elevation carbon_elevationAmbientShadowColor carbon_elevationShadowColor carbon_elevationSpotShadowColor carbon_inAnimation carbon_maxHeight carbon_maxWidth carbon_outAnimation carbon_rippleColor carbon_rippleHotspot carbon_rippleRadius carbon_rippleStyle carbon_stroke carbon_strokeWidth carbon_theme carbon_tint carbon_tintMode carbon_touchMargin carbon_touchMarginBottom carbon_touchMarginLeft carbon_touchMarginRight carbon_touchMarginTop paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
+styleable ViewPager carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_overScroll carbon_theme carbon_tint carbon_tintMode
 styleable ViewPager2 android_orientation
+styleable ViewPagerIndicator carbon_animateColorChanges carbon_backgroundTint carbon_backgroundTintMode carbon_theme carbon_tint carbon_tintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable fastscroll__fastScroller fastscroll__bubbleColor fastscroll__bubbleTextAppearance fastscroll__handleColor

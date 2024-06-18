@@ -28,13 +28,14 @@ public class QuizzVocabActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quizz);
 
         ivBackToHome = findViewById(R.id.ivBackToHome);
+        recyclerView = findViewById(R.id.rvQuizzVocab);
         ivBackToHome.setOnClickListener(v -> {
             finish();
         });
-        intRecyclerView();
+      intRecyclerView();
     }
 
-    private void intRecyclerView() {
+   private void intRecyclerView() {
         ArrayList<LessonVocab> ItemsArrayList = new ArrayList<>();
 
         ItemsArrayList.add(new LessonVocab(1,"lesson1","Lesson Video", "20 Lesson Video of Vocabulary"));

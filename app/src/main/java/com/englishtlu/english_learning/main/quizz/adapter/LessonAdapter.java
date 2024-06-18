@@ -29,7 +29,7 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
     @NonNull
     @Override
     public LessonAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_course,parent,false);
+        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_quizz,parent,false);
         context = parent.getContext();
         return new ViewHolder(inflate);
     }
@@ -50,10 +50,9 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
         TextView title, description;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            picpath = itemView.findViewById(R.id.ivLessonImage);
             title = itemView.findViewById(R.id.tvLessonName);
             description = itemView.findViewById(R.id.tvLessonDec);
-            picpath = itemView.findViewById(R.id.ivLessonVideo);
-
 
         }
         public void bind(LessonVocab lesson){

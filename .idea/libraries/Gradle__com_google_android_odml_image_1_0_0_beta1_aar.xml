@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.odml:image:1.0.0-beta1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/6c044d202a6e2588879fab430b6b7380/transformed/image-1.0.0-beta1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/6c044d202a6e2588879fab430b6b7380/transformed/image-1.0.0-beta1/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Android Project/caches/transforms-3/88825dba13866574fa1e6a47ebaa801b/transformed/jetified-image-1.0.0-beta1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../Android Project/caches/transforms-3/88825dba13866574fa1e6a47ebaa801b/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../Android Project/caches/modules-2/files-2.1/com.google.android.odml/image/1.0.0-beta1/aa9d23e3124a588104fe600f42af0e192f732599/image-1.0.0-beta1-javadoc.jar!/" />

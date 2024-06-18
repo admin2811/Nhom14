@@ -1,42 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\104408b4988d34197d6181d193432d64\\transformed\\ucrop-2.2.6\\res\\values-zh-rTW\\values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,132,186,240,287",
-                        "endColumns": "76,53,53,46,116",
-                        "endOffsets": "127,181,235,282,399"
-                    },
-                    "to": {
-                        "startLines": "143,144,145,146,147",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "11561,11638,11692,11746,11793",
-                        "endColumns": "76,53,53,46,116",
-                        "endOffsets": "11633,11687,11741,11788,11905"
-                    }
-                },
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\023d8ef0e0815c9a78e7a21abd583acd\\transformed\\play-services-basement-18.3.0\\res\\values-zh-rTW\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "199",
-                        "endColumns": "98",
-                        "endOffsets": "297"
-                    },
-                    "to": {
-                        "startLines": "58",
-                        "startColumns": "4",
-                        "startOffsets": "5219",
-                        "endColumns": "102",
-                        "endOffsets": "5317"
-                    }
-                },
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\e15eb1e0b06bc34dc67d4a333bb8f771\\transformed\\browser-1.4.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
@@ -91,20 +57,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\8f05977593ecba6644789ee6ac6c1c8e\\transformed\\credentials-1.2.0-rc01\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\0de3d6076ff05ecf30d8c2d9e264f389\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,110",
-                        "endOffsets": "156,267"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "98",
+                        "endOffsets": "297"
                     },
                     "to": {
-                        "startLines": "33,34",
-                        "startColumns": "4,4",
-                        "startOffsets": "2863,2969",
-                        "endColumns": "105,110",
-                        "endOffsets": "2964,3075"
+                        "startLines": "58",
+                        "startColumns": "4",
+                        "startOffsets": "5219",
+                        "endColumns": "102",
+                        "endOffsets": "5317"
                     }
                 },
                 {
@@ -142,7 +108,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\15a0e8e1b66de676e0aa08e5f3adcae2\\transformed\\play-services-base-18.3.0\\res\\values-zh-rTW\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\e4c5ca36aac25d19cdbbf0ca4f09cb44\\transformed\\jetified-play-services-base-18.3.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -156,6 +122,40 @@
                         "startOffsets": "4355,4456,4584,4699,4801,4908,5024,5124,5322,5432,5533,5662,5777,5879,5987,6043,6100",
                         "endColumns": "100,127,114,101,106,115,99,94,109,100,128,114,101,107,55,56,73",
                         "endOffsets": "4451,4579,4694,4796,4903,5019,5119,5214,5427,5528,5657,5772,5874,5982,6038,6095,6169"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\9e8443091a0251fafcb238be73049901\\transformed\\jetified-ucrop-2.2.6\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,132,186,240,287",
+                        "endColumns": "76,53,53,46,116",
+                        "endOffsets": "127,181,235,282,399"
+                    },
+                    "to": {
+                        "startLines": "143,144,145,146,147",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "11561,11638,11692,11746,11793",
+                        "endColumns": "76,53,53,46,116",
+                        "endOffsets": "11633,11687,11741,11788,11905"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\29102fed2b6247d452e3e9cb38441dc9\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,110",
+                        "endOffsets": "156,267"
+                    },
+                    "to": {
+                        "startLines": "33,34",
+                        "startColumns": "4,4",
+                        "startOffsets": "2863,2969",
+                        "endColumns": "105,110",
+                        "endOffsets": "2964,3075"
                     }
                 }
             ]

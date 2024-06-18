@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
     <uses-feature
@@ -59,7 +59,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.EnglishLearning" >
         <activity
-            android:name="com.englishtlu.english_learning.main.quizz.QuizzActivity"
+            android:name="com.englishtlu.english_learning.main.quizz.QuizzVocabActivity"
             android:exported="false"
             android:label="@string/title_activity_quizz"
             android:theme="@style/Theme.EnglishLearning" />

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-ne/values-ne.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\3eb69eeac7a6196586642a3c77d190ec\\transformed\\appcompat-1.7.0\\res\\values-ne\\values-ne.xml",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\8f05977593ecba6644789ee6ac6c1c8e\\transformed\\credentials-1.2.0-rc01\\res\\values-ne\\values-ne.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,166",
-                        "endColumns": "110,111",
-                        "endOffsets": "161,273"
-                    },
-                    "to": {
-                        "startLines": "33,34",
-                        "startColumns": "4,4",
-                        "startOffsets": "3079,3190",
-                        "endColumns": "110,111",
-                        "endOffsets": "3185,3297"
-                    }
-                },
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\15a0e8e1b66de676e0aa08e5f3adcae2\\transformed\\play-services-base-18.3.0\\res\\values-ne\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\e4c5ca36aac25d19cdbbf0ca4f09cb44\\transformed\\jetified-play-services-base-18.3.0\\res\\values-ne\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -71,6 +54,23 @@
                         "endLines": "5,35,36,37,38,39,47,48,49,69,70,71,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,137,139,140,141",
                         "endColumns": "12,88,87,81,94,88,101,109,86,59,65,95,65,60,104,63,71,57,73,61,53,112,59,60,58,77,123,80,81,99,84,84,135,80,82,130,82,85,61,53,65,76,78,70,82,68,75,80,67,103,90,77,92,96,73,78,97,59,87,65,87,87,61,67,62,65,104,105,94,104,65,57,83,88,75,72",
                         "endOffsets": "307,3386,3474,3556,3651,3740,4562,4672,4759,7253,7319,7415,7815,7876,7981,8045,8117,8175,8249,8311,8365,8478,8538,8599,8658,8736,8860,8941,9023,9123,9208,9293,9429,9510,9593,9724,9807,9893,9955,10009,10075,10152,10231,10302,10385,10454,10530,10611,10679,10783,10874,10952,11045,11142,11216,11295,11393,11453,11541,11607,11695,11783,11845,11913,11976,12042,12147,12253,12348,12453,12519,12577,12898,13067,13143,13216"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\0de3d6076ff05ecf30d8c2d9e264f389\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-ne\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "159",
+                        "endOffsets": "354"
+                    },
+                    "to": {
+                        "startLines": "58",
+                        "startColumns": "4",
+                        "startOffsets": "5806",
+                        "endColumns": "163",
+                        "endOffsets": "5965"
                     }
                 },
                 {
@@ -108,20 +108,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\023d8ef0e0815c9a78e7a21abd583acd\\transformed\\play-services-basement-18.3.0\\res\\values-ne\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\29102fed2b6247d452e3e9cb38441dc9\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-ne\\values-ne.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "159",
-                        "endOffsets": "354"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,166",
+                        "endColumns": "110,111",
+                        "endOffsets": "161,273"
                     },
                     "to": {
-                        "startLines": "58",
-                        "startColumns": "4",
-                        "startOffsets": "5806",
-                        "endColumns": "163",
-                        "endOffsets": "5965"
+                        "startLines": "33,34",
+                        "startColumns": "4,4",
+                        "startOffsets": "3079,3190",
+                        "endColumns": "110,111",
+                        "endOffsets": "3185,3297"
                     }
                 },
                 {

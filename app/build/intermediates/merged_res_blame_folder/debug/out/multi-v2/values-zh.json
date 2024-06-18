@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-zh/values-zh.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\104408b4988d34197d6181d193432d64\\transformed\\ucrop-2.2.6\\res\\values-zh\\values-zh.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\9e8443091a0251fafcb238be73049901\\transformed\\jetified-ucrop-2.2.6\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

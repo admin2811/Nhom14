@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\b1a9aa396250f2bf52ea154d333045f2\\transformed\\carbon-0.16.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,100,151,203,259,318,370,422,476",
-                        "endColumns": "44,50,51,55,58,51,51,53,51",
-                        "endOffsets": "95,146,198,254,313,365,417,471,523"
-                    },
-                    "to": {
-                        "startLines": "2,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,656,707,759,815,874,926,978,1032",
-                        "endColumns": "44,50,51,55,58,51,51,53,51",
-                        "endOffsets": "95,702,754,810,869,921,973,1027,1079"
-                    }
-                },
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\784fd688083b71c80f66d0455dd306b8\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
@@ -54,6 +37,23 @@
                         "startOffsets": "100,169,238,308,382,458,517,588",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "164,233,303,377,453,512,583,651"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\20fae0b701d2360dc3e0bbc373d72ff6\\transformed\\jetified-carbon-0.16.0.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,100,151,203,259,318,370,422,476",
+                        "endColumns": "44,50,51,55,58,51,51,53,51",
+                        "endOffsets": "95,146,198,254,313,365,417,471,523"
+                    },
+                    "to": {
+                        "startLines": "2,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,656,707,759,815,874,926,978,1032",
+                        "endColumns": "44,50,51,55,58,51,51,53,51",
+                        "endOffsets": "95,702,754,810,869,921,973,1027,1079"
                     }
                 }
             ]

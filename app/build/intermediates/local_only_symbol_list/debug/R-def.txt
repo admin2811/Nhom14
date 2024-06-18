@@ -255,7 +255,7 @@ id ivAdd
 id ivBack
 id ivBackToHome
 id ivDownload
-id ivLessonVideo
+id ivLessonImage
 id ivSearch
 id ivView
 id languageSwitchBtn
@@ -283,7 +283,6 @@ id passwordShowIcon
 id pdfImage
 id phone_btn
 id pic
-id picLesson
 id profile
 id profileImage
 id profileLayout
@@ -310,6 +309,7 @@ id register_button
 id resedn_otp_textView
 id right_chat_text_view
 id right_chat_view
+id rvQuizzVocab
 id rvpdf
 id saveBtn
 id scrollView2
@@ -394,7 +394,6 @@ layout fragment_home2
 layout fragment_my_profile
 layout fragment_profile
 layout fragment_translate
-layout item_course
 layout item_pdf
 layout item_quizz
 layout layout_change_password

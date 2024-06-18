@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\551511d6433494cc49100f02436a7b9f\\transformed\\play-services-auth-21.2.0\\res\\values-watch-v20\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\92d81c7eae58df42a85e597900dcaa4d\\transformed\\jetified-play-services-auth-21.2.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

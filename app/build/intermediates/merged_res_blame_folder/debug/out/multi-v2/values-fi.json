@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-66:/values-fi/values-fi.xml",
+            "outputFile": "com.englishtlu.english_learning.app-mergeDebugResources-59:/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "D:\\Android Project\\caches\\transforms-3\\63fc2177aa5e5723897d26382fe08136\\transformed\\core-1.13.1\\res\\values-fi\\values-fi.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\15a0e8e1b66de676e0aa08e5f3adcae2\\transformed\\play-services-base-18.3.0\\res\\values-fi\\values.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\e4c5ca36aac25d19cdbbf0ca4f09cb44\\transformed\\jetified-play-services-base-18.3.0\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -35,23 +35,6 @@
                         "startOffsets": "4643,4754,4907,5038,5144,5287,5413,5529,5786,5927,6033,6182,6308,6456,6595,6661,6731",
                         "endColumns": "110,152,130,105,142,125,115,106,140,105,148,125,147,138,65,69,82",
                         "endOffsets": "4749,4902,5033,5139,5282,5408,5524,5631,5922,6028,6177,6303,6451,6590,6656,6726,6809"
-                    }
-                },
-                {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\104408b4988d34197d6181d193432d64\\transformed\\ucrop-2.2.6\\res\\values-fi\\values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,178,243,293",
-                        "endColumns": "122,64,49,48",
-                        "endOffsets": "173,238,288,337"
-                    },
-                    "to": {
-                        "startLines": "143,144,145,146",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "12890,13013,13078,13128",
-                        "endColumns": "122,64,49,48",
-                        "endOffsets": "13008,13073,13123,13172"
                     }
                 },
                 {
@@ -91,23 +74,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\023d8ef0e0815c9a78e7a21abd583acd\\transformed\\play-services-basement-18.3.0\\res\\values-fi\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "145",
-                        "endOffsets": "340"
-                    },
-                    "to": {
-                        "startLines": "58",
-                        "startColumns": "4",
-                        "startOffsets": "5636",
-                        "endColumns": "149",
-                        "endOffsets": "5781"
-                    }
-                },
-                {
                     "source": "D:\\Android Project\\caches\\transforms-3\\e15eb1e0b06bc34dc67d4a333bb8f771\\transformed\\browser-1.4.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -142,7 +108,41 @@
                     }
                 },
                 {
-                    "source": "D:\\Android Project\\caches\\transforms-3\\8f05977593ecba6644789ee6ac6c1c8e\\transformed\\credentials-1.2.0-rc01\\res\\values-fi\\values-fi.xml",
+                    "source": "D:\\Android Project\\caches\\transforms-3\\0de3d6076ff05ecf30d8c2d9e264f389\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-fi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "145",
+                        "endOffsets": "340"
+                    },
+                    "to": {
+                        "startLines": "58",
+                        "startColumns": "4",
+                        "startOffsets": "5636",
+                        "endColumns": "149",
+                        "endOffsets": "5781"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\9e8443091a0251fafcb238be73049901\\transformed\\jetified-ucrop-2.2.6\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,178,243,293",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "173,238,288,337"
+                    },
+                    "to": {
+                        "startLines": "143,144,145,146",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "12890,13013,13078,13128",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "13008,13073,13123,13172"
+                    }
+                },
+                {
+                    "source": "D:\\Android Project\\caches\\transforms-3\\29102fed2b6247d452e3e9cb38441dc9\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

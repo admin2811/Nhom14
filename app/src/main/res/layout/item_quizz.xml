@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/edit_text_round_corner"
+    android:layout_margin="10dp"
+    app:carbon_elevation="10dp"
+    app:carbon_elevationShadowColor="@color/carbon_blue_700"
+    android:orientation="vertical"
+    app:carbon_cornerRadius="20dp"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <carbon.widget.RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <carbon.widget.ImageView
+                android:id="@+id/ivLessonImage"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/circual_bg"
+                android:padding="10dp"
+                android:src="@drawable/lesson1"
+                android:layout_marginTop="20dp"
+                />
+        </carbon.widget.RelativeLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:id="@+id/tvLessonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Lesson Video"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                tools:ignore="SmallSp" />
+
+            <carbon.widget.TextView
+                android:id="@+id/tvLessonDec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Lesson Video"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+
+        </carbon.widget.LinearLayout>
+
+
+        <carbon.widget.RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <carbon.widget.ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_vocabulary"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="6dp"
+                android:layout_gravity="center"/>
+        </carbon.widget.RelativeLayout>
+
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.LinearLayout>

@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.englishtlu.english_learning"
-        minSdk 28
+        minSdk 26
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -103,7 +103,5 @@ dependencies {
     // Add the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth'
-    implementation 'tk.zielony:carbon:0.16.0'
-
-
+    implementation 'tk.zielony:carbon:0.16.0.1'
 }
