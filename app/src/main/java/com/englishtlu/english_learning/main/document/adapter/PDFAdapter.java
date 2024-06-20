@@ -23,6 +23,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.main.document.model.PDF;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -131,19 +133,25 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
     }
 
     private void savePdfToRealtimeDatabase(String id, String name, String downloadUrl) {
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("pdfs");
-        PDF pdf = new PDF(id, name, downloadUrl);
-        if (id != null) {
-            databaseReference.child(id).setValue(pdf)
-                    .addOnSuccessListener(aVoid -> {
-                        Toast.makeText(context, "Lưu PDF thành công.", Toast.LENGTH_SHORT).show();
-                    })
-                    .addOnFailureListener(e -> {
-                        Toast.makeText(context, "Lưu PDF thất bại.", Toast.LENGTH_SHORT).show();
-                        Log.e("FirebaseDatabaseError", "Lỗi lưu PDF: ", e);
-                    });
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            String uid = user.getUid();
+            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("document").child(uid).child("pdfs");
+            PDF pdf = new PDF(id, name, downloadUrl);
+            if (id != null) {
+                databaseReference.child(id).setValue(pdf)
+                        .addOnSuccessListener(aVoid -> {
+                            Toast.makeText(context, "Lưu PDF thành công.", Toast.LENGTH_SHORT).show();
+                        })
+                        .addOnFailureListener(e -> {
+                            Toast.makeText(context, "Lưu PDF thất bại.", Toast.LENGTH_SHORT).show();
+                            Log.e("FirebaseDatabaseError", "Lỗi lưu PDF: ", e);
+                        });
+            } else {
+                Toast.makeText(context, "Không thể tạo ID cho PDF.", Toast.LENGTH_SHORT).show();
+            }
         } else {
-            Toast.makeText(context, "Không thể tạo ID cho PDF.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Người dùng chưa đăng nhập.", Toast.LENGTH_SHORT).show();
         }
     }
     @SuppressLint("QueryPermissionsNeeded")

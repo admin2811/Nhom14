@@ -16,7 +16,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -60,6 +59,8 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout share = (ConstraintLayout) view.findViewById(id.share);
         ConstraintLayout changePassword = (ConstraintLayout) view.findViewById(id.changePasswordandEmail);
         ConstraintLayout signOut = (ConstraintLayout) view.findViewById(id.signOut);
+        ConstraintLayout document = (ConstraintLayout) view.findViewById(id.document);
+
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
@@ -107,6 +108,13 @@ public class ProfileFragment extends Fragment {
                 Intent intent = new Intent(requireContext(), LoginActivity.class);
                 startActivity(intent);
                 requireActivity().finish();
+            }
+        });
+        document.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireContext(), DocActivity.class);
+                startActivity(intent);
             }
         });
         firestore = FirebaseFirestore.getInstance();

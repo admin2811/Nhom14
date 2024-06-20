@@ -2027,6 +2027,9 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -3848,6 +3851,7 @@ drawable baseline_chevron_left_24
 drawable baseline_chevron_right_24
 drawable baseline_compare_arrows_24
 drawable baseline_contactless_24
+drawable baseline_edit_24
 drawable baseline_file_download_24
 drawable baseline_g_translate_24
 drawable baseline_keyboard_arrow_down_24
@@ -4331,6 +4335,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable top_background
 drawable translate
+drawable trash_can
 drawable trends
 drawable trends2
 drawable twitter
@@ -4577,8 +4582,10 @@ id btnOtp
 id btnRegister
 id btnRegister_1
 id btnReset
+id btnSelectFile
 id btnSetEmail
 id btnSetPassword
+id btnUpload
 id btnVeritfy
 id btn_chanllenge
 id buttonPanel
@@ -4798,6 +4805,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etPdfName
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_layout
@@ -4903,7 +4911,9 @@ id item_touch_helper_previous_elevation
 id ivAdd
 id ivBack
 id ivBackToHome
+id ivDelete
 id ivDownload
+id ivEdit
 id ivLessonImage
 id ivSearch
 id ivView
@@ -5127,6 +5137,7 @@ id rounded
 id row_index_key
 id rtl
 id rvQuizzVocab
+id rvdoc
 id rvpdf
 id saveBtn
 id save_non_transition_alpha
@@ -5208,6 +5219,7 @@ id state_scale
 id staticLayout
 id staticPostLayout
 id stop
+id storageBoxImage
 id stretch
 id submenuarrow
 id submit_area
@@ -5314,6 +5326,7 @@ id tvLessonDec
 id tvLessonName
 id tvPdfName
 id tvPdfSize
+id tvSelectedFile
 id txtConPwd
 id txtPwd
 id ucrop
@@ -5472,6 +5485,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_chat_bot
+layout activity_doc
 layout activity_login
 layout activity_login_otpactivity
 layout activity_login_with_phone_number
@@ -5556,6 +5570,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_choose_app
 layout dialog_forgot
+layout dialog_upload_pdf
 layout fastscroll__default_bubble
 layout fragment_change
 layout fragment_change_passwordand_email
@@ -5568,6 +5583,7 @@ layout fragment_translate
 layout image_slider
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_doc
 layout item_pdf
 layout item_quizz
 layout layout_change_password
@@ -5641,8 +5657,10 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout spinner_item
+layout storage_box
 layout support_simple_spinner_dropdown_item
 layout toolbar
+layout toolbar1
 layout ucrop_activity_photobox
 layout ucrop_aspect_ratio
 layout ucrop_controls

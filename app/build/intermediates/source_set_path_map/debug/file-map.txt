@@ -54,11 +54,10 @@ com.englishtlu.english_learning.app-coordinatorlayout-1.1.0-52 D:\Android Projec
 com.englishtlu.english_learning.app-jetified-lifecycle-runtime-ktx-2.6.2-53 D:\Android Project\caches\transforms-3\f56dd5eb582b01b729e9f70b05dcbba4\transformed\jetified-lifecycle-runtime-ktx-2.6.2\res
 com.englishtlu.english_learning.app-databinding-runtime-3.4.0-rc03-54 D:\Android Project\caches\transforms-3\f58abf36a50e087fca2adcbad9879b39\transformed\databinding-runtime-3.4.0-rc03\res
 com.englishtlu.english_learning.app-drawerlayout-1.1.1-55 D:\Android Project\caches\transforms-3\fef399a32804c97dd940e7994b28a83e\transformed\drawerlayout-1.1.1\res
-com.englishtlu.english_learning.app-pngs-56 D:\EnglishTLU\app\build\generated\res\pngs\debug
-com.englishtlu.english_learning.app-res-57 D:\EnglishTLU\app\build\generated\res\processDebugGoogleServices
-com.englishtlu.english_learning.app-resValues-58 D:\EnglishTLU\app\build\generated\res\resValues\debug
-com.englishtlu.english_learning.app-packageDebugResources-59 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.englishtlu.english_learning.app-packageDebugResources-60 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.englishtlu.english_learning.app-merged_res-61 D:\EnglishTLU\app\build\intermediates\merged_res\debug
-com.englishtlu.english_learning.app-debug-62 D:\EnglishTLU\app\src\debug\res
-com.englishtlu.english_learning.app-main-63 D:\EnglishTLU\app\src\main\res
+com.englishtlu.english_learning.app-res-56 D:\EnglishTLU\app\build\generated\res\processDebugGoogleServices
+com.englishtlu.english_learning.app-resValues-57 D:\EnglishTLU\app\build\generated\res\resValues\debug
+com.englishtlu.english_learning.app-packageDebugResources-58 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.englishtlu.english_learning.app-packageDebugResources-59 D:\EnglishTLU\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.englishtlu.english_learning.app-merged_res-60 D:\EnglishTLU\app\build\intermediates\merged_res\debug
+com.englishtlu.english_learning.app-debug-61 D:\EnglishTLU\app\src\debug\res
+com.englishtlu.english_learning.app-main-62 D:\EnglishTLU\app\src\main\res

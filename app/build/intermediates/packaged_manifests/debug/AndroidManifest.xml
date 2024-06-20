@@ -111,6 +111,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.englishtlu.english_learning.main.profile.DocActivity"
+            android:exported="true" >
+        </activity>
 
         <service
             android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"

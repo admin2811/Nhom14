@@ -26,7 +26,6 @@ public class QuizzVocabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizz);
-
         ivBackToHome = findViewById(R.id.ivBackToHome);
         recyclerView = findViewById(R.id.rvQuizzVocab);
         ivBackToHome.setOnClickListener(v -> {

@@ -1,7 +1,9 @@
 package com.englishtlu.english_learning.main.document.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -14,8 +16,10 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.main.MainActivity;
 import com.englishtlu.english_learning.main.document.adapter.PDFAdapter;
 import com.englishtlu.english_learning.main.document.model.PDF;
+import com.englishtlu.english_learning.main.profile.DocActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +32,7 @@ public class PDFActivity extends AppCompatActivity {
     private PDFAdapter pdfAdapter;
     private List<PDF> pdfList = new ArrayList<>();
 
-    private ImageView ivBack;
+    private ImageView ivBack,ivStorage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +43,16 @@ public class PDFActivity extends AppCompatActivity {
         pdfAdapter = new PDFAdapter(pdfList,this);
         recyclerView.setAdapter(pdfAdapter);
         ivBack = findViewById(R.id.ivBack);
+        ivStorage = findViewById(R.id.storageBoxImage);
+         ivStorage.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(PDFActivity.this, DocActivity.class);
+                 startActivity(intent);
+             }
+         });
         ivBack.setOnClickListener(v -> finish());
+
         fetchData();
 
     }

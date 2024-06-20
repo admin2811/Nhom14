@@ -1,6 +1,9 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color english_learning_background
 color grey
 color lavender
@@ -37,6 +40,7 @@ drawable baseline_chevron_left_24
 drawable baseline_chevron_right_24
 drawable baseline_compare_arrows_24
 drawable baseline_contactless_24
+drawable baseline_edit_24
 drawable baseline_file_download_24
 drawable baseline_g_translate_24
 drawable baseline_keyboard_arrow_down_24
@@ -121,6 +125,7 @@ drawable star_1828884
 drawable storage_box
 drawable top_background
 drawable translate
+drawable trash_can
 drawable trends
 drawable trends2
 drawable twitter
@@ -168,8 +173,10 @@ id btnOtp
 id btnRegister
 id btnRegister_1
 id btnReset
+id btnSelectFile
 id btnSetEmail
 id btnSetPassword
+id btnUpload
 id btnVeritfy
 id btn_chanllenge
 id cardView
@@ -217,6 +224,7 @@ id edtSchool
 id emailBox
 id emailTxt
 id end
+id etPdfName
 id expanded_layout
 id fab_button
 id facebook_btn
@@ -254,7 +262,9 @@ id include
 id ivAdd
 id ivBack
 id ivBackToHome
+id ivDelete
 id ivDownload
+id ivEdit
 id ivLessonImage
 id ivSearch
 id ivView
@@ -310,6 +320,7 @@ id resedn_otp_textView
 id right_chat_text_view
 id right_chat_view
 id rvQuizzVocab
+id rvdoc
 id rvpdf
 id saveBtn
 id scrollView2
@@ -327,6 +338,7 @@ id sourceLanguageEt
 id sourceLanguageSpinner
 id star
 id start
+id storageBoxImage
 id textEmail
 id textFirstName
 id textLastName
@@ -369,10 +381,12 @@ id tvLessonDec
 id tvLessonName
 id tvPdfName
 id tvPdfSize
+id tvSelectedFile
 id txtConPwd
 id txtPwd
 id view
 layout activity_chat_bot
+layout activity_doc
 layout activity_login
 layout activity_login_otpactivity
 layout activity_login_with_phone_number
@@ -386,6 +400,7 @@ layout chat_item
 layout custom_spinner_dropdown_item
 layout definitions_list_items
 layout dialog_forgot
+layout dialog_upload_pdf
 layout fragment_change
 layout fragment_change_passwordand_email
 layout fragment_dictionary
@@ -394,6 +409,7 @@ layout fragment_home2
 layout fragment_my_profile
 layout fragment_profile
 layout fragment_translate
+layout item_doc
 layout item_pdf
 layout item_quizz
 layout layout_change_password
@@ -402,7 +418,9 @@ layout pdf_view
 layout phonetics_list_items
 layout question_faq
 layout spinner_item
+layout storage_box
 layout toolbar
+layout toolbar1
 layout viewholder_course
 mipmap english_learning
 mipmap english_learning_foreground

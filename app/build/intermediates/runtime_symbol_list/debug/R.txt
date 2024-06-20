@@ -2026,6 +2026,9 @@ int color cardview_dark_background 0x7f050169
 int color cardview_light_background 0x7f05016a
 int color cardview_shadow_end_color 0x7f05016b
 int color cardview_shadow_start_color 0x7f05016c
+int color colorAccent 0x7f05047b
+int color colorPrimary 0x7f05047c
+int color colorPrimaryDark 0x7f05047d
 int color common_google_signin_btn_text_dark 0x7f05016d
 int color common_google_signin_btn_text_dark_default 0x7f05016e
 int color common_google_signin_btn_text_dark_disabled 0x7f05016f
@@ -3847,6 +3850,7 @@ int drawable baseline_chevron_left_24 0x7f070094
 int drawable baseline_chevron_right_24 0x7f070095
 int drawable baseline_compare_arrows_24 0x7f070096
 int drawable baseline_contactless_24 0x7f070097
+int drawable baseline_edit_24 0x7f07029a
 int drawable baseline_file_download_24 0x7f070098
 int drawable baseline_g_translate_24 0x7f070099
 int drawable baseline_keyboard_arrow_down_24 0x7f07009a
@@ -4330,6 +4334,7 @@ int drawable tooltip_frame_dark 0x7f070277
 int drawable tooltip_frame_light 0x7f070278
 int drawable top_background 0x7f070279
 int drawable translate 0x7f07027a
+int drawable trash_can 0x7f07029b
 int drawable trends 0x7f07027b
 int drawable trends2 0x7f07027c
 int drawable twitter 0x7f07027d
@@ -4576,8 +4581,10 @@ int id btnOtp 0x7f0900cb
 int id btnRegister 0x7f0900cc
 int id btnRegister_1 0x7f0900cd
 int id btnReset 0x7f0900ce
+int id btnSelectFile 0x7f0903dd
 int id btnSetEmail 0x7f0900cf
 int id btnSetPassword 0x7f0900d0
+int id btnUpload 0x7f0903de
 int id btnVeritfy 0x7f0900d1
 int id btn_chanllenge 0x7f0900d2
 int id buttonPanel 0x7f0900d3
@@ -4797,6 +4804,7 @@ int id endToStart 0x7f0901a8
 int id enterAlways 0x7f0901a9
 int id enterAlwaysCollapsed 0x7f0901aa
 int id escape 0x7f0901ab
+int id etPdfName 0x7f0903df
 int id exitUntilCollapsed 0x7f0901ac
 int id expand_activities_button 0x7f0901ad
 int id expanded_layout 0x7f0901ae
@@ -4902,7 +4910,9 @@ int id item_touch_helper_previous_elevation 0x7f090211
 int id ivAdd 0x7f090212
 int id ivBack 0x7f090213
 int id ivBackToHome 0x7f090214
+int id ivDelete 0x7f0903db
 int id ivDownload 0x7f090215
+int id ivEdit 0x7f0903dc
 int id ivLessonImage 0x7f0903d8
 int id ivSearch 0x7f090217
 int id ivView 0x7f090218
@@ -5126,6 +5136,7 @@ int id rounded 0x7f0902f2
 int id row_index_key 0x7f0902f3
 int id rtl 0x7f0902f4
 int id rvQuizzVocab 0x7f0903d7
+int id rvdoc 0x7f0903da
 int id rvpdf 0x7f0902f5
 int id saveBtn 0x7f0902f6
 int id save_non_transition_alpha 0x7f0902f7
@@ -5207,6 +5218,7 @@ int id state_scale 0x7f090342
 int id staticLayout 0x7f090343
 int id staticPostLayout 0x7f090344
 int id stop 0x7f090345
+int id storageBoxImage 0x7f0903d9
 int id stretch 0x7f090346
 int id submenuarrow 0x7f090347
 int id submit_area 0x7f090348
@@ -5313,6 +5325,7 @@ int id tvLessonDec 0x7f0903ac
 int id tvLessonName 0x7f0903ad
 int id tvPdfName 0x7f0903ae
 int id tvPdfSize 0x7f0903af
+int id tvSelectedFile 0x7f0903e0
 int id txtConPwd 0x7f0903b0
 int id txtPwd 0x7f0903b1
 int id ucrop 0x7f0903b2
@@ -5471,6 +5484,7 @@ int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_chat_bot 0x7f0c001c
+int layout activity_doc 0x7f0c00d6
 int layout activity_login 0x7f0c001d
 int layout activity_login_otpactivity 0x7f0c001e
 int layout activity_login_with_phone_number 0x7f0c001f
@@ -5555,6 +5569,7 @@ int layout design_text_input_end_icon 0x7f0c006d
 int layout design_text_input_start_icon 0x7f0c006e
 int layout dialog_choose_app 0x7f0c006f
 int layout dialog_forgot 0x7f0c0070
+int layout dialog_upload_pdf 0x7f0c00d5
 int layout fastscroll__default_bubble 0x7f0c0071
 int layout fragment_change 0x7f0c0072
 int layout fragment_change_passwordand_email 0x7f0c0073
@@ -5567,6 +5582,7 @@ int layout fragment_translate 0x7f0c0079
 int layout image_slider 0x7f0c007a
 int layout ime_base_split_test_activity 0x7f0c007b
 int layout ime_secondary_split_test_activity 0x7f0c007c
+int layout item_doc 0x7f0c00d3
 int layout item_pdf 0x7f0c007e
 int layout item_quizz 0x7f0c007f
 int layout layout_change_password 0x7f0c0080
@@ -5640,8 +5656,10 @@ int layout select_dialog_item_material 0x7f0c00c3
 int layout select_dialog_multichoice_material 0x7f0c00c4
 int layout select_dialog_singlechoice_material 0x7f0c00c5
 int layout spinner_item 0x7f0c00c6
+int layout storage_box 0x7f0c00d1
 int layout support_simple_spinner_dropdown_item 0x7f0c00c7
 int layout toolbar 0x7f0c00c8
+int layout toolbar1 0x7f0c00d4
 int layout ucrop_activity_photobox 0x7f0c00c9
 int layout ucrop_aspect_ratio 0x7f0c00ca
 int layout ucrop_controls 0x7f0c00cb
