@@ -31,7 +31,6 @@ public class MainActivity2 extends AppCompatActivity {
     private  String lastName,getLastName;
     private FirebaseAuth auth;
     private int selectedTab = 1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +49,8 @@ public class MainActivity2 extends AppCompatActivity {
         final TextView translateText = findViewById(R.id.translateTxt);
         final TextView chatbotText = findViewById(R.id.chatbotTxt);
         final TextView profileText = findViewById(R.id.profileTxt);
+
+
         //in ra userId để kiểm tra
 
         auth = FirebaseAuth.getInstance();

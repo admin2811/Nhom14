@@ -2,9 +2,11 @@ package com.englishtlu.english_learning.main.home.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,7 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.main.flashcard.FlashCardActivity;
 import com.englishtlu.english_learning.main.home.model.Course;
+import com.englishtlu.english_learning.main.test.CourseActivity;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -22,7 +26,8 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
     ArrayList<Course> items;
 
     Context context;
-    public  CourseAdapter(ArrayList<Course> items) {
+    public  CourseAdapter(Context context, ArrayList<Course> items) {
+        this.context = context;
         this.items = items;
     }
 
@@ -45,6 +50,13 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
         Glide.with(holder.itemView.getContext())
                 .load(drawableResourceId)
                 .into(holder.picpath);
+        holder.btnChanglen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, CourseActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -57,12 +69,14 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
         TextView title, description, star;
 
         ImageView picpath;
+        Button btnChanglen;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.titleTxt);
             description = itemView.findViewById(R.id.description);
             star = itemView.findViewById(R.id.star);
             picpath = itemView.findViewById(R.id.pic);
+            btnChanglen = itemView.findViewById(R.id.btn_chanllenge);
         }
     }
 }

@@ -13,6 +13,27 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="31">
         <activity
+            android:name=".main.flashcard.LearnFlashCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.flashcard.CardManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.flashcard.AddCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.flashcard.FlashCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.test.QuizResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.test.QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.test.QuizStartActivity"
+            android:exported="false" />
+        <activity
             android:name=".authentication.LoginActivity"
             android:exported="false" />
         <activity
@@ -23,6 +44,9 @@
             android:exported="false" />
         <activity
             android:name=".main.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".main.test.CourseActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

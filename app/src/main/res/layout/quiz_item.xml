@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/QuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The content of question"
+                android:textColor="@color/black"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:scrollbars="vertical"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/playMedia"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                app:layout_constraintTop_toBottomOf="@+id/QuestionText"
+                app:srcCompat="@drawable/play_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/btnOptionA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_quiz_item_option">
+        <TextView android:id="@+id/optionA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginEnd="12dp" android:layout_marginStart="32dp" android:text="This is the A answer" android:textStyle="bold" android:textSize="18dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/btnOptionB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_quiz_item_option">
+        <TextView android:id="@+id/optionB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginEnd="12dp" android:layout_marginStart="32dp" android:text="This is the B answer" android:textStyle="bold" android:textSize="18dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/btnOptionC"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_quiz_item_option">
+        <TextView
+            android:id="@+id/optionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="32dp"
+            android:text="This is the C answer"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/bg_quiz_item_option"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/btnOptionD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_quiz_item_option">
+        <TextView
+            android:id="@+id/optionD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="32dp"
+            android:text="This is the D answer"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+    </FrameLayout>
+</LinearLayout>

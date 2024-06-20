@@ -111,8 +111,8 @@ public class HomeFragment extends Fragment {
                 "Treasure Hunt", "Collect hidden English vocabulary words in a timed scavenger hunt", 4.5));
         ItemsArrayList.add(new Course("completion", "Sentence Building Competition", "Drag and drop words to form grammatically correct sentences", 4.5));
 
-        recyclerViewCourse.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
-        RecyclerView.Adapter<CourseAdapter.ViewHolder> adapterPopular = new CourseAdapter(ItemsArrayList);
+        recyclerViewCourse.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        RecyclerView.Adapter<CourseAdapter.ViewHolder> adapterPopular = new CourseAdapter(getContext(), ItemsArrayList);
         recyclerViewCourse.setAdapter(adapterPopular);
     }
 }

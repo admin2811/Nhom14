@@ -160,6 +160,7 @@ public class LoginActivity extends AppCompatActivity {
                     if(firebaseUser.isEmailVerified()){
 
                         Intent intent = new Intent(LoginActivity.this, MainActivity2.class);
+                        intent.putExtra("uid",authProfile.getUid());
                         startActivity(intent);
 
                         Toast.makeText(LoginActivity.this, "You are logged in now",Toast.LENGTH_SHORT).show();

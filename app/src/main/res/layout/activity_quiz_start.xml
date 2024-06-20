@@ -1,0 +1,30 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#4C39CC" tools:context=".quiz.QuizStartActivity">
+    <LinearLayout android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="120dp" android:orientation="horizontal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:layout_width="15dp" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/white" android:padding="4dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="24dp" android:layout_marginTop="1dp">
+                <ImageView android:id="@+id/imageView8" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Questions" app:layout_constraintTop_toBottomOf="@+id/imageView8"/>
+                <TextView android:id="@+id/lenQuiz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="NULL" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView14"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="15dp" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/white" android:padding="4dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="24dp" android:layout_marginTop="1dp">
+                <ImageView android:id="@+id/imageView9" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:id="@+id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Questions" app:layout_constraintTop_toBottomOf="@+id/imageView9"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="NULL" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView15"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="15dp" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="@color/white" android:padding="4dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="24dp" android:layout_marginTop="1dp">
+                <ImageView android:id="@+id/imageView10" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:id="@+id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Questions" app:layout_constraintTop_toBottomOf="@+id/imageView10"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="NULL" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView16"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="15dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnstartQuiz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
