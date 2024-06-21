@@ -6,10 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.englishtlu.english_learning.R;
+import com.google.android.material.snackbar.Snackbar;
+import com.hbb20.CountryCodePicker;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.englishtlu.english_learning.R;
-import com.hbb20.CountryCodePicker;
 
 
 public class LoginWithPhoneNumberActivity extends AppCompatActivity {
