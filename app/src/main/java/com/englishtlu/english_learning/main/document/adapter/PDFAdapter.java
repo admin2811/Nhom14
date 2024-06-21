@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,15 +33,18 @@ import com.google.firebase.storage.StorageReference;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
-public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
+public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> implements Filterable {
 
-    private List<PDF> pdfList;
+    private static List<PDF> pdfList;
+    private static List<PDF> pdfListOld;
     private Context context;
     public PDFAdapter(List<PDF> pdfList, Context context) {
         this.pdfList = pdfList;
         this.context = context;
+        this.pdfListOld = pdfList;
     }
 
 
@@ -49,6 +54,38 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_pdf,parent,false);
        return new PDFViewHolder(view);
     }
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                String strSearch = constraint.toString();
+                if(strSearch.isEmpty()){
+                    pdfList = pdfListOld;
+                }else {
+                    List<PDF> list = new ArrayList<>();
+                    for(PDF pdf : pdfListOld){
+                        if(pdf.getName().toLowerCase().contains(strSearch.toLowerCase())){
+                            list.add(pdf);
+                        }
+                    }
+                    pdfList = list;
+                }
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = pdfList;
+                return filterResults;
+            }
+
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                pdfList = (List<PDF>) results.values;
+                notifyDataSetChanged();
+
+            }
+        };
+    }
+
 
     @Override
     public void onBindViewHolder(@NonNull PDFViewHolder holder, int position) {
