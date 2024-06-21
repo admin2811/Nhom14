@@ -35,6 +35,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
         <activity android:name=".authentication.LoginWithPhoneNumberActivity"
+            android:exported="false" />
         <activity
             android:name=".main.chatbot.ChatBotActivity"
             android:exported="false"
