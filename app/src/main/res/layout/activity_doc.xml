@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        android:background="@color/carbon_red_200"
+        android:background="#dc3b3b"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
         app:title="Document"
         app:titleMargin="17dp"
