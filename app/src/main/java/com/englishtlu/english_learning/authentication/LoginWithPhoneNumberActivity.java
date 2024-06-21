@@ -15,7 +15,8 @@ import com.hbb20.CountryCodePicker;
 
 public class LoginWithPhoneNumberActivity extends AppCompatActivity {
 
-
+    CountryCodePicker countryCodePicker;
+    EditText phoneInput;
    AppCompatButton sendOTP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
