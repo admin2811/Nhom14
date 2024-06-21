@@ -38,6 +38,8 @@
             android:exported="false" />
         <activity android:name=".authentication.LoginOTPActivity"
             android:exported="false" />
+        <activity android:name=".main.profile.DocActivity"
+            android:exported="false" />
         <activity
             android:name=".main.chatbot.ChatBotActivity"
             android:exported="false"

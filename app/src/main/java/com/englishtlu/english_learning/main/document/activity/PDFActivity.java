@@ -83,7 +83,8 @@ public class PDFActivity extends AppCompatActivity {
             finish();
         }
         if(item.getItemId() == R.id.action_storage){
-            //Chuyển đến trang lưu trữ D
+            //Chuyển đến trang lưu trữ DocAcitvity
+
 
         }
         return super.onOptionsItemSelected(item);
