@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.TaskInfo;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,26 +37,27 @@ import java.util.List;
 
 public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> {
 
-    public interface OnItemClickListener {
-        void onSelectFileButtonClick(int position);
-    }
+
     private List<Doc> docList;
 
     private Context context;
 
-    private OnItemClickListener listener;
+
     private DatabaseReference databaseReference;
 
-    public DocAdapter(List<Doc> docList, Context context, OnItemClickListener listener){
+    private boolean isSelectFile = false;
+
+    public interface OnItemClickListener {
+        void onSelectFileButtonClick(int position, TextView tvSelectedFile);
+    }
+    private OnItemClickListener listener;
+    public DocAdapter(List<Doc> docList, Context context,OnItemClickListener listener){
         this.docList = docList;
         this.context = context;
         this.listener = listener;
+
     }
 
-    @SuppressLint("NotifyDataSetChanged")
-    public void setSelectedFileName(String fileName){
-        notifyDataSetChanged();
-    }
 
     @NonNull
     @Override
@@ -87,19 +89,26 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> {
                 // Ánh xạ các thành phần trong layout của dialog
                 EditText etPdfName = dialogView.findViewById(R.id.etPdfName);
                 Button btnSelectedFile = dialogView.findViewById(R.id.btnSelectFile);
-                TextView tvSelectedFile = dialogView.findViewById(R.id.tvSelectedFile);
+                final TextView tvSelectedFile = dialogView.findViewById(R.id.tvSelectedFile);
                 Button btnUpload = dialogView.findViewById(R.id.btnUpload);
 
                 AlertDialog dialog = builder.create();
                 //Chọn File
-                btnSelectedFile.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        listener.onSelectFileButtonClick(holder.getAdapterPosition());
+                btnSelectedFile.setOnClickListener(v1 -> {
+                    int pos = holder.getAdapterPosition();
+                    if (pos != RecyclerView.NO_POSITION) {
+                        listener.onSelectFileButtonClick(pos, tvSelectedFile);
+                        isSelectFile = true;
                     }
                 });
                 // Hiển thị tên file đã  trong một chỉ mục bất kì
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                etPdfName.setText(selecteDoc.getName());
+                tvSelectedFile.setText(selecteDoc.getName());
+                if(isSelectFile){
+                    tvSelectedFile.setText(selecteDoc.getName());
+                }
+
+              /*  FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if(user != null){
                     String uid = user.getUid();
                     databaseReference = FirebaseDatabase.getInstance().getReference("document").child(uid).child("pdfs").child(selecteDoc.getId());
@@ -112,7 +121,7 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> {
                                 if(doc != null){
                                     etPdfName.setText(doc.getName());
                                     // Hiển thị tên file đã chọn
-                                    tvSelectedFile.setText(doc.getName());
+                                    tvSelectedFile[0].setText(doc.getName());
                                 }
                             }
                         }
@@ -121,7 +130,7 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> {
 
                         }
                     });
-                }
+                }*/
                 dialog.show();
             }
         });

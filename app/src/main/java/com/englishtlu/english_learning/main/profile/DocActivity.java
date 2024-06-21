@@ -4,6 +4,7 @@ package com.englishtlu.english_learning.main.profile;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -51,7 +52,7 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
     private List<Doc> docList;
 
     private Uri selectedPdfUri;
-    private TextView tvSelectedFile;
+    private TextView tvSelectedFile,currentTextView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,7 +68,7 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
 
         ivAdd.setOnClickListener(v -> showUploadDialog());
         docList = new ArrayList<>();
-        docAdapter = new DocAdapter(docList,this, (DocAdapter.OnItemClickListener) this);
+        docAdapter = new DocAdapter(docList, (Context) this, (DocAdapter.OnItemClickListener) this);
         recyclerView.setAdapter(docAdapter);
         fetchDocsFromFireBase();
     }
@@ -84,6 +85,7 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
         Button btnUpload = dialogView.findViewById(R.id.btnUpload);
         AlertDialog dialog = builder.create();
         btnSelectedFile.setOnClickListener(v -> {
+            this.currentTextView = tvSelectedFile;
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
             intent.setType("application/pdf");
             intent.addCategory(Intent.CATEGORY_OPENABLE);
@@ -106,20 +108,24 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
     }
 
     @Override
+    public void onSelectFileButtonClick(int position, TextView tvSelectedFile) {
+        this.currentTextView = tvSelectedFile;
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("application/pdf");
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        startActivityForResult(Intent.createChooser(intent, "Select PDF"), REQUEST_CODE_PICK_PDF);
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQUEST_CODE_PICK_PDF && resultCode == Activity.RESULT_OK){
             if(data != null){
                 selectedPdfUri = data.getData();
                 if (selectedPdfUri != null){
-                        if (tvSelectedFile != null){
+                        if (currentTextView != null){
+                            currentTextView.setText(selectedPdfUri.getLastPathSegment());
                             tvSelectedFile.setText(selectedPdfUri.getLastPathSegment());
-                            String fileName = selectedPdfUri.getLastPathSegment();
-                            if (fileName != null) {
-                                docAdapter.setSelectedFileName(fileName);
-                            }else{
-                                Log.e("DocFragment", "fileName is null");
-                            }
                         }else {
                             Log.e("DocFragment", "TextView tvSelectedFile is null");
                         }
@@ -196,10 +202,7 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
 
 
     @Override
-    public void onSelectFileButtonClick(int position) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("application/pdf");
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
-        startActivityForResult(Intent.createChooser(intent, "Select PDF"), REQUEST_CODE_PICK_PDF);
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
     }
 }
