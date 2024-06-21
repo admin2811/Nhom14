@@ -38,8 +38,6 @@ public class PDFActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         pdfAdapter = new PDFAdapter(pdfList,this);
         recyclerView.setAdapter(pdfAdapter);
-        ivBack = findViewById(R.id.ivBack);
-        ivBack.setOnClickListener(v -> finish());
         fetchData();
 
     }
