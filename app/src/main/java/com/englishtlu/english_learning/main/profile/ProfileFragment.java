@@ -16,7 +16,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -61,19 +60,10 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout changePassword = (ConstraintLayout) view.findViewById(id.changePasswordandEmail);
         ConstraintLayout signOut = (ConstraintLayout) view.findViewById(id.signOut);
         ConstraintLayout document = (ConstraintLayout) view.findViewById(id.document);
+
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
-
-        document.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-                transaction.replace(id.fragmentContainerView, new DocumentFragment());
-                transaction.addToBackStack(null);
-                transaction.commit();
-            }
-        });
         myProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,6 +110,13 @@ public class ProfileFragment extends Fragment {
                 requireActivity().finish();
             }
         });
+        document.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireActivity(), DocActivity.class);
+                startActivity(intent);
+            }
+        });
         firestore = FirebaseFirestore.getInstance();
         //lấy id hiện tai cua nguoi dung
         FirebaseAuth auth = FirebaseAuth.getInstance();
@@ -149,11 +146,13 @@ public class ProfileFragment extends Fragment {
                                 TextView emailEdt = view.findViewById(id.emailTxt);
                                 ImageView profileImage = view.findViewById(id.profile_Image);
                                 if (photoUrl != null && !photoUrl.isEmpty()) {
-                                    Glide.with(requireContext())
-                                            .load(photoUrl)
-                                            .apply(RequestOptions.circleCropTransform())
-                                            .placeholder(R.drawable.baseline_account_circle_24)
-                                            .into(profileImage);
+                                    if(isAdded()){
+                                        Glide.with(requireContext())
+                                                .load(photoUrl)
+                                                .apply(RequestOptions.circleCropTransform())
+                                                .placeholder(R.drawable.baseline_account_circle_24)
+                                                .into(profileImage);
+                                    }
                                 } else {
                                     // Xử lý khi không có ảnh
                                     Toast.makeText(requireContext(), "No Image", Toast.LENGTH_SHORT).show();
