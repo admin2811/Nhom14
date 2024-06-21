@@ -120,6 +120,16 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> impl
         Doc doc = docList.get(position);
         holder.name.setText(doc.getName());
         holder.size.setText(formatSize(doc.getPdf().length()));
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Xem pdf
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setDataAndType(Uri.parse(doc.getPdf()), "application/pdf");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                context.startActivity(intent);
+            }
+        });
         holder.ivDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
