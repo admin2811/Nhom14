@@ -85,6 +85,12 @@
         
     </style>
     <style name="Theme.EnglishLearning" parent="Base.Theme.EnglishLearning"/>
+    <style name="ToolbarTitleText">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        
+    </style>
     <style name="circular">
         <item name="cornerSize">50%</item>
     </style>

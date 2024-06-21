@@ -233,12 +233,6 @@
             </intent-filter>
         </activity>
 
-        <provider
-            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-            android:authorities="com.englishtlu.english_learning.mlkitinitprovider"
-            android:exported="false"
-            android:initOrder="99" />
-
         <service
             android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
             android:enabled="true"
@@ -271,6 +265,11 @@
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
             android:visibleToInstantApps="true" />
 
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:authorities="com.englishtlu.english_learning.mlkitinitprovider"
+            android:exported="false"
+            android:initOrder="99" />
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.englishtlu.english_learning.firebaseinitprovider"

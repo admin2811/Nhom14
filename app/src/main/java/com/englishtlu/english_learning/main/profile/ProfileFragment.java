@@ -113,7 +113,7 @@ public class ProfileFragment extends Fragment {
         document.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(requireContext(), DocActivity.class);
+                Intent intent = new Intent(requireActivity(), DocActivity.class);
                 startActivity(intent);
             }
         });
@@ -146,11 +146,13 @@ public class ProfileFragment extends Fragment {
                                 TextView emailEdt = view.findViewById(id.emailTxt);
                                 ImageView profileImage = view.findViewById(id.profile_Image);
                                 if (photoUrl != null && !photoUrl.isEmpty()) {
-                                    Glide.with(requireContext())
-                                            .load(photoUrl)
-                                            .apply(RequestOptions.circleCropTransform())
-                                            .placeholder(R.drawable.baseline_account_circle_24)
-                                            .into(profileImage);
+                                    if(isAdded()){
+                                        Glide.with(requireContext())
+                                                .load(photoUrl)
+                                                .apply(RequestOptions.circleCropTransform())
+                                                .placeholder(R.drawable.baseline_account_circle_24)
+                                                .into(profileImage);
+                                    }
                                 } else {
                                     // Xử lý khi không có ảnh
                                     Toast.makeText(requireContext(), "No Image", Toast.LENGTH_SHORT).show();

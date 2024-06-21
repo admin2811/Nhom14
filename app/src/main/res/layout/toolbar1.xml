@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar1"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    android:elevation="10dp">
+    android:elevation="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +35,9 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="50dp"
-            android:src="@drawable/baseline_search_24" />
+            android:onClick="onSearchClicked"
+            android:src="@drawable/baseline_search_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/ivAdd"
@@ -45,4 +50,4 @@
 
     </RelativeLayout>
 
-</RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

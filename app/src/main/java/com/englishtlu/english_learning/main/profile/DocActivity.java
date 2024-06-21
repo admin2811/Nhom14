@@ -4,6 +4,7 @@ package com.englishtlu.english_learning.main.profile;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -12,14 +13,15 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -41,7 +43,10 @@ import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.SearchView.OnQueryTextListener;
 
 public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemClickListener {
     private static final int REQUEST_CODE_PERMISSIONS = 1001;
@@ -50,27 +55,58 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
     private  RecyclerView recyclerView;
     private DocAdapter docAdapter;
     private List<Doc> docList;
-
     private Uri selectedPdfUri;
     private TextView tvSelectedFile,currentTextView;
-
+    private Toolbar toolbar;
+    private SearchView searchView;
+    @SuppressLint("WrongViewCast")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doc);
-        ivBack = findViewById(R.id.ivBack);
-        ivAdd = findViewById(R.id.ivAdd);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         recyclerView = findViewById(R.id.rvdoc);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        ivBack.setOnClickListener(v -> {
-            finish();
-        });
-
-        ivAdd.setOnClickListener(v -> showUploadDialog());
         docList = new ArrayList<>();
         docAdapter = new DocAdapter(docList, (Context) this, (DocAdapter.OnItemClickListener) this);
         recyclerView.setAdapter(docAdapter);
         fetchDocsFromFireBase();
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+    }
+    @Override
+    public  boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        assert searchView != null;
+        searchView.setSearchableInfo(Objects.requireNonNull(searchManager).getSearchableInfo(getComponentName()));
+        searchView.setMaxWidth(Integer.MAX_VALUE);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
+            @Override
+            public boolean onQueryTextSubmit(String query){
+                docAdapter.getFilter().filter(query);
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText){
+                docAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        //Quay trở lại trang profile
+        if(item.getItemId() == android.R.id.home){
+            finish();
+        }
+        if(item.getItemId() == R.id.action_add){
+            showUploadDialog();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @SuppressLint({"MissingInflatedId", "LocalSuppress"})
@@ -107,6 +143,7 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
         dialog.show();
     }
 
+
     @Override
     public void onSelectFileButtonClick(int position, TextView tvSelectedFile) {
         this.currentTextView = tvSelectedFile;
@@ -115,7 +152,6 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         startActivityForResult(Intent.createChooser(intent, "Select PDF"), REQUEST_CODE_PICK_PDF);
     }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -125,22 +161,25 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
                 if (selectedPdfUri != null){
                         if (currentTextView != null){
                             currentTextView.setText(selectedPdfUri.getLastPathSegment());
-                            tvSelectedFile.setText(selectedPdfUri.getLastPathSegment());
+                            docAdapter.setSelectFile(selectedPdfUri);
                         }else {
+                            Log.e("DocFragment", "TextView tvSelectedFile is null");
+                        }
+                        if(tvSelectedFile != null){
+                            tvSelectedFile.setText(selectedPdfUri.getLastPathSegment());
+                        }else{
                             Log.e("DocFragment", "TextView tvSelectedFile is null");
                         }
                 }
             }
         }
     }
-
     private void uploadFileToFireBase(Uri pdfUri, String pdfName) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user != null){
             String uid = user.getUid();
             String fileName = pdfName + ".pdf";
             StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("pdfs/" + uid + "/" + fileName);
-
             storageReference.putFile(pdfUri)
                     .addOnSuccessListener(taskSnapshot -> storageReference.getDownloadUrl().addOnSuccessListener(uri -> {
                         String downloadUrl = uri.toString();
@@ -153,9 +192,8 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
                         Toast.makeText(this,"Failed to upload file",Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                     });
-        }
+          }
     }
-
     private void saveFileToRealtimeDatabase(String fileName, String downloadUrl) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user != null){
@@ -190,7 +228,6 @@ public class DocActivity extends AppCompatActivity implements DocAdapter.OnItemC
                     }
                     docAdapter.notifyDataSetChanged();
                 }
-
                 @Override
                 public void onCancelled(@NonNull DatabaseError error) {
                     Toast.makeText(DocActivity.this, "Failed to fetch documents",Toast.LENGTH_SHORT).show();

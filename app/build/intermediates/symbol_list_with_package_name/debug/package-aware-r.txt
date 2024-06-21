@@ -4504,6 +4504,7 @@ id action_First2Fragment_to_Second2Fragment
 id action_FirstFragment_to_SecondFragment
 id action_Second2Fragment_to_First2Fragment
 id action_SecondFragment_to_FirstFragment
+id action_add
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -4520,6 +4521,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_search
 id action_text
 id actions
 id activity_chooser_view_content
@@ -5303,6 +5305,7 @@ id titleTxt
 id title_template
 id toggle
 id toolbar
+id toolbar1
 id toolbar_title
 id top
 id topPanel
@@ -5669,6 +5672,7 @@ layout ucrop_layout_rotate_wheel
 layout ucrop_layout_scale_wheel
 layout ucrop_view
 layout viewholder_course
+menu menu_main
 menu ucrop_menu_activity
 mipmap english_learning
 mipmap english_learning_foreground
@@ -6737,6 +6741,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style ToolbarTitleText
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
