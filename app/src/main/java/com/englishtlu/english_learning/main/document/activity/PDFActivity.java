@@ -82,6 +82,10 @@ public class PDFActivity extends AppCompatActivity {
         if(item.getItemId() == android.R.id.home){
             finish();
         }
+        if(item.getItemId() == R.id.action_storage){
+            //Chuyển đến trang lưu trữ D
+
+        }
         return super.onOptionsItemSelected(item);
     }
     private void fetchData() {
