@@ -149,7 +149,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         });
         phoneBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, LoginNumberPhoneActivity.class);
+            Intent intent = new Intent(LoginActivity.this, LoginWithPhoneNumberActivity.class);
             startActivity(intent);
         });
         facebookBtn.setOnClickListener(v -> {

@@ -33,10 +33,6 @@ android {
 }
 
 dependencies {
-<<<<<<< HEAD
-
-=======
->>>>>>> 41e1e40cadec1eb5ded5221a11e551755c164d9a
     implementation 'com.google.mlkit:translate:17.0.2'
     implementation 'com.github.dhaval2404:imagepicker:2.1'
     implementation 'com.google.mlkit:text-recognition:16.0.0'
@@ -69,19 +65,13 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
-<<<<<<< HEAD
     implementation platform('com.google.firebase:firebase-bom:33.1.0')
     implementation 'com.google.firebase:firebase-analytics'
-    // Import the BoM for the Firebase platform
-    // Add the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.hbb20:ccp:2.5.0'
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
     implementation 'androidx.browser:browser:1.4.0'
-}
-=======
     implementation 'com.squareup.retrofit2:retrofit:2.11.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
     implementation libs.appcompat // Giữ lại alias cho các thư viện nếu bạn muốn sử dụng cấu trúc quản lý thư viện này
@@ -92,4 +82,3 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }
->>>>>>> 41e1e40cadec1eb5ded5221a11e551755c164d9a

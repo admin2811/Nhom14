@@ -84,48 +84,6 @@
                 style="@android:style/Widget.Button"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:src="@drawable/women"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/todo" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-          <androidx.appcompat.widget.AppCompatButton
-              android:id="@+id/login_button"
-              style="@android:style/Widget.Button"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_marginStart="32dp"
-              android:layout_marginTop="35dp"
-              android:layout_marginEnd="32dp"
-              android:background="@drawable/background_btn_1"
-              android:text="@string/login"
-              android:textAppearance="@style/TextAppearance.AppCompat.Large"
-              android:textColor="#2f3363"
-              android:textSize="22sp"
-              android:textStyle="bold" />
-
-          <androidx.appcompat.widget.AppCompatButton
-              android:id="@+id/register_button"
-              style="@android:style/Widget.Button"
-              android:layout_width="300dp"
-              android:layout_height="wrap_content"
-              android:layout_marginStart="32dp"
-              android:layout_marginTop="40dp"
-              android:layout_marginEnd="32dp"
-              android:layout_marginBottom="50dp"
-              android:background="@drawable/background_btn_1"
-              android:text="@string/sign_up"
-              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-              android:textColor="#2f3363"
-              android:textSize="22sp"
-              android:textStyle="bold" />
-      </LinearLayout>
-  </ScrollView>
-=======
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="32dp"
@@ -138,5 +96,4 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
->>>>>>> 41e1e40cadec1eb5ded5221a11e551755c164d9a
 </androidx.constraintlayout.widget.ConstraintLayout>

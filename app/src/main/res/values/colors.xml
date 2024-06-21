@@ -3,8 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8395fb</color>
-<<<<<<< HEAD
-=======
     <color name="purple_200">#FFBBB6FC</color>
     <color name="purple_500">#F7CD2E</color>
     <color name="purple_700">#F7CD2E</color>
@@ -12,5 +10,4 @@
     <color name="teal_700">#FF018786</color>
     <color name="yellow">#F7CD2E</color>
     <color name="grey">#242B2E</color>
->>>>>>> 41e1e40cadec1eb5ded5221a11e551755c164d9a
 </resources>
