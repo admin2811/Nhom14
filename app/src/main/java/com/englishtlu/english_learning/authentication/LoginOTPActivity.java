@@ -1,5 +1,8 @@
 package com.englishtlu.english_learning.authentication;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,12 +15,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.utility.AndroidUtil;
 import com.englishtlu.english_learning.main.MainActivity;
+import com.englishtlu.english_learning.main.home.view.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -139,7 +140,7 @@ public class LoginOTPActivity extends AppCompatActivity {
             PhoneAuthProvider.verifyPhoneNumber(builder.build());
         }
 
-        
+
     }
 
 
