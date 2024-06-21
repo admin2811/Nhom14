@@ -36,6 +36,8 @@
         </provider>
         <activity android:name=".authentication.LoginWithPhoneNumberActivity"
             android:exported="false" />
+        <activity android:name=".authentication.LoginOTPActivity"
+            android:exported="false" />
         <activity
             android:name=".main.chatbot.ChatBotActivity"
             android:exported="false"
