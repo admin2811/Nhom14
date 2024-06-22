@@ -3,6 +3,7 @@ package com.englishtlu.english_learning.main.document.activity;
 import android.annotation.SuppressLint;
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,7 @@ import com.android.volley.toolbox.Volley;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.main.document.adapter.PDFAdapter;
 import com.englishtlu.english_learning.main.document.model.PDF;
+import com.englishtlu.english_learning.main.profile.DocActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -83,9 +85,10 @@ public class PDFActivity extends AppCompatActivity {
             finish();
         }
         if(item.getItemId() == R.id.action_storage){
-            //Chuyển đến trang lưu trữ DocAcitvity
-
-
+          //Chuyển đến docactivity
+            Intent intent = new Intent(this, DocActivity.class);
+            startActivity(intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
