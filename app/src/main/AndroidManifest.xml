@@ -33,6 +33,11 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="tiramisu">
         <activity
+            android:name=".main.quizz.PractieActivity"
+            android:exported="false"
+            android:label="@string/title_activity_practie"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
             android:name=".main.game2048.ui.activity.CoreActivity"
             android:exported="false"
             android:label="@string/title_activity_core"
@@ -92,9 +97,7 @@
         </activity>
         <activity
             android:name=".main.profile.DocActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

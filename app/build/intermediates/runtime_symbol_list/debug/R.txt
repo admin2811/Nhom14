@@ -4666,6 +4666,7 @@ int id autoComplete 0x7f0900ac
 int id autoCompleteToEnd 0x7f0900ad
 int id autoCompleteToStart 0x7f0900ae
 int id back 0x7f0900af
+int id back_button 0x7f0903f3
 int id backgroudLayout 0x7f0900b0
 int id background 0x7f0900b1
 int id backtohome 0x7f0900b2
@@ -5147,6 +5148,7 @@ int id nav_graph2 0x7f09028d
 int id nav_graph3 0x7f09028e
 int id nav_graph4 0x7f09028f
 int id nav_graph5 0x7f090290
+int id nav_graph6 0x7f0903f4
 int id nav_host_fragment_container 0x7f090291
 int id navigation_bar_item_active_indicator_view 0x7f090292
 int id navigation_bar_item_icon_container 0x7f090293
@@ -5264,6 +5266,7 @@ int id rotate_scroll_wheel 0x7f090302
 int id rounded 0x7f090303
 int id row_index_key 0x7f090304
 int id rtl 0x7f090305
+int id rvPracticeVocab 0x7f0903f5
 int id rvQuizzVocab 0x7f090306
 int id rvdoc 0x7f090307
 int id rvpdf 0x7f090308
@@ -5627,6 +5630,7 @@ int layout activity_login_with_phone_number 0x7f0c0021
 int layout activity_main 0x7f0c0022
 int layout activity_main2 0x7f0c0023
 int layout activity_pdfactivity 0x7f0c0024
+int layout activity_practie 0x7f0c00d9
 int layout activity_quizz 0x7f0c0025
 int layout activity_register 0x7f0c0026
 int layout activity_welcome 0x7f0c0027
@@ -5723,6 +5727,7 @@ int layout ime_base_split_test_activity 0x7f0c0080
 int layout ime_secondary_split_test_activity 0x7f0c0081
 int layout item_doc 0x7f0c0082
 int layout item_pdf 0x7f0c0083
+int layout item_practice 0x7f0c00da
 int layout item_quizz 0x7f0c0084
 int layout layout_change_password 0x7f0c0085
 int layout layout_code_picker 0x7f0c0086
@@ -5819,6 +5824,7 @@ int navigation nav_graph2 0x7f100001
 int navigation nav_graph3 0x7f100002
 int navigation nav_graph4 0x7f100003
 int navigation nav_graph5 0x7f100004
+int navigation nav_graph6 0x7f100005
 int plurals mtrl_badge_content_description 0x7f110000
 int raw a_new_lang_template 0x7f120000
 int raw carbon_arrow_down 0x7f120001
@@ -6130,6 +6136,7 @@ int string status_bar_notification_info_overflow 0x7f1300f5
 int string title_activity_chat_bot 0x7f1300f6
 int string title_activity_core 0x7f1300f7
 int string title_activity_login_with_phone_number 0x7f1300f8
+int string title_activity_practie 0x7f13010b
 int string title_activity_quizz 0x7f1300f9
 int string title_camera 0x7f1300fa
 int string title_choose_image_provider 0x7f1300fb

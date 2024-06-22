@@ -30,12 +30,15 @@ import static com.englishtlu.english_learning.main.game2048.util.Util.getCurrent
 
 
 import android.util.Log;
+import android.widget.ImageView;
 
 public class CoreActivity extends AppCompatActivity {
 
     private FrameLayout _fragmentContainer;
     private WeakReference<Fragment> currentFragment;
     private List<AppCompatImageView> componentButtons = new ArrayList<>(4);
+
+    private ImageView ivBack;
 
     private void setCurrentFragment(BaseFragment fragment) {
         currentFragment = new WeakReference<>(fragment);
@@ -116,6 +119,13 @@ public class CoreActivity extends AppCompatActivity {
             button.setImageResource(getCurrentTheme(this) == 0 ? R.drawable.ic_night : R.drawable.ic_day);
             button.setVisibility(View.VISIBLE);
             button.setOnClickListener(v -> changeTheme());
+        });
+        ivBack = findViewById(R.id.back_button);
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
         });
 
         changeFragment(TAG_HOME , new Bundle(), null);

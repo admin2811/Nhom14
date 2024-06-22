@@ -4667,6 +4667,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back
+id back_button
 id backgroudLayout
 id background
 id backtohome
@@ -5148,6 +5149,7 @@ id nav_graph2
 id nav_graph3
 id nav_graph4
 id nav_graph5
+id nav_graph6
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -5265,6 +5267,7 @@ id rotate_scroll_wheel
 id rounded
 id row_index_key
 id rtl
+id rvPracticeVocab
 id rvQuizzVocab
 id rvdoc
 id rvpdf
@@ -5628,6 +5631,7 @@ layout activity_login_with_phone_number
 layout activity_main
 layout activity_main2
 layout activity_pdfactivity
+layout activity_practie
 layout activity_quizz
 layout activity_register
 layout activity_welcome
@@ -5724,6 +5728,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_doc
 layout item_pdf
+layout item_practice
 layout item_quizz
 layout layout_change_password
 layout layout_code_picker
@@ -5820,6 +5825,7 @@ navigation nav_graph2
 navigation nav_graph3
 navigation nav_graph4
 navigation nav_graph5
+navigation nav_graph6
 plurals mtrl_badge_content_description
 raw a_new_lang_template
 raw carbon_arrow_down
@@ -6131,6 +6137,7 @@ string status_bar_notification_info_overflow
 string title_activity_chat_bot
 string title_activity_core
 string title_activity_login_with_phone_number
+string title_activity_practie
 string title_activity_quizz
 string title_camera
 string title_choose_image_provider

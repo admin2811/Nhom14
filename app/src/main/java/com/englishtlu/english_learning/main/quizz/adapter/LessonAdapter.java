@@ -22,9 +22,15 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
     static ArrayList<LessonVocab> items;
 
     static Context context;
+    private static OnItemClickListener mListener;
+    public interface OnItemClickListener {
+        void onItemClick(LessonVocab lessonVocab);
+    }
 
-    public LessonAdapter(ArrayList<LessonVocab> items) {
+
+    public LessonAdapter(ArrayList<LessonVocab> items, OnItemClickListener listener) {
         LessonAdapter.items = items;
+        mListener =  listener;
     }
     @NonNull
     @Override
@@ -38,6 +44,7 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
     public void onBindViewHolder(@NonNull LessonAdapter.ViewHolder holder, int position) {
         LessonVocab item = items.get(position);
         holder.bind(item);
+
     }
 
     @Override
@@ -53,6 +60,18 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
             picpath = itemView.findViewById(R.id.ivLessonImage);
             title = itemView.findViewById(R.id.tvLessonName);
             description = itemView.findViewById(R.id.tvLessonDec);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION) {
+                        LessonVocab lessonVocab = items.get(position);
+                        mListener.onItemClick(lessonVocab);
+                    }
+
+                }
+            });
 
         }
         public void bind(LessonVocab lesson){

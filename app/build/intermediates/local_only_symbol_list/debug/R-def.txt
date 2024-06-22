@@ -280,6 +280,7 @@ id answer
 id arrowHelp
 id arrowProfile
 id back
+id back_button
 id backgroudLayout
 id backtohome
 id bottomBar
@@ -413,6 +414,7 @@ id nav_graph2
 id nav_graph3
 id nav_graph4
 id nav_graph5
+id nav_graph6
 id optionsLl
 id passwordConIcon
 id passwordIcon
@@ -448,6 +450,7 @@ id restart_button
 id revert_button
 id right_chat_text_view
 id right_chat_view
+id rvPracticeVocab
 id rvQuizzVocab
 id rvdoc
 id rvpdf
@@ -529,6 +532,7 @@ layout activity_login_with_phone_number
 layout activity_main
 layout activity_main2
 layout activity_pdfactivity
+layout activity_practie
 layout activity_quizz
 layout activity_register
 layout activity_welcome
@@ -550,6 +554,7 @@ layout fragment_profile
 layout fragment_translate
 layout item_doc
 layout item_pdf
+layout item_practice
 layout item_quizz
 layout layout_change_password
 layout meanings_list_items
@@ -572,6 +577,7 @@ navigation nav_graph2
 navigation nav_graph3
 navigation nav_graph4
 navigation nav_graph5
+navigation nav_graph6
 string _2048
 string alex
 string all_courses
@@ -612,6 +618,7 @@ string sign_up
 string title_activity_chat_bot
 string title_activity_core
 string title_activity_login_with_phone_number
+string title_activity_practie
 string title_activity_quizz
 string todo
 string todo3

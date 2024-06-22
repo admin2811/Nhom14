@@ -60,10 +60,6 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\star_1828884.png"
     },
     {
-        "merged": "com.englishtlu.english_learning.app-merged_res-61:/layout_fragment_profile.xml.flat",
-        "source": "com.englishtlu.english_learning.app-main-63:/layout/fragment_profile.xml"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-ldpi_facebook.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-ldpi\\facebook.png"
     },
@@ -1016,6 +1012,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "com.englishtlu.english_learning.app-merged_res-61:/navigation_nav_graph6.xml.flat",
+        "source": "com.englishtlu.english_learning.app-main-63:/navigation/nav_graph6.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_arc_1.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\arc_1.png"
     },
@@ -1106,6 +1106,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_image3.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\image3.png"
+    },
+    {
+        "merged": "com.englishtlu.english_learning.app-merged_res-61:/layout_activity_practie.xml.flat",
+        "source": "com.englishtlu.english_learning.app-main-63:/layout/activity_practie.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_bottom_btn4.png.flat",
@@ -1298,6 +1302,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_background_intro.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\background_intro.png"
+    },
+    {
+        "merged": "com.englishtlu.english_learning.app-merged_res-61:/layout_item_practice.xml.flat",
+        "source": "com.englishtlu.english_learning.app-main-63:/layout/item_practice.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_women2.png.flat",

@@ -59,6 +59,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.EnglishLearning" >
         <activity
+            android:name="com.englishtlu.english_learning.main.quizz.PractieActivity"
+            android:exported="false"
+            android:label="@string/title_activity_practie"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
             android:name="com.englishtlu.english_learning.main.game2048.ui.activity.CoreActivity"
             android:exported="false"
             android:label="@string/title_activity_core"
@@ -118,8 +123,7 @@
         </activity>
         <activity
             android:name="com.englishtlu.english_learning.main.profile.DocActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
 
         <service
             android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"

@@ -79,4 +79,5 @@
     <string name="reset_dialog_positive">Yes</string>
     <string name="reset_dialog_negative">No</string>
     <string name="_2048">2048</string>
+    <string name="title_activity_practie">PractieActivity</string>
 </resources>

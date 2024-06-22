@@ -1,55 +1,78 @@
 package com.englishtlu.english_learning.main.quizz;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.main.quizz.adapter.CategoryAdapter;
+import com.englishtlu.english_learning.main.quizz.model.Category;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.View;
+import java.util.List;
 
-import androidx.core.view.WindowCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
-import com.englishtlu.english_learning.databinding.ActivityPractieBinding;
-
-import com.englishtlu.english_learning.R;
 
 public class PractieActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityPractieBinding binding;
-
+    private RecyclerView recyclerView;
+    private CategoryAdapter categoryAdapter;
+    private ImageView ivBackToHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_practie);
+        recyclerView = findViewById(R.id.rvPracticeVocab);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setHasFixedSize(true);
+        ivBackToHome = findViewById(R.id.ivBackToHome);
+        ivBackToHome.setOnClickListener(v -> {
+            finish();
+        });
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://nhom14-android.000webhostapp.com/test/fetch_categories.php/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
 
-        binding = ActivityPractieBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        ApiService apiService = retrofit.create(ApiService.class);
 
-        setSupportActionBar(binding.toolbar);
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_practie);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        Call<List<Category>> call = apiService.getCategories();
+        call.enqueue(new Callback<List<Category>>() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
+            public void onResponse(Call<List<Category>> call, Response<List<Category>> response) {
+                if(response.isSuccessful()){
+                    List<Category> categories = response.body();
+                    assert categories != null;
+                    for (Category category : categories) {
+                        Log.d("PractieActivity", "Category - Name: " + category.getName() + ", Description: " + category.getDescription() + ", Image URL: " + category.getImage());
+                    }
+                    categoryAdapter = new CategoryAdapter(PractieActivity.this, categories, new CategoryAdapter.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(Category category) {
+                            if(category.getId() == 1){
+                                Toast.makeText(PractieActivity.this, "Category 1", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                    recyclerView.setAdapter(categoryAdapter);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Category>> call, Throwable throwable) {
+                Toast.makeText(PractieActivity.this, "Error: " + throwable.getMessage(), Toast.LENGTH_SHORT).show();
+
             }
         });
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_practie);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
     }
 }
