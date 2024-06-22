@@ -145,7 +145,6 @@ public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> impl
 
                 // Tạo dialog
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("Edit PDF");
 
                 // Gắn layout cho dialog
                 LayoutInflater inflater = LayoutInflater.from(context);

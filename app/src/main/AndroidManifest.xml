@@ -34,6 +34,12 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <activity
+            android:name=".main.game2048.ui.activity.CoreActivity"
+            android:exported="false"
+            android:label="@string/title_activity_core"
+            android:theme="@style/G2048DarkTheme" />
         <activity android:name=".authentication.LoginWithPhoneNumberActivity"
             android:exported="false" />
         <activity android:name=".authentication.LoginOTPActivity"

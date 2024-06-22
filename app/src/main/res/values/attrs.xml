@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Game2048AppTheme">
+        <attr name="appBackgroundColor" format="color" />
+        <attr name="appBackgroundColorTransparent" format="color" />
+        <attr name="appBackgroundColorMoreTransparent" format="color" />
+        <attr name="appCardColor" format="color" />
+        <attr name="appTextColorPrimary" format="color" />
+        <attr name="appAccentColor" format="color" />
+        <attr name="appAccentColorLight" format="color" />
+        <attr name="appTextColorSecondary" format="color" />
+        <attr name="appTabColor" format="color" />
+        <attr name="appSelectedTabColor" format="color" />
+        <attr name="appHeaderBackground" format="color" />
+
+        <attr name="box2BackgroundColor" format="color" />
+        <attr name="box4BackgroundColor" format="color" />
+        <attr name="box8BackgroundColor" format="color" />
+        <attr name="box16BackgroundColor" format="color" />
+        <attr name="box32BackgroundColor" format="color" />
+        <attr name="box64BackgroundColor" format="color" />
+        <attr name="box128BackgroundColor" format="color" />
+        <attr name="box256BackgroundColor" format="color" />
+        <attr name="box512BackgroundColor" format="color" />
+        <attr name="box1024BackgroundColor" format="color" />
+        <attr name="box2048BackgroundColor" format="color" />
+
+        <attr name="box4096PlusBackgroundColor" format="color" />
+
+        <attr name="rectangleFadeColor" format="color" />
+        <attr name="rectangleBackgroundColor" format="color" />
+        <attr name="rectangleLightUpColor" format="color" />
+        <attr name="cellBackgroundColor" format="color" />
+
+    </declare-styleable>
+</resources>
