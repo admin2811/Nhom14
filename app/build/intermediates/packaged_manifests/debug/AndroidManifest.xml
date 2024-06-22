@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.englishtlu.english_learning"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="21010"
+    android:versionName="0.2.1.10" >
 
     <uses-sdk
         android:minSdkVersion="26"
@@ -58,6 +58,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.EnglishLearning" >
+        <activity
+            android:name="com.englishtlu.english_learning.main.game2048.ui.activity.CoreActivity"
+            android:exported="false"
+            android:label="@string/title_activity_core"
+            android:theme="@style/G2048DarkTheme" />
         <activity
             android:name="com.englishtlu.english_learning.main.quizz.QuizzVocabActivity"
             android:exported="false"

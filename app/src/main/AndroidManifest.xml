@@ -33,6 +33,11 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="tiramisu">
         <activity
+            android:name=".main.game2048.ui.activity.CoreActivity"
+            android:exported="false"
+            android:label="@string/title_activity_core"
+            android:theme="@style/G2048DarkTheme" />
+        <activity
             android:name=".main.quizz.QuizzVocabActivity"
             android:exported="false"
             android:label="@string/title_activity_quizz"
@@ -88,6 +93,7 @@
         <activity
             android:name=".main.profile.DocActivity"
             android:exported="true">
+
         </activity>
     </application>
 

@@ -48,16 +48,7 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ConstraintLayout changePasswordandEmail;
 
   @NonNull
-  public final ConstraintLayout dictionary;
-
-  @NonNull
-  public final ImageView dictionaryImage;
-
-  @NonNull
   public final ImageView dictionaryIn;
-
-  @NonNull
-  public final TextView dictionaryTxt;
 
   @NonNull
   public final ConstraintLayout document;
@@ -85,6 +76,15 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @NonNull
   public final TextView fullNameTxt;
+
+  @NonNull
+  public final ConstraintLayout game;
+
+  @NonNull
+  public final ImageView gameImage;
+
+  @NonNull
+  public final TextView gameTxt;
 
   @NonNull
   public final ImageView help;
@@ -156,12 +156,12 @@ public final class FragmentProfileBinding implements ViewBinding {
       @NonNull ImageView DocumentImage, @NonNull ConstraintLayout FAQ, @NonNull ImageView arrowHelp,
       @NonNull ImageView arrowProfile, @NonNull ImageView changePassword,
       @NonNull ImageView changePasswordImage, @NonNull TextView changePasswordTxt,
-      @NonNull ConstraintLayout changePasswordandEmail, @NonNull ConstraintLayout dictionary,
-      @NonNull ImageView dictionaryImage, @NonNull ImageView dictionaryIn,
-      @NonNull TextView dictionaryTxt, @NonNull ConstraintLayout document,
-      @NonNull ImageView documentIn, @NonNull TextView documentTxt, @NonNull TextView emailTxt,
+      @NonNull ConstraintLayout changePasswordandEmail, @NonNull ImageView dictionaryIn,
+      @NonNull ConstraintLayout document, @NonNull ImageView documentIn,
+      @NonNull TextView documentTxt, @NonNull TextView emailTxt,
       @NonNull ConstraintLayout flashCard, @NonNull ImageView flashCardImage,
       @NonNull ImageView flashCardIn, @NonNull TextView flashCardTxt, @NonNull TextView fullNameTxt,
+      @NonNull ConstraintLayout game, @NonNull ImageView gameImage, @NonNull TextView gameTxt,
       @NonNull ImageView help, @NonNull TextView helpTxt, @NonNull ImageView imageView4,
       @NonNull ImageView logout, @NonNull ImageView logoutImage, @NonNull TextView logoutTxt,
       @NonNull ConstraintLayout myProfile, @NonNull ImageView profile,
@@ -180,10 +180,7 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.changePasswordImage = changePasswordImage;
     this.changePasswordTxt = changePasswordTxt;
     this.changePasswordandEmail = changePasswordandEmail;
-    this.dictionary = dictionary;
-    this.dictionaryImage = dictionaryImage;
     this.dictionaryIn = dictionaryIn;
-    this.dictionaryTxt = dictionaryTxt;
     this.document = document;
     this.documentIn = documentIn;
     this.documentTxt = documentTxt;
@@ -193,6 +190,9 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.flashCardIn = flashCardIn;
     this.flashCardTxt = flashCardTxt;
     this.fullNameTxt = fullNameTxt;
+    this.game = game;
+    this.gameImage = gameImage;
+    this.gameTxt = gameTxt;
     this.help = help;
     this.helpTxt = helpTxt;
     this.imageView4 = imageView4;
@@ -292,27 +292,9 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.dictionary;
-      ConstraintLayout dictionary = ViewBindings.findChildViewById(rootView, id);
-      if (dictionary == null) {
-        break missingId;
-      }
-
-      id = R.id.dictionaryImage;
-      ImageView dictionaryImage = ViewBindings.findChildViewById(rootView, id);
-      if (dictionaryImage == null) {
-        break missingId;
-      }
-
       id = R.id.dictionaryIn;
       ImageView dictionaryIn = ViewBindings.findChildViewById(rootView, id);
       if (dictionaryIn == null) {
-        break missingId;
-      }
-
-      id = R.id.dictionaryTxt;
-      TextView dictionaryTxt = ViewBindings.findChildViewById(rootView, id);
-      if (dictionaryTxt == null) {
         break missingId;
       }
 
@@ -367,6 +349,24 @@ public final class FragmentProfileBinding implements ViewBinding {
       id = R.id.fullNameTxt;
       TextView fullNameTxt = ViewBindings.findChildViewById(rootView, id);
       if (fullNameTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.game;
+      ConstraintLayout game = ViewBindings.findChildViewById(rootView, id);
+      if (game == null) {
+        break missingId;
+      }
+
+      id = R.id.gameImage;
+      ImageView gameImage = ViewBindings.findChildViewById(rootView, id);
+      if (gameImage == null) {
+        break missingId;
+      }
+
+      id = R.id.gameTxt;
+      TextView gameTxt = ViewBindings.findChildViewById(rootView, id);
+      if (gameTxt == null) {
         break missingId;
       }
 
@@ -504,12 +504,11 @@ public final class FragmentProfileBinding implements ViewBinding {
 
       return new FragmentProfileBinding((ConstraintLayout) rootView, DocumentImage, FAQ, arrowHelp,
           arrowProfile, changePassword, changePasswordImage, changePasswordTxt,
-          changePasswordandEmail, dictionary, dictionaryImage, dictionaryIn, dictionaryTxt,
-          document, documentIn, documentTxt, emailTxt, flashCard, flashCardImage, flashCardIn,
-          flashCardTxt, fullNameTxt, help, helpTxt, imageView4, logout, logoutImage, logoutTxt,
-          myProfile, profile, profileImage, profileTxt, progress, progressBar5, progressImage,
-          progressIn, progressTxt, scrollView4, send, sendImage, sendTxt, share, signOut,
-          textView8);
+          changePasswordandEmail, dictionaryIn, document, documentIn, documentTxt, emailTxt,
+          flashCard, flashCardImage, flashCardIn, flashCardTxt, fullNameTxt, game, gameImage,
+          gameTxt, help, helpTxt, imageView4, logout, logoutImage, logoutTxt, myProfile, profile,
+          profileImage, profileTxt, progress, progressBar5, progressImage, progressIn, progressTxt,
+          scrollView4, send, sendImage, sendTxt, share, signOut, textView8);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -347,7 +347,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/dictionary"
+                android:id="@+id/game"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="32dp"
@@ -357,27 +357,27 @@
                 android:background="@drawable/round_back_home_100">
 
                 <ImageView
-                    android:id="@+id/dictionaryImage"
+                    android:id="@+id/gameImage"
                     android:layout_width="46dp"
                     android:layout_height="46dp"
-                    android:src="@drawable/dic"
+                    android:src="@drawable/game"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/dictionaryTxt"
+                    android:id="@+id/gameTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font1"
-                    android:text="Your Dictionary"
+                    android:text="2048"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.066"
-                    app:layout_constraintStart_toEndOf="@+id/dictionaryImage"
+                    app:layout_constraintStart_toEndOf="@+id/gameImage"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView

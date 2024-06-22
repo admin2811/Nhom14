@@ -4,12 +4,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\favorites.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_btn_2.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\btn_2.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\mipmap-xhdpi_english_learning.webp.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\mipmap-xhdpi\\english_learning.webp"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_btn_2.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\btn_2.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_arc_2.png.flat",
@@ -36,6 +36,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\notification.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_512.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_512.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_round_background_profile.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\round_background_profile.xml"
     },
@@ -56,6 +60,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\star_1828884.png"
     },
     {
+        "merged": "com.englishtlu.english_learning.app-merged_res-61:/layout_fragment_profile.xml.flat",
+        "source": "com.englishtlu.english_learning.app-main-63:/layout/fragment_profile.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-ldpi_facebook.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-ldpi\\facebook.png"
     },
@@ -68,24 +76,32 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\baseline_send_24.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_1024.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_1024.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_arc_1.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-mdpi\\arc_1.png"
-    },
-    {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_viewholder_course.xml.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\viewholder_course.xml"
-    },
-    {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_btn_2.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\btn_2.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_arc_2.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\arc_2.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_btn_2.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\btn_2.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_viewholder_course.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\viewholder_course.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_google.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\google.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_base.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_base.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_bottom_btn1.png.flat",
@@ -94,6 +110,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_icon_translate.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\icon_translate.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_64.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_64.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_bottom_btn3.png.flat",
@@ -128,6 +148,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\font\\font4.ttf"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_ic_night.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\ic_night.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_pdf.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\pdf.png"
     },
@@ -140,12 +164,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\background_intro.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_trends.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\trends.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_facebook.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\facebook.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_trends.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\trends.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_profile.png.flat",
@@ -182,6 +206,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_google.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\google.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_ic_refresh.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\ic_refresh.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_write.png.flat",
@@ -240,12 +268,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\arc_3.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\mipmap-mdpi_english_learning_round.webp.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\mipmap-mdpi\\english_learning_round.webp"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_search.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\search.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\mipmap-mdpi_english_learning_round.webp.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\mipmap-mdpi\\english_learning_round.webp"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_activity_chat_bot.xml.flat",
@@ -294,6 +322,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\menu_menu_main.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_ic_save.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\ic_save.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_favorites.png.flat",
@@ -400,12 +432,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\twitter.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_translate.xml.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_translate.xml"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\font_font2.ttf.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\font\\font2.ttf"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_translate.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_translate.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_white_line.png.flat",
@@ -428,12 +460,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-ldpi\\women2.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_document.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\document.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_arc_1.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\arc_1.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_document.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\document.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-ldpi_arc_2.png.flat",
@@ -492,12 +524,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\phone_call.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_dialog_upload_pdf.xml.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\dialog_upload_pdf.xml"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_lesson1.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\lesson1.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_dialog_upload_pdf.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\dialog_upload_pdf.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_trends2.png.flat",
@@ -510,6 +542,14 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_background_btn_1.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\background_btn_1.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\navigation_nav_graph5.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\navigation\\nav_graph5.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\font_clearsansbold.ttf.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\font\\clearsansbold.ttf"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_btn_changllenge.xml.flat",
@@ -532,12 +572,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\women1.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_arc_3.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\arc_3.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_icon_chatbot.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\icon_chatbot.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_arc_3.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\arc_3.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_bg.xml.flat",
@@ -552,10 +592,6 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\reset_password.png"
     },
     {
-        "merged": "com.englishtlu.english_learning.app-merged_res-61:/menu_menu_main.xml.flat",
-        "source": "com.englishtlu.english_learning.app-main-63:/menu/menu_main.xml"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_baseline_mic_24.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\baseline_mic_24.xml"
     },
@@ -566,6 +602,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_women.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\women.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_ic_day.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\ic_day.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_activity_pdfactivity.xml.flat",
@@ -592,12 +632,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\bottom_btn3.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_solar_camera.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\solar_camera.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_circle.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\circle.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_solar_camera.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\solar_camera.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_dic.png.flat",
@@ -624,14 +664,6 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\social.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_item_pdf.xml.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_pdf.xml"
-    },
-    {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_userprofile.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\userprofile.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-hdpi_circle.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\circle.png"
     },
@@ -640,16 +672,24 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\white_box.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_userprofile.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\userprofile.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_item_pdf.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_pdf.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_top_background.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\top_background.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_white_line.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-mdpi\\white_line.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_white_line.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\white_line.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_white_line.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-mdpi\\white_line.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_btn_4.png.flat",
@@ -756,8 +796,16 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\social.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_2.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_2.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_activity_quizz.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_quizz.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_light_up_rectangle.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\light_up_rectangle.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_write.png.flat",
@@ -794,6 +842,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_btn_6.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\btn_6.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_2048.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_2048.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_arc_2.png.flat",
@@ -838,6 +890,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_notification.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\notification.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_round_dialogs.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\round_dialogs.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_change_passwordand_email.xml.flat",
@@ -886,6 +942,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\font_font3.ttf.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\font\\font3.ttf"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_4.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_4.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xhdpi_bottom_btn2.png.flat",
@@ -1068,6 +1128,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\bottom_btn4.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_item_quizz.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_quizz.xml"
     },
@@ -1124,6 +1188,14 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-hdpi\\write.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_background_rectangle.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\background_rectangle.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_ic_back.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\ic_back.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_background_intro.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\background_intro.png"
     },
@@ -1134,6 +1206,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_bottom_btn1.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\bottom_btn1.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_256.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_256.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_search.png.flat",
@@ -1172,12 +1248,20 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xhdpi\\social.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_4096.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_4096.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\mipmap-hdpi_english_learning.webp.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\mipmap-hdpi\\english_learning.webp"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_arc_2.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\arc_2.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_round_dialogs_dark.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\round_dialogs_dark.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_profile_background.xml.flat",
@@ -1198,6 +1282,14 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-ldpi_profile.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-ldpi\\profile.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_game.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\game.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_ic_action_refresh.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\ic_action_refresh.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_bottom_btn2.png.flat",
@@ -1266,6 +1358,10 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxhdpi_arrow.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxhdpi\\arrow.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_fade_rectangle.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\fade_rectangle.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_social.png.flat",
@@ -1384,6 +1480,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\favorites.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_32.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_32.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\navigation_nav_graph2.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\navigation\\nav_graph2.xml"
     },
@@ -1420,12 +1520,24 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\baseline_contactless_24.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_16.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_16.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_trends2.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-mdpi\\trends2.png"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_blank.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_blank.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_chat_item.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\chat_item.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_activity_core.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_core.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_microphone.png.flat",
@@ -1460,12 +1572,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\image1.png"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_arc_2.png.flat",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-mdpi\\arc_2.png"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_icon_home.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\icon_home.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-mdpi_arc_2.png.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-mdpi\\arc_2.png"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-ldpi_btn_2.png.flat",
@@ -1536,8 +1648,16 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_8.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_8.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_activity_main.xml.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_home.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_home.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\layout_fragment_change.xml.flat",
@@ -1554,5 +1674,9 @@
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable-xxxhdpi_notification.png.flat",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable-xxxhdpi\\notification.png"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-merged_res-61:\\drawable_cell_rectangle_128.xml.flat",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\drawable\\cell_rectangle_128.xml"
     }
 ]

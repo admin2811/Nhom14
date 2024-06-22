@@ -26,6 +26,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.R.id;
 import com.englishtlu.english_learning.authentication.LoginActivity;
+import com.englishtlu.english_learning.main.game2048.ui.activity.CoreActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,7 +61,7 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout changePassword = (ConstraintLayout) view.findViewById(id.changePasswordandEmail);
         ConstraintLayout signOut = (ConstraintLayout) view.findViewById(id.signOut);
         ConstraintLayout document = (ConstraintLayout) view.findViewById(id.document);
-
+        ConstraintLayout game = (ConstraintLayout) view.findViewById(id.game);
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
@@ -71,6 +72,13 @@ public class ProfileFragment extends Fragment {
                 transaction.replace(id.fragmentContainerView, new MyProfileFragment());
                 transaction.addToBackStack(null);
                 transaction.commit();
+            }
+        });
+        game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireActivity(), CoreActivity.class);
+                startActivity(intent);
             }
         });
         FAQ.setOnClickListener(new View.OnClickListener() {
