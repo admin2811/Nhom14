@@ -40,7 +40,6 @@ import com.google.firebase.storage.StorageReference;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class DocAdapter extends RecyclerView.Adapter<DocAdapter.ViewHolder> implements Filterable {
 
 
