@@ -74,6 +74,10 @@ dependencies {
     implementation 'androidx.browser:browser:1.4.0'
     implementation 'com.squareup.retrofit2:retrofit:2.11.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation platform('com.google.firebase:firebase-bom:33.1.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
     implementation libs.appcompat // Giữ lại alias cho các thư viện nếu bạn muốn sử dụng cấu trúc quản lý thư viện này
     implementation libs.material
     implementation libs.activity
