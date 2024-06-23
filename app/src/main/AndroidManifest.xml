@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="31">
         <activity
+            android:name=".main.flashcard.StartLearnFlashCardActivity"
+            android:exported="false" />
+        <activity
             android:name=".main.flashcard.LearnFlashCardActivity"
             android:exported="false" />
         <activity

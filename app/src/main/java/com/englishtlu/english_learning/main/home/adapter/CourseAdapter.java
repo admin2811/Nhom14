@@ -53,7 +53,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
         holder.btnChanglen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, CourseActivity.class);
+                Intent intent = new Intent(context, FlashCardActivity.class);
                 context.startActivity(intent);
             }
         });

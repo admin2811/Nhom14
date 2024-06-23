@@ -5,40 +5,135 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_flashcard"
     tools:context=".main.flashcard.CardManageActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_top_dashbroad_flashcard"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Cards"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView17"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/project_management"
+                app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView22" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_dashbroad_card"
+        android:elevation="2dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5"
+        tools:layout_editor_absoluteX="16dp" />
+
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="92dp" />
+        android:id="@+id/spinnerDesks"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5"
+        android:elevation="3dp"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonAddesk"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:elevation="3dp"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:background="#AAFF00"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDesks"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDesks"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDesks"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/buttonAddCard"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDeleteDesk"
         android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:background="#ff4c30"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDesks"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddesk"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDesks"
+        app:layout_constraintVertical_bias="1.0"
+        android:elevation="3dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddCard"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        android:layout_marginTop="16dp"
+        android:text="Add new card"
+        android:textStyle="bold"
+        android:background="#FFD700"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout7" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardList"
         android:layout_width="409dp"
         android:layout_height="613dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="117dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddCard"
+        tools:layout_editor_absoluteX="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

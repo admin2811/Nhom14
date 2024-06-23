@@ -16,9 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.englishtlu.english_learning.R;
 
 public class FlashCardActivity extends AppCompatActivity {
-    FrameLayout addCradFrame;
-    Dialog addcarddialog;
-    Dialog addeskDialog;
+    FrameLayout addCradFrame, learnFrame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +27,22 @@ public class FlashCardActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        addCradFrame = findViewById(R.id.addNewFrame);
+        addCradFrame = findViewById(R.id.cardManagement);
+        learnFrame = findViewById(R.id.learnCard);
         addCradFrame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FlashCardActivity.this,LearnFlashCardActivity.class);
+                Intent intent = new Intent(FlashCardActivity.this, CardManageActivity.class);
                 startActivity(intent);
             }
         });
+        learnFrame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FlashCardActivity.this, StartLearnFlashCardActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
