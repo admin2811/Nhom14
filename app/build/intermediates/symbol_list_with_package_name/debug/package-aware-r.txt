@@ -2065,6 +2065,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color color3
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
@@ -2832,6 +2833,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color pressed_bg
+color primary
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2847,6 +2849,7 @@ color red_0
 color red_1
 color ripple_material_dark
 color ripple_material_light
+color secondary
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -3938,6 +3941,7 @@ drawable baseline_arrow_back_24
 drawable baseline_arrow_back_ios_new_24
 drawable baseline_camera_alt_24
 drawable baseline_chat_24
+drawable baseline_check_circle_24
 drawable baseline_chevron_left_24
 drawable baseline_chevron_right_24
 drawable baseline_compare_arrows_24
@@ -4337,6 +4341,7 @@ drawable icon_profile
 drawable icon_profile_selected
 drawable icon_translate
 drawable icon_translate_selected
+drawable ideas
 drawable illustrations
 drawable image1
 drawable image2
@@ -4435,11 +4440,15 @@ drawable profile_background
 drawable profilebkg
 drawable reset_password
 drawable round_back_home_100
+drawable round_back_sec_ques_100
+drawable round_back_sec_str_100
+drawable round_back_secondary_100
 drawable round_background_profile
 drawable round_dialogs
 drawable round_dialogs_dark
 drawable rounded_corner
 drawable search
+drawable selected_btn
 drawable send
 drawable social
 drawable solar_camera
@@ -4473,10 +4482,12 @@ drawable ucrop_vector_ic_crop
 drawable ucrop_vector_loader
 drawable ucrop_vector_loader_animated
 drawable ucrop_wrapper_controls_shape
+drawable unselected_btn
 drawable userprofile
 drawable vocabulary
 drawable white_box
 drawable white_line
+drawable winner
 drawable woman
 drawable women
 drawable women1
@@ -4694,9 +4705,12 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnBack
 id btnCancel
+id btnGoBack
 id btnLogin
 id btnLogin_1
+id btnNext
 id btnOtp
 id btnRegister
 id btnRegister_1
@@ -4704,6 +4718,8 @@ id btnReset
 id btnSelectFile
 id btnSetEmail
 id btnSetPassword
+id btnStart
+id btnSubmit
 id btnUpload
 id btnVeritfy
 id btn_chanllenge
@@ -5044,6 +5060,7 @@ id ivEdit
 id ivLessonImage
 id ivSearch
 id ivView
+id iv_quesID
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -5150,6 +5167,9 @@ id nav_graph3
 id nav_graph4
 id nav_graph5
 id nav_graph6
+id nav_graph7
+id nav_graph8
+id nav_graph9
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -5188,6 +5208,10 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id optionA
+id optionB
+id optionC
+id optionD
 id optionsLl
 id outline
 id outward
@@ -5238,6 +5262,7 @@ id progressWidth
 id progress_circular
 id progress_horizontal
 id question
+id question_view
 id radio
 id ratio
 id rectangles
@@ -5249,6 +5274,7 @@ id recycler_countryDialog
 id recycler_definitions
 id recycler_view
 id register_button
+id relativeLayout
 id report_drawn
 id resedn_otp_textView
 id restart_button
@@ -5465,6 +5491,9 @@ id tvLessonName
 id tvPdfName
 id tvPdfSize
 id tvSelectedFile
+id tv_quesID
+id tv_quesTotal
+id tv_question
 id txtConPwd
 id txtPwd
 id ucrop
@@ -5478,6 +5507,7 @@ id useLogo
 id vertical
 id vertical_only
 id view
+id view2
 id view_offset_helper
 id view_overlay
 id view_pager
@@ -5632,8 +5662,10 @@ layout activity_main
 layout activity_main2
 layout activity_pdfactivity
 layout activity_practie
+layout activity_quesstion
 layout activity_quizz
 layout activity_register
+layout activity_start
 layout activity_welcome
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -5797,6 +5829,7 @@ layout pager_row
 layout pdf_view
 layout phonetics_list_items
 layout question_faq
+layout question_item_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -5826,6 +5859,9 @@ navigation nav_graph3
 navigation nav_graph4
 navigation nav_graph5
 navigation nav_graph6
+navigation nav_graph7
+navigation nav_graph8
+navigation nav_graph9
 plurals mtrl_badge_content_description
 raw a_new_lang_template
 raw carbon_arrow_down
@@ -6138,7 +6174,9 @@ string title_activity_chat_bot
 string title_activity_core
 string title_activity_login_with_phone_number
 string title_activity_practie
+string title_activity_quesstion
 string title_activity_quizz
+string title_activity_start
 string title_camera
 string title_choose_image_provider
 string title_gallery

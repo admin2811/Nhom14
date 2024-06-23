@@ -59,6 +59,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.EnglishLearning" >
         <activity
+            android:name="com.englishtlu.english_learning.main.quizz.QuesstionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quesstion"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name="com.englishtlu.english_learning.main.quizz.QuizzActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quizz"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name="com.englishtlu.english_learning.main.quizz.StartActivity"
+            android:exported="false"
+            android:label="@string/title_activity_start"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
             android:name="com.englishtlu.english_learning.main.quizz.PractieActivity"
             android:exported="false"
             android:label="@string/title_activity_practie"

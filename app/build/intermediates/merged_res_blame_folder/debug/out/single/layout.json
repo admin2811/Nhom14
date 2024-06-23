@@ -12,6 +12,10 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_f_a_q.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\question_item_layout.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\question_item_layout.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\toolbar.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\toolbar.xml"
     },
@@ -20,16 +24,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_doc.xml"
     },
     {
-        "merged": "com.englishtlu.english_learning.app-mergeDebugResources-60:/layout/activity_practie.xml",
-        "source": "com.englishtlu.english_learning.app-main-63:/layout/activity_practie.xml"
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_main2.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_main2.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\item_pdf.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_pdf.xml"
-    },
-    {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_main2.xml",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_main2.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\fragment_change_passwordand_email.xml",
@@ -40,12 +40,20 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\phonetics_list_items.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_practie.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_practie.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\item_quizz.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_quizz.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\layout_change_password.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\layout_change_password.xml"
+    },
+    {
+        "merged": "com.englishtlu.english_learning.app-mergeDebugResources-60:/layout/activity_quesstion.xml",
+        "source": "com.englishtlu.english_learning.app-main-63:/layout/activity_quesstion.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\definitions_list_items.xml",
@@ -88,24 +96,28 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\fragment_base.xml",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_base.xml"
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_quesstion.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_quesstion.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_quizz.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_quizz.xml"
     },
     {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\fragment_base.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_base.xml"
+    },
+    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_doc.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_doc.xml"
     },
     {
-        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\fragment_home2.xml",
-        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_home2.xml"
-    },
-    {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\viewholder_course.xml",
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\viewholder_course.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\fragment_home2.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\fragment_home2.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\meanings_list_items.xml",
@@ -164,8 +176,12 @@
         "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_pdfactivity.xml"
     },
     {
-        "merged": "com.englishtlu.english_learning.app-mergeDebugResources-60:/layout/item_practice.xml",
-        "source": "com.englishtlu.english_learning.app-main-63:/layout/item_practice.xml"
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\item_practice.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\item_practice.xml"
+    },
+    {
+        "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\activity_start.xml",
+        "source": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-main-63:\\layout\\activity_start.xml"
     },
     {
         "merged": "D:\\Android Project\\daemon\\8.2\\com.englishtlu.english_learning.app-mergeDebugResources-60:\\layout\\fragment_home.xml",

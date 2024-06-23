@@ -1,5 +1,6 @@
 package com.englishtlu.english_learning.main.quizz;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -60,7 +61,9 @@ public class PractieActivity extends AppCompatActivity {
                         @Override
                         public void onItemClick(Category category) {
                             if(category.getId() == 1){
-                                Toast.makeText(PractieActivity.this, "Category 1", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(PractieActivity.this, StartActivity.class);
+                                intent.putExtra("CATEGORY_ID", category.getId());
+                                startActivity(intent);
                             }
                         }
                     });

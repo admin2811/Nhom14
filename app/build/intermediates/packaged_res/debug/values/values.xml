@@ -12,6 +12,7 @@
     <color name="black_1y">#f80f0f0f</color>
     <color name="blue_0">#2a359a</color>
     <color name="blue_1">#2196F3</color>
+    <color name="color3">#11C59C</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#000</color>
@@ -57,11 +58,13 @@
     <color name="ic_launcher_background">#2DCA71</color>
     <color name="icon_background">#e8ba2e</color>
     <color name="lavender">#8395fb</color>
+    <color name="primary">#141933</color>
     <color name="purple_200">#FFBBB6FC</color>
     <color name="purple_500">#F7CD2E</color>
     <color name="purple_700">#F7CD2E</color>
     <color name="red_0">#fd5152</color>
     <color name="red_1">#e4494a</color>
+    <color name="secondary">#06CBED</color>
     <color name="status_background">#bbada0</color>
     <color name="teal_200">#FFD3DAC5</color>
     <color name="teal_700">#FF018786</color>
@@ -154,7 +157,9 @@
     <string name="title_activity_core">CoreActivity</string>
     <string name="title_activity_login_with_phone_number">LoginWithPhoneNumberActivity</string>
     <string name="title_activity_practie">PractieActivity</string>
+    <string name="title_activity_quesstion">QuesstionActivity</string>
     <string name="title_activity_quizz">QuizzActivity</string>
+    <string name="title_activity_start">StartActivity</string>
     <string name="todo">TODO</string>
     <string name="todo3">TODO</string>
     <string name="todo8">TODO</string>
