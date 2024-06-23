@@ -1,6 +1,7 @@
 package com.englishtlu.english_learning.main.quizz;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.android.volley.Request;
@@ -14,10 +15,12 @@ import com.englishtlu.english_learning.main.quizz.model.QuestionModel;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,14 +54,38 @@ public class QuesstionActivity extends AppCompatActivity {
     private AppCompatButton btnNEXT,btnPREV;
     private QuesstionAdapter adapter;
     private List<QuestionModel> questionList;
-
+    private ImageView btnBack;
     private  int question_id;
     private  int totalQues;
     private int selectedAnswer;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quesstion);
+        btnBack = findViewById(R.id.ivback);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(QuesstionActivity.this);
+                builder.setTitle("Xác nhận");
+                builder.setMessage("Bạn có chắc muốn thoát không?");
+                builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish(); // Đóng activity khi người dùng xác nhận muốn thoát
+                    }
+                });
+                builder.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss(); // Đóng dialog nếu người dùng chọn hủy
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
 
 
         int categoryID = getIntent().getIntExtra("CATEGORY_ID", -1);
