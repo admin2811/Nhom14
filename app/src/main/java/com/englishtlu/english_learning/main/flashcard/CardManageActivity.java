@@ -190,8 +190,8 @@ public class CardManageActivity extends AppCompatActivity {
                     for (DataSnapshot childSnapshot : snapshot.getChildren()) {
                         cards.add(childSnapshot.getKey());
                     }
-                    cards.remove(0);
                     lenDesk = cards.size();
+                    cards.remove(lenDesk-1);
 
                     listCardAdapter = new ListCardAdapter(CardManageActivity.this, cards, userId, deskName);
                     rcCardList.setAdapter(listCardAdapter);

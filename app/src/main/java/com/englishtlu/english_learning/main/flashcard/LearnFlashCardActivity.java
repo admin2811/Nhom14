@@ -2,15 +2,20 @@ package com.englishtlu.english_learning.main.flashcard;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -38,13 +43,16 @@ import java.util.List;
 public class LearnFlashCardActivity extends AppCompatActivity {
     private CardView card_front, card_back;
     private TextView tv_question, tv_answer;
-    private AppCompatButton nextCardbtn;
+    private TextView tv_end;
+    private ImageView btnBack;
+    private AppCompatButton nextCardbtn, btnEndTask;
     private int currentCardIndex = 0;
-    private boolean isFront;
+    private boolean isFront = true;
     String nameDesk;
     FirebaseAuth auth;
     String userId;
     List<String> cards;
+    int lenDesks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +69,8 @@ public class LearnFlashCardActivity extends AppCompatActivity {
         tv_question = findViewById(R.id.tv_question);
         tv_answer = findViewById(R.id.tv_answer);
         nextCardbtn = findViewById(R.id.btnNextCard);
+        btnEndTask = findViewById(R.id.EndTask);
+        tv_end = findViewById(R.id.TheEnd);
 
         auth = FirebaseAuth.getInstance();
 
@@ -82,6 +92,8 @@ public class LearnFlashCardActivity extends AppCompatActivity {
                     for (DataSnapshot childSnapshot : snapshot.getChildren()) {
                         cards.add(childSnapshot.getKey());
                     }
+                    lenDesks = cards.size();
+                    cards.remove(lenDesks-1);
                     if (!cards.isEmpty()) {
                         displayCurrentCard();
                     }
@@ -99,22 +111,36 @@ public class LearnFlashCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 flip_card_anim();
-            }
-        });
-        card_main.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                nextCard();
-                return true;
+                if (isFront) {
+                    card_front.setVisibility(View.VISIBLE);
+                    card_back.setVisibility(View.INVISIBLE);
+                } else {
+                    card_front.setVisibility(View.INVISIBLE);
+                    card_back.setVisibility(View.VISIBLE);
+                }
             }
         });
 
         nextCardbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nextCard();
+                if(currentCardIndex == (cards.size() - 1)){
+                    tv_end.setVisibility(View.VISIBLE);
+                    card_main.setVisibility(View.INVISIBLE);
+                    nextCardbtn.setVisibility(View.INVISIBLE);
+                } else {
+                    nextCard();
+                }
             }
         });
+
+        btnEndTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
     }
     private void displayCurrentCard() {
@@ -127,8 +153,16 @@ public class LearnFlashCardActivity extends AppCompatActivity {
                     if (snapshot.exists()) {
                         String question = snapshot.child("question").getValue(String.class);
                         String answer = snapshot.child("answer").getValue(String.class);
+                        Toast.makeText(LearnFlashCardActivity.this,answer,Toast.LENGTH_LONG).show();
                         tv_question.setText(question);
                         tv_answer.setText(answer);
+                        if (isFront) {
+                            card_front.setVisibility(View.VISIBLE);
+                            card_back.setVisibility(View.INVISIBLE);
+                        } else {
+                            card_front.setVisibility(View.INVISIBLE);
+                            card_back.setVisibility(View.VISIBLE);
+                        }
                     }
                 }
 
@@ -144,8 +178,13 @@ public class LearnFlashCardActivity extends AppCompatActivity {
         AnimatorSet setout = (AnimatorSet) AnimatorInflater.loadAnimator(LearnFlashCardActivity.this,R.animator.card_flip_out);
         AnimatorSet setin = (AnimatorSet) AnimatorInflater.loadAnimator(LearnFlashCardActivity.this,R.animator.card_flip_in);
 
-        setout.setTarget(isFront ? card_front: card_back);
-        setin.setTarget(isFront ? card_back: card_front);
+        if (isFront) {
+            setout.setTarget(card_front);
+            setin.setTarget(card_back);
+        } else {
+            setout.setTarget(card_back);
+            setin.setTarget(card_front);
+        }
 
         setout.start();
         setin.start();
@@ -155,8 +194,6 @@ public class LearnFlashCardActivity extends AppCompatActivity {
     private void nextCard() {
         if (currentCardIndex < cards.size() - 1) {
             currentCardIndex++;
-        } else {
-            currentCardIndex = 0; // Loop back to the first card if at the end
         }
         displayCurrentCard();
         if (!isFront) {

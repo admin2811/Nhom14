@@ -1,6 +1,8 @@
 package com.englishtlu.english_learning.main.flashcard;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -30,6 +32,7 @@ public class StartLearnFlashCardActivity extends AppCompatActivity {
     String userId;
     List<String> desks;
     ListDeskAdapter listDeskAdapter;
+    private ImageView btnBack;
     RecyclerView rcListDesk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,7 @@ public class StartLearnFlashCardActivity extends AppCompatActivity {
             return insets;
         });
         rcListDesk = findViewById(R.id.listDesk);
+        btnBack = findViewById(R.id.btnRecall);
 
         auth = FirebaseAuth.getInstance();
 
@@ -74,5 +78,13 @@ public class StartLearnFlashCardActivity extends AppCompatActivity {
 
             }
         });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
     }
 }
