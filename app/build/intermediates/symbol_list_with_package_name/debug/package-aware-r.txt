@@ -4712,9 +4712,11 @@ id btnLogin
 id btnLogin_1
 id btnNext
 id btnOtp
+id btnOut
 id btnRegister
 id btnRegister_1
 id btnReset
+id btnSeeResult
 id btnSelectFile
 id btnSetEmail
 id btnSetPassword
@@ -5024,6 +5026,7 @@ id image
 id imageButton_audio
 id imageSlider
 id imageView
+id imageView10
 id imageView2
 id imageView3
 id imageView4
@@ -5162,6 +5165,7 @@ id multiply
 id myProfile
 id nav_controller_view_tag
 id nav_graph
+id nav_graph10
 id nav_graph2
 id nav_graph3
 id nav_graph4
@@ -5416,6 +5420,7 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
 id textView16
 id textView17
 id textView18
@@ -5425,13 +5430,16 @@ id textView20
 id textView21
 id textView22
 id textView23
+id textView24
 id textView25
+id textView26
 id textView3
 id textView4
 id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id textView_antonyns
 id textView_code
 id textView_countryName
@@ -5490,7 +5498,9 @@ id tvLessonDec
 id tvLessonName
 id tvPdfName
 id tvPdfSize
+id tvScore
 id tvSelectedFile
+id tvTotal
 id tv_quesID
 id tv_quesTotal
 id tv_question
@@ -5665,6 +5675,7 @@ layout activity_practie
 layout activity_quesstion
 layout activity_quizz
 layout activity_register
+layout activity_result
 layout activity_start
 layout activity_welcome
 layout browser_actions_context_menu_page
@@ -5854,6 +5865,7 @@ mipmap english_learning_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+navigation nav_graph10
 navigation nav_graph2
 navigation nav_graph3
 navigation nav_graph4
@@ -6176,6 +6188,7 @@ string title_activity_login_with_phone_number
 string title_activity_practie
 string title_activity_quesstion
 string title_activity_quizz
+string title_activity_result
 string title_activity_start
 string title_camera
 string title_choose_image_provider

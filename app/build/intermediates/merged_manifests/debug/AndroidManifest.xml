@@ -59,6 +59,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.EnglishLearning" >
         <activity
+            android:name="com.englishtlu.english_learning.main.quizz.ResultActivity"
+            android:exported="false"
+            android:label="@string/title_activity_result"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
             android:name="com.englishtlu.english_learning.main.quizz.QuesstionActivity"
             android:exported="false"
             android:label="@string/title_activity_quesstion"

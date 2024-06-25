@@ -24,4 +24,8 @@ public class Answer {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
+
+    public boolean isCorrect() {
+        return true;
+    }
 }

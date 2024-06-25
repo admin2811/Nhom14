@@ -10,6 +10,7 @@ public class QuestionModel {
     private List<Answer> answers;
 
     private int selectedAnswer;
+    private boolean isSelect;
 
     public QuestionModel(int question_id, String question, int correctAnswer, List<Answer> answers,int selectedAnswer) {
         this.question_id = question_id;
@@ -19,13 +20,6 @@ public class QuestionModel {
         this.selectedAnswer = selectedAnswer;
     }
 
-    public int getSelectedAnswer() {
-        return selectedAnswer;
-    }
-
-    public void setSelectedAnswer(int selectedAnswer) {
-        this.selectedAnswer = selectedAnswer;
-    }
 
     public int getQuestion_id() {
         return question_id;
@@ -57,5 +51,20 @@ public class QuestionModel {
 
     public void setAnswers(List<Answer> answers) {
         this.answers = answers;
+    }
+
+    public int getSelectedAnswer() {
+        return selectedAnswer;
+    }
+
+    public void setSelectedAnswer(int selectedAnswer) {
+        this.selectedAnswer = selectedAnswer;
+    }
+
+    public boolean isSelect(){
+        return isSelect;
+    }
+    public void setSelect(boolean select){
+        this.isSelect = select;
     }
 }

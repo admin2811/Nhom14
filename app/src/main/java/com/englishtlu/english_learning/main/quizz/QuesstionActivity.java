@@ -2,6 +2,7 @@ package com.englishtlu.english_learning.main.quizz;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.android.volley.Request;
@@ -11,6 +12,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.englishtlu.english_learning.main.quizz.adapter.QuesstionAdapter;
+import com.englishtlu.english_learning.main.quizz.model.Answer;
+import com.englishtlu.english_learning.main.quizz.model.QuestionCorrectAwnser;
 import com.englishtlu.english_learning.main.quizz.model.QuestionModel;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -18,6 +21,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -40,30 +44,42 @@ import com.englishtlu.english_learning.databinding.ActivityQuesstionBinding;
 import com.englishtlu.english_learning.R;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
 import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
-public class QuesstionActivity extends AppCompatActivity {
+public class QuesstionActivity extends AppCompatActivity implements QuesstionAdapter.OnAnswerSelectedListener {
 
     private RecyclerView questionView;
-    private TextView tvQuestId,btnSub,tvTotalQues;
-    private AppCompatButton btnNEXT,btnPREV;
+    private TextView tvQuestId, btnSub, tvTotalQues;
+    private AppCompatButton btnNEXT, btnPREV;
     private QuesstionAdapter adapter;
     private List<QuestionModel> questionList;
+    private List<QuestionCorrectAwnser> correctAwnserList = new ArrayList<>();
     private ImageView btnBack;
-    private  int question_id;
-    private  int totalQues;
-    private int selectedAnswer;
+    private int question_id;
+    private int totalQues;
+    private int score = 0;
+
+    private List<QuestionModel> selectedQuestions = new ArrayList<>();
+    //private int correctAnswer;
+    private Map<Integer,Integer> correctAnswerMap = new HashMap<>();
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quesstion);
         btnBack = findViewById(R.id.ivback);
+        btnSub = findViewById(R.id.btnSubmit);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,28 +103,28 @@ public class QuesstionActivity extends AppCompatActivity {
             }
         });
 
-
         int categoryID = getIntent().getIntExtra("CATEGORY_ID", -1);
-        if(categoryID == -1){
+        if (categoryID == -1) {
             // Handle the case where CATEGORY_ID is not passed
             Snackbar.make(questionView, "Invalid category ID", Snackbar.LENGTH_SHORT).show();
             finish();
             return;
-        }else {
+        } else {
             fetchQuestions(categoryID);
+            fetchCorrectAnswer(categoryID);
         }
         init();
         setSnapHelper();
         setOnclik();
-
     }
 
     private void setOnclik() {
+
         btnNEXT.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                if(question_id < totalQues - 1){
+                if (question_id < totalQues - 1) {
                     question_id++;
                     questionView.smoothScrollToPosition(question_id);
                     tvQuestId.setText("Question: " + (question_id + 1));
@@ -120,7 +136,7 @@ public class QuesstionActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                if(question_id > 0){
+                if (question_id > 0) {
                     question_id--;
                     questionView.smoothScrollToPosition(question_id);
                     tvQuestId.setText("Question: " + (question_id + 1));
@@ -128,10 +144,40 @@ public class QuesstionActivity extends AppCompatActivity {
             }
         });
 
+        btnSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Hiển thị thông báo bạn có chắc muốn nộp bài
+                AlertDialog.Builder builder = new AlertDialog.Builder(QuesstionActivity.this);
+                builder.setTitle("Xác nhận");
+                builder.setMessage("Bạn có chắc muốn nộp bài không?");
+                builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Chuyển sang màn hình kết quả
+                        Intent intent = new Intent(QuesstionActivity.this, ResultActivity.class);
+                        intent.putExtra("score", score);
+                        intent.putExtra("totalQues", totalQues);
+
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+                builder.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Đóng dialog nếu người dùng chọn hủy
+                        dialog.dismiss();
+                    }
+                });
+
+                // Hiển thị dialog
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
     }
-
-    private void setSnapHelper() {
-
+        private void setSnapHelper() {
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(questionView);
 
@@ -141,7 +187,7 @@ public class QuesstionActivity extends AppCompatActivity {
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 View view = snapHelper.findSnapView(questionView.getLayoutManager());
-                if(view != null){
+                if (view != null) {
                     question_id = Objects.requireNonNull(questionView.getLayoutManager()).getPosition(view);
                     tvQuestId.setText("Question: " + (question_id + 1));
                 }
@@ -154,49 +200,125 @@ public class QuesstionActivity extends AppCompatActivity {
         });
     }
 
-    private void fetchQuestions(int categoryID) {
-        String url = "https://nhom14-android.000webhostapp.com/test/fetch_questions.php?category_id=" + categoryID;
-        RequestQueue queue = Volley.newRequestQueue(this);
+        private void fetchCorrectAnswer(int categoryID) {
+            String url = "https://nhom14-android.000webhostapp.com/test/fetch_correct_answer.php?category_id=" + categoryID;
+            RequestQueue queue = Volley.newRequestQueue(this);
+            JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
+                    Request.Method.GET, url, null,
+                    new Response.Listener<JSONArray>() {
+                        @SuppressLint("SetTextI18n")
+                        @Override
+                        public void onResponse(JSONArray response) {
+                            try {
+                                if(response.length()>0){
+                                    correctAwnserList = new ArrayList<>();
+                                    for (int i = 0; i < response.length(); i++) {
+                                        JSONObject jsonObject = response.getJSONObject(i);
+                                        int id = jsonObject.getInt("id");
+                                        String question = jsonObject.getString("question");
+                                        int correctAnswer = jsonObject.getInt("correct_answer");
+                                        String categoryName = jsonObject.getString("category_name");
 
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
-                Request.Method.GET, url, null,
-                new Response.Listener<JSONArray>() {
-                    @SuppressLint("SetTextI18n")
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Gson gson = new Gson();
-                        Type listType = new TypeToken<List<QuestionModel>>() {}.getType();
-                        List<QuestionModel> questionList = gson.fromJson(response.toString(), listType);
+                                        QuestionCorrectAwnser q = new QuestionCorrectAwnser(id, question, correctAnswer, categoryName);
+                                        correctAwnserList.add(q);
+                                        correctAnswerMap.put(id,correctAnswer);
+                                    }
 
-                        QuesstionAdapter adapter = new QuesstionAdapter(questionList);
-                        questionView.setAdapter(adapter);
+                                    //HiỂN THỊ correctAnswerList
+                                    for(QuestionCorrectAwnser correctAwnser : correctAwnserList){
+                                        Log.d("QuestionActivity", "Question ID: " + correctAwnser.getQuestion() + ", Correct answer: " + correctAwnser.getCorrectAnswer());
+                                    }
+                                }
 
-                        totalQues = questionList.size();
-                        tvTotalQues.setText("/" + totalQues);
+                            } catch (JsonSyntaxException e) {
+                                Log.e("QuestionActivity", "JSON parsing error", e);
+                                Toast.makeText(QuesstionActivity.this, "Error parsing JSON", Toast.LENGTH_SHORT).show();
+                            } catch (JSONException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    },
+
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Log.e("QuestionActivity", "Error fetching correct answer", error);
+                            Toast.makeText(QuesstionActivity.this, "Error fetching correct answer", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.e("QuesstionActivity", "Error fetching questions", error);
-                        Toast.makeText(QuesstionActivity.this, "Error fetching questions", Toast.LENGTH_SHORT).show();
-                    }
-                }
-        );
-        queue.add(jsonArrayRequest);
-    }
+            );
+            queue.add(jsonArrayRequest);
+        }
 
-    @SuppressLint({"WrongViewCast", "SetTextI18n"})
-    private void init(){
-        tvQuestId = findViewById(R.id.tv_quesID);
-        tvTotalQues = findViewById(R.id.tv_quesTotal);
-        questionView = findViewById(R.id.question_view);
-        btnNEXT = findViewById(R.id.btnNext);
-        btnPREV = findViewById(R.id.btnGoBack);
-        questionView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-        questionView.setHasFixedSize(true);
-        question_id = 0;
-        tvQuestId.setText("Question: " + (question_id + 1));
-        tvTotalQues.setText("0");
-    }
+        private void fetchQuestions(int categoryID) {
+            String url = "https://nhom14-android.000webhostapp.com/test/fetch_questions.php?category_id=" + categoryID;
+            RequestQueue queue = Volley.newRequestQueue(this);
+
+            JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
+                    Request.Method.GET, url, null,
+                    new Response.Listener<JSONArray>() {
+                        @SuppressLint("SetTextI18n")
+                        @Override
+                        public void onResponse(JSONArray response) {
+                            Gson gson = new Gson();
+                            Type listType = new TypeToken<List<QuestionModel>>() {
+                            }.getType();
+                            questionList = gson.fromJson(response.toString(), listType);
+                            for (QuestionModel question : questionList) {
+                                question.setSelectedAnswer(-1);
+                            }
+                            adapter = new QuesstionAdapter(questionList, QuesstionActivity.this);
+                            questionView.setAdapter(adapter);
+
+                            totalQues = questionList.size();
+                            tvTotalQues.setText("/" + totalQues);
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Log.e("QuesstionActivity", "Error fetching questions", error);
+                            Toast.makeText(QuesstionActivity.this, "Error fetching questions", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+            );
+            queue.add(jsonArrayRequest);
+        }
+
+        @SuppressLint({"WrongViewCast", "SetTextI18n"})
+        private void init() {
+            tvQuestId = findViewById(R.id.tv_quesID);
+            tvTotalQues = findViewById(R.id.tv_quesTotal);
+            questionView = findViewById(R.id.question_view);
+            btnNEXT = findViewById(R.id.btnNext);
+            btnPREV = findViewById(R.id.btnGoBack);
+            questionView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+            questionView.setHasFixedSize(true);
+            question_id = 0;
+            tvQuestId.setText("Question: " + (question_id + 1));
+            tvTotalQues.setText("0");
+        }
+
+        @SuppressLint({"SetTextI18n", "NotifyDataSetChanged"})
+        @Override
+        public void onAnswerSelected(int questionPosition, int answerIndex) {
+            QuestionModel question = questionList.get(questionPosition);
+            int previousSelectedAnswer = question.getSelectedAnswer();
+            question.setSelectedAnswer(answerIndex);
+            //Lấy ra trường answer_id của câu trả lời được chọn
+            int selectedAnswerId = question.getAnswers().get(answerIndex).getAnswer_id();
+            int questionId = question.getQuestion_id();
+            boolean isSelect = question.isSelect();
+            Toast.makeText(this, "Selected answer ID: " + selectedAnswerId, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Question Id" + questionId,Toast.LENGTH_SHORT).show();
+            Integer correctAnswer = correctAnswerMap.get(questionId);
+            if (correctAnswer != null && selectedAnswerId == correctAnswer) {
+                score++;
+                Toast.makeText(QuesstionActivity.this,"Score" + score,Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(QuesstionActivity.this, "Answer not true", Toast.LENGTH_SHORT).show();
+
+            }
+            selectedQuestions.add(question);
+        }
 }

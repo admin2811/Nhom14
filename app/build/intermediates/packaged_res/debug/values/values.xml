@@ -159,6 +159,7 @@
     <string name="title_activity_practie">PractieActivity</string>
     <string name="title_activity_quesstion">QuesstionActivity</string>
     <string name="title_activity_quizz">QuizzActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
     <string name="title_activity_start">StartActivity</string>
     <string name="todo">TODO</string>
     <string name="todo3">TODO</string>
