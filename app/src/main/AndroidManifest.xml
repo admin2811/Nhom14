@@ -32,6 +32,9 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="tiramisu">
         <activity
+            android:name=".main.Grammar.GrammarActivity"
+            android:exported="false" />
+        <activity
             android:name=".authentication.VeriotpActivity"
             android:exported="false" />
         <activity
