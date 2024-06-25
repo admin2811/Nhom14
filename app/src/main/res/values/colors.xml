@@ -86,4 +86,8 @@
     <color name="color_cell_background_dark">#958F88</color>
 
     <color name="status_background">#bbada0</color>
+    <color name="primary">#141933</color>
+    <color name="result">#0F217A</color>
+    <color name="secondary">#06CBED</color>
+    <color name="color3">#11C59C</color>
 </resources>

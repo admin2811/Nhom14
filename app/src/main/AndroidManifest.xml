@@ -2,17 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +32,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="tiramisu">
+        <activity
+            android:name=".main.quizz.CheckActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name=".main.quizz.ResultActivity"
+            android:exported="false"
+
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name=".main.quizz.QuesstionActivity"
+            android:exported="false"
+
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name=".main.quizz.StartActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name=".main.quizz.PractieActivity"
+            android:exported="false"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name=".main.game2048.ui.activity.CoreActivity"
+            android:exported="false"
+            android:label="@string/title_activity_core"
+            android:theme="@style/G2048DarkTheme" />
+        <activity
+            android:name=".main.quizz.QuizzVocabActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quizz"
+            android:theme="@style/Theme.EnglishLearning" />
+        <activity
+            android:name=".authentication.LoginOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LoginWithPhoneNumberActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login_with_phone_number"
+            android:theme="@style/Theme.EnglishLearning" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.file-provider"
@@ -36,15 +84,7 @@
         </provider>
 
         <activity
-            android:name=".main.game2048.ui.activity.CoreActivity"
-            android:exported="false"
-            android:label="@string/title_activity_core"
-            android:theme="@style/G2048DarkTheme" />
-        <activity android:name=".authentication.LoginWithPhoneNumberActivity"
-            android:exported="false" />
-        <activity android:name=".authentication.LoginOTPActivity"
-            android:exported="false" />
-        <activity android:name=".main.profile.DocActivity"
+            android:name=".main.document.activity.PDFActivity"
             android:exported="false" />
         <activity
             android:name=".main.chatbot.ChatBotActivity"
@@ -72,8 +112,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main.document.activity.PDFActivity"
-            android:exported="false" />
+        <activity
+            android:name=".main.profile.DocActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -26,6 +26,7 @@ import com.englishtlu.english_learning.authentication.model.User;
 import com.englishtlu.english_learning.main.document.activity.PDFActivity;
 import com.englishtlu.english_learning.main.home.adapter.CourseAdapter;
 import com.englishtlu.english_learning.main.home.model.Course;
+import com.englishtlu.english_learning.main.quizz.QuizzVocabActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -136,6 +137,9 @@ public class HomeFragment extends Fragment {
                 //Khi ấn vào document thì chuyển sang PDFActivity
                 if (course.getId() == 4) {
                     Intent intent = new Intent(requireContext(), PDFActivity.class);
+                    startActivity(intent);
+                }else if(course.getId() == 1){
+                    Intent intent = new Intent(requireContext(), QuizzVocabActivity.class);
                     startActivity(intent);
                 }
             }
