@@ -1,11 +1,14 @@
 package com.englishtlu.english_learning.main.test;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -18,9 +21,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class QuizResultActivity extends AppCompatActivity {
-    private TextView wrongAnswer, trueAnswer, ngAnswer;
+    private TextView wrongAnswer, trueAnswer, ngAnswer, Earnscore;
     private int quizID;
     QuizRepository quizRepository;
+    AppCompatButton btnEnd;
     FirebaseAuth auth;
     String userId;
     @Override
@@ -38,6 +42,9 @@ public class QuizResultActivity extends AppCompatActivity {
         trueAnswer = findViewById(R.id.noTrue);
         wrongAnswer = findViewById(R.id.noFalse);
         ngAnswer = findViewById(R.id.noNG);
+        btnEnd = findViewById(R.id.btnEndquiz);
+        Earnscore = findViewById(R.id.txtEarnScore);
+
 
         quizRepository = new QuizRepository(this);
 
@@ -51,6 +58,16 @@ public class QuizResultActivity extends AppCompatActivity {
         if (currentUser != null) {
             userId = currentUser.getUid();
         }
+
+        Earnscore.setText("You've scored " + quizRepository.nuTrue + " points");
+
+        btnEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizResultActivity.this,CourseActivity.class);
+                startActivity(intent);
+            }
+        });
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId).child("quiz" + Integer.toString(quizID));
         databaseReference.child("result").setValue(Integer.toString(quizRepository.nuTrue))

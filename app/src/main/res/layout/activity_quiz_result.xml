@@ -1,34 +1,196 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#4C39CC" tools:context=".quiz.QuizResultActivity">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="16dp" android:layout_marginTop="180dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-    <FrameLayout android:id="@+id/frameLayout" android:layout_width="300dp" android:layout_height="220dp" android:elevation="8dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
-            <TextView android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:text="Congratulations !" android:textSize="24dp" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-            <TextView android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="You've scored ... points" android:textSize="16dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView11"/>
-            <TableLayout android:layout_width="match_parent" android:layout_height="150dp" android:layout_marginTop="25dp" app:layout_constraintTop_toBottomOf="@+id/textView12">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test_bg"
+    tools:context=".main.test.QuizResultActivity">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="180dp"
+        android:elevation="16dp"
+        android:src="@drawable/trophy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:elevation="8dp"
+        android:background="@drawable/bg_list_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Congratulations !"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/txtEarnScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="You've scored ... points"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtEarnScore">
                 <TableRow>
-                    <FrameLayout android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:padding="4dp">
-                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginTop="5dp">
-                            <ImageView android:id="@+id/imageView8" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-                            <TextView android:id="@+id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="True" android:textSize="12dp" app:layout_constraintBottom_toBottomOf="@+id/imageView8" app:layout_constraintStart_toEndOf="@+id/imageView8" app:layout_constraintTop_toTopOf="@+id/imageView8"/>
-                            <TextView android:id="@+id/noTrue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Null" android:textSize="14dp" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView8"/>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:padding="4dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/accept"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="True"
+                                android:textSize="12dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                                app:layout_constraintTop_toTopOf="@+id/imageView8"/>
+                            <TextView
+                                android:id="@+id/noTrue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Null"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView8"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
-                    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:padding="4dp">
-                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:layout_marginTop="5dp">
-                            <ImageView android:id="@+id/imageView9" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="False" android:textSize="12dp" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="@+id/imageView9" app:layout_constraintStart_toEndOf="@+id/imageView9" app:layout_constraintTop_toTopOf="@+id/imageView9"/>
-                            <TextView android:id="@+id/noFalse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Null" android:textSize="14dp" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView9"/>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="4dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/cancel"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="False"
+                                android:textSize="12dp"
+                                android:layout_marginStart="8dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                                app:layout_constraintTop_toTopOf="@+id/imageView9"/>
+                            <TextView
+                                android:id="@+id/noFalse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Null"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView9"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
-                    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:padding="4dp">
-                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
-                            <ImageView android:id="@+id/imageView10" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No choice" android:textSize="12dp" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="@+id/imageView10" app:layout_constraintStart_toEndOf="@+id/imageView10" app:layout_constraintTop_toTopOf="@+id/imageView10"/>
-                            <TextView android:id="@+id/noNG" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Null" android:textSize="14dp" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView10"/>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="4dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="8dp"
+                                android:src="@drawable/nochoice"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No choice"
+                                android:textSize="12dp"
+                                android:layout_marginStart="8dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                                app:layout_constraintTop_toTopOf="@+id/imageView10"/>
+                            <TextView
+                                android:id="@+id/noNG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Null"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView10"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
                 </TableRow>
             </TableLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEndquiz"
+        android:layout_marginTop="25dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#FFC000"
+        android:text="End"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

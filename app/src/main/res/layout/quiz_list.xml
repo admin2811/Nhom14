@@ -17,7 +17,7 @@
         android:id="@+id/quizName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="24dp"
         android:drawablePadding="2dp"
         android:text="Quiz name"
         android:textSize="24dp"
@@ -28,19 +28,20 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="40dp"
         android:drawablePadding="2dp"
         android:text="Quiz name"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/quizName"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:src="@drawable/exercise_icon"
-        android:layout_marginLeft="280dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/quizName"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quizName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
