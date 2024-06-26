@@ -32,7 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private  String lastName,getLastName;
+    private  String lastName;
     private FirebaseAuth auth;
     private int selectedTab = 1;
 
