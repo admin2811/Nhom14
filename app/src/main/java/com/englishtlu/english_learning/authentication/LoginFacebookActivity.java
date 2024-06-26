@@ -52,10 +52,7 @@ public class LoginFacebookActivity extends AppCompatActivity {
             startActivity(new Intent(LoginFacebookActivity.this,MainActivity.class));
         }
         FacebookSdk.sdkInitialize(getApplicationContext());
-        mCallbackManager = CallbackManager.Factory.create();
-        mAuth = FirebaseAuth.getInstance();
-        database = FirebaseDatabase.getInstance("https://e-learning-app-9e5d6-default-rtdb.firebaseio.com/");
-        LoginButton loginButton = findViewById(R.id.login_button);
+
 
        loginButton.setReadPermissions("email", "public_profile");
        loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
