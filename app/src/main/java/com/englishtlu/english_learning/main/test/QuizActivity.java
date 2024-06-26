@@ -28,6 +28,7 @@ import androidx.recyclerview.widget.SnapHelper;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.main.test.adapter.QuestionAdapter;
 import com.englishtlu.english_learning.main.test.database.QuizDatabase;
+import com.englishtlu.english_learning.main.test.model.Answer;
 import com.englishtlu.english_learning.main.test.model.Question;
 import com.englishtlu.english_learning.main.test.model.Quiz;
 import com.englishtlu.english_learning.main.test.repository.QuizRepository;
@@ -159,7 +160,8 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(quesID < questionsData.size() - 1){
-                    Toast.makeText(QuizActivity.this,Integer.toString(quesID) + " AND " + Integer.toString(questionsData.size()),Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(QuizActivity.this,questionsData.get(quesID).getAnswer() + " AND " + Integer.toString(questionsData.size()),Toast.LENGTH_SHORT).show();
+                    // QuizRepository.answersData.add(new Answer(questionsData.get(quesID).getQuestion(),questionsData.get(quesID).getQuestionType(),null,questionsData.get(quesID).getAnswer(),questionsData.get(quesID).getIdQuiz(),questionsData.get(quesID).getOptionA(),questionsData.get(quesID).getOptionB(),questionsData.get(quesID).getOptionC(),questionsData.get(quesID).getOptionD(),questionsData.get(quesID).getUrlMedia()));
                     questionView.smoothScrollToPosition(quesID + 1);
                     updateProgressBar();
                     QuizRepository.nuNoChoice++;

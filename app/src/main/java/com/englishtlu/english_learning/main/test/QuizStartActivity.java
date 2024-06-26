@@ -48,6 +48,7 @@ public class QuizStartActivity extends AppCompatActivity {
             return insets;
         });
         // dbHelper = new QuizDatabase(this);
+        // insertListenTest();
         auth = FirebaseAuth.getInstance();
 
         txtlenQuiz = findViewById(R.id.lenQuiz);
@@ -148,7 +149,7 @@ public class QuizStartActivity extends AppCompatActivity {
     private void insertListenTest(){
         Question question1 = new Question(
                 "What country is the champion of euro 2016?", "listen", "Portugal", "2",
-                "Portugal", "France", "Germany", "Au", "raw/test_1.m4a");
+                "Portugal", "France", "Germany", "Au", "test_1.mp3");
 
         dbHelper.insertDataQuestions(question1);
     }

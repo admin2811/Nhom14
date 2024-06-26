@@ -1,9 +1,14 @@
 package com.englishtlu.english_learning.main.test.adapter;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +26,7 @@ import com.englishtlu.english_learning.main.test.model.Answer;
 import com.englishtlu.english_learning.main.test.model.Question;
 import com.englishtlu.english_learning.main.test.repository.QuizRepository;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.logging.Handler;
 
@@ -33,6 +39,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
     public boolean checkChoice = false;
     private List<Question> questionModelList;
     private OnQuestionAnsweredListener onQuestionAnsweredListener;
+    MediaPlayer mediaPlayer;
     public interface OnQuestionAnsweredListener {
         void onQuestionAnswered(int position);
     }
@@ -81,36 +88,34 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
             optionB.setText(questionModelList.get(pos).getOptionB());
             optionC.setText(questionModelList.get(pos).getOptionC());
             optionD.setText(questionModelList.get(pos).getOptionD());
-            if(questionModelList.get(pos).getQuestionType() == "listen"){
-                String audioFilePath = questionModelList.get(pos).getUrlMedia();
-                MediaPlayer mediaPlayer = MediaPlayer.create(context, Uri.parse(audioFilePath));
-                if (mediaPlayer != null) {
-                    mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                        @Override
-                        public void onPrepared(MediaPlayer mp) {
-                            mediaPlayer.start();
-                        }
-                    });
-
-                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        @Override
-                        public void onCompletion(MediaPlayer mp) {
-                            mediaPlayer.release();
-                        }
-                    });
-
-                    mediaPlayer.setOnErrorListener(new MediaPlayer.OnErrorListener() {
-                        @Override
-                        public boolean onError(MediaPlayer mp, int what, int extra) {
-                            // Xử lý lỗi ở đây
-                            return true;
-                        }
-                    });
-                } else {
-                    Toast.makeText(context, "No media file found.", Toast.LENGTH_SHORT).show();
-                }
-            } else{
+            if(questionModelList.get(pos).getQuestionType().equals("listen")){
                 playmedia.setVisibility(View.VISIBLE);
+                String audioFilePath = questionModelList.get(pos).getUrlMedia();
+
+                if (mediaPlayer != null) {
+                    mediaPlayer.release();
+                }
+
+                mediaPlayer = new MediaPlayer();
+                AssetManager assetManager = context.getAssets();
+                try {
+                    AssetFileDescriptor afd = assetManager.openFd(audioFilePath);
+                    mediaPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
+                    mediaPlayer.prepare();
+                } catch (IOException e) {
+                    Log.e("Media test", "Could not prepare media player", e);
+                }
+
+                mediaPlayer.start();
+
+                playmedia.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mediaPlayer.start();
+                    }
+                });
+            } else{
+                playmedia.setVisibility(View.INVISIBLE);
             }
 
 

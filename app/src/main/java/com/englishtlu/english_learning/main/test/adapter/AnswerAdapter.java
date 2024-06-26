@@ -102,6 +102,12 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.MyViewHold
                     btnOptionC.setClickable(false);
                     btnOptionD.setClickable(false);
                 }
+            } else if (answerslList.get(pos).getAnswer() == null) {
+                rightAnswer(pos);
+                btnOptionA.setClickable(false);
+                btnOptionB.setClickable(false);
+                btnOptionC.setClickable(false);
+                btnOptionD.setClickable(false);
             } else {
                 rightAnswer(pos);
                 btnOptionA.setClickable(false);

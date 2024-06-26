@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Date;
 
 public class CardManageActivity extends AppCompatActivity {
     FrameLayout addCradFrame;
@@ -290,6 +291,10 @@ public class CardManageActivity extends AppCompatActivity {
         });
     }
     private void submitCard(){
+        Date currentDate = new Date();
+        int hour = currentDate.getHours();
+        int minute = currentDate.getMinutes();
+        int second = currentDate.getSeconds();
         btnSubmitCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -300,13 +305,13 @@ public class CardManageActivity extends AppCompatActivity {
                     values.put("question", question);
                     values.put("answer", answer);
 
-                    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Flashcards").child(userId).child(nameDesk).child("Card "+lenDesk);
+                    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Flashcards").child(userId).child(nameDesk).child("Card "+lenDesk + " - " + Integer.toString(hour) + " - " + Integer.toString(minute) + " - " + Integer.toString(second));
                     databaseReference.updateChildren(values)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()){
-                                        cards.add("Card "+lenDesk);
+                                        cards.add("Card "+lenDesk + " - " + Integer.toString(hour) + " - " + Integer.toString(minute) + " - " + Integer.toString(second));
                                         listCardAdapter.notifyDataSetChanged();
 
                                         // Đóng Dialog
