@@ -136,7 +136,12 @@ public class AnalysisActivity extends AppCompatActivity {
         });
     }
     private void setAxisLeft(){
-
+        YAxis yAxis = barChart.getAxisLeft();
+        yAxis.setAxisMaximum(0f);
+        yAxis.setAxisMaximum(20f);
+        yAxis.setAxisLineWidth(2f);
+        yAxis.setAxisLineColor(Color.BLACK);
+        yAxis.setLabelCount(10);
     }
 
 }
