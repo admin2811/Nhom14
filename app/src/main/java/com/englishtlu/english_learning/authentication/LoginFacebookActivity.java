@@ -83,9 +83,7 @@ public class LoginFacebookActivity extends AppCompatActivity {
         super.onStart();
         user = mAuth.getCurrentUser();
         if(user!=null){
-            Intent intent = new Intent(LoginFacebookActivity.this, MainActivity.class);
-            intent.putExtra("name", Objects.requireNonNull(user.getDisplayName()).toString());
-            startActivity(intent);
+
         }
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
