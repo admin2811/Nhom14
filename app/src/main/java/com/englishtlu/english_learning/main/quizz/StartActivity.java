@@ -38,7 +38,9 @@ public class StartActivity extends AppCompatActivity {
         btnStartPractice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(StartActivity.this, QuesstionActivity.class);
+                intent.putExtra("CATEGORY_ID", category_id);
+                startActivity(intent);
             }
         });
 
