@@ -81,9 +81,7 @@ public class AnalysisActivity extends AppCompatActivity {
 
         quizRepository = new QuizRepository(this);
 
-        progresses = new ArrayList<>();
 
-        entries = new ArrayList<>();
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId);
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
