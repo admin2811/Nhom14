@@ -38,11 +38,7 @@ public class LearnFlashCardActivity extends AppCompatActivity {
     private AppCompatButton nextCardbtn, btnEndTask;
     private int currentCardIndex = 0;
     private boolean isFront = true;
-    String nameDesk;
-    FirebaseAuth auth;
-    String userId;
-    List<String> cards;
-    int lenDesks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
