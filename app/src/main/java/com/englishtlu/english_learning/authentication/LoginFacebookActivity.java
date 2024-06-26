@@ -105,14 +105,7 @@ public class LoginFacebookActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
-                            user = mAuth.getCurrentUser();
-                            assert user != null;
-                            users users1 = new users();
-                            users1.setUserName(user.getDisplayName());
-                            database.getReference().child("users").child(user.getUid()).setValue(users1);
-                            Intent intent = new Intent(LoginFacebookActivity.this, MainActivity.class);
-                            intent.putExtra("name", Objects.requireNonNull(user.getDisplayName()).toString());
-                            startActivity(intent);
+
 
                         } else {
                             // If sign in fails, display a message to the user.
