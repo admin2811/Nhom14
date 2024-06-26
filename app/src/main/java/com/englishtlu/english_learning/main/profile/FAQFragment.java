@@ -96,6 +96,18 @@ public class FAQFragment extends Fragment {
 
         return view;
     }
+    public void requestReviewInfo(){
+        reviewManager = ReviewManagerFactory.create(requireContext());
+        Task<ReviewInfo> request = reviewManager.requestReviewFlow();
+        request.addOnCompleteListener(task -> {
+            if(task.isSuccessful()){
+                reviewInfo = task.getResult();
+                showReviewFlow();
+            }else{
+                Toast.makeText(requireContext(),"Review not reviced",Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
 
     private void showReviewFlow(){
