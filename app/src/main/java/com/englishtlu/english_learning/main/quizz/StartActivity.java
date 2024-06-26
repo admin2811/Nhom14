@@ -23,9 +23,7 @@ public class StartActivity extends AppCompatActivity {
         int category_id = getIntent().getIntExtra("CATEGORY_ID", -1);
         if(category_id == -1){
             // Handle the case where CATEGORY_ID is not passed
-            Toast.makeText(this, "Invalid category ID", Toast.LENGTH_SHORT).show();
-            finish();
-            return;
+
         }
         btnBackToHome = findViewById(R.id.btnBack);
         btnBackToHome.setOnClickListener(new View.OnClickListener() {
