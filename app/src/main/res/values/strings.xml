@@ -79,4 +79,7 @@
     <string name="reset_dialog_positive">Yes</string>
     <string name="reset_dialog_negative">No</string>
     <string name="_2048">2048</string>
+    <string name="facebook_app_id">475227014885836</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
 </resources>

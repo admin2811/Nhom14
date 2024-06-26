@@ -52,7 +52,7 @@ import  com.google.android.gms.auth.api.identity.BeginSignInRequest.GoogleIdToke
 
 public class LoginActivity extends AppCompatActivity {
     private EditText edtPassword,edtEmail;
-    private ImageView passwordIcon, phoneIcon;
+    private ImageView passwordIcon, phoneIcon,facebookBtn;
     private boolean passwordShowing = false;
     Button register,login;
     TextView forgotPassword;
@@ -78,11 +78,14 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.btnLogin);
         authProfile =FirebaseAuth.getInstance();
         phoneIcon = findViewById(R.id.phone_btn);
-
+        facebookBtn = findViewById(R.id.facebook_btn);
         authProfile = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         oneTapClient = Identity.getSignInClient(this);
-
+        facebookBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this,LoginFacebookActivity.class);
+            startActivity(intent);
+        });
         signInRequest = BeginSignInRequest.builder()
                 .setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
                         .setSupported(true)
