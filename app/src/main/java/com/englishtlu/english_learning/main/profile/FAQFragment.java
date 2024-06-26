@@ -63,7 +63,10 @@ public class FAQFragment extends Fragment {
         btnReview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                RateUsDialog rateUsDialog = new RateUsDialog(requireContext());
+                rateUsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+                rateUsDialog.setCancelable(false);
+                rateUsDialog.show();
             }
         });
 
