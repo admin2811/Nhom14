@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,7 +49,11 @@ public class HomeFragment extends Fragment {
     public TextView LastName;
     public ProgressBar progressBar;
 
+    EditText findcourse;
+
     public RecyclerView recyclerViewCourse;
+
+    private CourseAdapter adapterPopular;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -82,6 +88,8 @@ public class HomeFragment extends Fragment {
         LastName = view.findViewById(R.id.textView6);
         progressBar = view.findViewById(R.id.progressBar3);
         progressBar.setVisibility(View.VISIBLE);
+        findcourse = view.findViewById(R.id.editFind);
+
         // Kiểm tra xem đã có Bundle được truyền vào fragment chưa
         if (getArguments() != null && getArguments().containsKey(ARG_LAST_NAME)) {
             lastName = getArguments().getString(ARG_LAST_NAME);
@@ -92,6 +100,20 @@ public class HomeFragment extends Fragment {
         }
         LastName.setText(lastName);
 
+        findcourse.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (adapterPopular != null) {
+                    adapterPopular.filterList(charSequence.toString());
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {}
+        });
         return view;
     }
 
@@ -131,7 +153,7 @@ public class HomeFragment extends Fragment {
 
         recyclerViewCourse.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
         // Truyền listener vào adapter
-        RecyclerView.Adapter<CourseAdapter.ViewHolder> adapter = new CourseAdapter(ItemsArrayList, new CourseAdapter.OnItemClickListener() {
+         adapterPopular = new CourseAdapter(ItemsArrayList, new CourseAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Course course) {
                 Log.d("CourseAdapter", "ID: " + course.getId());
@@ -153,6 +175,6 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
-        recyclerViewCourse.setAdapter(adapter);
+        recyclerViewCourse.setAdapter(adapterPopular);
     }
 }

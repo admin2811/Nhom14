@@ -28,6 +28,7 @@ import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.R.id;
 import com.englishtlu.english_learning.authentication.LoginActivity;
 import com.englishtlu.english_learning.main.analysis.AnalysisActivity;
+import com.englishtlu.english_learning.main.flashcard.CardManageActivity;
 import com.englishtlu.english_learning.main.game2048.ui.activity.CoreActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -65,7 +66,14 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout document = (ConstraintLayout) view.findViewById(id.document);
         ConstraintLayout game = (ConstraintLayout) view.findViewById(id.game);
         ConstraintLayout progress = (ConstraintLayout) view.findViewById(id.progress);
-
+        ConstraintLayout flashCard = (ConstraintLayout) view.findViewById(id.flashCard);
+        flashCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireActivity(), CardManageActivity.class);
+                startActivity(intent);
+            }
+        });
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
         progressBar.setVisibility(View.VISIBLE);
