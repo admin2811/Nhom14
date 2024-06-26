@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:background="@drawable/background_dialog"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Alert"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/title_dialog_custom"
+        android:backgroundTint="#D22B2B"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Do you want to delete this ?"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCancel"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#B2BEB5"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Cancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSave"
+            android:layout_marginRight="15dp"
+            android:background="#EE4B2B"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Delete" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,6 +1,8 @@
 package com.englishtlu.english_learning.main.profile;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,11 +14,17 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.main.profile.adapter.FAQadapter;
 import com.englishtlu.english_learning.main.profile.model.FAQ;
+import com.google.android.gms.tasks.Task;
+import com.google.android.play.core.review.ReviewInfo;
+import com.google.android.play.core.review.ReviewManager;
+import com.google.android.play.core.review.ReviewManagerFactory;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,7 +43,9 @@ public class FAQFragment extends Fragment {
     FAQadapter faQadapter;
     ArrayList<FAQ> faqList;
 
-
+    ReviewManager reviewManager;
+    ReviewInfo reviewInfo;
+    Button btnReview;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -49,6 +59,17 @@ public class FAQFragment extends Fragment {
         faqList = new ArrayList<>();
         faQadapter = new FAQadapter(getContext(), faqList);
         recyclerView.setAdapter(faQadapter);
+        btnReview =view.findViewById(R.id.btnReview);
+        btnReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RateUsDialog rateUsDialog = new RateUsDialog(requireContext());
+                rateUsDialog.getWindow().setBackgroundDrawable(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+                rateUsDialog.setCancelable(false);
+                rateUsDialog.show();
+            }
+        });
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +97,31 @@ public class FAQFragment extends Fragment {
         return view;
     }
 
+    public void requestReviewInfo(){
+        reviewManager = ReviewManagerFactory.create(requireContext());
+        Task<ReviewInfo> request = reviewManager.requestReviewFlow();
+        request.addOnCompleteListener(task -> {
+            if(task.isSuccessful()){
+                reviewInfo = task.getResult();
+                showReviewFlow();
+            }else{
+                Toast.makeText(requireContext(),"Review not reviced",Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
-
+    private void showReviewFlow(){
+        if(reviewInfo != null){
+            Task<Void> flow = reviewManager.launchReviewFlow((Activity) requireContext(),reviewInfo);
+            flow.addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(requireContext(), "Review successfully completed", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(requireContext(), "Review failed", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }else{
+            Toast.makeText(requireContext(), "Review info is null", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

@@ -24,6 +24,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.authentication.model.User;
 import com.englishtlu.english_learning.main.document.activity.PDFActivity;
+import com.englishtlu.english_learning.main.flashcard.FlashCardActivity;
 import com.englishtlu.english_learning.main.home.adapter.CourseAdapter;
 import com.englishtlu.english_learning.main.home.model.Course;
 import com.englishtlu.english_learning.main.quizz.QuizzVocabActivity;
@@ -141,6 +142,14 @@ public class HomeFragment extends Fragment {
                 }else if(course.getId() == 1){
                     Intent intent = new Intent(requireContext(), QuizzVocabActivity.class);
                     startActivity(intent);
+                } else if (course.getId() == 3) {
+                    Intent intent = new Intent(requireContext(), FlashCardActivity.class);
+                    startActivity(intent);
+                } else if (course.getId() == 2) {
+                    Intent intent = new Intent(requireContext(), QuizzVocabActivity.class);
+                    intent.putExtra("COURSE_ID", course.getId());
+                    startActivity(intent);
+
                 }
             }
         });

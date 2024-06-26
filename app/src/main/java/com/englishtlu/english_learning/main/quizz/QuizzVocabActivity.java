@@ -10,8 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.main.MainActivity;
+import com.englishtlu.english_learning.main.Video.VideoActivity;
 import com.englishtlu.english_learning.main.quizz.adapter.LessonAdapter;
 import com.englishtlu.english_learning.main.quizz.model.LessonVocab;
+import com.englishtlu.english_learning.main.test.CourseActivity;
 
 import java.util.ArrayList;
 
@@ -27,9 +30,11 @@ public class QuizzVocabActivity extends AppCompatActivity {
         ivBackToHome = findViewById(R.id.ivBackToHome);
         recyclerView = findViewById(R.id.rvQuizzVocab);
         ivBackToHome.setOnClickListener(v -> {
-            finish();
+            Intent intent = new Intent(QuizzVocabActivity.this, MainActivity.class);
+            startActivity(intent);
         });
       intRecyclerView();
+      //Lấy intent được truyền từ Home
     }
    private void intRecyclerView() {
         ArrayList<LessonVocab> ItemsArrayList = new ArrayList<>();
@@ -44,6 +49,16 @@ public class QuizzVocabActivity extends AppCompatActivity {
             public void onItemClick(LessonVocab lessonVocab){
                 if(lessonVocab.getId() == 2){
                     Intent intent = new Intent(QuizzVocabActivity.this, PractieActivity.class);
+                    startActivity(intent);
+                }else if (lessonVocab.getId() == 1){
+                    Intent intent = new Intent(QuizzVocabActivity.this, VideoActivity.class);
+                    //Truyền tiếp courseId
+                    int courseId = getIntent().getIntExtra("COURSE_ID", -1);
+                    intent.putExtra("COURSE_ID", courseId);
+                    startActivity(intent);
+                }
+                else if(lessonVocab.getId() == 3){
+                    Intent intent = new Intent(QuizzVocabActivity.this, CourseActivity.class);
                     startActivity(intent);
                 }
             }

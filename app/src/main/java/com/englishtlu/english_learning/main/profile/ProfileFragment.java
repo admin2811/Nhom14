@@ -3,6 +3,7 @@ package com.englishtlu.english_learning.main.profile;
 import static com.englishtlu.english_learning.R.*;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -26,6 +27,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.R.id;
 import com.englishtlu.english_learning.authentication.LoginActivity;
+import com.englishtlu.english_learning.main.analysis.AnalysisActivity;
 import com.englishtlu.english_learning.main.game2048.ui.activity.CoreActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -62,6 +64,7 @@ public class ProfileFragment extends Fragment {
         ConstraintLayout signOut = (ConstraintLayout) view.findViewById(id.signOut);
         ConstraintLayout document = (ConstraintLayout) view.findViewById(id.document);
         ConstraintLayout game = (ConstraintLayout) view.findViewById(id.game);
+        ConstraintLayout progress = (ConstraintLayout) view.findViewById(id.progress);
 
         final String app = requireActivity().getPackageName();
         progressBar = (ProgressBar) view.findViewById(R.id.progressBar5);
@@ -73,6 +76,13 @@ public class ProfileFragment extends Fragment {
                 transaction.replace(id.fragmentContainerView, new MyProfileFragment());
                 transaction.addToBackStack(null);
                 transaction.commit();
+            }
+        });
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(requireActivity(), AnalysisActivity.class);
+                startActivity(intent);
             }
         });
         game.setOnClickListener(new View.OnClickListener() {
@@ -113,10 +123,21 @@ public class ProfileFragment extends Fragment {
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(requireContext(), LoginActivity.class);
-                startActivity(intent);
-                requireActivity().finish();
+             //Hiển thị thông báo alter để đăng xuat
+                AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+                builder.setTitle("Sign Out");
+                builder.setMessage("Are you sure you want to sign out?");
+                builder.setPositiveButton("Yes", (dialog, which) -> {
+                    FirebaseAuth.getInstance().signOut();
+                    Intent intent = new Intent(requireActivity(), LoginActivity.class);
+                    startActivity(intent);
+                    requireActivity().finish();
+                });
+                builder.setNegativeButton("No", (dialog, which) -> {
+                    dialog.dismiss();
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
             }
         });
         document.setOnClickListener(new View.OnClickListener() {
