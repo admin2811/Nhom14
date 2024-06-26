@@ -37,12 +37,6 @@ public class RateUsDialog extends Dialog {
             @Override
             public void onClick(View v) {
                 //Hiển thị thông báo cảm ơn
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Thank you");
-                builder.setMessage("Thank you for your feedback");
-                builder.setPositiveButton("OK",null);
-                builder.show();
-                dismiss();
             }
         });
         laterBtn.setOnClickListener(new View.OnClickListener() {
