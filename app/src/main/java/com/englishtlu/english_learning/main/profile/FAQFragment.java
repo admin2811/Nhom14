@@ -110,18 +110,5 @@ public class FAQFragment extends Fragment {
     }
 
 
-    private void showReviewFlow(){
-        if(reviewInfo != null){
-            Task<Void> flow = reviewManager.launchReviewFlow((Activity) requireContext(),reviewInfo);
-            flow.addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    Toast.makeText(requireContext(), "Review successfully completed", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(requireContext(), "Review failed", Toast.LENGTH_SHORT).show();
-                }
-            });
-        }else{
-            Toast.makeText(requireContext(), "Review info is null", Toast.LENGTH_SHORT).show();
-        }
-    }
+
 }
