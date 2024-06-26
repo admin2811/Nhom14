@@ -35,11 +35,7 @@ import java.util.Objects;
 
 public class LoginFacebookActivity extends AppCompatActivity {
 
-    CallbackManager mCallbackManager;
-    LoginButton loginButton;
-    FirebaseAuth mAuth;
-    FirebaseUser user;
-    FirebaseDatabase database;
+
 
 
     @Override
