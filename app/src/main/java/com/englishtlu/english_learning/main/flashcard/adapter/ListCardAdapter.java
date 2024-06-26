@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -72,7 +73,7 @@ public class ListCardAdapter extends RecyclerView.Adapter<ListCardAdapter.MyView
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView namecard;
+        carbon.widget.TextView namecard;
         ImageView btnDelete, buttobEdit;
 
         MyViewHolder(@NonNull View itemView) {
@@ -92,7 +93,7 @@ public class ListCardAdapter extends RecyclerView.Adapter<ListCardAdapter.MyView
                     Dialog dialog = new Dialog(context);
                     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                     dialog.setContentView(R.layout.alerat_dialog);
-                    dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+                    dialog.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,WindowManager.LayoutParams.WRAP_CONTENT);
                     dialog.getWindow().setBackgroundDrawable(getDrawable(context,R.drawable.dialog_bg));
                     dialog.setCancelable(false);
 
@@ -113,6 +114,7 @@ public class ListCardAdapter extends RecyclerView.Adapter<ListCardAdapter.MyView
                             String cardName = cardList.get(pos);
                             removeCard(pos);
                             deleteCardFromFirebase(cardName);
+                            dialog.dismiss();
                         }
                     });
                 }
@@ -143,21 +145,20 @@ public class ListCardAdapter extends RecyclerView.Adapter<ListCardAdapter.MyView
         private void showEditDialog(final int pos) {
             String cardId = cardList.get(pos);
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Flashcards").child(userId).child(nameDesk).child(cardId);
-
-            // Inflate the dialog with custom view
-            LayoutInflater inflater = LayoutInflater.from(context);
-            View view = inflater.inflate(R.layout.dialog_box_card, null);
+            Dialog addeskDialog = new Dialog(context);
+            addeskDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            addeskDialog.setContentView(R.layout.dialog_box_card);
+            addeskDialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.WRAP_CONTENT);
+            addeskDialog.getWindow().setBackgroundDrawable(getDrawable(context,R.drawable.dialog_bg));
+            addeskDialog.setCancelable(false);
 
             // Initialize dialog views
-            EditText txtQuestion = view.findViewById(R.id.editTextQuestion);
-            EditText txtAnswer = view.findViewById(R.id.editTextAnswer);
-            AppCompatButton btnCancelCard = view.findViewById(R.id.buttonCancel);
-            AppCompatButton btnSubmitCard = view.findViewById(R.id.buttonSave);
+            EditText txtQuestion = addeskDialog.findViewById(R.id.editTextQuestion);
+            EditText txtAnswer = addeskDialog.findViewById(R.id.editTextAnswer);
+            AppCompatButton btnCancelCard = addeskDialog.findViewById(R.id.buttonCancel);
+            AppCompatButton btnSubmitCard = addeskDialog.findViewById(R.id.buttonSave);
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(context);
-            builder.setView(view);
-
-            AlertDialog dialog = builder.create();
+            addeskDialog.show();
 
             // Fetch current card details
             databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -181,7 +182,7 @@ public class ListCardAdapter extends RecyclerView.Adapter<ListCardAdapter.MyView
             btnCancelCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    dialog.dismiss();
+                    addeskDialog.dismiss();
                 }
             });
 
@@ -198,20 +199,21 @@ public class ListCardAdapter extends RecyclerView.Adapter<ListCardAdapter.MyView
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()) {
                                     notifyItemChanged(pos);
-                                    dialog.dismiss();
+                                    addeskDialog.dismiss();
                                     Toast.makeText(context, "Card updated successfully", Toast.LENGTH_SHORT).show();
                                 } else {
                                     Toast.makeText(context, "Failed to update card", Toast.LENGTH_SHORT).show();
+                                    addeskDialog.dismiss();
                                 }
                             }
                         });
                     } else {
                         Toast.makeText(context, "Question and Answer cannot be empty", Toast.LENGTH_SHORT).show();
+                        addeskDialog.dismiss();
                     }
                 }
             });
 
-            dialog.show();
         }
     }
 }

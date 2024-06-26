@@ -48,10 +48,12 @@ public class CourseActivity extends AppCompatActivity {
 
         quizListAdapter = new QuizListAdapter(this, quizsData, new QuizListAdapter.QuizItemClickListener() {
             @Override
-            public void onQuizItemClick(ArrayList<Question> questionList, int id) {
+            public void onQuizItemClick(ArrayList<Question> questionList, int id, String name) {
                 Intent intent = new Intent(CourseActivity.this, QuizStartActivity.class);
                 intent.putExtra("lenQuiz",questionList.size());
+                intent.putExtra("nameQuiz",name);
                 intent.putExtra("idQuiz",id);
+
                 startActivity(intent);
             }
         });

@@ -25,7 +25,7 @@ public class QuizListAdapter extends RecyclerView.Adapter<QuizListAdapter.MyView
     public Context context;
     private QuizRepository quizRepository;
     public interface QuizItemClickListener {
-        void onQuizItemClick(ArrayList<Question> questionList,int id);
+        void onQuizItemClick(ArrayList<Question> questionList,int id, String name);
     }
     public QuizListAdapter(Context context, List<Quiz> quizList, QuizItemClickListener clickListener){
         this.context = context;
@@ -61,7 +61,7 @@ public class QuizListAdapter extends RecyclerView.Adapter<QuizListAdapter.MyView
                     //Toast.makeText(context,Integer.toString(quizList.get(pos).getIdQuiz()),Toast.LENGTH_SHORT).show();
                     questionList = quizRepository.readQuiz(Integer.toString(quizList.get(pos).getIdQuiz()));
                     //Toast.makeText(context,questionList.get(pos).getQuestion().toString(),Toast.LENGTH_SHORT).show();
-                    clickListener.onQuizItemClick(questionList,quizList.get(pos).getIdQuiz());
+                    clickListener.onQuizItemClick(questionList,quizList.get(pos).getIdQuiz(),quizList.get(pos).getNameQuiz());
                 }
             });
         }

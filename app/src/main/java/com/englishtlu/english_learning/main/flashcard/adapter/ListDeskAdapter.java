@@ -39,8 +39,8 @@ public class ListDeskAdapter extends RecyclerView.Adapter<ListDeskAdapter.MyView
         return deskList.size();
     }
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView nameDesk;
-        ConstraintLayout getDesk;
+        carbon.widget.TextView nameDesk;
+        carbon.widget.LinearLayout getDesk;
         MyViewHolder(@NonNull View itemView){
             super(itemView);
             nameDesk = itemView.findViewById(R.id.deskName);

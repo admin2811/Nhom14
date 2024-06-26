@@ -20,13 +20,17 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class QuizResultActivity extends AppCompatActivity {
     private TextView wrongAnswer, trueAnswer, ngAnswer, Earnscore;
     private int quizID;
     QuizRepository quizRepository;
-    AppCompatButton btnEnd;
+    AppCompatButton btnEnd, btnCheck;
     FirebaseAuth auth;
     String userId;
+    String nameQuiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +48,7 @@ public class QuizResultActivity extends AppCompatActivity {
         ngAnswer = findViewById(R.id.noNG);
         btnEnd = findViewById(R.id.btnEndquiz);
         Earnscore = findViewById(R.id.txtEarnScore);
+        btnCheck = findViewById(R.id.btnCheck);
 
 
         quizRepository = new QuizRepository(this);
@@ -53,6 +58,8 @@ public class QuizResultActivity extends AppCompatActivity {
         ngAnswer.setText(Integer.toString(quizRepository.nuNoChoice));
 
         quizID = getIntent().getIntExtra("idQuiz",0);
+        nameQuiz = getIntent().getStringExtra("nameQuiz");
+
 
         FirebaseUser currentUser = auth.getCurrentUser();
         if (currentUser != null) {
@@ -61,21 +68,32 @@ public class QuizResultActivity extends AppCompatActivity {
 
         Earnscore.setText("You've scored " + quizRepository.nuTrue + " points");
 
-        btnEnd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(QuizResultActivity.this,CourseActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId).child("quiz" + Integer.toString(quizID));
-        databaseReference.child("result").setValue(Integer.toString(quizRepository.nuTrue))
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId).child(Integer.toString(quizID));
+        Map<String, Object> values = new HashMap<>();
+        values.put("result",Integer.toString(quizRepository.nuTrue));
+        values.put("namequiz",nameQuiz);
+        databaseReference.updateChildren(values)
                 .addOnCompleteListener(aVoid -> {
 
                 })
                 .addOnFailureListener(e -> {
 
                 });
+
+        btnCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizResultActivity.this,QuizCheckAnswerActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizResultActivity.this,CourseActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }

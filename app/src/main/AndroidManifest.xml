@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="31">
         <activity
+            android:name=".main.test.QuizCheckAnswerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.analysis.AnalysisActivity"
+            android:exported="false" />
+        <activity
             android:name=".main.flashcard.StartLearnFlashCardActivity"
             android:exported="false" />
         <activity

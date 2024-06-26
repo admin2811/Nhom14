@@ -274,17 +274,17 @@ public class CardManageActivity extends AppCompatActivity {
                                             txtDesk.setText("");
 
                                             Toast.makeText(CardManageActivity.this, "Desk added successfully", Toast.LENGTH_SHORT).show();
-                                            confirmDelete.cancel();
+                                            confirmDelete.dismiss();
                                         } else {
                                             Toast.makeText(CardManageActivity.this, "Failed to add desk", Toast.LENGTH_SHORT).show();
-                                            confirmDelete.cancel();
+                                            confirmDelete.dismiss();
                                         }
                                     }
                                 });
                     }
                 } else {
                     Toast.makeText(CardManageActivity.this, "Desk name cannot be empty", Toast.LENGTH_SHORT).show();
-                    confirmDelete.cancel();
+                    confirmDelete.dismiss();
                 }
             }
         });

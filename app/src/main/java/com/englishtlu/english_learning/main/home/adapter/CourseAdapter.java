@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.main.analysis.AnalysisActivity;
 import com.englishtlu.english_learning.main.flashcard.FlashCardActivity;
 import com.englishtlu.english_learning.main.home.model.Course;
 import com.englishtlu.english_learning.main.test.CourseActivity;
@@ -53,7 +54,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
         holder.btnChanglen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, CourseActivity.class);
+                Intent intent = new Intent(context, AnalysisActivity.class);
                 context.startActivity(intent);
             }
         });

@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
 import com.englishtlu.english_learning.main.test.database.QuizDatabase;
+import com.englishtlu.english_learning.main.test.model.Answer;
 import com.englishtlu.english_learning.main.test.model.Question;
 import com.englishtlu.english_learning.main.test.model.Quiz;
 
@@ -16,6 +17,7 @@ public class QuizRepository {
     public static int nuTrue;
     public static int nuWrong;
     public static int nuNoChoice;
+    public static ArrayList<Answer> answersData = new ArrayList<>();
     SQLiteDatabase myDB;
     private static ArrayList<Question> questionsData  = new ArrayList<>();
     private static ArrayList<Quiz> quizsData = new ArrayList<>();

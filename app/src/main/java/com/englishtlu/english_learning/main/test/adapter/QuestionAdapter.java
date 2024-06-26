@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.englishtlu.english_learning.R;
+import com.englishtlu.english_learning.main.test.model.Answer;
 import com.englishtlu.english_learning.main.test.model.Question;
 import com.englishtlu.english_learning.main.test.repository.QuizRepository;
 
@@ -125,6 +126,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuTrue++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionA.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }
                     else{
                         rightAnswer(pos);
@@ -133,6 +135,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuWrong++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionA.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }
                     checkChoice = true;
                     onQuestionAnsweredListener.onQuestionAnswered(pos);
@@ -150,6 +153,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionB.setClickable(false);
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionB.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                         QuizRepository.nuTrue++;
                     }else {
                         rightAnswer(pos);
@@ -158,6 +162,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuWrong++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionB.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }
                     checkChoice = true;
                     onQuestionAnsweredListener.onQuestionAnswered(pos);
@@ -177,6 +182,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuTrue++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionC.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }
                     else {
                         rightAnswer(pos);
@@ -185,6 +191,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuWrong++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionC.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }
                     checkChoice = true;
                     onQuestionAnsweredListener.onQuestionAnswered(pos);
@@ -203,6 +210,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuTrue++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionD.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }else {
                         rightAnswer(pos);
                         btnOptionA.setClickable(false);
@@ -210,6 +218,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.MyView
                         btnOptionC.setClickable(false);
                         btnOptionD.setClickable(false);
                         QuizRepository.nuWrong++;
+                        QuizRepository.answersData.add(new Answer(questionModelList.get(pos).getQuestion(),questionModelList.get(pos).getQuestionType(),optionD.getText().toString(),questionModelList.get(pos).getAnswer(),questionModelList.get(pos).getIdQuiz(),questionModelList.get(pos).getOptionA(),questionModelList.get(pos).getOptionB(),questionModelList.get(pos).getOptionC(),questionModelList.get(pos).getOptionD(),questionModelList.get(pos).getUrlMedia()));
                     }
                     checkChoice = true;
                     onQuestionAnsweredListener.onQuestionAnswered(pos);

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.main.test.database.QuizDatabase;
 import com.englishtlu.english_learning.main.test.model.Question;
+import com.englishtlu.english_learning.main.test.repository.QuizRepository;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -28,8 +30,11 @@ public class QuizStartActivity extends AppCompatActivity {
     private int lenQuiz;
     private int idQuiz;
     String userId;
+    String nameQuiz;
     FirebaseAuth auth;
+    QuizRepository quizRepository;
     private TextView txtlenQuiz, highestscore;
+    private ImageView btnBack;
     private Button btnstartQuiz;
     QuizDatabase dbHelper;
     @Override
@@ -48,9 +53,11 @@ public class QuizStartActivity extends AppCompatActivity {
         txtlenQuiz = findViewById(R.id.lenQuiz);
         btnstartQuiz = findViewById(R.id.btnstartQuiz);
         highestscore = findViewById(R.id.txtHighetscore);
+        btnBack = findViewById(R.id.btnRecall);
 
         lenQuiz = getIntent().getIntExtra("lenQuiz",0);
         idQuiz = getIntent().getIntExtra("idQuiz",0);
+        nameQuiz = getIntent().getStringExtra("nameQuiz");
 
         txtlenQuiz.setText(Integer.toString(lenQuiz));
 
@@ -58,6 +65,11 @@ public class QuizStartActivity extends AppCompatActivity {
         if (currentUser != null) {
             userId = currentUser.getUid();
         }
+
+        quizRepository = new QuizRepository(this);
+        quizRepository.nuTrue = 0;
+        quizRepository.nuWrong = 0;
+        quizRepository.nuNoChoice = 0;
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId).child("quiz" + Integer.toString(idQuiz)).child("result");
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -82,10 +94,22 @@ public class QuizStartActivity extends AppCompatActivity {
                 startQuiz();
             }
         });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizStartActivity.this, CourseActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
     private void startQuiz(){
         Intent intent = new Intent(QuizStartActivity.this, QuizActivity.class);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("idQuiz",idQuiz);
+        intent.putExtra("nameQuiz",nameQuiz);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(intent);
     }
     private void insertQuestion(){

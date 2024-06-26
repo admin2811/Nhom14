@@ -48,6 +48,7 @@ public class QuizActivity extends AppCompatActivity {
     private int quesID;
     private int quizID;
     private int noQues = 1, progress = 1;
+    String nameQuiz;
     QuestionAdapter questionAdapter;
     private CountDownTimer timer;
     @Override
@@ -60,6 +61,7 @@ public class QuizActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        quesID = 0;
 
         dbHelper = new QuizDatabase(this);
 
@@ -70,8 +72,11 @@ public class QuizActivity extends AppCompatActivity {
         btnSkip = findViewById(R.id.btnSkip);
 
         quizID = getIntent().getIntExtra("idQuiz",0);
+        nameQuiz = getIntent().getStringExtra("nameQuiz");
 
         quizRepository = new QuizRepository(this);
+
+        QuizRepository.answersData.clear();
 
         questionsData = quizRepository.readQuiz(Integer.toString(quizID));
 
@@ -93,8 +98,10 @@ public class QuizActivity extends AppCompatActivity {
                 }
                 if (quesID == (questionsData.size() - 1)) {
                     Intent intent = new Intent(QuizActivity.this, QuizResultActivity.class);
+                    intent.putExtra("nameQuiz",nameQuiz);
                     intent.putExtra("idQuiz",quizID);
                     startActivity(intent);
+                    finish();
                 }
             }
         });
@@ -112,6 +119,8 @@ public class QuizActivity extends AppCompatActivity {
 
         progress = noQues * 100 / questionsData.size();
         quesProgress.setProgress(progress);
+
+
 
     }
     private void setSnapHelper(){
@@ -157,8 +166,10 @@ public class QuizActivity extends AppCompatActivity {
                 } else if (quesID == (questionsData.size() - 1)) {
                     Intent intent = new Intent(QuizActivity.this, QuizResultActivity.class);
                     intent.putExtra("idQuiz",quizID);
-                    startActivity(intent);
+                    intent.putExtra("nameQuiz",nameQuiz);
                     QuizRepository.nuNoChoice++;
+                    startActivity(intent);
+                    finish();
                 }
             }
         });
@@ -188,10 +199,18 @@ public class QuizActivity extends AppCompatActivity {
                 if (quesID == (questionsData.size() - 1)) {
                     Intent intent = new Intent(QuizActivity.this, QuizResultActivity.class);
                     intent.putExtra("idQuiz",quizID);
+                    intent.putExtra("nameQuiz",nameQuiz);
                     startActivity(intent);
+                    finish();
                 }
             }
+
         };
         timer.start();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        timer.cancel(); // Hủy Timer khi Activity bị hủy
     }
 }
