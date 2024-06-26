@@ -1,5 +1,7 @@
 package com.englishtlu.english_learning.main.home.view;
 
+import static java.util.Locale.filter;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
@@ -9,6 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,14 +41,13 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
-
-
     private static final String ARG_LAST_NAME = "LAST_NAME";
     private String lastName;
     public TextView LastName;
-
+    EditText findcourse;
     public RecyclerView recyclerViewCourse;
-
+    ArrayList<Course> ItemsArrayList;
+    private CourseAdapter adapterPopular;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -69,15 +72,29 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        //Lay du liệu từ MainActivity2
         View view = inflater.inflate(R.layout.fragment_home2, container, false);
         LastName = view.findViewById(R.id.textView6);
-        // Kiểm tra xem đã có Bundle được truyền vào fragment chưa
+        findcourse = view.findViewById(R.id.editFind);
         if (getArguments() != null && getArguments().containsKey(ARG_LAST_NAME)) {
             lastName = getArguments().getString(ARG_LAST_NAME);
         }
         LastName.setText(lastName);
+
+        findcourse.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (adapterPopular != null) {
+                    adapterPopular.filterList(charSequence.toString());
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {}
+        });
+
         return view;
     }
 
@@ -98,21 +115,17 @@ public class HomeFragment extends Fragment {
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
         intRecyclerView();
-
-
     }
 
-
-
     private void intRecyclerView() {
-        ArrayList<Course> ItemsArrayList = new ArrayList<>();
+        ItemsArrayList = new ArrayList<>();
 
         ItemsArrayList.add(new Course("vocabulary", "Vocabulary \n" +
                 "Treasure Hunt", "Collect hidden English vocabulary words in a timed scavenger hunt", 4.5));
         ItemsArrayList.add(new Course("completion", "Sentence Building Competition", "Drag and drop words to form grammatically correct sentences", 4.5));
 
         recyclerViewCourse.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        RecyclerView.Adapter<CourseAdapter.ViewHolder> adapterPopular = new CourseAdapter(getContext(), ItemsArrayList);
+        adapterPopular = new CourseAdapter(getContext(), ItemsArrayList);
         recyclerViewCourse.setAdapter(adapterPopular);
     }
 }

@@ -72,7 +72,7 @@ public class QuizStartActivity extends AppCompatActivity {
         quizRepository.nuWrong = 0;
         quizRepository.nuNoChoice = 0;
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId).child("quiz" + Integer.toString(idQuiz)).child("result");
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("QuizResult").child(userId).child(Integer.toString(idQuiz)).child("result");
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

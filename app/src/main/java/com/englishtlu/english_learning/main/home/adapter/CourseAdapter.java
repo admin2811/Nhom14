@@ -3,6 +3,7 @@ package com.englishtlu.english_learning.main.home.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,14 +26,13 @@ import java.util.ArrayList;
 
 public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder>{
     ArrayList<Course> items;
-
+    private ArrayList<Course> itemsFiltered;
     Context context;
     public  CourseAdapter(Context context, ArrayList<Course> items) {
         this.context = context;
         this.items = items;
+        this.itemsFiltered = new ArrayList<>(items);
     }
-
-
     @NonNull
     @Override
     public CourseAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -43,7 +43,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Course item = items.get(position);
+        Course item = itemsFiltered.get(position);
         holder.title.setText(item.getTitle());
         holder.description.setText(item.getDescription());
         holder.star.setText(new DecimalFormat("##.#").format(item.getStar()));
@@ -62,7 +62,22 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return itemsFiltered.size();
+    }
+
+    public void filterList(String text) {
+        itemsFiltered.clear();
+        if (TextUtils.isEmpty(text)) {
+            itemsFiltered.addAll(items); // Nếu không có từ khóa, hiển thị toàn bộ danh sách
+        } else {
+            String pattern = text.toLowerCase().trim();
+            for (Course item : items) {
+                if (item.getTitle().toLowerCase().contains(pattern)) {
+                    itemsFiltered.add(item); // Thêm vào danh sách lọc nếu tiêu đề chứa từ khóa
+                }
+            }
+        }
+        notifyDataSetChanged(); // Thông báo cho RecyclerView là đã thay đổi dữ liệu
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{

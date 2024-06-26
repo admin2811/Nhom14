@@ -8,7 +8,9 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 
+import android.content.IntentFilter;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -23,6 +25,7 @@ import android.widget.Toast;
 import com.englishtlu.english_learning.R;
 import com.englishtlu.english_learning.main.MainActivity2;
 import com.englishtlu.english_learning.main.home.view.HomeFragment;
+import com.englishtlu.english_learning.report.networkchange.Networkchange;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -34,6 +37,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
+    private Networkchange networkChangeReceiver = new Networkchange();
     private EditText edtPassword,edtEmail;
     private ImageView passwordIcon;
     private boolean passwordShowing = false;
@@ -46,6 +50,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(networkChangeReceiver, filter);
+
         edtPassword = (EditText) findViewById(R.id.edtPassword);
         edtEmail = (EditText) findViewById(R.id.edtEmail);
         passwordIcon = findViewById(R.id.passwordIcon);

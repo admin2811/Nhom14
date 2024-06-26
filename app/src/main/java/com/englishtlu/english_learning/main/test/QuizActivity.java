@@ -213,6 +213,6 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        timer.cancel(); // Hủy Timer khi Activity bị hủy
+        timer.cancel();
     }
 }

@@ -127,6 +127,7 @@ public class LearnFlashCardActivity extends AppCompatActivity {
                 if(currentCardIndex == (cards.size() - 1)){
                     tv_end.setVisibility(View.VISIBLE);
                     card_main.setVisibility(View.INVISIBLE);
+
                     nextCardbtn.setVisibility(View.INVISIBLE);
                 } else {
                     nextCard();
