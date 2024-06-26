@@ -75,7 +75,10 @@ public class RateUsDialog extends Dialog {
 
     private void animateRatingImage(ImageView ratingImage){
         // Animation code here
-
+        ScaleAnimation scaleAnimation = new ScaleAnimation(0,1f,0,1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF,0.5f);
+        scaleAnimation.setFillAfter(true);
+        scaleAnimation.setDuration(200);
+        ratingImage.startAnimation(scaleAnimation);
     }
 
 }
