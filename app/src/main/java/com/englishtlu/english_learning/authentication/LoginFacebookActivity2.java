@@ -17,6 +17,8 @@ public class LoginFacebookActivity2 extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login_facebook2);
 
-
+        textView = findViewById(R.id.textView3);
+        String name = getIntent().getStringExtra("name");
+        textView.setText(name);
     }
 }
