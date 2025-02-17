@@ -1,32 +1,4 @@
-[TRƯỜNG ĐẠI HỌC THỦY LỢI]{.mark}
-
-**[KHOA CÔNG NGHỆ THÔNG TIN]{.mark}**
-
-![](media/image54.png){width="1.9416666666666667in" height="1.3in"}
-
-**BÀI TẬP LỚN**
-
-HỌC PHẦN: PHÁT TRIỂN ỨNG DỤNG CHO CÁC THIẾT BỊ DI ĐỘNG
-
-**ĐỀ TÀI:**
-
 **ỨNG DỤNG HỌC TIẾNG ANH TRÊN ANDROID**
-
-> **Giáo viên hướng dẫn: Nguyễn Văn Nam**
->
-> Nhóm sinh viên thực hiện:
->
-> 1\. Triệu Thị Hậu, 2151163689 - 63HTTT1
->
-> 2\. Nguyễn Đức Minh, 2151163707 - 63HTTT1
->
-> 3\. Phùng Bảo Lâm, 2151163700 - 63HTTT1
->
-> **Hà Nội, năm 2024**
-
-**MỤC LỤC**
-
-[**LỜI MỞ ĐẦU 4**](#lời-mở-đầu)
 
 [**CHƯƠNG 1: TỔNG QUAN VỀ APP HỌC TIẾNG ANH VÀ NỀN TẢNG XÂY DỰNG ỨNG
 DỤNG
@@ -247,8 +219,6 @@ và phát triển mạnh. Do vậy tiềm năng với app android là rất lớ
 android ra đời vào năm 2005. Android xuất hiện hầu như trong các sản
 phẩm của các nhà sản xuất lớn như Samsung, Sony, ...
 
-![](media/image55.png){width="4.25036854768154in"
-height="3.5836439195100613in"}
 
 Thành phần chính của Android (gồm 4 thành phần chính):
 
@@ -363,17 +333,17 @@ files (bộ nhớ trong, đệm, bộ nhớ ngoài, tài nguyên, SQLite.
 
 ## 2.2. Biểu đồ Use Case tổng quát
 
-![](media/image20.png){width="6.777777777777778in"
-height="4.333333333333333in"}
+![image](https://github.com/user-attachments/assets/c19c623c-6bfe-4e2b-94b3-45d355b9c5a2)
 
 ## 2.3. Thiết kế cơ sở dữ liệu
 
-## ![](media/image53.png){width="6.777777777777778in" height="4.430555555555555in"}
+![image](https://github.com/user-attachments/assets/58248795-fe01-4b2c-9458-b71d3719e65a)
+
 
 ## 2.4. Biểu đồ tuần tự Đăng ký
 
-![](media/image56.png){width="5.488957786526684in"
-height="4.140625546806649in"}
+![image](https://github.com/user-attachments/assets/233e2281-7774-41a9-a628-6912b5d7d928)
+
 
 -   Đặc tả đăng ký
 
@@ -417,11 +387,10 @@ height="4.140625546806649in"}
 
 ##  2.5. Biểu đồ quản lý Đăng nhập
 
-![](media/image4.png){width="5.465096237970254in"
-height="3.2180260279965003in"}
+![image](https://github.com/user-attachments/assets/0c51e614-c2c3-4b01-851c-7fbae47fed78)
 
-![](media/image5.png){width="5.102431102362205in"
-height="3.5113495188101487in"}
+![image](https://github.com/user-attachments/assets/a8cea636-31a1-4c67-ad36-619665ba224c)
+
 
 \- Đặc tả Đăng nhập
 
@@ -466,32 +435,27 @@ height="3.5113495188101487in"}
 
 ### 3.1.1. Welcom
 
-![](media/image60.png){width="2.7899311023622047in"
-height="4.958009623797025in"}
+![image](https://github.com/user-attachments/assets/0beae292-d12a-4b5a-a72c-89af9ad03473)
+
 
 ### 3.1.2. Đăng ký 
 
-![](media/image59.png){width="3.100925196850394in"
-height="6.942129265091864in"}
+![image](https://github.com/user-attachments/assets/8a1ac804-83f8-45a9-954b-3939d1979efd)
+
 
 ### 3.1.3. Đăng nhập tài khoản
+![image](https://github.com/user-attachments/assets/52fad1ec-5f8a-4845-b3c0-cc20af9096a9)
 
-![](media/image1.png){width="2.7560673665791775in"
-height="5.307292213473316in"}
 
 ### 3.1.4. Đăng nhập bằng Google
 
-### ![](media/image22.png){width="2.4479166666666665in" height="4.742305336832896in"}
+![image](https://github.com/user-attachments/assets/64cb8f1b-e06b-4302-b33b-bd48986b1c14)
 
-### 3.1.5. Đăng nhập bằng Facebook
+### 3.1.5. Đăng nhập bằng số điện thoại
 
-![](media/image1.png){width="2.4375in" height="4.691037839020122in"}
+![image](https://github.com/user-attachments/assets/dbc351e8-80da-48b2-9ca1-f69585e215c2)
+![image](https://github.com/user-attachments/assets/8199081d-c030-4955-825a-b3c17548d4e3)
 
-### 3.1.6. Đăng nhập bằng số điện thoại
-
-![](media/image45.png){width="2.901042213473316in"
-height="5.640914260717411in"}![](media/image29.png){width="2.902551399825022in"
-height="5.640625546806649in"}
 
 ### 3.1.7. Quên mật khẩu 
 
@@ -505,60 +469,55 @@ height="5.681486220472441in"}
 
 ### 3.1.9. Đổi email
 
-![](media/image23.png){width="3.050347769028871in"
-height="5.869150262467191in"}
+![image](https://github.com/user-attachments/assets/4ac4fe98-502d-4e49-87d3-a8e05b682a5e)
+
 
 ### 3.1.10. Đăng xuất
 
-![](media/image40.png){width="2.0833333333333335in" height="4.375in"}
+![image](https://github.com/user-attachments/assets/7dfe3bc9-33be-4733-b562-a93e946f02ba)
+
 
 ### 3.1.11. Hồ sơ 
+![image](https://github.com/user-attachments/assets/975eb5b7-52c7-4b25-82d9-f21285e79a73)
 
-![](media/image48.png){width="2.9461811023622047in"
-height="6.277001312335958in"}![](media/image49.png){width="2.904514435695538in"
-height="3.6306419510061243in"}
 
 ### 3.1.12. Xem thông tin cá nhân
 
-![](media/image43.png){width="2.779514435695538in"
-height="6.563554243219597in"}
+![image](https://github.com/user-attachments/assets/dcaca7ca-1d82-4ccb-9dd3-ef588cb3b923)
+
 
 ### 3.1.13.Sửa thông tin cá nhân
 
-![](media/image10.png){width="3.164834864391951in"
-height="7.473958880139983in"}![](media/image8.png){width="3.175347769028871in"
-height="7.495056867891513in"}
+![image](https://github.com/user-attachments/assets/3d8013c2-bc72-4d71-a72c-ac8e8f166ade)
+
 
 ### 3.1.14.Tìm kiếm thông tin khóa học
 
-![](media/image19.png){width="3.270371828521435in"
-height="6.905184820647419in"}
+![image](https://github.com/user-attachments/assets/bca4f4d0-61c8-4351-9886-2b288eb2f9b2)
+
 
 ### 3.1.15. Dịch từ vựng và văn bản
 
-![](media/image34.png){width="3.2899311023622047in"
-height="6.488727034120735in"}
+![image](https://github.com/user-attachments/assets/e79949d3-1a59-4ea0-831d-a2486f0ea2c7)
 
 ### 3.1.16. Dịch từ giọng nói
 
-![](media/image32.png){width="3.6817727471566055in"
-height="7.265625546806649in"}
+![image](https://github.com/user-attachments/assets/f538fb4e-f0b1-4e33-8aa3-78e9533c5e98)
+
 
 ### 3.1.17. Dịch bằng chụp văn bản hoặc ảnh từ thư viện ảnh
 
-![](media/image18.png){width="3.6332458442694664in"
-height="7.171875546806649in"}
+![image](https://github.com/user-attachments/assets/fa1e3af9-cf12-4965-9aa9-1fe7c5e9f9ff)
+
 
 ### 3.1.18. Từ điển học tiếng anh
 
-![](media/image52.png){width="2.9495352143482063in"
-height="7.598958880139983in"}
+![image](https://github.com/user-attachments/assets/f1a12415-f433-4037-a652-c3a382c789df)
 
 ### 3.1.19. Liệt kê bài học
 
-![](media/image42.png){width="3.024795494313211in"
-height="6.505208880139983in"}![](media/image14.png){width="3.0618864829396326in"
-height="6.473958880139983in"}
+![image](https://github.com/user-attachments/assets/d1c5aab0-2c8a-4b95-a978-05cc744af81e)
+
 
 ### 3.1.20. Tìm kiếm tài liệu
 
@@ -566,8 +525,8 @@ height="6.473958880139983in"}
 
 ### 3.1.21. Thêm tài liệu
 
-![](media/image12.png){width="2.9583333333333335in"
-height="5.625683508311461in"}
+![image](https://github.com/user-attachments/assets/dd4918aa-27c5-4bab-a003-bd8ddbac004f)
+
 
 ### 3.1.22. Xóa tài liệu
 
@@ -596,9 +555,8 @@ height="4.8989676290463695in"}
 
 ### 3.1.27. Bài luyện tập theo chủ đề
 
-![](media/image13.png){width="2.654514435695538in"
-height="6.331583552055993in"}![](media/image21.png){width="2.9985575240594926in"
-height="6.328125546806649in"}
+![image](https://github.com/user-attachments/assets/d092d161-3742-45d4-b22f-e2024bf94b80)
+
 
 ![](media/image15.png){width="2.800347769028871in"
 height="5.956878827646544in"}![](media/image35.png){width="2.8226935695538056in"
@@ -606,18 +564,16 @@ height="5.953125546806649in"}
 
 ### 3.1.28. Xem các bài học qua video
 
-![](media/image37.png){width="3.144097769028871in"
-height="6.691032370953631in"}![](media/image11.png){width="3.1649311023622047in"
-height="6.736170166229221in"}
+![image](https://github.com/user-attachments/assets/045c34ea-25e2-4aa0-be67-e4ff6fbe8cf8)
+
 
 ![](media/image7.png){width="2.842014435695538in"
 height="6.0486286089238845in"}
 
 ### 3.1.29. Các bài kiểm tra trên Quizz
 
-![](media/image41.png){width="3.029514435695538in"
-height="7.108859361329833in"}![](media/image17.png){width="3.529514435695538in"
-height="7.069563648293963in"}
+![image](https://github.com/user-attachments/assets/5f40f3c1-3af2-4419-b7cf-175cc2f86237)
+
 
 ![](media/image46.png){width="3.206597769028871in"
 height="6.422101924759405in"}![](media/image28.png){width="3.2274311023622047in"
@@ -625,9 +581,7 @@ height="6.465374015748031in"}
 
 ### 3.1.30. Thẻ học từ vựng
 
-![](media/image36.png){width="2.987847769028871in"
-height="5.9855883639545056in"}![](media/image25.png){width="2.9774311023622047in"
-height="5.96495406824147in"}
+![image](https://github.com/user-attachments/assets/334c36f4-6a77-414c-94c9-10596a957c4a)
 
 ![](media/image39.png){width="2.5086811023622047in"
 height="5.024329615048119in"}
@@ -649,24 +603,23 @@ height="5.728889982502187in"}
 
 ### 3.1.34. Tiến độ học tập
 
-![](media/image31.png){width="3.050347769028871in"
-height="6.110317147856518in"}
+![image](https://github.com/user-attachments/assets/93ff8d26-ba08-49c5-adb0-91faca8a94cb)
+
 
 ### 3.1.35. Trò chơi 2048
 
-![](media/image26.png){width="2.9149311023622047in"
-height="5.839174321959755in"}![](media/image27.png){width="2.9461811023622047in"
-height="5.772331583552056in"}
+![image](https://github.com/user-attachments/assets/0960277e-d747-469b-a03c-3c38a049f682)
+
 
 ### 3.1.36. Chat bot
 
-![](media/image50.png){width="2.8788998250218722in"
-height="6.234375546806649in"}
+![image](https://github.com/user-attachments/assets/247ab79a-f3dc-4f63-b2e0-ecb0d21108cc)
+
 
 ### 3.1.37. Chia sẻ ứng dụng
 
-![](media/image30.png){width="2.4791666666666665in"
-height="5.145833333333333in"}
+![image](https://github.com/user-attachments/assets/ac7ce6d3-f15b-4036-bf3e-d9ca2d92b902)
+
 
 ### 3.1.38. Thông báo mất mạng, pin yếu
 
@@ -676,13 +629,13 @@ height="5.521652449693788in"}
 
 ### 3.1.39. Trung tâm hỗ trợ
 
-![](media/image3.png){width="2.8837970253718286in"
-height="7.057292213473316in"}
+![image](https://github.com/user-attachments/assets/b1618c65-e9a4-4728-add5-79826f391b67)
+
 
 ### 3.1.40. Đánh giá ứng dụng
 
-![](media/image33.png){width="2.988847331583552in"
-height="5.646652449693788in"}
+![image](https://github.com/user-attachments/assets/58064039-d08c-44b0-a9be-1580485bbdb9)
+
 
 ## 3.2: Mã nguồn của ứng dụng
 
